@@ -1,9 +1,8 @@
 ---
 title: "About"
+title-block-banner: true
 ---
 
-About this site
+This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis.
 
-```{r}
-1 + 1
-```
+

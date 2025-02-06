@@ -1,13 +1,22 @@
 ---
-title: "code-assurance-playbook"
+title: "NHSBSA Analytical Code Assurance Playbook"
+description: ""
+title-block-banner: true
+listing:
+  type: grid
+  contents: "guidance/*/index.qmd"
+  sort: "path"
+format:
+  html:
+    html-math-method: katex
+    css: styles.css
+    embed-resources: true
+toc: false
 ---
 
-This website documents the tools and process that NHS Business Services
-Authority (NHSBSA) analytical teams use to create analytical code and how to
-assure it.
+This playbook sets out the NHSBSA’s expectations and processes for quality assurance of code used to produce analysis. 
 
-It is intended to complement, not replace, existing UK government and NHS
-guidance:
+It is intended to complement, not replace, existing UK government and NHS guidance:
 
 * Analysis Function Duck book
 * NHSE England RAP Community of Practice
