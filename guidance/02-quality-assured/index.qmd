@@ -1,5 +1,6 @@
 ---
-title: "Analytical code should be quality assured"
+title: "Analysis should be quality assured"
 description: " "
 title-block-banner: true
 ---
+<!-- TODO: link to the producing quality analysis playbook -->

@@ -1,5 +1,5 @@
 ---
-title: "Analytical code should be reproducible"
+title: "Analysis should be reproducible"
 description: " "
 title-block-banner: true
 listing:
