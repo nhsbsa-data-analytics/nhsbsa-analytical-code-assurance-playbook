@@ -22,7 +22,18 @@ website:
     tools:
       - icon: github
         href:  https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
-        
+
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: '
+      **Pre-Release**: This is a new website under development.
+      [Click here](https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/blob/main/CONTRIBUTE.md)
+      to find out how you can submit feedback, suggest improvements and get involved!
+      '
+    type: warning
+    position: above-navbar
+
   sidebar:
     style: "docked"
     search: false
