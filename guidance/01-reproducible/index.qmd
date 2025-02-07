@@ -1,0 +1,9 @@
+---
+title: "Analysis should be reproducible"
+description: " "
+title-block-banner: true
+listing:
+  type: grid
+  contents: "/pages/**.qmd"
+  sort: "path"
+---
