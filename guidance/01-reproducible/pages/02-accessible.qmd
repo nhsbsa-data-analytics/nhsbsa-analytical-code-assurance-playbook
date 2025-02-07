@@ -1,0 +1,6 @@
+---
+title: "Accessible"
+description: ""
+---
+
+<!-- Generalised from readability: code should be readable *and* understandable by the intended audience.  -->

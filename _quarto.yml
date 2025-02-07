@@ -8,41 +8,38 @@ website:
   title: "Analytical Code Assurance" 
   navbar:
     title: false
-    logo: "static/logo-nhs.svg"
-    logo-alt: "NHS logo"
+    logo: "static/bsa-logo.png"
+    logo-alt: "NHS Business Services Authority"
+    logo-href: "https://www.nhsbsa.nhs.uk/"
     pinned: true
     background: "#005EB8"
+    collapse: false
     left:
       - href: index.qmd
         text: Home
-      - text: "Guidance"
-        menu:
-          - href: guidance/01-principles/index.qmd
-          
     right:
       - about.qmd
+    tools:
+      - icon: github
+        href:  https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
+        
   sidebar:
     style: "docked"
-    collapse-level: 1
+    search: false
+    collapse-level: 2
     contents:
-      - index.qmd
-      - guidance/01-principles/index.qmd
-      # - section: "Analytical Cycle"
-      #   contents:        
-      #     - guidance/02-analytical-cycle/index.qmd
-      #     - guidance/02-analytical-cycle/pages/03-customer-engagement.qmd
-      #     - guidance/02-analytical-cycle/pages/04-analysis-design.qmd
-      #     - guidance/02-analytical-cycle/pages/05-conducting-the-analysis.qmd
-      #     - guidance/02-analytical-cycle/pages/06-delivery-and-approval.qmd
-      #     - guidance/02-analytical-cycle/pages/07-approval-and-distribution.qmd
-      #     - guidance/02-analytical-cycle/pages/08-review.qmd        
-      # - section: "Responsibilities"
-      #   contents:            
-      #     - guidance/03-responsibilities/pages/09-commissioner-responsibilities.qmd
-      #     - guidance/03-responsibilities/pages/10-analyst-responsibilities.qmd
-      #     - guidance/03-responsibilities/pages/11-critical-friend.qmd
+      - text: "Home"
+        href: index.qmd
+      - section: "Reproducible"
+        href: guidance/01-reproducible/index.qmd
+        contents: guidance/01-reproducible/pages/*
+      - section: "Quality Assured"
+        href: guidance/02-quality-assured/index.qmd
+        contents: guidance/02-quality-assured/pages/*
+      - section: "Transparent"
+        href: guidance/03-transparent/index.qmd
+        contents: guidance/03-transparent/pages/*
       
-
 format:
   html:
    grid: 

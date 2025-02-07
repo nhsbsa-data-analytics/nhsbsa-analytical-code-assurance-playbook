@@ -3,7 +3,7 @@
 This repository contains the framework for writing and deploying the NHSBSA Analytical Code Assurance Playbook. 
 The Playbook is used to give detailed guidance on quality assuring code used to produce analytical outputs.
 
-The live version of The Playbook can be found [here](https://nhsbsa-data-analytics.github.io/code-assurance-playbook/).
+The live version of The Playbook can be found [here](https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/).
 
 ## Getting started
 

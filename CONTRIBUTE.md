@@ -1,7 +1,7 @@
 # How to contribute
 
 Hi there! 
-Thank you for considering contributing to the [NHSBSA Analytical Code Assurance Playbook](https://github.com/nhsbsa-data-analytics/code-assurance-playbook/). 
+Thank you for considering contributing to the [NHSBSA Analytical Code Assurance Playbook](https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/). 
 The Playbook is meant to serve the Data & Analytics community, so contributions from community members themselves are super important in making this a reality! 
 
 ## Creating an issue
@@ -72,9 +72,9 @@ If you want to show an image on the card, add a jpeg file to the same subfolder 
 - [Using Pull Requests](https://help.github.com/articles/using-pull-requests/)
 - [GitHub Help](https://help.github.com)
 
-[fork]: https://github.com/nhsbsa-data-analytics/code-assurance-playbook/fork
-[pr]: https://github.com/nhsbsa-data-analytics/code-assurance-playbook/pulls
-[issues]: https://github.com/nhsbsa-data-analytics/code-assurance-playbook/issues
+[fork]: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/fork
+[pr]: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/pulls
+[issues]: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/issues
 
 ## Acknowledgements
 Thank you to the [NHS England RAP Community of Practice](https://github.com/NHSDigital/rap-community-of-practice/blob/35adb3c15ba3c34fe7d5ab3baede760504ceb7a1/CONTRIBUTE.md) from which this guide took heavy inspiration!
