@@ -1,5 +1,9 @@
 ---
 title: "Analytical code should be reproducible"
-description: ""
+description: " "
 title-block-banner: true
+listing:
+  type: grid
+  contents: "/pages/**.qmd"
+  sort: "path"
 ---

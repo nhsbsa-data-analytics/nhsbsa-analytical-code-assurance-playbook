@@ -3,9 +3,9 @@ title: "NHSBSA Analytical Code Assurance Playbook"
 description: ""
 title-block-banner: true
 listing:
-  type: grid
+  type: default
+  sort: path
   contents: "guidance/*/index.qmd"
-  sort: "path"
 format:
   html:
     html-math-method: katex
