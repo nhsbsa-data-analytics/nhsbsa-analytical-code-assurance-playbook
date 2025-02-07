@@ -14,7 +14,7 @@ You can run the document by:
     - For VS Code, you must install the Quarto extension and install the Quarto CLI. When running Quarto for the first time, you will be prompted with instructions on how to install this. **Please note this is not currently possible with the Azure Virtual Desktop (AVD)**.
 1. Opening [index.qmd](/index.qmd) in the repository root
 1. Click 'Compile' or 'Preview' respectively. 
-    - Note: for Rstudio usage, you must also load the `quality-analysis-playbook.Rproj` project to be able to compile the document. 
+    - Note: for Rstudio usage, you must also load the [code-assurance-playbook.Rproj](./code-assurance-playbook.Rproj) project to be able to compile the document. 
 
 ## Folder Structure
 
