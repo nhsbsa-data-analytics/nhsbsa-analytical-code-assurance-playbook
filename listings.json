@@ -1,0 +1,11 @@
+[
+  {
+    "listing": "/guidance/01-reproducible/index.html",
+    "items": [
+      "/guidance/01-reproducible/pages/01-documented.html",
+      "/guidance/01-reproducible/pages/02-accessible.html",
+      "/guidance/01-reproducible/pages/03-modular.html",
+      "/guidance/01-reproducible/pages/04-version-controlled.html"
+    ]
+  }
+]
