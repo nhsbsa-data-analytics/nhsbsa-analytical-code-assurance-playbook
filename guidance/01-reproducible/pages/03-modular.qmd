@@ -1,4 +1,81 @@
 ---
-title: "Modular"
+title: "Modular Code and Workflows"
 description: ""
 ---
+
+> Pre-requisite reading
+>
+> * [AF Duck book: Modular code][duck-book]
+> * [NHSBSA DDaT playbook: Development - Coding][coding-playbook]
+
+## What is modular code?
+Complex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks. 
+Breaking down your code and workflow into smaller reusable chunks to can help you maintain your project and share components across a series of analyses. 
+Tools such as R, Python, SQL, and Alteryx provide methods to create containerised code such as modules, classes, functions and macros.
+
+## Why should I do this?
+Writing your code in a modular way provides a range of benefits:
+
+* prevents long, complex walls of code that are hard to understand
+* makes sharing code with others (and your future self) easier
+* speeds up the peer review process 
+* makes testing of the code (and its outputs) easier
+
+## How do we do it then?
+Writing modular code or developing modular workflows can differ depending on the your tool of choice, the needs of the project or piece of work, the intended customer, or the expected users of the code in the future. 
+However, a simple hierarchy of actions to take are:
+
+* split complex code and workflows in multiple (ordered) scripts or smaller workflows
+* use a code notebook to organise your analysis
+* write re-usable code as functions
+* organise related functions into modules
+* organise and document modules as packages
+
+Let's dive into how we can do some of these.
+
+### Split your code into multiple scripts
+Monolithic code is a big no-no. A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug and maintain, and pretty mean to pass off for peer review on a Friday afternoon. 
+Splitting your monolithic code into ordered scripts can help others (and yourself) understand the steps you've taken and the reasons why.
+
+<!-- DRAFT NOTE: intention here is to provide examples for the various tools that teams use e.g. R, Python, SQL, Alteryx, VBA (also need to be conscious of future data platform) -->
+
+For example, in R a large project could be split into:
+
+```
+project
+-- 01_data_build.R
+-- 02_data_clean.R
+-- 03_analysis.R
+-- 04_visualisation.R
+```
+
+these scripts can now be run in their intended order and splits out the parts of your code into related areas, making peer review easier.
+
+Using scripts doesn't inherently make your code reproducible or reusable, but are a good first step towards better and higher quality code.
+
+**Do**
+
+* split your code up
+* group related code together
+* organise your scripts so you and others know how to run it
+* make your scripts self contained and be able to ran from a command line
+
+**Don't**
+
+* write monolithic code
+* split up your code too much - 100 scripts with 10 lines of code in are just as hard to digest
+* write overly complex code where simpler solutions might exist
+
+### Use a code notebook
+Services such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. 
+They can be incredibly useful, and individual workbooks can be a good first step towards modularising your code for simple projects and workflows and for doing initial data exploration. 
+However, they can be difficult to use with further practices for producing high quality code. For example:
+
+* they are inherently difficult to review and audit using version control
+* code cells can be ran out of order, reducing reproducibility
+* not easy to test functions written in the notebook
+
+## How will this be enforced?
+
+[coding-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
+[duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html
