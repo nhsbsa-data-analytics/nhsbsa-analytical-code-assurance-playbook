@@ -1,0 +1,33 @@
+---
+title: "Readable"
+description: ""
+---
+
+> ### Pre-requisite reading
+>
+> * [AF Duck book: Readable code][duck-book]
+> * [NHSBSA DDaT playbook: Naming conventions][ddat-playbook]
+
+## What is readable code?
+Readable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader's experience over the convenience of writing code.
+
+## Why should we write readable code?
+* Enhances team collaboration
+* Facilitates easier debugging and maintenance
+* Encourages best coding practices
+* Speeds up the onboading process for new team memebers
+
+## How do we write readable code?
+* Use clear and descriptive namees for variables and functions
+* Write small, reusable function that do one thing well
+* Comment wisely to explain the 'why', not the 'what'
+* Adhere to a consistent coding style
+* Regularly refactor to improve code clarity
+
+By following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. 
+For more detailed insights, please refer to the recommended pre-requisite reading.
+
+## How will this be enforced?
+
+[duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/readable_code.html
+[ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-naming-conventions/

@@ -1,12 +1,12 @@
 ---
-title: "Modular Code and Workflows"
+title: "Modular"
 description: ""
 ---
 
-> Pre-requisite reading
+> ### Pre-requisite reading
 >
 > * [AF Duck book: Modular code][duck-book]
-> * [NHSBSA DDaT playbook: Development - Coding][coding-playbook]
+> * [NHSBSA DDaT playbook: Development - Coding][ddat-playbook]
 
 ## What is modular code?
 Complex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks. 
@@ -77,5 +77,5 @@ However, they can be difficult to use with further practices for producing high 
 
 ## How will this be enforced?
 
-[coding-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html
+[ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
