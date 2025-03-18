@@ -2,3 +2,86 @@
 title: "Peer-reviewed"
 description: ""
 ---
+
+> ### Pre-requisite reading
+> * [AF Duck Book: Peer review][duck-book]
+> * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook]
+
+## What is peer review?
+Peer review is a process where a second person will review a colleagues code before any code is finalised or used to produce output.
+
+## Why should I do this?
+Although peer reviews can reduce potential bugs being missed, the peer review process is not simply a case of trying to catch errors.
+
+There are a number of benefits that to using a peer review approach, including:
+
+* **Improving quality of code**: As part of the peer review process code will be reviewed to ensure that it is readable and understandable
+* **Sharing knowledge**: Review code can improve the knowledge of both the original code author and the reviewer
+* **Optimising code performance**: As part of the review process, different approaches may be found that could improve the code
+* **Find potential mistakes in the code**: Although peer review is not a replacement for testing, it can find potential bugs or issues in the code
+
+## How do we do it then?
+When using version control tools such as Git, peer review should be part of the branching and pull request process (see [DDaT Playbook][ddat-playbook]). 
+Ideally a pull request should not be merged without the code being reviewed by somebody else.
+
+Using version control tools the basic steps for a peer review are:
+<!-- DRAFT NOTE: do we need more details or is this repeating DDaT playbook -->
+
+1. Code author submits merge request relating for branch used to develop code
+1. Reviewer reviews the code and adds comments for any potential issues, including the following areas:
+    * Is the code readable and understandable?
+    * Is the code tested, and does the code do what it is designed for?
+    * Could the problem have been approached in a different way?
+1. Author reviews comments and amends code as needed
+    * Comments can and should be challenged if there is any disagreement to agree a resolution between the author and reviewer
+1. Reviewer approves amended code checking all issues have been resolved
+1. Branch merged
+
+**Do**
+
+* Try and incorporate peer review during the development process to get feedback during development
+* Communicate clearly to ensure both author and reviewer understand and are in agreement at each stage
+* Document any issues and decisions
+* Try running all code to ensure it works as designed
+
+**Don't**
+
+* Simply glance over code and accept if it "looks right"
+* Submit huge pull requests with multiple/large scripts where the reviewer has had not sight of the work previously
+* Blindly accept comments from a reviewer without making sure you agree with the comment
+* Be tempted to skip the review process to progress work quickly
+
+It would be strongly recommended that [version control][version-control] tools are implemented and used for all pieces of work 
+<!-- DRAFT NOTE: link to playbook section on version control -->
+However, where version control tools may not be in place, a peer review process would still be recommended, and notes should still be captured around any feedback and amendments raised during a review process.
+
+## Pair programming
+Instead of having the code writing and peer review as two distinct phases, pair programming combines these into a single step with two or more people actively working on the same piece of code at the same time. 
+Effective pair programming will involve one person writing the code whilst the other(s) supply real time feedback on the code being written.
+
+The benefits of pair programming are that feedback can be provided as the code is being written, suggesting improvements or identifying/fixing issues as they appear. Additionally, pair programming can be a good method to share knowledge and experience between individuals.
+
+Pair programming may require more resource during the development stage but at the benefit in a reduce of resource needed for a review stage.
+
+For pair programming to be effective there are guidelines that should be followed:
+
+### Rotate roles often
+
+Everyone should take turns writing and reviewing which could mean switching roles every 15-30 minutes. 
+This will ensure everyone gets experience from both sides of the process and will solidify the knowledge of the code being written.
+
+### Document large decisions
+
+Pair programming allows real-time discussion and decision making but where big decisions in terms of approach have been made these should still be documented for anybody who may use the code in future.
+
+### Be vocal and ask questions
+
+Pair programming is a collaborative process and should not just involve one person watching another code. 
+The person writing the code should be talking through what they are writing, and the reviewer should be supplying feedback and asking for clarification if there are parts that they do not understand. 
+Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.
+
+## How will peer review be enforced?
+
+[duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
+[ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
+[version-control]: /guidance/01-reproducible/pages/04-version-controlled.qmd
