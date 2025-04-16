@@ -5,10 +5,16 @@ project:
 website:
   bread-crumbs: false
   favicon: static/bsa-favicon.png
-  title: "Analytical Code Assurance" 
+  title: "Analytical Code Assurance"
+  # Search is good to have and works very well. But it introduces an accessibility
+  # issue no matter how it is configured.
+  # https://quarto.org/docs/websites/website-search.html
+  # overlay gives empty button, while textbox gives empty label
+  # Disabled for now until a solution is found
+  search: false
   navbar:
     title: false
-    logo: "static/bsa-logo.png"
+    logo: "static/NHSBSA logo.png"
     logo-alt: "NHS Business Services Authority"
     logo-href: "https://www.nhsbsa.nhs.uk/"
     pinned: true
@@ -50,6 +56,11 @@ website:
       - section: "Transparent"
         href: guidance/03-transparent/index.qmd
         contents: guidance/03-transparent/pages/*
+        
+  page-footer:
+      left:
+        - text: "Accessibility"
+          href: accessibility.qmd
       
 format:
   html:
