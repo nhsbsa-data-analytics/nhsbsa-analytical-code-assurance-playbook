@@ -16,13 +16,23 @@ website:
     collapse: false
     left:
       - href: index.qmd
-        text: Home
+        text: Playbook Home Page
+      - text: "Guidance"
+        menu:
+          - href: guidance/01-reproducible/index.qmd
+          - href: guidance/02-quality-assured/index.qmd
+          - href: guidance/03-transparent/index.qmd
+          
     right:
-      - about.qmd
-    tools:
-      - icon: github
-        href:  https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
-
+      - href: about.qmd
+        text: "{{< iconify mdi:information-outline size=xl >}} About"
+      - href: https://www.nhsbsa.nhs.uk/nhsbsa-statistics-and-data-science
+        text: "{{< iconify mdi:house-outline size=xl >}} NHSBSA Data Science Home Page"
+      - href: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
+        text: "{{< iconify mdi:github size=xl >}} GitHub"
+      - href: https://twitter.com/nhsbsa
+        text: "{{< iconify mdi:twitter size=xl >}} X (formerly Twitter)"
+        
   announcement: 
     icon: info-circle
     dismissable: true
