@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "NHSBSA Analytical Code Assurance Playbook",
-    "section": "",
-    "text": "This Playbook sets out the NHSBSA’s expectations and processes for quality assurance of code used to produce analysis.\nIt is intended to complement, not replace, existing UK government and NHS guidance, including:\n\nAnalysis Function Duck book\nNHSE England RAP Community of Practice\nNHS Health RAP playbook\nDepartment of Health and Social Care (DHSC)\n\nThe Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be quality assured\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be transparent\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/index.html",
-    "href": "guidance/01-reproducible/index.html",
-    "title": "Analysis should be reproducible",
-    "section": "",
-    "text": "Documented\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccessible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Home",
-      "Reproducible"
-    ]
-  },
-  {
     "objectID": "CONTRIBUTE.html",
     "href": "CONTRIBUTE.html",
     "title": "How to contribute",
@@ -68,5 +47,27 @@
     "title": "About",
     "section": "",
     "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NHSBSA Analytical Code Assurance Playbook",
+    "section": "",
+    "text": "This Playbook sets out the NHSBSA’s expectations and processes for quality assurance of code used to produce analysis.\nIt is intended to complement, not replace, existing UK government and NHS guidance, including:\n\nAnalysis Function Duck book\nNHSE England RAP Community of Practice\nNHS Health RAP playbook\nDepartment of Health and Social Care (DHSC)\n\nThe Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be quality assured\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be transparent\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Playbook Home Page",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/index.html",
+    "href": "guidance/01-reproducible/index.html",
+    "title": "Analysis should be reproducible",
+    "section": "",
+    "text": "Documented\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccessible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible"
+    ]
   }
 ]
