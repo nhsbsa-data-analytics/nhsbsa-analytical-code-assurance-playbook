@@ -2,3 +2,5 @@
 title: "Decisions Logged"
 description: ""
 ---
+
+Lorem ipsum dolor sit veritum ...
