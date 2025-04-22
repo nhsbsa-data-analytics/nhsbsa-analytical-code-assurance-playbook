@@ -1,4 +1,50 @@
 ---
 title: "Tested"
-description: ""
+description: "Rigorous testing is fundamental to software quality, verifying code correctness, ensuring reliability, and building confidence throughout the development lifecycle."
 ---
+
+> ## Pre-requisite reading
+>
+> * [AF Duck book: Testing code](https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html)
+> * [NHSBSA DDaT playbook: Testing](https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/)
+
+Rigorous testing is fundamental to software quality, verifying code correctness, ensuring reliability, and building confidence throughout the development lifecycle.
+
+## What sort of testing is needed for code?
+
+*   **Unit Tests:** Focus on testing the smallest individual components, such as functions, in isolation. They should be fast and numerous.
+*   **Integration Tests:** Verify the interaction and communication between different components or modules work as expected.
+*   **End-to-End (E2E) Tests:** Simulate real user scenarios from start to finish, testing the entire application flow. These are typically slower and more complex.
+*   **Regression Tests:** Ensure that new changes or bug fixes haven't negatively impacted existing functionality. Often implicitly tested by by re-running unit, integration and E2E tests.
+
+## Why should we test our code?
+
+*   **Verify Correctness:** Ensure the code behaves as intended and meets requirements.
+*   **Catch Bugs Early:** Identify and fix issues during development when they are cheapest and easiest to resolve.
+*   **Provide Confidence:** Increase confidence in the code's reliability for deployment and release.
+*   **Enable Refactoring:** Act as a safety net, allowing developers to improve code structure without fear of breaking functionality.
+*   **Serve as Documentation:** Well-written tests can illustrate how code is intended to be used and its expected behavior.
+*   **Improve Design:** Writing testable code often leads to better, more modular, and loosely coupled designs.
+*   **Facilitate Collaboration:** Ensure that contributions from different team members integrate correctly.
+
+## How do we test our code?
+
+*   **Use Testing Frameworks:** Leverage established frameworks appropriate for the coding language to structure, run, and assert test outcomes.
+*   **Risk-based Approach:** Write more tests for parts of your code that are very new, more complex, or encapsulate critical business logic.
+*   **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
+*   **Write Testable Code:** Design code with testing in mind.
+*   **Focus on Behavior:** Test *what* the code should do, rather than *how* it does it.
+*   **Test Edge Cases and Errors:** Include tests for boundary conditions, invalid inputs, and expected failure modes.
+*   **Keep Tests Independent and Fast:** Ensure tests can run independently and quickly to provide rapid feedback.
+*   **Write Clear and Readable Tests:** Tests should be easy to understand, indicating what is being tested and why.
+*   **Maintain Tests:** Treat test code like production code – keep it updated, refactor it, and remove obsolete tests.
+
+## How do we define success?
+
+*   **Confidence:** Teams feel confident releasing code because tests provide a strong safety net.
+*   **Reduced Bugs:** A noticeable decrease in bugs discovered by users after release.
+*   **Effective Refactoring:** Developers can refactor and improve code without introducing regressions.
+*   **Fail Fast:** Automated tests in CI quickly inform developers of potential issues.
+*   **Meaningful Tests:** Tests cover critical paths and business logic; test quality and relevance matter more than percentage of code covered.
+*   **Maintainable:** Tests are reliable, easy to understand, and kept up-to-date alongside the code they test.
+*   **Easy Verification:** Tests clearly demonstrate that the code meets its specified requirements.
