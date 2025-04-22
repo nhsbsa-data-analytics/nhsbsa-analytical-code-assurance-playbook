@@ -86,3 +86,4 @@ Everybody who has been involved writing the code should have full understanding 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
 [version-control]: /guidance/01-reproducible/pages/04-version-controlled.qmd
+[ddat-playbook-peer-review]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/
