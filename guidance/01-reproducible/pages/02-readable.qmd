@@ -31,3 +31,4 @@ For more detailed insights, please refer to the recommended pre-requisite readin
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/readable_code.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-naming-conventions/
+[peer-review]: /guidance/02-quality-assured/pages/06-peer-reviewed.qmd
