@@ -52,9 +52,9 @@ Using version control tools the basic steps for a peer review are:
 * Blindly accept comments from a reviewer without making sure you agree with the comment
 * Be tempted to skip the review process to progress work quickly
 
-It would be strongly recommended that [version control][version-control] tools are implemented and used for all pieces of work 
-<!-- DRAFT NOTE: link to playbook section on version control -->
-However, where version control tools may not be in place, a peer review process would still be recommended, and notes should still be captured around any feedback and amendments raised during a review process.
+Whenever feasible, analytical code and low-or-no-code artifacts should be version controlled. Version control tools facilitate [peer-review][ddat-playbook-peer-review], among [other benefits][version-control].
+
+However, even where version control tools are not used, peer review should still be done, including recording of any feedback and amendments requested during the review process.
 
 ## Pair programming
 Instead of having the code writing and peer review as two distinct phases, pair programming combines these into a single step with two or more people actively working on the same piece of code at the same time. 
