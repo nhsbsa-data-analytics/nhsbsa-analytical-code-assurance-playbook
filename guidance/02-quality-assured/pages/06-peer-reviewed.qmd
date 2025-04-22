@@ -16,6 +16,8 @@ Although peer reviews can reduce potential bugs being missed, the peer review pr
 There are a number of benefits that to using a peer review approach, including:
 
 * **Improving quality of code**: As part of the peer review process code will be reviewed to ensure that it is readable and understandable
+* **Consistency**: Promotes consistency by ensuring adherence to team standards and style guides
+* **Alternative Perspectives**: Provides alternative perspectives that might lead to simpler or more robust solutions
 * **Sharing knowledge**: Review code can improve the knowledge of both the original code author and the reviewer
 * **Optimising code performance**: As part of the review process, different approaches may be found that could improve the code
 * **Find potential mistakes in the code**: Although peer review is not a replacement for testing, it can find potential bugs or issues in the code
