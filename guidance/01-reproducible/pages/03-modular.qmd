@@ -16,10 +16,12 @@ Tools such as R, Python, SQL, and Alteryx provide methods to create containerise
 ## Why should I do this?
 Writing your code in a modular way provides a range of benefits:
 
-* prevents long, complex walls of code that are hard to understand
-* makes sharing code with others (and your future self) easier
-* speeds up the peer review process 
-* makes testing of the code (and its outputs) easier
+* promotes [readability][readable-code] by preventing long, complex walls of code that are hard to understand
+* multiple team members working on same codebase will have less code conflicts
+* simplifies testing of the code (and its outputs)
+* smaller modules are easier to maintain or improve in future
+* speeds up the [peer review][peer-review] process 
+* makes sharing and reusing code easier
 
 ## How do we do it then?
 Writing modular code or developing modular workflows can differ depending on the your tool of choice, the needs of the project or piece of work, the intended customer, or the expected users of the code in the future. 
