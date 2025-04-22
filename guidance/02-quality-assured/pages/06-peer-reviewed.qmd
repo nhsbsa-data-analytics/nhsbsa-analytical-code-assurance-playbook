@@ -8,12 +8,11 @@ description: ""
 > * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook]
 
 ## What is peer review?
-Peer review is a process where a second person will review a colleagues code before any code is finalised or used to produce output.
+Peer review is a process where a colleague provides constructive feedback before any code or workflows are finalised and used to produce output.
 
 ## Why should I do this?
-Although peer reviews can reduce potential bugs being missed, the peer review process is not simply a case of trying to catch errors.
 
-There are a number of benefits that to using a peer review approach, including:
+Benefits from peer review include:
 
 * **Improving quality of code**: As part of the peer review process code will be reviewed to ensure that it is readable and understandable
 * **Consistency**: Promotes consistency by ensuring adherence to team standards and style guides
