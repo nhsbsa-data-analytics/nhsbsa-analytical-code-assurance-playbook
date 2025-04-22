@@ -1,4 +1,68 @@
 ---
 title: "Documented"
-description: ""
+description: "Effective documentation is crucial for the health, usability, and maintainability of any software project."
 ---
+
+> ## Pre-requisite reading
+>
+> * [AF Duck book: Code documentation](https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html)
+> * [AF Duck book: Project documentation](https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html)
+> * [NHSBSA DDaT playbook: Licensing software or code](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/)
+> * [NHSBSA DDaT playbook: Standard code repository files](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/)
+
+Effective documentation is crucial for the health, usability, and maintainability of any software project. It encompasses both the specifics within the code and the broader context of the project itself.
+
+## What sort of documentation is needed?
+
+*   **Project-Level:**
+    *   **README:** Explains the project's purpose, scope, basic setup, usage, and links to other key documentation.
+    *   **Installation Guide:** Detailed instructions for getting the project running.
+    *   **Usage and Examples:** Clear instructions and examples on how to use the project's features.
+    *   **Contribution Guidelines:** How others can contribute (code style, testing, PR process).
+    *   **License Information:** Defines legal usage and distribution rights.
+    *   **Changelog:** Tracks changes across versions.
+    *   **Code of Conduct:** Sets community standards.
+    *   **Support Information:** How to get help.
+    *   **Design Docs:** High-level overview for complex projects.
+    *   **Accessibility Statement:** If an output is available as a webpage or app, it must have an accessibility statement.
+
+*   **Code-Level:**
+    *   **In-Code Comments:** Explanations within the code focusing on the *why* (rationale, complex logic, trade-offs).
+    *   **API Documentation:** Standardized comments for functions, classes, modules explaining their purpose, parameters, returns, and usage.
+    *   **Detailed Explanations:** Separate documents or wiki pages for complex algorithms, data structures, or specific modules when needed.
+
+## Why should we document our code and project?
+
+*   **Improves Understanding & Clarity:** Makes code and project purpose comprehensible to others and your future self.
+*   **Facilitates Onboarding:** Reduces the time needed for new team members or contributors to become productive.
+*   **Supports Maintenance & Debugging:** Makes modifying, fixing and refactoring code safer and easier.
+*   **Enables Collaboration & Reuse:** Allows others to effectively use, contribute to, and build upon the work.
+*   **Encourages Better Design:** Explaining complex parts often highlights areas for simplification or improvement.
+*   **Increases User Adoption:** Makes the project accessible and usable for its intended audience.
+*   **Preserves Knowledge:** Prevents critical information loss when team members change.
+*   **Attracts Contributors:** Well-documented projects are more inviting and easier to engage with.
+*   **Meets Quality Standards:** Often a requirement for deliverables, funding, or organizational policies.
+
+## How do we create and maintain quality documentation?
+
+*   **Start Early & Integrate:** Treat documentation as an integral part of the development process, not an afterthought.
+*   **Keep it Updated:** Build updates into your workflow.
+*   **Write Clearly and Concisely:** Know your audience for a particular piece of documentation and use straightforward language at the right level.
+*   **Focus on the "Why":** Especially for in-code comments, explain the reasoning behind non-obvious decisions.
+*   **Use Standard Formats & Locations:** Employ conventional filenames, formats, and place documentation where users expect it.
+*   **Leverage Tooling:**
+    *   Use linters to enforce documentation standards.
+    *   Use tools to generate documentation from code comments.
+    *   Use templates for consistency.
+*   **Maintain Discoverability:** Ensure documentation is easy to find and link related documents together.
+*   **Assign Responsibility:** Have clear ownership for creating and maintaining different documentation aspects.
+
+## How do we define success?
+
+*   **Understandable:** Developers and users can quickly grasp the project's purpose, setup, usage, and the logic within the code.
+*   **Accurate:** Documentation correctly reflects the current state and behavior of the project and code.
+*   **Discoverable:** Needed information is easy to locate.
+*   **Usefulness:** Documentation actively helps users and developers, answers common questions, and smooths onboarding.
+*   **Completeness:** Covers essential aspects adequately for the intended audience.
+*   **Maintained:** Documentation is consistently kept up-to-date as part of the regular workflow, indicating a healthy maintenance culture.
+*   **Positive Feedback:** Users and contributors find the documentation helpful and easy to use.
