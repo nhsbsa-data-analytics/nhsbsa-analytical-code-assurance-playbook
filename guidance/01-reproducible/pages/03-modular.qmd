@@ -79,3 +79,7 @@ However, they can be difficult to use with further practices for producing high 
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
+[readable-code]: /guidance/01-reproducible/pages/02-readable.qmd
+[peer-review]: /guidance/02-quality-assured/pages/06-peer-reviewed.qmd
+[version-control]:  /guidance/01-reproducible/pages/04-version-controlled.qmd
+[testing]: /guidance/02-quality-assured/pages/05-tested.qmd
