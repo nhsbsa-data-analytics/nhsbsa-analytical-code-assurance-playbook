@@ -21,7 +21,7 @@ Readable code is written with clarity and simplicity, making it easy for others 
 * Use clear and descriptive namees for variables and functions
 * Write small, reusable function that do one thing well
 * Comment wisely to explain the 'why', not the 'what'
-* Adhere to a consistent coding style
+* Adhere to a [consistent coding style](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-style-guide/), by agreeing this at the beginning of a project
 * Regularly refactor to improve code clarity
 
 By following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. 
