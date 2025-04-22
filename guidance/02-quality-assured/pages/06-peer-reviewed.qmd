@@ -40,7 +40,7 @@ Using version control tools the basic steps for a peer review are:
 
 **Do**
 
-* Try and incorporate peer review during the development process to get feedback during development
+* Incorporate peer review during the development process to implement continuous feedback and improvement
 * Communicate clearly to ensure both author and reviewer understand and are in agreement at each stage
 * Document any issues and decisions
 * Try running all code to ensure it works as designed
