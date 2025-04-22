@@ -32,6 +32,7 @@ However, a simple hierarchy of actions to take are:
 * write re-usable code as functions
 * organise related functions into modules
 * organise and document modules as packages
+* starting from 'monolithic' code and refactoring over time is a valid strategy!
 
 Let's dive into how we can do some of these.
 
