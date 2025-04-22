@@ -58,7 +58,7 @@ Using scripts doesn't inherently make your code reproducible or reusable, but ar
 * split your code up
 * group related code together
 * organise your scripts so you and others know how to run it
-* make your scripts self contained and be able to ran from a command line
+* make your scripts self contained and runnable from the command line
 
 **Don't**
 
