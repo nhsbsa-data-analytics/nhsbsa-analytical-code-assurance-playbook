@@ -42,27 +42,14 @@
     "text": "Thank you to the NHS England RAP Community of Practice from which this guide took heavy inspiration!"
   },
   {
-    "objectID": "guidance/01-reproducible/pages/01-documented.html",
-    "href": "guidance/01-reproducible/pages/01-documented.html",
-    "title": "Documented",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NHSBSA Analytical Code Assurance Playbook",
     "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
+    "text": "This Playbook sets out the NHSBSA’s expectations and processes for quality assurance of code used to produce analysis.\nIt is intended to complement, not replace, existing UK government and NHS guidance, including:\n\nAnalysis Function Duck book\nNHSE England RAP Community of Practice\nNHS Health RAP playbook\nDepartment of Health and Social Care (DHSC)\n\nThe Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be quality assured\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be transparent\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
-      "Documented"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/02-accessible.html",
-    "href": "guidance/01-reproducible/pages/02-accessible.html",
-    "title": "Accessible",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Accessible"
+      "Home"
     ]
   },
   {
@@ -77,69 +64,15 @@
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/05-tested.html",
-    "href": "guidance/02-quality-assured/pages/05-tested.html",
-    "title": "Tested",
+    "objectID": "guidance/01-reproducible/pages/03-modular.html",
+    "href": "guidance/01-reproducible/pages/03-modular.html",
+    "title": "Modular",
     "section": "",
     "text": "Lorem ipsum dolor sit veritum …",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Tested"
-    ]
-  },
-  {
-    "objectID": "guidance/03-transparent/pages/08-open-source.html",
-    "href": "guidance/03-transparent/pages/08-open-source.html",
-    "title": "Open Source",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Transparent",
-      "Open Source"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "NHSBSA Analytical Code Assurance Playbook",
-    "section": "",
-    "text": "This Playbook sets out the NHSBSA’s expectations and processes for quality assurance of code used to produce analysis.\nIt is intended to complement, not replace, existing UK government and NHS guidance, including:\n\nAnalysis Function Duck book\nNHSE England RAP Community of Practice\nNHS Health RAP playbook\nDepartment of Health and Social Care (DHSC)\n\nThe Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be quality assured\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be transparent\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Playbook Home Page",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
-  },
-  {
-    "objectID": "guidance/03-transparent/pages/07-decisions-logged.html",
-    "href": "guidance/03-transparent/pages/07-decisions-logged.html",
-    "title": "Decisions Logged",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Transparent",
-      "Decisions Logged"
-    ]
-  },
-  {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
-    "title": "Peer-reviewed",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
+      "Reproducible",
+      "Modular"
     ]
   },
   {
@@ -155,16 +88,83 @@
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/03-modular.html",
-    "href": "guidance/01-reproducible/pages/03-modular.html",
-    "title": "Modular",
+    "objectID": "guidance/03-transparent/pages/07-decisions-logged.html",
+    "href": "guidance/03-transparent/pages/07-decisions-logged.html",
+    "title": "Decisions Logged",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Transparent",
+      "Decisions Logged"
+    ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/05-tested.html",
+    "href": "guidance/02-quality-assured/pages/05-tested.html",
+    "title": "Tested",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
+    "title": "Peer-reviewed",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/03-transparent/pages/08-open-source.html",
+    "href": "guidance/03-transparent/pages/08-open-source.html",
+    "title": "Open Source",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Transparent",
+      "Open Source"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/02-accessible.html",
+    "href": "guidance/01-reproducible/pages/02-accessible.html",
+    "title": "Accessible",
     "section": "",
     "text": "Lorem ipsum dolor sit veritum …",
     "crumbs": [
       "Playbook Home Page",
       "Reproducible",
-      "Modular"
+      "Accessible"
     ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/01-documented.html",
+    "href": "guidance/01-reproducible/pages/01-documented.html",
+    "title": "Documented",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
   },
   {
     "objectID": "accessibility.html",
