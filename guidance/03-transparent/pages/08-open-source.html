@@ -24,12 +24,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
 <link href="../../../static/bsa-favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -38,21 +34,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-136e2b1943e1a6331a3409113e68dd0f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-003c9a9090cd1d88fa06e95447ae10d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -83,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.nhsbsa.nhs.uk/" class="navbar-brand navbar-brand-logo">
-    <img src="../../../static/bsa-logo.png" alt="NHS Business Services Authority" class="navbar-logo">
+    <img src="../../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo">
     </a>
   </div>
           <ul class="navbar-nav navbar-nav-scroll me-auto">
@@ -131,7 +115,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           <div class="quarto-navbar-tools">
 </div>
-            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -264,15 +247,106 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+<script>
+  // Create skiplink
+  var a = document.createElement('a');
+  var linkText = document.createTextNode("Skip to main content");
+  a.appendChild(linkText);
+  a.classList.add("skip");
+  a.href = "#quarto-content";
+  document.body.insertBefore(a, document.body.firstChild);
+</script>
 
 
 
 
 
+<p>Lorem ipsum dolor sit veritum …</p>
 
 
 
 </main> <!-- /main -->
+<script>
+  // 1. Handle 'i' tags - these are added dynamically by quarto. They can have 
+  //    the 'aria-hidden' attribute set to 'true', but quarto does not make them
+  //    unfocusable. This script handles this by setting the 'tabindex' to '-1'.
+  
+  // We observe the entire body for changes to the DOM, since the tags of
+  // interest will be added dynamically and hence we cannot identify them before
+  // they appear.
+  const iTagTargetNode = document.body;
+
+  // We want our observer to be informed when any tag is added within the body. 
+  // For direct children it is 'childList', while for nested children it is
+  // 'subtree'.
+  const iTagConfig = { childList: true, subtree: true };
+
+  // The observer callback receives an array of mutation records, over which we
+  // want to iterate.
+  const forEachMutationRecord = func => 
+    records => 
+      records.forEach(func);
+
+  // Each mutation record holds a node list of added nodes, over which we also
+  // want to iterate.
+  const forEachAddedNode = func => 
+    ({ addedNodes }) => 
+      Array.from(addedNodes).forEach(func);
+  
+  // We want to mutate 'i' nodes that have 'aria-hidden' set to 'true'.
+  const iTagMutate = node => {
+    if (node.tagName === 'I' && node.getAttribute('aria-hidden')) {
+      node.setAttribute('tabindex', '-1');
+    }
+  };
+
+  // The mutation observer gets instantiated with a callback...
+  const iTagObserver = new MutationObserver(
+    forEachMutationRecord(
+      forEachAddedNode(
+      	 iTagMutate)
+      )
+    );
+
+  // ... and registered with the body element to observe.
+  iTagObserver.observe(iTagTargetNode, iTagConfig);
+  
+  
+  // 2. Handle callouts having the 'aria-expanded' attribute - this is not a 
+  //    valid attribute for callouts. Quarto will automatically add this 
+  //    attribute whenever a callout eloement is created and will also add it if
+  //    not already present whenever a callout is expanded or collapsed. This
+  //    script handles this by:
+  //      a. removing the attribute initially
+  //      b. observing all callout elements and again removing it whenever it is
+  //         added back by quarto
+  
+  // The callout elements already exist, so we can observe just relevant nodes.
+  const calloutTargetNodes = document.querySelectorAll('.callout-header');
+  
+  // We only need to observe attribute mutations, since the callouts will be
+  // permanently in the DOM.
+  var calloutConfig = { attributes: true };
+  
+  // We want to remove 'aria-expanded'. Every mutation observed will be relevant,
+  // so no checks are needed.
+  const calloutMutate = mutation => mutation.target.removeAttribute("aria-expanded");
+  
+  // The mutation observer gets instantiated with a callback.
+  const calloutObserver = new MutationObserver(
+    forEachMutationRecord(
+      calloutMutate
+    )
+  );
+    
+  // Initially remove attribute but also add observers to catch the attribute
+  // being added back.
+  calloutTargetNodes.
+    forEach(function(node){
+      node.removeAttribute("aria-expanded");
+      calloutObserver.observe(node, calloutConfig);
+    });
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -691,6 +765,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../../accessibility.html">
+<p>Accessibility</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

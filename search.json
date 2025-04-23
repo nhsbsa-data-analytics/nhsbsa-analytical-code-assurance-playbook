@@ -42,11 +42,63 @@
     "text": "Thank you to the NHS England RAP Community of Practice from which this guide took heavy inspiration!"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "guidance/01-reproducible/pages/01-documented.html",
+    "href": "guidance/01-reproducible/pages/01-documented.html",
+    "title": "Documented",
     "section": "",
-    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/02-accessible.html",
+    "href": "guidance/01-reproducible/pages/02-accessible.html",
+    "title": "Accessible",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Accessible"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/index.html",
+    "href": "guidance/01-reproducible/index.html",
+    "title": "Analysis should be reproducible",
+    "section": "",
+    "text": "Documented\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccessible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible"
+    ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/05-tested.html",
+    "href": "guidance/02-quality-assured/pages/05-tested.html",
+    "title": "Tested",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "guidance/03-transparent/pages/08-open-source.html",
+    "href": "guidance/03-transparent/pages/08-open-source.html",
+    "title": "Open Source",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Transparent",
+      "Open Source"
+    ]
   },
   {
     "objectID": "index.html",
@@ -60,14 +112,72 @@
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/index.html",
-    "href": "guidance/01-reproducible/index.html",
-    "title": "Analysis should be reproducible",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Documented\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccessible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
+  },
+  {
+    "objectID": "guidance/03-transparent/pages/07-decisions-logged.html",
+    "href": "guidance/03-transparent/pages/07-decisions-logged.html",
+    "title": "Decisions Logged",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible"
+      "Transparent",
+      "Decisions Logged"
     ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
+    "title": "Peer-reviewed",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/04-version-controlled.html",
+    "href": "guidance/01-reproducible/pages/04-version-controlled.html",
+    "title": "Version Controlled",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Version Controlled"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/03-modular.html",
+    "href": "guidance/01-reproducible/pages/03-modular.html",
+    "title": "Modular",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Modular"
+    ]
+  },
+  {
+    "objectID": "accessibility.html",
+    "href": "accessibility.html",
+    "title": "Analytical Code Assurance",
+    "section": "",
+    "text": "This accessibility statement applies to the NHSBSA Analytical Code Assurance Playbook website.\nThis website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:\n\nzoom in up to 400% without the text spilling off the screen\nlisten to most of the website using a screen reader (including the most recent version of NVDA)\nnavigate most of the website using just a keyboard or speech recognition software (Dragon)\nchange colours, contrast levels and fonts using browser or device settings\n\nWe’ve also made the website text as simple as possible to understand.\nAbilityNet has advice on making your device easier to use if you have a disability.\n\n\nWe know some parts of this website are not fully accessible, as:\n\nnavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order\nzooming can only be done to a limited extent due to content becoming unviewable\nthe report has links to external PDF or Excel documents and websites which may have accessibility issues\n\n\n\n\nIf you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nWe’ll consider your request and get back to you in 5 working days.\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nWe’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nFor all queries not accessibility related, you can contact us by:\nEmail: dall@nhsbsa.nhs.uk\n\n\n\nThe Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).\nIf you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).\n\n\n\nThe NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.\n\n\nThis website is partially compliant with the Web Content Accessibility Guidelines version 2.2 AA standard, due to the non-compliances listed below.\n\n\n\n\nThe content listed below is non-accessible for the following reasons.\n\n\nNavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).\nZooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).\nThe report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).\nWe plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.\n\n\n\n\nWe’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.\nOur accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.\n\n\n\nThis statement was originally prepared on 16 April 2025. It was last reviewed on 16 April 2025.\nThis website was last tested on 16 April 2025 against the WCAG 2.2 AA standard.\nThe test was carried out by the NHSBSA test and development teams. The most viewed pages were tested using automated testing tools by our website team. A further audit of the website was carried out to the WCAG 2.2 AA standard.\nWe tested all the website screens to meet ‘AA’ WCAG 2.2 standards, using manual and automated tests.\nWe run each webpage through automated Wave, Lighthouse and Axe accessibility tools then manually test with screen readers (NVDA) and standards checklists. We run representative user journey tests through speech recognition software (Dragon).\nThese checklists contain standards that have been compiled using WCAG, the NHS service manual and the Government Digital Service (GDS) guidance."
+  },
+  {
+    "objectID": "accessibility.html#accessibility-statement-for-nhsbsa-analytical-code-assurance-playbook",
+    "href": "accessibility.html#accessibility-statement-for-nhsbsa-analytical-code-assurance-playbook",
+    "title": "Analytical Code Assurance",
+    "section": "",
+    "text": "This accessibility statement applies to the NHSBSA Analytical Code Assurance Playbook website.\nThis website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:\n\nzoom in up to 400% without the text spilling off the screen\nlisten to most of the website using a screen reader (including the most recent version of NVDA)\nnavigate most of the website using just a keyboard or speech recognition software (Dragon)\nchange colours, contrast levels and fonts using browser or device settings\n\nWe’ve also made the website text as simple as possible to understand.\nAbilityNet has advice on making your device easier to use if you have a disability.\n\n\nWe know some parts of this website are not fully accessible, as:\n\nnavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order\nzooming can only be done to a limited extent due to content becoming unviewable\nthe report has links to external PDF or Excel documents and websites which may have accessibility issues\n\n\n\n\nIf you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nWe’ll consider your request and get back to you in 5 working days.\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nWe’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nFor all queries not accessibility related, you can contact us by:\nEmail: dall@nhsbsa.nhs.uk\n\n\n\nThe Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).\nIf you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).\n\n\n\nThe NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.\n\n\nThis website is partially compliant with the Web Content Accessibility Guidelines version 2.2 AA standard, due to the non-compliances listed below.\n\n\n\n\nThe content listed below is non-accessible for the following reasons.\n\n\nNavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).\nZooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).\nThe report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).\nWe plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.\n\n\n\n\nWe’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.\nOur accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.\n\n\n\nThis statement was originally prepared on 16 April 2025. It was last reviewed on 16 April 2025.\nThis website was last tested on 16 April 2025 against the WCAG 2.2 AA standard.\nThe test was carried out by the NHSBSA test and development teams. The most viewed pages were tested using automated testing tools by our website team. A further audit of the website was carried out to the WCAG 2.2 AA standard.\nWe tested all the website screens to meet ‘AA’ WCAG 2.2 standards, using manual and automated tests.\nWe run each webpage through automated Wave, Lighthouse and Axe accessibility tools then manually test with screen readers (NVDA) and standards checklists. We run representative user journey tests through speech recognition software (Dragon).\nThese checklists contain standards that have been compiled using WCAG, the NHS service manual and the Government Digital Service (GDS) guidance."
   }
 ]
