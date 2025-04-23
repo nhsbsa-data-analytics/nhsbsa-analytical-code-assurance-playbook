@@ -15,6 +15,7 @@ description: "Effective documentation is essential for any software project to b
 Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.
 
 We should document:
+
 * a project's purpose and scope
 * how to install or run code or other outputs and their dependencies
 * how to use code or other outputs like apps or dashboards
@@ -22,22 +23,22 @@ We should document:
 
 ## Why should we document our code and project?
 
-*   **Understanding:** Makes code and project purpose clear, improving [transparency][transparent].
-*   **Collaboration:** Reduces time to become productive for contributors and other users.
-*   **Maintenance:** Makes modifying, fixing and refactoring code safer and easier.
-*   **Improved Design:** Explaining complex parts often highlights areas for simplification or improvement.
-*   **Accessibility:** Makes the project [accessible][accessible] and usable for its intended audience.
-*   **Knowledge:** Prevents critical information loss when team members change.
-*   **Standards:** Provides a record of how a project has been [quality assured][quality-assured] and facilitates [reproducibility][reproducible] and [transparency][transparent].
+* **Understanding:** Makes code and project purpose clear, improving [transparency][transparent].
+* **Collaboration:** Reduces time to become productive for contributors and other users.
+* **Maintenance:** Makes modifying, fixing and refactoring code safer and easier.
+* **Improved Design:** Explaining complex parts often highlights areas for simplification or improvement.
+* **Accessibility:** Makes the project [accessible][accessible] and usable for its intended audience.
+* **Knowledge:** Prevents critical information loss when team members change.
+* **Standards:** Provides a record of how a project has been [quality assured][quality-assured] and facilitates [reproducibility][reproducible] and [transparency][transparent].
 
 ## How do we create and maintain quality documentation?
 
 * **Project-Level:**
   * The standard files used in code repositories are in the [NHSBSA DDaT playbook][ddat-playbook-dev-doc] - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.
   * In addition to the standard documentation, a project may also need to include additional documentation.
-      * **Support Information:** How to get help, particularly where a project output includes an app-like artifact.
-      * **Design Docs:** High-level overview for complex projects.
-      * **Accessibility Statement:** If an output is available as a webpage or app, it must have an accessibility statement.
+    * **Support Information:** How to get help, particularly where a project output includes an app-like artifact.
+    * **Design Docs:** High-level overview for complex projects.
+    * **Accessibility Statement:** If an output is available as a webpage or app, it must have an accessibility statement.
 
 * **Code-Level:**
   * **In-Code Comments:** Explanations within the code focusing on the *why* (rationale, complex logic, trade-offs).
