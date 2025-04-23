@@ -1,16 +1,16 @@
 ---
 title: "Documented"
-description: "Effective documentation is crucial for the health, usability, and maintainability of any software project."
+description: "Effective documentation is essential for any software project to be reproducible, quality assured and transparent."
 ---
 
 > ## Pre-requisite reading
 >
-> * [AF Duck book: Code documentation](https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html)
-> * [AF Duck book: Project documentation](https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html)
-> * [NHSBSA DDaT playbook: Licensing software or code](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/)
-> * [NHSBSA DDaT playbook: Standard code repository files](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/)
+> * [AF Duck book: Code documentation][duck-book-code-doc]
+> * [AF Duck book: Project documentation][duck-book-project-doc]
+> * [NHSBSA DDaT playbook: Licensing software or code][ddat-playbook-licenses]
+> * [NHSBSA DDaT playbook: Standard code repository files][ddat-playbook-dev-doc]
 
-Effective documentation is crucial for the health, usability, and maintainability of any software project. It encompasses both the specifics within the code and the broader context of the project itself.
+Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.
 
 ## What sort of documentation is needed?
 
@@ -66,3 +66,8 @@ Effective documentation is crucial for the health, usability, and maintainabilit
 *   **Completeness:** Covers essential aspects adequately for the intended audience.
 *   **Maintained:** Documentation is consistently kept up-to-date as part of the regular workflow, indicating a healthy maintenance culture.
 *   **Positive Feedback:** Users and contributors find the documentation helpful and easy to use.
+
+[duck-book-code-doc]: https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html
+[duck-book-project-doc]: https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html
+[ddat-playbook-licenses]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/
+[ddat-playbook-dev-doc]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/
