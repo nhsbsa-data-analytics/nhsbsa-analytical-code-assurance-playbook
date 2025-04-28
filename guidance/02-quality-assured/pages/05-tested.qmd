@@ -53,7 +53,7 @@ It is important to also ensure that new changes or bug fixes haven't introduced 
 
 * **Documenting:** Records of test failures and solutions are made.
 * **Maintenance:** Bugs and errors identified are recorded and addressed, with tests being added where appropriate.
-* **Retrospectives:** Documentation is included in retrospective discussions, and any areas for improvement identified are planned in.
+* **Retrospectives:** Testing is included in retrospective discussions, and any areas for improvement identified are planned in.
 * **Feedback:** We seek feedback on a project, including its tests, from contributors.
 
 [duck-book-testing]: https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html
