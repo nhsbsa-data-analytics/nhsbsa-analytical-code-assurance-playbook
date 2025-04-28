@@ -1,50 +1,65 @@
 ---
 title: "Tested"
-description: "Rigorous testing is fundamental to software quality, verifying code correctness, ensuring reliability, and building confidence throughout the development lifecycle."
+description: "Rigorous testing is fundamental to assuring quality of code."
 ---
 
 > ## Pre-requisite reading
 >
-> * [AF Duck book: Testing code](https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html)
-> * [NHSBSA DDaT playbook: Testing](https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/)
+> * [AF Duck book: Testing code][duck-book-testing]
+> * [NHSBSA DDaT playbook: Testing][ddat-playbook-testing]
 
-Rigorous testing is fundamental to software quality, verifying code correctness, ensuring reliability, and building confidence throughout the development lifecycle.
+## What types of testing should be done?
 
-## What sort of testing is needed for code?
+Rigorous testing is fundamental to assuring quality of code. It builds confidence that results are [reproducible][reproducible] by ensuring code works as expected, and [allows anyone to easily verify this][transparent].
 
-*   **Unit Tests:** Focus on testing the smallest individual components, such as functions, in isolation. They should be fast and numerous.
-*   **Integration Tests:** Verify the interaction and communication between different components or modules work as expected.
-*   **End-to-End (E2E) Tests:** Simulate real user scenarios from start to finish, testing the entire application flow. These are typically slower and more complex.
-*   **Regression Tests:** Ensure that new changes or bug fixes haven't negatively impacted existing functionality. Often implicitly tested by by re-running unit, integration and E2E tests.
+* **Unit Tests:** Focus on testing the smallest individual components, in isolation. They should be fast and numerous.
+* **Integration Tests:** Verify that different components or modules work together as expected.
+* **End-to-End (E2E) Tests:** Testing the entire application flow, from start to finish.
 
 ## Why should we test our code?
 
-*   **Verify Correctness:** Ensure the code behaves as intended and meets requirements.
-*   **Catch Bugs Early:** Identify and fix issues during development when they are cheapest and easiest to resolve.
-*   **Provide Confidence:** Increase confidence in the code's reliability for deployment and release.
-*   **Enable Refactoring:** Act as a safety net, allowing developers to improve code structure without fear of breaking functionality.
-*   **Serve as Documentation:** Well-written tests can illustrate how code is intended to be used and its expected behavior.
-*   **Improve Design:** Writing testable code often leads to better, more modular, and loosely coupled designs.
-*   **Facilitate Collaboration:** Ensure that contributions from different team members integrate correctly.
+* **Verify Correctness:** Ensure the code behaves as intended and meets requirements.
+* **Catch Bugs Early:** Identify and fix issues during development when they are cheapest and easiest to resolve.
+* **Provide Confidence:** Increase confidence in the code's reliability and the [reproducibility][reproducible] of results.
+* **Enable Refactoring:** Act as a safety net, allowing developers to improve code structure without fear of breaking functionality.
+* **Serve as [Documentation][documented]:** Well-written tests can illustrate how code is intended to be used and its expected behavior.
+* **Improve Design:** Writing testable code often leads to better, more [modular][modular], and loosely coupled designs.
+* **Facilitate Collaboration:** Ensure that contributions from different team members integrate correctly.
 
 ## How do we test our code?
 
-*   **Use Testing Frameworks:** Leverage established frameworks appropriate for the coding language to structure, run, and assert test outcomes.
-*   **Risk-based Approach:** Write more tests for parts of your code that are very new, more complex, or encapsulate critical business logic.
-*   **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
-*   **Write Testable Code:** Design code with testing in mind.
-*   **Focus on Behavior:** Test *what* the code should do, rather than *how* it does it.
-*   **Test Edge Cases and Errors:** Include tests for boundary conditions, invalid inputs, and expected failure modes.
-*   **Keep Tests Independent and Fast:** Ensure tests can run independently and quickly to provide rapid feedback.
-*   **Write Clear and Readable Tests:** Tests should be easy to understand, indicating what is being tested and why.
-*   **Maintain Tests:** Treat test code like production code – keep it updated, refactor it, and remove obsolete tests.
+* **Use Testing Frameworks:** Use established testing frameworks appropriate for the coding language.
+* **Risk-based Approach:** Write more tests for code that is very new, more complex, or encapsulates critical business logic.
+* **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
+* **Write Testable Code:** Design code with testing in mind.
+* **Focus on Behavior:** Test *what* the code should do, rather than *how* it does it.
+* **Test Edge Cases and Errors:** Include tests for boundary conditions, invalid inputs, and expected failure modes.
+* **Keep Tests Independent and Fast:** Ensure tests can run independently and quickly to provide rapid feedback.
+* **Write Clear and Readable Tests:** Tests should be [easy to understand][documented], indicating what is being tested and why.
+* **Maintain Tests:** Treat test code like production code – keep it [updated, refactor it, and remove obsolete tests][version-controlled].
+
+It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
 
 ## How do we define success?
 
-*   **Confidence:** Teams feel confident releasing code because tests provide a strong safety net.
-*   **Reduced Bugs:** A noticeable decrease in bugs discovered by users after release.
-*   **Effective Refactoring:** Developers can refactor and improve code without introducing regressions.
-*   **Fail Fast:** Automated tests in CI quickly inform developers of potential issues.
-*   **Meaningful Tests:** Tests cover critical paths and business logic; test quality and relevance matter more than percentage of code covered.
-*   **Maintainable:** Tests are reliable, easy to understand, and kept up-to-date alongside the code they test.
-*   **Easy Verification:** Tests clearly demonstrate that the code meets its specified requirements.
+* **Confidence:** Teams feel confident about their code.
+* **Reliability:** Bugs discovered after release of code are rare.
+* **Efficiency:** Automated tests in CI quickly inform developers of potential issues.
+* **Quality:** Test quality and relevance is high, and regressions detected.
+* **Maintainable:** The tests are understandable and do not hinder refactoring of the code.
+* **Verification:** Tests clearly demonstrate that the code meets its specified requirements.
+
+## How do we measure success?
+
+* **Documenting:** Records of test failures and solutions are made.
+* **Maintenance:** Bugs and errors identified are recorded and addressed, with tests being added where appropriate.
+* **Retrospectives:** Documentation is included in retrospective discussions, and any areas for improvement identified are planned in.
+* **Feedback:** We seek feedback on a project, including its tests, from contributors.
+
+[duck-book-testing]: https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html
+[ddat-playbook-testing]: https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/
+[reproducible]: /guidance/01-reproducible/index.qmd
+[transparent]: /guidance/03-transparent/index.qmd
+[documented]: /guidance/01-reproducible/pages/01-documented.qmd
+[modular]: /guidance/01-reproducible/pages/03-modular.qmd
+[version-controlled]: /guidance/01-reproducible/pages/04-version-controlled.qmd
