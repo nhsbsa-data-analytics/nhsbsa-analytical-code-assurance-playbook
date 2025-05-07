@@ -70,14 +70,15 @@ Using scripts doesn't inherently make your code reproducible or reusable, but ar
 * split up your code too much - 100 scripts with 10 lines of code in are just as hard to digest
 * write overly complex code where simpler solutions might exist
 
-### Use a code notebook
-Services such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. 
-They can be incredibly useful, and individual workbooks can be a good first step towards modularising your code for simple projects and workflows and for doing initial data exploration. 
-However, they can be difficult to use with further practices for producing high quality code. For example:
+### Using notebooks
+Tools such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. 
+They can be incredibly useful starting points for exploring data, developing an analysis and are great for communicating results. 
 
-* they are inherently difficult to review and audit using version control
+However, as your analysis matures it can be difficult to align notebooks with other principles for producing high quality code:
+
+* notebooks are inherently difficult to [review][peer-review] and audit using [version control][version-control]
 * code cells can be ran out of order, reducing reproducibility
-* not easy to test functions written in the notebook
+* it's hard to [test][testing] functions written in the notebook
 
 ## How will this be enforced?
 
