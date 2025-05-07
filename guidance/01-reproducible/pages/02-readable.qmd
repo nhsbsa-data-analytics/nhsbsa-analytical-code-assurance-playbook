@@ -29,7 +29,13 @@ Readable code is written with clarity and simplicity, making it easy for others 
 By following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. 
 For more detailed insights, please refer to the recommended pre-requisite reading.
 
-## How will this be enforced?
+## How do we define success?
+* You should always review your code after you have written it to check for and fix any obvious issues
+* [Peer-review][peer-review] should highlight any issues spotted when someone else tries to read your code.
+
+**Lookout for:**
+* Try putting what you have written to one side, or leaving it overnight - does it still make sense when you come back?
+* Code can always be improved, so try to make it 'good enough' and avoid falling into the trap of never finishing!
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/readable_code.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-naming-conventions/
