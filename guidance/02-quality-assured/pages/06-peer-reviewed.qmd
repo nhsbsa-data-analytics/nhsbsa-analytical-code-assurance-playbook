@@ -85,7 +85,15 @@ Pair programming is a collaborative process and should not just involve one pers
 The person writing the code should be talking through what they are writing, and the reviewer should be supplying feedback and asking for clarification if there are parts that they do not understand. 
 Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.
 
-## How will peer review be enforced?
+## How do we define success?
+* Reviewers should understand what they are expected to review ahead of time
+* Developers should receive kind, constructive feedback that improves quality
+* Reviews should be proportionate to the complexity and importance of the analysis
+
+**Lookout for:**
+* There is often more than one way to achieve a certain task: reviewers should look at whether what has been delivered aligns with best practice, rather than whether they would have done it that way!
+* Avoid asking for review on very large pieces of work in one go - try breaking it up to make it easier for the reviewer!
+
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
