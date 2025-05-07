@@ -38,19 +38,23 @@ Using version control tools the basic steps for a peer review are:
 1. Reviewer approves amended code checking all issues have been resolved
 1. Branch merged
 
-**Do**
+As the Code Author:
+- **Do** submit code for review in manageable and related chunks.
+- **Do** ensure your code runs correctly and passes relevant tests before before a review.
+- **Do** provide context and additional explanation when required.
+- **Do** carefully consider all reviewer feedback; discuss comments you disagree with or are unsure of to reach an understanding.
+- **Do** document changes made and decisions taken based on the review feedback.
+- **Don't** bypass or rush the review process just to merge code faster.
+- **Don't** submit unrelated changes together.
+- **Don't** blindly accept and implement all reviewer comments.
 
-* Incorporate peer review during the development process to implement continuous feedback and improvement
-* Communicate clearly to ensure both author and reviewer understand and are in agreement at each stage
-* Document any issues and decisions
-* Try running all code to ensure it works as designed
-
-**Don't**
-
-* Simply glance over code and accept if it "looks right"
-* Submit huge pull requests with multiple/large scripts where the reviewer has had not sight of the work previously
-* Blindly accept comments from a reviewer without making sure you agree with the comment
-* Be tempted to skip the review process to progress work quickly
+As the Reviewer:
+- **Do** thoroughly review the code, understanding its purpose and verifying it does what is expected.
+- **Do** provide clear, constructive, and actionable feedback; explain the *why* of your suggestions.
+- **Do** document identified issues, potential improvements, or questions clearly.
+- **Don't** Simply glance over the code and approve it without scrutiny.
+- **Don't** Delay reviews unnecessarily, blocking the author's progress.
+- **Don't** Be overly critical or personal in your feedback.
 
 Whenever feasible, analytical code and low-or-no-code artifacts should be version controlled. Version control tools facilitate [peer-review][ddat-playbook-peer-review], among [other benefits][version-control].
 
