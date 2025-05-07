@@ -37,8 +37,9 @@ However, a simple hierarchy of actions to take are:
 Let's dive into how we can do some of these.
 
 ### Split your code into multiple scripts
-Monolithic code is a big no-no. A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug and maintain, and pretty mean to pass off for peer review on a Friday afternoon. 
-Splitting your monolithic code into ordered scripts can help others (and yourself) understand the steps you've taken and the reasons why.
+Monolithic code should be avoided as much as possible. 
+A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug, and maintain, and your [peer reviewer][peer-review] won't thank you either!
+Splitting your monolithic code into ordered scripts can help yourself and others understand the steps you've taken and the reasons why.
 
 <!-- DRAFT NOTE: intention here is to provide examples for the various tools that teams use e.g. R, Python, SQL, Alteryx, VBA (also need to be conscious of future data platform) -->
 
