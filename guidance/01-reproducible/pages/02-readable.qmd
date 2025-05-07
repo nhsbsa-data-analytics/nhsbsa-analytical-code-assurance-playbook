@@ -12,10 +12,12 @@ description: ""
 Readable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader's experience over the convenience of writing code.
 
 ## Why should we write readable code?
-* Enhances team collaboration
-* Facilitates easier debugging and maintenance
-* Encourages best coding practices
-* Speeds up the onboading process for new team memebers
+* Simpler and faster for readers (including yourself!) to understand
+* Reduces risk of bugs and simplifies debugging and future maintenance
+* Enhances collaboration by making it easier to share and reuse code across teams / projects
+* Encourages coding best practices
+* Speeds up the onboarding process for new team members
+* Demonstrates professionalism and care, enhancing organisation and team image
 
 ## How do we write readable code?
 * Use clear and descriptive namees for variables and functions
