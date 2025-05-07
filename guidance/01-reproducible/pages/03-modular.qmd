@@ -80,7 +80,16 @@ However, as your analysis matures it can be difficult to align notebooks with ot
 * code cells can be ran out of order, reducing reproducibility
 * it's hard to [test][testing] functions written in the notebook
 
-## How will this be enforced?
+## How do we define success?
+* Modular code should feel well-organised and easy to navigate. 
+* Repetition will be minimised through the use of small, reusable functions. 
+* The purpose of each part of the code will be clear to the reader, with similar pieces of logic grouped together. 
+* A [reviewer][peer-review] should help spot any potentially issues and suggest improvements.
+
+**Lookout for:**
+* Finding yourself scrolling-and-scrolling to look for a particular part of the code could indicate you should break it up into smaller modules!
+* Alternatively, needing to look through many, many files and maintain multiple tabs to understand and make changes might suggest reducing the modularity!
+
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
