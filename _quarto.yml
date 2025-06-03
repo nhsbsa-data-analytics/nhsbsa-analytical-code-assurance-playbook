@@ -5,10 +5,16 @@ project:
 website:
   bread-crumbs: false
   favicon: static/bsa-favicon.png
-  title: "Analytical Code Assurance" 
+  title: "Analytical Code Assurance"
+  # Search is good to have and works very well. But it introduces an accessibility
+  # issue no matter how it is configured.
+  # https://quarto.org/docs/websites/website-search.html
+  # overlay gives empty button, while textbox gives empty label
+  # Disabled for now until a solution is found
+  search: false
   navbar:
     title: false
-    logo: "static/bsa-logo.png"
+    logo: "static/NHSBSA logo.png"
     logo-alt: "NHS Business Services Authority"
     logo-href: "https://www.nhsbsa.nhs.uk/"
     pinned: true
@@ -16,13 +22,23 @@ website:
     collapse: false
     left:
       - href: index.qmd
-        text: Home
+        text: Playbook Home Page
+      - text: "Guidance"
+        menu:
+          - href: guidance/01-reproducible/index.qmd
+          - href: guidance/02-quality-assured/index.qmd
+          - href: guidance/03-transparent/index.qmd
+          
     right:
-      - about.qmd
-    tools:
-      - icon: github
-        href:  https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
-
+      - href: about.qmd
+        text: "{{< iconify mdi:information-outline size=xl >}} About"
+      - href: https://www.nhsbsa.nhs.uk/nhsbsa-statistics-and-data-science
+        text: "{{< iconify mdi:house-outline size=xl >}} NHSBSA Data Science Home Page"
+      - href: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
+        text: "{{< iconify mdi:github size=xl >}} GitHub"
+      - href: https://twitter.com/nhsbsa
+        text: "{{< iconify mdi:twitter size=xl >}} X (formerly Twitter)"
+        
   announcement: 
     icon: info-circle
     dismissable: true
@@ -50,6 +66,11 @@ website:
       - section: "Transparent"
         href: guidance/03-transparent/index.qmd
         contents: guidance/03-transparent/pages/*
+        
+  page-footer:
+      left:
+        - text: "Accessibility"
+          href: accessibility.qmd
       
 format:
   html:
