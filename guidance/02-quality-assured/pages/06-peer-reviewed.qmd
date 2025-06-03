@@ -8,7 +8,7 @@ description: ""
 > * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook]
 
 ## What is peer review?
-Peer review is a process where a colleague provides constructive feedback before any code or workflows are finalised and used to produce output.
+Peer review is a process where a colleague provides constructive feedback aimed at improving the quality, validity, and maintainability of code or workflows before they are finalised and used to produce output.
 
 ## Why should I do this?
 
@@ -23,7 +23,8 @@ Benefits from peer review include:
 
 ## How do we do it then?
 When using version control tools such as Git, peer review should be part of the branching and pull request process (see [DDaT Playbook][ddat-playbook]). 
-Ideally a pull request should not be merged without the code being reviewed by somebody else.
+Ideally a pull request should not be merged without the code being reviewed by another person. 
+In analytical projects, code reviews are often (although not always) the responsibilities of the [Critical Friend][critical-friend]. 
 
 Using version control tools the basic steps for a peer review are:
 <!-- DRAFT NOTE: do we need more details or is this repeating DDaT playbook -->
@@ -98,4 +99,5 @@ Everybody who has been involved writing the code should have full understanding 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
 [version-control]: /guidance/01-reproducible/pages/04-version-controlled.qmd
+[critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/03-responsibilities/pages/11-critical-friend.html
 [ddat-playbook-peer-review]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/

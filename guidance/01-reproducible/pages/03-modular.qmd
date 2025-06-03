@@ -9,9 +9,10 @@ description: ""
 > * [NHSBSA DDaT playbook: Development - Coding][ddat-playbook]
 
 ## What is modular code?
-Complex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks. 
-Breaking down your code and workflow into smaller reusable chunks to can help you maintain your project and share components across a series of analyses. 
-Languages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.
+* Complex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks. 
+* Breaking down your code and workflow into smaller, independent, reusable chunks (modules) can help you maintain your project and share components across a series of analyses.
+* Each module ideally handles a specific task (aka separation of concerns) and interacts with others through well-defined interfaces (you should be able to use a module from the outside without needing to understand the internal complexity on the inside)
+* Languages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.
 
 ## Why should I do this?
 Writing your code in a modular way provides a range of benefits:
