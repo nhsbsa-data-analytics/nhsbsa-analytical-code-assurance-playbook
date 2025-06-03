@@ -1,5 +1,148 @@
 [
   {
+    "objectID": "accessibility.html",
+    "href": "accessibility.html",
+    "title": "Analytical Code Assurance",
+    "section": "",
+    "text": "This accessibility statement applies to the NHSBSA Analytical Code Assurance Playbook website.\nThis website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:\n\nzoom in up to 400% without the text spilling off the screen\nlisten to most of the website using a screen reader (including the most recent version of NVDA)\nnavigate most of the website using just a keyboard or speech recognition software (Dragon)\nchange colours, contrast levels and fonts using browser or device settings\n\nWe’ve also made the website text as simple as possible to understand.\nAbilityNet has advice on making your device easier to use if you have a disability.\n\n\nWe know some parts of this website are not fully accessible, as:\n\nnavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order\nzooming can only be done to a limited extent due to content becoming unviewable\nthe report has links to external PDF or Excel documents and websites which may have accessibility issues\n\n\n\n\nIf you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nWe’ll consider your request and get back to you in 5 working days.\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nWe’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nFor all queries not accessibility related, you can contact us by:\nEmail: dall@nhsbsa.nhs.uk\n\n\n\nThe Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).\nIf you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).\n\n\n\nThe NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.\n\n\nThis website is partially compliant with the Web Content Accessibility Guidelines version 2.2 AA standard, due to the non-compliances listed below.\n\n\n\n\nThe content listed below is non-accessible for the following reasons.\n\n\nNavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).\nZooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).\nThe report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).\nWe plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.\n\n\n\n\nWe’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.\nOur accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.\n\n\n\nThis statement was originally prepared on 16 April 2025. It was last reviewed on 16 April 2025.\nThis website was last tested on 16 April 2025 against the WCAG 2.2 AA standard.\nThe test was carried out by the NHSBSA test and development teams. The most viewed pages were tested using automated testing tools by our website team. A further audit of the website was carried out to the WCAG 2.2 AA standard.\nWe tested all the website screens to meet ‘AA’ WCAG 2.2 standards, using manual and automated tests.\nWe run each webpage through automated Wave, Lighthouse and Axe accessibility tools then manually test with screen readers (NVDA) and standards checklists. We run representative user journey tests through speech recognition software (Dragon).\nThese checklists contain standards that have been compiled using WCAG, the NHS service manual and the Government Digital Service (GDS) guidance."
+  },
+  {
+    "objectID": "accessibility.html#accessibility-statement-for-nhsbsa-analytical-code-assurance-playbook",
+    "href": "accessibility.html#accessibility-statement-for-nhsbsa-analytical-code-assurance-playbook",
+    "title": "Analytical Code Assurance",
+    "section": "",
+    "text": "This accessibility statement applies to the NHSBSA Analytical Code Assurance Playbook website.\nThis website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:\n\nzoom in up to 400% without the text spilling off the screen\nlisten to most of the website using a screen reader (including the most recent version of NVDA)\nnavigate most of the website using just a keyboard or speech recognition software (Dragon)\nchange colours, contrast levels and fonts using browser or device settings\n\nWe’ve also made the website text as simple as possible to understand.\nAbilityNet has advice on making your device easier to use if you have a disability.\n\n\nWe know some parts of this website are not fully accessible, as:\n\nnavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order\nzooming can only be done to a limited extent due to content becoming unviewable\nthe report has links to external PDF or Excel documents and websites which may have accessibility issues\n\n\n\n\nIf you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nWe’ll consider your request and get back to you in 5 working days.\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nWe’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nFor all queries not accessibility related, you can contact us by:\nEmail: dall@nhsbsa.nhs.uk\n\n\n\nThe Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).\nIf you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).\n\n\n\nThe NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.\n\n\nThis website is partially compliant with the Web Content Accessibility Guidelines version 2.2 AA standard, due to the non-compliances listed below.\n\n\n\n\nThe content listed below is non-accessible for the following reasons.\n\n\nNavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).\nZooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).\nThe report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).\nWe plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.\n\n\n\n\nWe’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.\nOur accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.\n\n\n\nThis statement was originally prepared on 16 April 2025. It was last reviewed on 16 April 2025.\nThis website was last tested on 16 April 2025 against the WCAG 2.2 AA standard.\nThe test was carried out by the NHSBSA test and development teams. The most viewed pages were tested using automated testing tools by our website team. A further audit of the website was carried out to the WCAG 2.2 AA standard.\nWe tested all the website screens to meet ‘AA’ WCAG 2.2 standards, using manual and automated tests.\nWe run each webpage through automated Wave, Lighthouse and Axe accessibility tools then manually test with screen readers (NVDA) and standards checklists. We run representative user journey tests through speech recognition software (Dragon).\nThese checklists contain standards that have been compiled using WCAG, the NHS service manual and the Government Digital Service (GDS) guidance."
+  },
+  {
+    "objectID": "guidance/03-transparent/pages/08-open-source.html",
+    "href": "guidance/03-transparent/pages/08-open-source.html",
+    "title": "Open Source",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Transparent",
+      "Open Source"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/03-modular.html",
+    "href": "guidance/01-reproducible/pages/03-modular.html",
+    "title": "Modular",
+    "section": "",
+    "text": "AF Duck book: Modular code\nNHSBSA DDaT playbook: Development - Coding",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Modular"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/03-modular.html#what-is-modular-code",
+    "href": "guidance/01-reproducible/pages/03-modular.html#what-is-modular-code",
+    "title": "Modular",
+    "section": "What is modular code?",
+    "text": "What is modular code?\n\nComplex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks.\nBreaking down your code and workflow into smaller, independent, reusable chunks (modules) can help you maintain your project and share components across a series of analyses.\nEach module ideally handles a specific task (aka separation of concerns) and interacts with others through well-defined interfaces (you should be able to use a module from the outside without needing to understand the internal complexity on the inside)\nLanguages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Modular"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/03-modular.html#why-should-i-do-this",
+    "href": "guidance/01-reproducible/pages/03-modular.html#why-should-i-do-this",
+    "title": "Modular",
+    "section": "Why should I do this?",
+    "text": "Why should I do this?\nWriting your code in a modular way provides a range of benefits:\n\npromotes readability by preventing long, complex walls of code that are hard to understand\nmultiple team members working on same codebase will have less code conflicts\nsimplifies testing of the code (and its outputs)\nsmaller modules are easier to maintain or improve in future\nspeeds up the peer review process\nmakes sharing and reusing code easier",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Modular"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/03-modular.html#how-do-we-do-it-then",
+    "href": "guidance/01-reproducible/pages/03-modular.html#how-do-we-do-it-then",
+    "title": "Modular",
+    "section": "How do we do it then?",
+    "text": "How do we do it then?\nWriting modular code or developing modular workflows can differ depending on the your tool of choice, the needs of the project or piece of work, the intended customer, or the expected users of the code in the future. However, a simple hierarchy of actions to take are:\n\nsplit complex code and workflows in multiple (ordered) scripts or smaller workflows\nuse a code notebook to organise your analysis\nwrite re-usable code as functions\norganise related functions into modules\norganise and document modules as packages\nstarting from ‘monolithic’ code and refactoring over time is a valid strategy!\n\nLet’s dive into how we can do some of these.\n\nSplit your code into multiple scripts\nMonolithic code should be avoided as much as possible. A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug, and maintain, and your peer reviewer won’t thank you either! Splitting your monolithic code into ordered scripts can help yourself and others understand the steps you’ve taken and the reasons why.\n\nFor example, in R a large project could be split into:\nproject\n-- 01_data_build.R\n-- 02_data_clean.R\n-- 03_analysis.R\n-- 04_visualisation.R\nthese scripts can now be run in their intended order and splits out the parts of your code into related areas, making peer review easier.\nUsing scripts doesn’t inherently make your code reproducible or reusable, but are a good first step towards better and higher quality code.\nDo\n\nsplit your code up\ngroup related code together\norganise your scripts so you and others know how to run it\nmake your scripts self contained and runnable from the command line\n\nDon’t\n\nwrite monolithic code\nsplit up your code too much - 100 scripts with 10 lines of code in are just as hard to digest\nwrite overly complex code where simpler solutions might exist\n\n\n\nUsing notebooks\nTools such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. They can be incredibly useful starting points for exploring data, developing an analysis and are great for communicating results.\nHowever, as your analysis matures it can be difficult to align notebooks with other principles for producing high quality code:\n\nnotebooks are inherently difficult to review and audit using version control\ncode cells can be ran out of order, reducing reproducibility\nit’s hard to test functions written in the notebook",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Modular"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/03-modular.html#how-do-we-define-success",
+    "href": "guidance/01-reproducible/pages/03-modular.html#how-do-we-define-success",
+    "title": "Modular",
+    "section": "How do we define success?",
+    "text": "How do we define success?\n\nModular code should feel well-organised and easy to navigate.\nRepetition will be minimised through the use of small, reusable functions.\nThe purpose of each part of the code will be clear to the reader, with similar pieces of logic grouped together.\nA reviewer should help spot any potentially issues and suggest improvements.\n\nLookout for: * Finding yourself scrolling-and-scrolling to look for a particular part of the code could indicate you should break it up into smaller modules! * Alternatively, needing to look through many, many files and maintain multiple tabs to understand and make changes might suggest reducing the modularity!",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Modular"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/01-documented.html",
+    "href": "guidance/01-reproducible/pages/01-documented.html",
+    "title": "Documented",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/index.html",
+    "href": "guidance/01-reproducible/index.html",
+    "title": "Analysis should be reproducible",
+    "section": "",
+    "text": "Documented\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReadable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible"
+    ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/05-tested.html",
+    "href": "guidance/02-quality-assured/pages/05-tested.html",
+    "title": "Tested",
+    "section": "",
+    "text": "Lorem ipsum dolor sit veritum …",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NHSBSA Analytical Code Assurance Playbook",
+    "section": "",
+    "text": "This Playbook sets out the NHSBSA’s expectations and processes for quality assurance of code used to produce analysis.\nIt is intended to complement, not replace, existing UK government and NHS guidance, including:",
+    "crumbs": [
+      "Playbook Home Page",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#the-playbook-aims-to-support-nhsbsa-staff-in-the-production-of-high-quality-analytical-code-inline-with-the-following-principles-click-to-explore-more",
+    "href": "index.html#the-playbook-aims-to-support-nhsbsa-staff-in-the-production-of-high-quality-analytical-code-inline-with-the-following-principles-click-to-explore-more",
+    "title": "NHSBSA Analytical Code Assurance Playbook",
+    "section": "The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):",
+    "text": "The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):",
+    "crumbs": [
+      "Playbook Home Page",
+      "Home"
+    ]
+  },
+  {
     "objectID": "CONTRIBUTE.html",
     "href": "CONTRIBUTE.html",
     "title": "How to contribute",
@@ -42,37 +185,142 @@
     "text": "Thank you to the NHS England RAP Community of Practice from which this guide took heavy inspiration!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "NHSBSA Analytical Code Assurance Playbook",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This Playbook sets out the NHSBSA’s expectations and processes for quality assurance of code used to produce analysis.\nIt is intended to complement, not replace, existing UK government and NHS guidance, including:\n\nAnalysis Function Duck book\nNHSE England RAP Community of Practice\nNHS Health RAP playbook\nDepartment of Health and Social Care (DHSC)\n\nThe Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be reproducible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be quality assured\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis should be transparent\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
+    "title": "Peer-reviewed",
+    "section": "",
+    "text": "AF Duck Book: Peer review\nNHSBSA DDaT Playbook: Development - Peer Review",
     "crumbs": [
       "Playbook Home Page",
-      "Home"
+      "Quality Assured",
+      "Peer-reviewed"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/index.html",
-    "href": "guidance/01-reproducible/index.html",
-    "title": "Analysis should be reproducible",
-    "section": "",
-    "text": "Documented\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAccessible\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#what-is-peer-review",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#what-is-peer-review",
+    "title": "Peer-reviewed",
+    "section": "What is peer review?",
+    "text": "What is peer review?\nPeer review is a process where a colleague provides constructive feedback aimed at improving the quality, validity, and maintainability of code or workflows before they are finalised and used to produce output.",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible"
+      "Quality Assured",
+      "Peer-reviewed"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/03-modular.html",
-    "href": "guidance/01-reproducible/pages/03-modular.html",
-    "title": "Modular",
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#why-should-i-do-this",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#why-should-i-do-this",
+    "title": "Peer-reviewed",
+    "section": "Why should I do this?",
+    "text": "Why should I do this?\nBenefits from peer review include:\n\nImproving quality of code: As part of the peer review process code will be reviewed to ensure that it is readable and understandable\nConsistency: Promotes consistency by ensuring adherence to team standards and style guides\nAlternative Perspectives: Provides alternative perspectives that might lead to simpler or more robust solutions\nSharing knowledge: Review code can improve the knowledge of both the original code author and the reviewer\nOptimising code performance: As part of the review process, different approaches may be found that could improve the code\nFind potential mistakes in the code: Although peer review is not a replacement for testing, it can find potential bugs or issues in the code",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-do-it-then",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-do-it-then",
+    "title": "Peer-reviewed",
+    "section": "How do we do it then?",
+    "text": "How do we do it then?\nWhen using version control tools such as Git, peer review should be part of the branching and pull request process (see DDaT Playbook). Ideally a pull request should not be merged without the code being reviewed by another person. In analytical projects, code reviews are often (although not always) the responsibilities of the Critical Friend.\nUsing version control tools the basic steps for a peer review are: \n\nCode author submits merge request relating for branch used to develop code\nReviewer reviews the code and adds comments for any potential issues, including the following areas:\n\nIs the code readable and understandable?\nIs the code tested, and does the code do what it is designed for?\nCould the problem have been approached in a different way?\n\nAuthor reviews comments and amends code as needed\n\nComments can and should be challenged if there is any disagreement to agree a resolution between the author and reviewer\n\nReviewer approves amended code checking all issues have been resolved\nBranch merged\n\nAs the Code Author: - Do submit code for review in manageable and related chunks. - Do ensure your code runs correctly and passes relevant tests before before a review. - Do provide context and additional explanation when required. - Do carefully consider all reviewer feedback; discuss comments you disagree with or are unsure of to reach an understanding. - Do document changes made and decisions taken based on the review feedback. - Don’t bypass or rush the review process just to merge code faster. - Don’t submit unrelated changes together. - Don’t blindly accept and implement all reviewer comments.\nAs the Reviewer: - Do thoroughly review the code, understanding its purpose and verifying it does what is expected. - Do provide clear, constructive, and actionable feedback; explain the why of your suggestions. - Do document identified issues, potential improvements, or questions clearly. - Don’t Simply glance over the code and approve it without scrutiny. - Don’t Delay reviews unnecessarily, blocking the author’s progress. - Don’t Be overly critical or personal in your feedback.\nWhenever feasible, analytical code and low-or-no-code artifacts should be version controlled. Version control tools facilitate peer-review, among other benefits.\nHowever, even where version control tools are not used, peer review should still be done, including recording of any feedback and amendments requested during the review process.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#pair-programming",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#pair-programming",
+    "title": "Peer-reviewed",
+    "section": "Pair programming",
+    "text": "Pair programming\nInstead of having the code writing and peer review as two distinct phases, pair programming combines these into a single step with two or more people actively working on the same piece of code at the same time. Effective pair programming will involve one person writing the code whilst the other(s) supply real time feedback on the code being written.\nThe benefits of pair programming are that feedback can be provided as the code is being written, suggesting improvements or identifying/fixing issues as they appear. Additionally, pair programming can be a good method to share knowledge and experience between individuals.\nPair programming may require more resource during the development stage but at the benefit in a reduce of resource needed for a review stage.\nFor pair programming to be effective there are guidelines that should be followed:\n\nRotate roles often\nEveryone should take turns writing and reviewing which could mean switching roles every 15-30 minutes. This will ensure everyone gets experience from both sides of the process and will solidify the knowledge of the code being written.\n\n\nDocument large decisions\nPair programming allows real-time discussion and decision making but where big decisions in terms of approach have been made these should still be documented for anybody who may use the code in future.\n\n\nBe vocal and ask questions\nPair programming is a collaborative process and should not just involve one person watching another code. The person writing the code should be talking through what they are writing, and the reviewer should be supplying feedback and asking for clarification if there are parts that they do not understand. Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-define-success",
+    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-define-success",
+    "title": "Peer-reviewed",
+    "section": "How do we define success?",
+    "text": "How do we define success?\n\nReviewers should understand what they are expected to review ahead of time\nDevelopers should receive kind, constructive feedback that improves quality\nReviews should be proportionate to the complexity and importance of the analysis\n\nLookout for: * There is often more than one way to achieve a certain task: reviewers should look at whether what has been delivered aligns with best practice, rather than whether they would have done it that way! * Avoid asking for review on very large pieces of work in one go - try breaking it up to make it easier for the reviewer!",
+    "crumbs": [
+      "Playbook Home Page",
+      "Quality Assured",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/02-readable.html",
+    "href": "guidance/01-reproducible/pages/02-readable.html",
+    "title": "Readable",
     "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
+    "text": "AF Duck book: Readable code\nNHSBSA DDaT playbook: Naming conventions",
     "crumbs": [
       "Playbook Home Page",
       "Reproducible",
-      "Modular"
+      "Readable"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/02-readable.html#what-is-readable-code",
+    "href": "guidance/01-reproducible/pages/02-readable.html#what-is-readable-code",
+    "title": "Readable",
+    "section": "What is readable code?",
+    "text": "What is readable code?\nReadable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader’s experience over the convenience of writing code.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Readable"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/02-readable.html#why-should-we-write-readable-code",
+    "href": "guidance/01-reproducible/pages/02-readable.html#why-should-we-write-readable-code",
+    "title": "Readable",
+    "section": "Why should we write readable code?",
+    "text": "Why should we write readable code?\n\nSimpler and faster for readers (including yourself!) to understand\nReduces risk of bugs and simplifies debugging and future maintenance\nEnhances collaboration by making it easier to share and reuse code across teams / projects\nEncourages coding best practices\nSpeeds up the onboarding process for new team members\nDemonstrates professionalism and care, enhancing organisation and team image",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Readable"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/02-readable.html#how-do-we-write-readable-code",
+    "href": "guidance/01-reproducible/pages/02-readable.html#how-do-we-write-readable-code",
+    "title": "Readable",
+    "section": "How do we write readable code?",
+    "text": "How do we write readable code?\n\nUse clear and descriptive names for variables, functions and other objects\nRegularly refactor to improve code clarity\nComments to explain the ‘why’, not the ‘how’ or ’what (if you find yourself explaining what your code does or how it does it, then it probably needs to be refactored!)\nAdhere to a consistent style guide (ideally discuss and agree this with your team before you start!)\n\nBy following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. For more detailed insights, please refer to the recommended pre-requisite reading.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Readable"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/02-readable.html#how-do-we-define-success",
+    "href": "guidance/01-reproducible/pages/02-readable.html#how-do-we-define-success",
+    "title": "Readable",
+    "section": "How do we define success?",
+    "text": "How do we define success?\n\nYou should always review your code after you have written it to check for and fix any obvious issues\nPeer-review should highlight any issues spotted when someone else tries to read your code.\n\nLookout for: * Try putting what you have written to one side, or leaving it overnight - does it still make sense when you come back? * Code can always be improved, so try to make it ‘good enough’ and avoid falling into the trap of never finishing!",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Readable"
     ]
   },
   {
@@ -98,86 +346,5 @@
       "Transparent",
       "Decisions Logged"
     ]
-  },
-  {
-    "objectID": "guidance/02-quality-assured/pages/05-tested.html",
-    "href": "guidance/02-quality-assured/pages/05-tested.html",
-    "title": "Tested",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Quality Assured",
-      "Tested"
-    ]
-  },
-  {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
-    "title": "Peer-reviewed",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
-    ]
-  },
-  {
-    "objectID": "guidance/03-transparent/pages/08-open-source.html",
-    "href": "guidance/03-transparent/pages/08-open-source.html",
-    "title": "Open Source",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Transparent",
-      "Open Source"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/02-accessible.html",
-    "href": "guidance/01-reproducible/pages/02-accessible.html",
-    "title": "Accessible",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Accessible"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/01-documented.html",
-    "href": "guidance/01-reproducible/pages/01-documented.html",
-    "title": "Documented",
-    "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Documented"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
-  },
-  {
-    "objectID": "accessibility.html",
-    "href": "accessibility.html",
-    "title": "Analytical Code Assurance",
-    "section": "",
-    "text": "This accessibility statement applies to the NHSBSA Analytical Code Assurance Playbook website.\nThis website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:\n\nzoom in up to 400% without the text spilling off the screen\nlisten to most of the website using a screen reader (including the most recent version of NVDA)\nnavigate most of the website using just a keyboard or speech recognition software (Dragon)\nchange colours, contrast levels and fonts using browser or device settings\n\nWe’ve also made the website text as simple as possible to understand.\nAbilityNet has advice on making your device easier to use if you have a disability.\n\n\nWe know some parts of this website are not fully accessible, as:\n\nnavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order\nzooming can only be done to a limited extent due to content becoming unviewable\nthe report has links to external PDF or Excel documents and websites which may have accessibility issues\n\n\n\n\nIf you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nWe’ll consider your request and get back to you in 5 working days.\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nWe’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nFor all queries not accessibility related, you can contact us by:\nEmail: dall@nhsbsa.nhs.uk\n\n\n\nThe Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).\nIf you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).\n\n\n\nThe NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.\n\n\nThis website is partially compliant with the Web Content Accessibility Guidelines version 2.2 AA standard, due to the non-compliances listed below.\n\n\n\n\nThe content listed below is non-accessible for the following reasons.\n\n\nNavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).\nZooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).\nThe report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).\nWe plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.\n\n\n\n\nWe’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.\nOur accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.\n\n\n\nThis statement was originally prepared on 16 April 2025. It was last reviewed on 16 April 2025.\nThis website was last tested on 16 April 2025 against the WCAG 2.2 AA standard.\nThe test was carried out by the NHSBSA test and development teams. The most viewed pages were tested using automated testing tools by our website team. A further audit of the website was carried out to the WCAG 2.2 AA standard.\nWe tested all the website screens to meet ‘AA’ WCAG 2.2 standards, using manual and automated tests.\nWe run each webpage through automated Wave, Lighthouse and Axe accessibility tools then manually test with screen readers (NVDA) and standards checklists. We run representative user journey tests through speech recognition software (Dragon).\nThese checklists contain standards that have been compiled using WCAG, the NHS service manual and the Government Digital Service (GDS) guidance."
-  },
-  {
-    "objectID": "accessibility.html#accessibility-statement-for-nhsbsa-analytical-code-assurance-playbook",
-    "href": "accessibility.html#accessibility-statement-for-nhsbsa-analytical-code-assurance-playbook",
-    "title": "Analytical Code Assurance",
-    "section": "",
-    "text": "This accessibility statement applies to the NHSBSA Analytical Code Assurance Playbook website.\nThis website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:\n\nzoom in up to 400% without the text spilling off the screen\nlisten to most of the website using a screen reader (including the most recent version of NVDA)\nnavigate most of the website using just a keyboard or speech recognition software (Dragon)\nchange colours, contrast levels and fonts using browser or device settings\n\nWe’ve also made the website text as simple as possible to understand.\nAbilityNet has advice on making your device easier to use if you have a disability.\n\n\nWe know some parts of this website are not fully accessible, as:\n\nnavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order\nzooming can only be done to a limited extent due to content becoming unviewable\nthe report has links to external PDF or Excel documents and websites which may have accessibility issues\n\n\n\n\nIf you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nWe’ll consider your request and get back to you in 5 working days.\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nWe’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nFor all queries not accessibility related, you can contact us by:\nEmail: dall@nhsbsa.nhs.uk\n\n\n\nThe Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).\nIf you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).\n\n\n\nThe NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.\n\n\nThis website is partially compliant with the Web Content Accessibility Guidelines version 2.2 AA standard, due to the non-compliances listed below.\n\n\n\n\nThe content listed below is non-accessible for the following reasons.\n\n\nNavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).\nZooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).\nThe report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).\nWe plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.\n\n\n\n\nWe’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.\nOur accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.\n\n\n\nThis statement was originally prepared on 16 April 2025. It was last reviewed on 16 April 2025.\nThis website was last tested on 16 April 2025 against the WCAG 2.2 AA standard.\nThe test was carried out by the NHSBSA test and development teams. The most viewed pages were tested using automated testing tools by our website team. A further audit of the website was carried out to the WCAG 2.2 AA standard.\nWe tested all the website screens to meet ‘AA’ WCAG 2.2 standards, using manual and automated tests.\nWe run each webpage through automated Wave, Lighthouse and Axe accessibility tools then manually test with screen readers (NVDA) and standards checklists. We run representative user journey tests through speech recognition software (Dragon).\nThese checklists contain standards that have been compiled using WCAG, the NHS service manual and the Government Digital Service (GDS) guidance."
   }
 ]
