@@ -14,9 +14,13 @@ Testing is fundamental to assuring quality of analytical processes.
 It helps us ensure the things we've written to generate our analyses (e.g. code, workflows, excel workbooks, etc) work as expected and reduces the risk of errors in our results. 
 Testing also builds confidence that results are [reproducible][reproducible] and helps anyone to [easily verify this][transparent].
 
-* **Unit Tests:** Focus on testing the smallest individual components, in isolation. They should be fast and numerous.
-* **Integration Tests:** Verify that different components or modules work together as expected.
-* **End-to-End (E2E) Tests:** Testing the entire application flow, from start to finish.
+There are many different types of tests, each aimed to address a different aspect of quality assurance. 
+In analytical work, the following are often the most important to consider:
+| Type | Description | Benefits |
+| ----- | ------------- | -------- |
+| Unit Tests | Small isolated tests to ensure each individual component works as expected | Help you locate and identify the root cause of any issues or errors |
+| Integration Tests | Testing interactions between two or more individual components (for example, can the data output by one component be used as the input to another?) | Verify that different components or modules work together as expected |
+| End-to-end Tests | Testing the entire analysis from start to finish | Verify that the whole process produces the expected results, given certain inputs |
 
 ## Why should we test our code?
 
