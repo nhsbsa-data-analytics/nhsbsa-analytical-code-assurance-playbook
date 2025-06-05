@@ -10,7 +10,9 @@ description: "Rigorous testing is fundamental to assuring quality of code."
 
 ## What types of testing should be done?
 
-Rigorous testing is fundamental to assuring quality of code. It builds confidence that results are [reproducible][reproducible] by ensuring code works as expected, and [allows anyone to easily verify this][transparent].
+Testing is fundamental to assuring quality of analytical processes.
+It helps us ensure the things we've written to generate our analyses (e.g. code, workflows, excel workbooks, etc) work as expected and reduces the risk of errors in our results. 
+Testing also builds confidence that results are [reproducible][reproducible] and helps anyone to [easily verify this][transparent].
 
 * **Unit Tests:** Focus on testing the smallest individual components, in isolation. They should be fast and numerous.
 * **Integration Tests:** Verify that different components or modules work together as expected.
