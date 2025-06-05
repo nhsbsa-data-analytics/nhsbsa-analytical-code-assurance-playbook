@@ -60,17 +60,17 @@ There are considerations that apply to the project itself, or just to code, in a
   * **Assign Responsibility:** Have clear ownership for creating and maintaining different documentation aspects.
 
 ## How do we define success?
+	
+* Documentation enables rapid onboarding of contributors and users.
+* Documentation reflects the state of a project, with documentation updates being part of the regular workflow.
+* Needed information is easy to locate.
+* Documentation covers all aspects adequately for the intended audience, answering reasonable questions.
+	
+**Lookout for:**
 
-* **Understandable:** Documentation enables rapid onboarding of contributors and users.
-* **Accurate:** Documentation reflects the state of a project, with documentation updates being part of the regular workflow.
-* **Discoverable:** Needed information is easy to locate.
-* **Completeness:** Documentation covers all aspects adequately for the intended audience, answering reasonable questions.
-
-## How do we measure success?
-
-* **Reviewers:** [Critical friends][critical-friend] and other [peer-reviewers][peer-review] consider all documentation in addition to code or main outputs.
-* **Retrospectives:** Documentation is included in retrospective discussions, and any areas for improvement identified are planned in.
-* **Feedback:** We seek feedback on a project, including its documentation, from contributors and users in general communications and by surveys.
+* [Critical friends][critical-friend] and other [peer-reviewers][peer-review] should consider and feedback on documentation, in addition to code and outputs.
+* Creating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates.
+* Include documentation in retrospective discussions to ensure it's improving and evolving in line with the rest of the analysis.
 
 [duck-book-code-doc]: https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html
 [duck-book-project-doc]: https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html
