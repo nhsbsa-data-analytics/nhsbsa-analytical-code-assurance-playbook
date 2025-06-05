@@ -32,19 +32,23 @@ In analytical work, the following are often the most important to consider:
 * **Serve as [Documentation][documented]:** Well-written tests can illustrate intended use and expected behaviour.
 * **Facilitate Collaboration:** Ensure that contributions from different team members integrate correctly.
 
-## How do we test our code?
+## How do we test our analysis?
 
-* **Use Testing Frameworks:** Use established testing frameworks appropriate for the coding language.
-* **Risk-based Approach:** Write more tests for code that is very new, more complex, or encapsulates critical business logic.
-* **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
-* **Write Testable Code:** Design code with testing in mind.
-* **Focus on Behavior:** Test *what* the code should do, rather than *how* it does it.
+* **Focus on Behaviour:** Test *what* the logic should do, rather than *how* it does it.
+* **Risk-based Approach:** Write more tests for logic that is very new, more complex, or business critical.
 * **Test Edge Cases and Errors:** Include tests for boundary conditions, invalid inputs, and expected failure modes.
+* **Write Testable Processes:** Design and implement analytical processes with testing in mind.
 * **Keep Tests Independent and Fast:** Ensure tests can run independently and quickly to provide rapid feedback.
 * **Write Clear and Readable Tests:** Tests should be [easy to understand][documented], indicating what is being tested and why.
-* **Maintain Tests:** Treat test code like production code – keep it [updated, refactor it, and remove obsolete tests][version-controlled].
+* **Maintain Tests:** As your analysis [evolves][version-controlled], be sure to update your tests, refactor them, remove obsolete tests and add new ones. 
 
-It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
+### Testing code
+If you are producing analysis using code, the following points can help you go even further:
+* **Use Testing Frameworks:** Use established testing frameworks appropriate for the coding language.
+* **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
+
+It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. 
+This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
 
 ## How do we define success?
 
