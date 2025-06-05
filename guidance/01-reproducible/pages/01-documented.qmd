@@ -33,6 +33,8 @@ We should document:
 
 ## How do we create and maintain quality documentation?
 
+There are considerations that apply to the project itself, or just to code, in addition to more general considerations that apply to both project and code.
+
 * **Project-Level:**
   * The standard files used in code repositories are in the [NHSBSA DDaT playbook][ddat-playbook-dev-doc] - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.
   * In addition to the standard documentation, a project may also need to include additional documentation.
