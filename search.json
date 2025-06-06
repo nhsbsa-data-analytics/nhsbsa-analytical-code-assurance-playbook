@@ -90,7 +90,55 @@
     "href": "guidance/01-reproducible/pages/01-documented.html",
     "title": "Documented",
     "section": "",
-    "text": "Lorem ipsum dolor sit veritum …",
+    "text": "AF Duck book: Code documentation\nAF Duck book: Project documentation\nNHSBSA DDaT playbook: Licensing software or code\nNHSBSA DDaT playbook: Standard code repository files",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/01-documented.html#what-sort-of-documentation-is-needed",
+    "href": "guidance/01-reproducible/pages/01-documented.html#what-sort-of-documentation-is-needed",
+    "title": "Documented",
+    "section": "What sort of documentation is needed?",
+    "text": "What sort of documentation is needed?\nEffective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.\nWe should document:\n\na project’s purpose and scope\nhow to install or run code or other outputs and their dependencies\nhow to use code or other outputs like apps or dashboards\ndecisions and changes across a project lifecycle",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/01-documented.html#why-should-we-document-our-code-and-project",
+    "href": "guidance/01-reproducible/pages/01-documented.html#why-should-we-document-our-code-and-project",
+    "title": "Documented",
+    "section": "Why should we document our code and project?",
+    "text": "Why should we document our code and project?\n\nUnderstanding: Makes code and project purpose clear, improving transparency.\nCollaboration: Reduces time to become productive for contributors and other users.\nMaintenance: Makes modifying, fixing and refactoring code safer and easier.\nImproved Design: Explaining complex parts often highlights areas for simplification or improvement.\nAccessibility: Makes the project accessible and usable for its intended audience.\nKnowledge: Prevents critical information loss when team members change.\nStandards: Provides a record of how a project has been quality assured and facilitates reproducibility and transparency.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/01-documented.html#how-do-we-create-and-maintain-quality-documentation",
+    "href": "guidance/01-reproducible/pages/01-documented.html#how-do-we-create-and-maintain-quality-documentation",
+    "title": "Documented",
+    "section": "How do we create and maintain quality documentation?",
+    "text": "How do we create and maintain quality documentation?\nThere are considerations that apply to the project itself, or just to code, in addition to more general considerations that apply to both project and code.\n\nProject-Level:\n\nThe standard files used in code repositories are in the NHSBSA DDaT playbook - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.\nIn addition to the standard documentation, a project may also need to include additional documentation.\n\nSupport Information: How to get help, particularly where a project output includes an app-like artifact.\nDesign Docs: High-level overview for complex projects.\nAccessibility Statement: If an output is available as a webpage or app, it must have an accessibility statement.\n\n\nCode-Level:\n\nIn-Code Comments: Explanations within the code focusing on the why (rationale, complex logic, trade-offs).\nAPI Documentation: Standardized comments for functions, classes, modules explaining their purpose, parameters, returns, and usage.\nDetailed Explanations: Separate documents or wiki pages for complex algorithms, data structures, or specific modules when needed.\n\nGeneral\n\nStart Early & Integrate: Treat documentation as an integral part of the development process, and build updates into your workflow.\nWrite Clearly and Concisely: Know your audience for a particular piece of documentation and use straightforward language at the right level.\nFocus on the “Why”: Especially for in-code comments, explain the reasoning behind non-obvious decisions.\nUse Standard Formats & Locations: Employ conventional filenames, formats, and place documentation where users expect it.\nLeverage Tooling\n\nUse linters and formatters to enforce documentation standards.\nUse tools to generate documentation from code comments.\nUse templates for consistency.\n\nMaintain Discoverability: Ensure documentation is easy to find and link related documents together.\nAssign Responsibility: Have clear ownership for creating and maintaining different documentation aspects.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Reproducible",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "guidance/01-reproducible/pages/01-documented.html#how-do-we-define-success",
+    "href": "guidance/01-reproducible/pages/01-documented.html#how-do-we-define-success",
+    "title": "Documented",
+    "section": "How do we define success?",
+    "text": "How do we define success?\n\nDocumentation enables rapid onboarding of contributors and users.\nDocumentation reflects the state of a project, with documentation updates being part of the regular workflow.\nNeeded information is easy to locate.\nDocumentation covers all aspects adequately for the intended audience, answering reasonable questions.\n\nLookout for:\n\nCritical friends and other peer-reviewers should consider and feedback on documentation, in addition to code and outputs.\nCreating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates.\nInclude documentation in retrospective discussions to ensure it’s improving and evolving in line with the rest of the analysis.",
     "crumbs": [
       "Playbook Home Page",
       "Reproducible",
@@ -102,7 +150,7 @@
     "href": "guidance/01-reproducible/index.html",
     "title": "Analysis should be reproducible",
     "section": "",
-    "text": "Documented\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReadable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Documented\n\n\nEffective documentation is essential for any software project to be reproducible, quality assured and transparent.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReadable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Playbook Home Page",
       "Reproducible"

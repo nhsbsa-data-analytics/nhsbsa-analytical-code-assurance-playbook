@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Effective documentation is essential for any software project to be reproducible, quality assured and transparent.">
 
 <title>Analytical Code Assurance</title>
 <style>
@@ -132,13 +133,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
+    <div class="quarto-title column-body">
       <h1 class="title d-none d-lg-block">Documented</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          Effective documentation is essential for any software project to be reproducible, quality assured and transparent.
+        </div>
+      </div>
+                </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-right">
+  <div class="quarto-title-meta column-body">
 
       
     
@@ -243,11 +249,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-sort-of-documentation-is-needed" id="toc-what-sort-of-documentation-is-needed" class="nav-link active" data-scroll-target="#what-sort-of-documentation-is-needed">What sort of documentation is needed?</a></li>
+  <li><a href="#why-should-we-document-our-code-and-project" id="toc-why-should-we-document-our-code-and-project" class="nav-link" data-scroll-target="#why-should-we-document-our-code-and-project">Why should we document our code and project?</a></li>
+  <li><a href="#how-do-we-create-and-maintain-quality-documentation" id="toc-how-do-we-create-and-maintain-quality-documentation" class="nav-link" data-scroll-target="#how-do-we-create-and-maintain-quality-documentation">How do we create and maintain quality documentation?</a></li>
+  <li><a href="#how-do-we-define-success" id="toc-how-do-we-define-success" class="nav-link" data-scroll-target="#how-do-we-define-success">How do we define success?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 <script>
   // Create skiplink
   var a = document.createElement('a');
@@ -262,9 +277,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Lorem ipsum dolor sit veritum …</p>
+<blockquote class="blockquote">
+<h2 id="pre-requisite-reading" class="anchored">Pre-requisite reading</h2>
+<ul>
+<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html">AF Duck book: Code documentation</a></li>
+<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html">AF Duck book: Project documentation</a></li>
+<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/">NHSBSA DDaT playbook: Licensing software or code</a></li>
+<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/">NHSBSA DDaT playbook: Standard code repository files</a></li>
+</ul>
+</blockquote>
+<section id="what-sort-of-documentation-is-needed" class="level2">
+<h2 class="anchored" data-anchor-id="what-sort-of-documentation-is-needed">What sort of documentation is needed?</h2>
+<p>Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.</p>
+<p>We should document:</p>
+<ul>
+<li>a project’s purpose and scope</li>
+<li>how to install or run code or other outputs and their dependencies</li>
+<li>how to use code or other outputs like apps or dashboards</li>
+<li>decisions and changes across a project lifecycle</li>
+</ul>
+</section>
+<section id="why-should-we-document-our-code-and-project" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-we-document-our-code-and-project">Why should we document our code and project?</h2>
+<ul>
+<li><strong>Understanding:</strong> Makes code and project purpose clear, improving <a href="../../../guidance/03-transparent/index.html">transparency</a>.</li>
+<li><strong>Collaboration:</strong> Reduces time to become productive for contributors and other users.</li>
+<li><strong>Maintenance:</strong> Makes modifying, fixing and refactoring code safer and easier.</li>
+<li><strong>Improved Design:</strong> Explaining complex parts often highlights areas for simplification or improvement.</li>
+<li><strong>Accessibility:</strong> Makes the project <a href="../../../guidance/01-reproducible/pages/02-accessible.qmd">accessible</a> and usable for its intended audience.</li>
+<li><strong>Knowledge:</strong> Prevents critical information loss when team members change.</li>
+<li><strong>Standards:</strong> Provides a record of how a project has been <a href="../../../guidance/02-quality-assured/index.html">quality assured</a> and facilitates <a href="../../../guidance/01-reproducible/index.html">reproducibility</a> and <a href="../../../guidance/03-transparent/index.html">transparency</a>.</li>
+</ul>
+</section>
+<section id="how-do-we-create-and-maintain-quality-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-create-and-maintain-quality-documentation">How do we create and maintain quality documentation?</h2>
+<p>There are considerations that apply to the project itself, or just to code, in addition to more general considerations that apply to both project and code.</p>
+<ul>
+<li><strong>Project-Level:</strong>
+<ul>
+<li>The standard files used in code repositories are in the <a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/">NHSBSA DDaT playbook</a> - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.</li>
+<li>In addition to the standard documentation, a project may also need to include additional documentation.
+<ul>
+<li><strong>Support Information:</strong> How to get help, particularly where a project output includes an app-like artifact.</li>
+<li><strong>Design Docs:</strong> High-level overview for complex projects.</li>
+<li><strong>Accessibility Statement:</strong> If an output is available as a webpage or app, it must have an accessibility statement.</li>
+</ul></li>
+</ul></li>
+<li><strong>Code-Level:</strong>
+<ul>
+<li><strong>In-Code Comments:</strong> Explanations within the code focusing on the <em>why</em> (rationale, complex logic, trade-offs).</li>
+<li><strong>API Documentation:</strong> Standardized comments for functions, classes, modules explaining their purpose, parameters, returns, and usage.</li>
+<li><strong>Detailed Explanations:</strong> Separate documents or wiki pages for complex algorithms, data structures, or specific modules when needed.</li>
+</ul></li>
+<li><strong>General</strong>
+<ul>
+<li><strong>Start Early &amp; Integrate:</strong> Treat documentation as an integral part of the development process, and build updates into your workflow.</li>
+<li><strong>Write Clearly and Concisely:</strong> Know your audience for a particular piece of documentation and use straightforward language at the right level.</li>
+<li><strong>Focus on the “Why”:</strong> Especially for in-code comments, explain the reasoning behind non-obvious decisions.</li>
+<li><strong>Use Standard Formats &amp; Locations:</strong> Employ conventional filenames, formats, and place documentation where users expect it.</li>
+<li><strong>Leverage Tooling</strong>
+<ul>
+<li>Use linters and formatters to enforce documentation standards.</li>
+<li>Use tools to generate documentation from code comments.</li>
+<li>Use templates for consistency.</li>
+</ul></li>
+<li><strong>Maintain Discoverability:</strong> Ensure documentation is easy to find and link related documents together.</li>
+<li><strong>Assign Responsibility:</strong> Have clear ownership for creating and maintaining different documentation aspects.</li>
+</ul></li>
+</ul>
+</section>
+<section id="how-do-we-define-success" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-define-success">How do we define success?</h2>
+<ul>
+<li>Documentation enables rapid onboarding of contributors and users.</li>
+<li>Documentation reflects the state of a project, with documentation updates being part of the regular workflow.</li>
+<li>Needed information is easy to locate.</li>
+<li>Documentation covers all aspects adequately for the intended audience, answering reasonable questions.</li>
+</ul>
+<p><strong>Lookout for:</strong></p>
+<ul>
+<li><a href="https://nhsbsa-data-analytics.github.io/nhsbsa-data-science-playbook/guidance/03-analysis/analysis-steps/04-review.html#critical-friend-review">Critical friends</a> and other <a href="../../../guidance/02-quality-assured/pages/06-peer-reviewed.html">peer-reviewers</a> should consider and feedback on documentation, in addition to code and outputs.</li>
+<li>Creating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates.</li>
+<li>Include documentation in retrospective discussions to ensure it’s improving and evolving in line with the rest of the analysis.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>
