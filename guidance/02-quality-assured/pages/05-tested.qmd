@@ -16,6 +16,7 @@ Testing also builds confidence that results are [reproducible][reproducible] and
 
 There are many different types of tests, each aimed to address a different aspect of quality assurance. 
 In analytical work, the following are often the most important to consider:
+
 | Type | Description | Benefits |
 | ----- | ------------- | -------- |
 | Unit Tests | Small isolated tests to ensure each individual component works as expected | Help you locate and identify the root cause of any issues or errors |
