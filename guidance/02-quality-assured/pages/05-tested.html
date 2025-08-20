@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Testing is fundamental to the quality assurance of analysis.">
 
 <title>Analytical Code Assurance</title>
 <style>
@@ -32,10 +33,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-26fdfdf7152fedb3217964b0bb1b69a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-fd5c5177c569e3b5a20cc9e49e6f04e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
@@ -132,13 +133,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
+    <div class="quarto-title column-body">
       <h1 class="title d-none d-lg-block">Tested</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          Testing is fundamental to the quality assurance of analysis.
+        </div>
+      </div>
+                </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-right">
+  <div class="quarto-title-meta column-body">
 
       
     
@@ -243,11 +249,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-types-of-testing-should-be-done" id="toc-what-types-of-testing-should-be-done" class="nav-link active" data-scroll-target="#what-types-of-testing-should-be-done">What types of testing should be done?</a></li>
+  <li><a href="#why-should-we-test-our-analysis" id="toc-why-should-we-test-our-analysis" class="nav-link" data-scroll-target="#why-should-we-test-our-analysis">Why should we test our analysis?</a></li>
+  <li><a href="#how-do-we-test-our-analysis" id="toc-how-do-we-test-our-analysis" class="nav-link" data-scroll-target="#how-do-we-test-our-analysis">How do we test our analysis?</a>
+  <ul class="collapse">
+  <li><a href="#testing-code" id="toc-testing-code" class="nav-link" data-scroll-target="#testing-code">Testing code</a></li>
+  </ul></li>
+  <li><a href="#how-do-we-define-success" id="toc-how-do-we-define-success" class="nav-link" data-scroll-target="#how-do-we-define-success">How do we define success?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 <script>
   // Create skiplink
   var a = document.createElement('a');
@@ -262,9 +280,66 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Lorem ipsum dolor sit veritum …</p>
+<blockquote class="blockquote">
+<h2 id="pre-requisite-reading" class="anchored">Pre-requisite reading</h2>
+<ul>
+<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html">AF Duck book: Testing code</a></li>
+<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/">NHSBSA DDaT playbook: Testing</a></li>
+</ul>
+</blockquote>
+<section id="what-types-of-testing-should-be-done" class="level2">
+<h2 class="anchored" data-anchor-id="what-types-of-testing-should-be-done">What types of testing should be done?</h2>
+<p>Testing is fundamental to assuring quality of analytical processes. It helps us ensure the things we’ve written to generate our analyses (e.g.&nbsp;code, workflows, excel workbooks, etc) work as expected and reduces the risk of errors in our results. Testing also builds confidence that results are <a href="../../../guidance/01-reproducible/index.html">reproducible</a> and helps anyone to <a href="../../../guidance/03-transparent/index.html">easily verify this</a>.</p>
+<p>There are many different types of tests, each aimed to address a different aspect of quality assurance. In analytical work, the following are often the most important to consider: | Type | Description | Benefits | | —– | ————- | ——– | | Unit Tests | Small isolated tests to ensure each individual component works as expected | Help you locate and identify the root cause of any issues or errors | | Integration Tests | Testing interactions between two or more individual components (for example, can the data output by one component be used as the input to another?) | Verify that different components or modules work together as expected | | End-to-end Tests | Testing the entire analysis from start to finish | Verify that the whole process produces the expected results, given certain inputs |</p>
+</section>
+<section id="why-should-we-test-our-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-we-test-our-analysis">Why should we test our analysis?</h2>
+<ul>
+<li><strong>Verify Correctness:</strong> Ensure our processes behave as intended and meet the requirements.</li>
+<li><strong>Provide Confidence:</strong> Increase confidence in the code’s reliability and the <a href="../../../guidance/01-reproducible/index.html">reproducibility</a> of results.</li>
+<li><strong>Catch Bugs (Early):</strong> Identify and fix issues during development, when they are cheapest and easiest to resolve.</li>
+<li><strong>Improve Design:</strong> Writing testable processes often leads to better, more <a href="../../../guidance/01-reproducible/pages/03-modular.html">modular</a>, and loosely coupled designs.</li>
+<li><strong>Enable Refactoring:</strong> Act as a safety net to enable us to make improvements while knowing that our results are not impacted.</li>
+<li><strong>Serve as <a href="../../../guidance/01-reproducible/pages/01-documented.html">Documentation</a>:</strong> Well-written tests can illustrate intended use and expected behaviour.</li>
+<li><strong>Facilitate Collaboration:</strong> Ensure that contributions from different team members integrate correctly.</li>
+</ul>
+</section>
+<section id="how-do-we-test-our-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-test-our-analysis">How do we test our analysis?</h2>
+<ul>
+<li><strong>Focus on Behaviour:</strong> Test <em>what</em> the logic should do, rather than <em>how</em> it does it.</li>
+<li><strong>Risk-based Approach:</strong> Write more tests for logic that is very new, more complex, or business critical.</li>
+<li><strong>Test Edge Cases and Errors:</strong> Include tests for boundary conditions, invalid inputs, and expected failure modes.</li>
+<li><strong>Write Testable Processes:</strong> Design and implement analytical processes with testing in mind.</li>
+<li><strong>Keep Tests Independent and Fast:</strong> Ensure tests can run independently and quickly to provide rapid feedback.</li>
+<li><strong>Write Clear and Readable Tests:</strong> Tests should be <a href="../../../guidance/01-reproducible/pages/01-documented.html">easy to understand</a>, indicating what is being tested and why.</li>
+<li><strong>Maintain Tests:</strong> As your analysis <a href="../../../guidance/01-reproducible/pages/04-version-controlled.html">evolves</a>, be sure to update your tests, refactor them, remove obsolete tests and add new ones.</li>
+</ul>
+<section id="testing-code" class="level3">
+<h3 class="anchored" data-anchor-id="testing-code">Testing code</h3>
+<p>If you are producing analysis using code, the following points can help you go even further: * <strong>Use Testing Frameworks:</strong> Use established testing frameworks appropriate for the coding language. * <strong>Automate Test Execution:</strong> Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.</p>
+<p>It is important to also ensure that new changes or bug fixes haven’t introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.</p>
+</section>
+</section>
+<section id="how-do-we-define-success" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-define-success">How do we define success?</h2>
+<ul>
+<li>Teams feel confident about their code.</li>
+<li>Bugs discovered after release of code are rare.</li>
+<li>Automated tests in CI quickly inform developers of potential issues.</li>
+<li>Test quality and relevance is high, and regressions detected.</li>
+<li>The tests are understandable and do not hinder refactoring of the code.</li>
+<li>Tests clearly demonstrate that the code meets its specified requirements.</li>
+</ul>
+<p><strong>Lookout for:</strong></p>
+<ul>
+<li>Apply the 80/20 rule - the most effective use of time writing tests will be spent on the first 20% of tests that cover 80% of the key logic.</li>
+<li>Plan for long term maintenance - you’ll need to maintain your tests, so design them carefully and stop before you write more than you can realistically keep up-to-date.</li>
+<li>Avoid testing implementation details - focusing on the <em>what</em> rather than the <em>how</em> will improve your designs, make refactoring easier and avoid you having to update tests every time you update your code.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>
