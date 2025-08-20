@@ -1,6 +1,6 @@
 ---
 title: "Tested"
-description: "Rigorous testing is fundamental to assuring quality of code."
+description: "Testing is fundamental to the quality assurance of analysis."
 ---
 
 > ## Pre-requisite reading
