@@ -51,20 +51,19 @@ It is important to also ensure that new changes or bug fixes haven't introduced 
 This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
 
 ## How do we define success?
-
-* **Confidence:** Teams feel confident about their code.
-* **Reliability:** Bugs discovered after release of code are rare.
-* **Efficiency:** Automated tests in CI quickly inform developers of potential issues.
-* **Quality:** Test quality and relevance is high, and regressions detected.
-* **Maintainable:** The tests are understandable and do not hinder refactoring of the code.
-* **Verification:** Tests clearly demonstrate that the code meets its specified requirements.
-
-## How do we measure success?
-
-* **Documenting:** Records of test failures and solutions are made.
-* **Maintenance:** Bugs and errors identified are recorded and addressed, with tests being added where appropriate.
-* **Retrospectives:** Testing is included in retrospective discussions, and any areas for improvement identified are planned in.
-* **Feedback:** We seek feedback on a project, including its tests, from contributors.
+	
+* Teams feel confident about their code.
+* Bugs discovered after release of code are rare.
+* Automated tests in CI quickly inform developers of potential issues.
+* Test quality and relevance is high, and regressions detected.
+* The tests are understandable and do not hinder refactoring of the code.
+* Tests clearly demonstrate that the code meets its specified requirements.
+	
+**Lookout for:**
+	
+- Apply the 80/20 rule - the most effective use of time writing tests will be spent on the first 20% of tests that cover 80% of the key logic. 
+- Plan for long term maintenance - you'll need to maintain your tests, so design them carefully and stop before you write more than you can realistically keep up-to-date.
+- Avoid testing implementation details - focusing on the *what* rather than the *how* will improve your designs, make refactoring easier and avoid you having to update tests every time you update your code.
 
 [duck-book-testing]: https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html
 [ddat-playbook-testing]: https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/
