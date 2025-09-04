@@ -23,21 +23,21 @@ Follow these steps to publish analytical code as open source:
 3. **Document your code:** Provide clear instructions for use, dependencies, and purpose.
 4. **Use a public repository:** Host your code on platforms like GitHub, GitLab, or Bitbucket.
 5. **Follow organisational guidance:** Adhere to your organisation’s policies and approval processes for open source publication.
-6. **Complete a publishing review:** Use a 'Fit for publishing checklist' to ensure your code is ready for release, including internal and external review steps. See the NHS Digital RAP Community Fit for publishing checklist PDF [fit-for-publishing].
-7. **Avoid storing secret keys or credentials in source code:** Use secret management systems and keep credentials out of repositories. See GOV.UK guidance [govuk-secret-guidance].
+6. **Complete a publishing review:** Use a 'Fit for publishing checklist' to ensure your code is ready for release, including internal and external review steps. See the [NHS Digital RAP Community Fit for publishing checklist][fit-for-publishing].
+7. **Avoid storing secret keys or credentials in source code:** Use secret management systems and keep credentials out of repositories. See [GOV.UK guidance][govuk-secret-guidance].
 8. **Include a full LICENCE file:** Add a file named `LICENCE` (British English spelling) with the complete license text in your repository, not just a statement in the README. See the section below to learn more about the licenses we use at the NHSBSA.
 
-See the GOV.UK Service Manual [govuk-service-manual] and NHS Digital RAP Community guidance [rap-community-guidance] for detailed steps and best practices.
+See the [GOV.UK Service Manual][govuk-service-manual] and [NHS Digital RAP Community guidance][rap-community-guidance] for detailed steps and best practices.
 
 ### Licensing open code
 
 When publishing code or content openly, it is essential to include a clear license to specify how others can use, modify, and share your work. Open code should include a `LICENCE` file, with a copyright notice where the year should reflect first publication, or a range if significantly updated.  
 
 The NHSBSA uses two types of licences:
-- For software/code: use the Apache 2 Licence [apache-2]. This is generally the licence to use in the code repository via the `LICENCE` file. 
-- For published content, documentation, and data: use the Open Government Licence v3.0 (OGL v3) [ogl-v3]. For OGL v3, user interfaces should include a link to the licence agreement in the footer or main documentation.
+- For software/code: use the [Apache 2 Licence][apache-2]. This is generally the licence to use in the code repository via the `LICENCE` file. 
+- For published content, documentation, and data: use the [Open Government Licence v3.0 (OGL v3)]should include a link to the licence agreement in the footer or main documentation.
 
-For more details, see the NHSBSA Digital Playbook: Coding Licences [coding-licences].
+For more details, see the [NHSBSA Digital Playbook][coding-licences].
 
 ## How do we define success?
 
@@ -55,14 +55,10 @@ For more details, see the NHSBSA Digital Playbook: Coding Licences [coding-licen
 * Secret keys or credentials stored in the source code.
 * Code that is difficult to understand or maintain.
 
----
-
-## References
-
-[fit-for-publishing]: [NHS Digital RAP Community Fit for publishing checklist PDF](https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.pdf)
-[govuk-secret-guidance]: [GOV.UK guidance](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#you-must-not-store-secret-keys-or-credentials-in-the-source-code)
-[govuk-service-manual]: [GOV.UK Service Manual](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#making-the-code-open)
-[rap-community-guidance]: [NHS Digital RAP Community guidance](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/publishing_code/how-to-publish-your-code-in-the-open/)
-[apache-2]: [Apache 2 Licence](https://www.apache.org/licenses/LICENSE-2.0)
-[ogl-v3]: [Open Government Licence v3.0 (OGL v3)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
-[coding-licences]: [NHSBSA Digital Playbook: Coding Licences](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/#ogl-v3)
+[fit-for-publishing]: https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.pdf
+[govuk-secret-guidance]: https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#you-must-not-store-secret-keys-or-credentials-in-the-source-code
+[govuk-service-manual]: https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#making-the-code-open
+[rap-community-guidance]: https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/publishing_code/how-to-publish-your-code-in-the-open/
+[apache-2]: https://www.apache.org/licenses/LICENSE-2.0
+[ogl-v3]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+[coding-licences]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/#ogl-v3
