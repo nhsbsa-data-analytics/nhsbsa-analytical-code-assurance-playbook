@@ -15,7 +15,7 @@ Publishing analytical code openly is a key part of making our work:
 
 There are two main routes to open-sourcing analytical code:
 1. Work in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the [NHSBSA Open Data Portal][nhsbsa-open-data]. 
-2. Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments and retrospectively publish a version of the code (after suitable checks have taken place - see below for details).
+2. Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments. We would still recommend retrospectively publishing your analytical code, although this may need additional review (see below for details).
 
 To publish analytical code:
 1. **Include a full LICENCE file:** Add a file named `LICENCE` (British English spelling) with the complete license text in your repository, not just a statement in the `README` (see below to learn more about the licenses we use at the NHSBSA)
