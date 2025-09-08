@@ -17,17 +17,20 @@ There are two main routes to open-sourcing analytical code:
 1. Work in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the [NHSBSA Open Data Portal][nhsbsa-open-data]. 
 2. Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments and retrospectively publish a version of the code (after suitable checks have taken place - see below for details).
 
-To retrospectively publish analytical code as open source:
-
-1. **Include a full LICENCE file:** Add a file named `LICENCE` (British English spelling) with the complete license text in your repository, not just a statement in the README (see below to learn more about the licenses we use at the NHSBSA)
+To publish analytical code:
+1. **Include a full LICENCE file:** Add a file named `LICENCE` (British English spelling) with the complete license text in your repository, not just a statement in the `README` (see below to learn more about the licenses we use at the NHSBSA)
 1. **Document your code:** Provide clear instructions for use, dependencies, and purpose.
-1. **Use a public repository:** Host your code on platforms like GitHub, GitLab, or Bitbucket.
-1. **Follow organisational guidance:** Adhere to your organisation’s policies and approval processes for open source publication. # TODO: link retrospective open source guides
-1. **Complete a publishing review:** Use a 'Fit for publishing checklist' to ensure your code is ready for release, including internal and external review steps. See the [NHS Digital RAP Community Fit for publishing checklist][fit-for-publishing].
-1. **Check for sensitive information:** Ensure no personal, confidential, or proprietary data is included. # TODO: combine these two points
-1. **Avoid storing secret keys or credentials in source code:** Use secret management systems and keep credentials out of repositories. See [GOV.UK guidance][govuk-secret-guidance].
+1. **Host on GitHub:** Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github]
+1. **Follow NHSBSA guidance:** Adhere to [NHSBSA policies][nhsbsa-open-source] and approval processes for open source coding (only visible to internal NHSBSA colleagues).
+1. **Avoid storing secret keys or credentials in source code:** Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
+1. **Check for sensitive information:** Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!
 
 See the [GOV.UK Service Manual][govuk-service-manual] and [NHS Digital RAP Community guidance][rap-community-guidance] for detailed steps and best practices.
+
+### Retrospective open sourcing
+If you are retrospectively open sourcing your code (after having developed it closed source), also consider:
+1. The [NHSBSA Retrospective Open Sourcing][nhsbsa-retro-open] Guidance (only visible to internal NHSBSA colleauges)
+1. Whether you would benefit from using a 'fit-for-publishing checklist' to ensure your code is ready for release, including internal and external review steps. See the [NHS Digital RAP Community Fit for publishing checklist][fit-for-publishing].
 
 ### Licensing open code
 
@@ -63,3 +66,6 @@ For more details, see the [NHSBSA Digital Playbook][coding-licences].
 [ogl-v3]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 [coding-licences]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/#ogl-v3
 [nhsbsa-open-data]: https://opendata.nhsbsa.net/
+[nhsbsa-github]: https://github.com/nhsbsa-data-analytics/
+[nhsbsa-open-source]: https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3585835009/NHSBSA+Open+Source+Policy+FINAL
+[nhsbsa-retro-open]: https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3978821762/Retrospective+open+sourcing+REVIEW
