@@ -5,16 +5,17 @@ description: "Publishing analytical code as open source increases transparency, 
 
 ## Why publish analytical code as open source?
 
-Publishing analytical code openly is a key part of making our work transparent, reproducible, and trustworthy. Open source code:
-
-* **Promotes Transparency:** Others can see how analyses are performed, increasing trust in results.
-* **Supports Reusability:** Allows others to build on existing work, reducing duplication.
-* **Improves Quality:** Open review and feedback help identify issues and improve code.
-* **Accelerates Innovation:** Shared solutions and approaches speed up progress.
-* **Enhances Reproducibility:** Open code makes it easier to verify and reproduce results.
-* **Fosters Community Support:** Issues and improvements can be raised and addressed collaboratively.
+Publishing analytical code openly is a key part of making our work:
+* **Transparent:** Others can see how analyses are performed, increasing trust in results.
+* **Reproducibile:** Open code makes it easier to verify and reproduce results.
+* **Reusabile:** Allows others to build on existing work, reducing duplication.
+* **Quality assured:** Open review and feedback help identify issues and improve code.
 
 ## How to publish analytical code openly
+
+There are two main routes to open-sourcing analytical code:
+1. Work in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the [NHSBSA Open Data Portal][nhsbsa-open-data]. 
+2. Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments and retrospectively publish a version of the code (after suitable checks have taken place).
 
 Follow these steps to publish analytical code as open source:
 
@@ -62,3 +63,4 @@ For more details, see the [NHSBSA Digital Playbook][coding-licences].
 [apache-2]: https://www.apache.org/licenses/LICENSE-2.0
 [ogl-v3]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 [coding-licences]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/#ogl-v3
+[nhsbsa-open-data]: https://opendata.nhsbsa.net/
