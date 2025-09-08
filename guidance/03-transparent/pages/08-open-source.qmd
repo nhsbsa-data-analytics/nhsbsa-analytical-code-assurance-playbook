@@ -6,6 +6,7 @@ description: "Publishing analytical code as open source increases transparency, 
 ## Why publish analytical code as open source?
 
 Publishing analytical code openly is a key part of making our work:
+
 * **Transparent:** Others can see how analyses are performed, increasing trust in results.
 * **Reproducible:** Open code makes it easier to verify and reproduce results.
 * **Reusable:** Allows others to build on existing work, reducing duplication.
@@ -14,10 +15,12 @@ Publishing analytical code openly is a key part of making our work:
 ## How to publish analytical code openly
 
 There are two main routes to open-sourcing analytical code:
+
 1. Work in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the [NHSBSA Open Data Portal][nhsbsa-open-data]. 
 1. Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments. We would still recommend retrospectively publishing your analytical code, although this may need additional review (see below for details).
 
 To publish analytical code:
+
 1. **Include a full LICENCE file:** Add a file named `LICENCE` (British English spelling) with the complete licence text in your repository, not just a statement in the `README` (see below to learn more about the licences we use at the NHSBSA)
 1. **Document your code:** Provide clear instructions for use, dependencies, and purpose.
 1. **Host on GitHub:** Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github]
@@ -29,6 +32,7 @@ See the [GOV.UK Service Manual][govuk-service-manual] and [NHS Digital RAP Commu
 
 ### Retrospective open sourcing
 If you are retrospectively open sourcing your code (after having developed it closed source), also consider:
+
 1. The [NHSBSA Retrospective Open Sourcing][nhsbsa-retro-open] Guidance (only visible to internal NHSBSA colleagues)
 1. Whether you would benefit from using a 'fit-for-publishing checklist' to ensure your code is ready for release, including internal and external review steps. See the [NHS Digital RAP Community Fit for publishing checklist][fit-for-publishing].
 
@@ -36,9 +40,10 @@ If you are retrospectively open sourcing your code (after having developed it cl
 
 When publishing code or content openly, it is essential to include a clear licence to specify how others can use, modify, and share your work. Open code should include a `LICENCE` file, with a copyright notice where the year should reflect first publication, or a range if significantly updated.  
 
-The NHSBSA uses two types of licences:
-- For software/code: use the [Apache 2 Licence][apache-2]. This is generally the licence to use in the code repository via the `LICENCE` file. 
-- For published content, documentation, and data: use the [Open Government Licence v3.0 (OGL v3)]. This should include a link to the licence agreement in the footer or main documentation.
+The NHSBSA uses two types of licences, to serve different purposes:
+
+* For software/code: use the [Apache 2 Licence][apache-2]. This is generally the licence to use in the code repository via the `LICENCE` file. 
+* For published content, documentation, and data: use the [Open Government Licence v3.0 (OGL v3)]. This should include a link to the licence agreement in the footer or main documentation.
 
 For more details, see the [NHSBSA Digital Playbook][coding-licences].
 

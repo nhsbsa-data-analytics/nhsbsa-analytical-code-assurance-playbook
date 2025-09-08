@@ -68,9 +68,16 @@ website:
         contents: guidance/03-transparent/pages/*
         
   page-footer:
-      left:
-        - text: "Accessibility"
-          href: accessibility.qmd
+    left:
+      - text: "Accessibility Statement"
+        href: accessibility.qmd
+      - text: "Contact Us"
+        href: mailto:analyticalassurance@nhsbsa.nhs.uk
+      - text: "GitHub"
+        href: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
+    right:
+      - text: "All content is available under the Open Government Licence v3.0 except where otherwise stated"
+        href: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
       
 format:
   html:
