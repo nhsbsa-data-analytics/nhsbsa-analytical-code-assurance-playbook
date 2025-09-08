@@ -1,13 +1,41 @@
+# RStudio files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Data files
 *.csv
 *.xlsx
 *.docx
 *.pdf
 *.pptx
+
+# Quarto files
 .quarto/
 _site
 /.quarto/
 docs/
+
+# Python virtual environments
+.venv
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Jekyll files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
