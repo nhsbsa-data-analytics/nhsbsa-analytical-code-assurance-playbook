@@ -40,22 +40,24 @@ Using version control tools the basic steps for a peer review are:
 1. Branch merged
 
 As the Code Author:
-- **Do** submit code for review in manageable and related chunks.
-- **Do** ensure your code runs correctly and passes relevant tests before before a review.
-- **Do** provide context and additional explanation when required.
-- **Do** carefully consider all reviewer feedback; discuss comments you disagree with or are unsure of to reach an understanding.
-- **Do** document changes made and decisions taken based on the review feedback.
-- **Don't** bypass or rush the review process just to merge code faster.
-- **Don't** submit unrelated changes together.
-- **Don't** blindly accept and implement all reviewer comments.
+
+* **Do** submit code for review in manageable and related chunks.
+* **Do** ensure your code runs correctly and passes relevant tests before before a review.
+* **Do** provide context and additional explanation when required.
+* **Do** carefully consider all reviewer feedback; discuss comments you disagree with or are unsure of to reach an understanding.
+* **Do** document changes made and decisions taken based on the review feedback.
+* **Don't** bypass or rush the review process just to merge code faster.
+* **Don't** submit unrelated changes together.
+* **Don't** blindly accept and implement all reviewer comments.
 
 As the Reviewer:
-- **Do** thoroughly review the code, understanding its purpose and verifying it does what is expected.
-- **Do** provide clear, constructive, and actionable feedback; explain the *why* of your suggestions.
-- **Do** document identified issues, potential improvements, or questions clearly.
-- **Don't** Simply glance over the code and approve it without scrutiny.
-- **Don't** Delay reviews unnecessarily, blocking the author's progress.
-- **Don't** Be overly critical or personal in your feedback.
+
+* **Do** thoroughly review the code, understanding its purpose and verifying it does what is expected.
+* **Do** provide clear, constructive, and actionable feedback; explain the *why* of your suggestions.
+* **Do** document identified issues, potential improvements, or questions clearly.
+* **Don't** Simply glance over the code and approve it without scrutiny.
+* **Don't** Delay reviews unnecessarily, blocking the author's progress.
+* **Don't** Be overly critical or personal in your feedback.
 
 Whenever feasible, analytical code and low-or-no-code artifacts should be version controlled. Version control tools facilitate [peer-review][ddat-playbook-peer-review], among [other benefits][version-control].
 
@@ -87,11 +89,13 @@ The person writing the code should be talking through what they are writing, and
 Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.
 
 ## How do we define success?
+
 * Reviewers should understand what they are expected to review ahead of time
 * Developers should receive kind, constructive feedback that improves quality
 * Reviews should be proportionate to the complexity and importance of the analysis
 
 **Lookout for:**
+
 * There is often more than one way to achieve a certain task: reviewers should look at whether what has been delivered aligns with best practice, rather than whether they would have done it that way!
 * Avoid asking for review on very large pieces of work in one go - try breaking it up to make it easier for the reviewer!
 

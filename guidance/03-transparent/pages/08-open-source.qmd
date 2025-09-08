@@ -43,7 +43,7 @@ When publishing code or content openly, it is essential to include a clear licen
 The NHSBSA uses two types of licences, to serve different purposes:
 
 * For software/code: use the [Apache 2 Licence][apache-2]. This is generally the licence to use in the code repository via the `LICENCE` file. 
-* For published content, documentation, and data: use the [Open Government Licence v3.0 (OGL v3)]. This should include a link to the licence agreement in the footer or main documentation.
+* For published content, documentation, and data: use the [Open Government Licence v3.0 (OGL v3)][ogl-v3]. This should include a link to the licence agreement in the footer or main documentation.
 
 For more details, see the [NHSBSA Digital Playbook][coding-licences].
 
@@ -52,7 +52,7 @@ For more details, see the [NHSBSA Digital Playbook][coding-licences].
 * The majority of NHSBSA analytical codebases are available in the open.
 * Decisions to keep code closed source are justified and clearly recorded.
 * Published outputs (reports, data, dashboards, etc) are linked to the published code that produced them.
-* All outputs (code and publications) include a LICENCE file in line with the guidance above.
+* All outputs (code and publications) include a `LICENCE` file in line with the guidance above.
 * Sensitive or confidential information never appears in open repositories.
 * Bugs or issues discovered after publication are rare.
 
@@ -60,7 +60,7 @@ For more details, see the [NHSBSA Digital Playbook][coding-licences].
 
 * Sensitive or confidential information accidentally included in the repository or commit history.
 * Missing or unclear documentation on how to setup and use the code.
-* Lack of key repository files, including LICENCE and CONTRIBUTE.
+* Lack of key repository files, including `LICENCE` and `CONTRIBUTE`.
 * Code that is difficult to understand or maintain.
 
 [fit-for-publishing]: https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.pdf

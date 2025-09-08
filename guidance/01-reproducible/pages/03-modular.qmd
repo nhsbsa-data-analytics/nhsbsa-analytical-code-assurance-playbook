@@ -9,6 +9,7 @@ description: ""
 > * [NHSBSA DDaT playbook: Development - Coding][ddat-playbook]
 
 ## What is modular code?
+
 * Complex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks. 
 * Breaking down your code and workflow into smaller, independent, reusable chunks (modules) can help you maintain your project and share components across a series of analyses.
 * Each module ideally handles a specific task (aka separation of concerns) and interacts with others through well-defined interfaces (you should be able to use a module from the outside without needing to understand the internal complexity on the inside)
@@ -82,12 +83,14 @@ However, as your analysis matures it can be difficult to align notebooks with ot
 * it's hard to [test][testing] functions written in the notebook
 
 ## How do we define success?
+
 * Modular code should feel well-organised and easy to navigate. 
 * Repetition will be minimised through the use of small, reusable functions. 
 * The purpose of each part of the code will be clear to the reader, with similar pieces of logic grouped together. 
 * A [reviewer][peer-review] should help spot any potentially issues and suggest improvements.
 
 **Lookout for:**
+
 * Finding yourself scrolling-and-scrolling to look for a particular part of the code could indicate you should break it up into smaller modules!
 * Alternatively, needing to look through many, many files and maintain multiple tabs to understand and make changes might suggest reducing the modularity!
 
