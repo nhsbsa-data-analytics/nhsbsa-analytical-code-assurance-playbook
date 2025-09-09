@@ -68,29 +68,29 @@ website:
         contents: guidance/03-transparent/pages/*
         
   page-footer:
-    left:
-      - text: "Accessibility Statement"
-        href: accessibility.qmd
-      - text: "Contact Us"
-        href: mailto:analyticalassurance@nhsbsa.nhs.uk
-      - text: "GitHub"
-        href: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
+    left: |
+      * [Accessibility](/accessibility.qmd)
+      * [Contact](mailto:analyticalassurance@nhsbsa.nhs.uk)
+      * [GitHub](https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook)
+    
+      <img src="/static/ogl3-logo.svg" height="17" width="41" focusable="false">&nbsp;
+      All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.        
+              
     right:
-      - text: "All content is available under the Open Government Licence v3.0 except where otherwise stated"
-        href: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+      - text: "&copy Crown Copyright"
       
 format:
   html:
-   grid: 
-    sidebar-width: 25%
-   pagetitle: "Analytical Code Assurance"
-   lang: en-GB
-   theme: cosmo
-   css: styles.css
-   mainfont: "Arial"
-   fontsize: 130%
-   page-layout: full
-   toc: true
+    grid: 
+      sidebar-width: 25%
+    pagetitle: "Analytical Code Assurance"
+    lang: en-GB
+    theme: cosmo
+    css: styles.css
+    mainfont: "Arial"
+    fontsize: 130%
+    page-layout: full
+    toc: true
     
 execute:
   freeze: auto
