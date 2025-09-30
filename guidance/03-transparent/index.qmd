@@ -1,5 +1,0 @@
----
-title: "Analysis should be transparent"
-description: " "
-title-block-banner: true
----

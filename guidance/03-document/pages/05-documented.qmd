@@ -10,6 +10,22 @@ description: "Effective documentation is essential for any software project to b
 > * [NHSBSA DDaT playbook: Licensing software or code][ddat-playbook-licenses]
 > * [NHSBSA DDaT playbook: Standard code repository files][ddat-playbook-dev-doc]
 
+## Why should we document our code and project?
+
+* **Understanding:** Makes code and project purpose clear, improving transparency.
+* **Collaboration:** Reduces time to become productive for contributors and other users.
+* **Maintenance:** Makes modifying, fixing and refactoring code safer and easier.
+* **Improved Design:** Explaining complex parts often highlights areas for simplification or improvement.
+* **Accessibility:** Makes the project [accessible][accessible] and usable for its intended audience.
+* **Knowledge:** Prevents critical information loss when team members change.
+* **Standards:** Provides a record of how a project has been quality assured and facilitates reproducibility and transparency.
+
+Well documented code and projects can help meet the key principles of analytical code.
+
+* **Transparent:** Others can more easily understand what the analysis does, with important context like decisions and limitations.
+* **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier and trust is built.
+* **Quality assured:** It is easier for others to review both the code and project as a whole.
+
 ## What sort of documentation is needed?
 
 Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.
@@ -20,16 +36,6 @@ We should document:
 * how to install or run code or other outputs and their dependencies
 * how to use code or other outputs like apps or dashboards
 * decisions and changes across a project lifecycle
-
-## Why should we document our code and project?
-
-* **Understanding:** Makes code and project purpose clear, improving [transparency][transparent].
-* **Collaboration:** Reduces time to become productive for contributors and other users.
-* **Maintenance:** Makes modifying, fixing and refactoring code safer and easier.
-* **Improved Design:** Explaining complex parts often highlights areas for simplification or improvement.
-* **Accessibility:** Makes the project [accessible][accessible] and usable for its intended audience.
-* **Knowledge:** Prevents critical information loss when team members change.
-* **Standards:** Provides a record of how a project has been [quality assured][quality-assured] and facilitates [reproducibility][reproducible] and [transparency][transparent].
 
 ## How do we create and maintain quality documentation?
 
@@ -68,17 +74,15 @@ There are considerations that apply to the project itself, or just to code, in a
 	
 **Lookout for:**
 
-* [Critical friends][critical-friend] and other [peer-reviewers][peer-review] should consider and feedback on documentation, in addition to code and outputs.
-* Creating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates.
-* Include documentation in retrospective discussions to ensure it's improving and evolving in line with the rest of the analysis.
+* [critical friends][critical-friend] and other [peer-reviewers][peer-review] should consider and feedback on documentation, in addition to code and outputs
+* creating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates
+* include documentation in retrospective discussions to ensure it's improving and evolving in line with the rest of the analysis
+
 
 [duck-book-code-doc]: https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html
 [duck-book-project-doc]: https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html
 [ddat-playbook-licenses]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/
 [ddat-playbook-dev-doc]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/
-[transparent]: /guidance/03-transparent/index.qmd
-[accessible]: /guidance/01-reproducible/pages/02-accessible.qmd
-[quality-assured]: /guidance/02-quality-assured/index.qmd
-[reproducible]: /guidance/01-reproducible/index.qmd
+[accessible]: /guidance/02-develop/pages/02-readable.qmd
 [critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-data-science-playbook/guidance/03-analysis/analysis-steps/04-review.html#critical-friend-review
-[peer-review]: /guidance/02-quality-assured/pages/06-peer-reviewed.qmd
+[peer-review]: /guidance/04-peer-review/pages/07-peer-reviewed.qmd

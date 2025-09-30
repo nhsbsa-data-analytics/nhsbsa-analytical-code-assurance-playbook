@@ -1,0 +1,109 @@
+---
+title: "Peer-reviewed"
+description: "Peer review is essential for quality code, and helps ensure transparency and reproducibility."
+---
+
+> ### Pre-requisite reading
+> * [AF Duck Book: Peer review][duck-book]
+> * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook]
+
+## Why should code be peer reviewed?
+
+* **Improving quality of code**: As part of the peer review process code will be reviewed to ensure that it is readable and understandable.
+* **Consistency**: Promotes consistency by ensuring adherence to team standards and style guides.
+* **Alternative Perspectives**: Provides alternative perspectives that might lead to simpler or more robust solutions.
+* **Sharing knowledge**: Review code can improve the knowledge of both the original code author and the reviewer.
+* **Optimising code performance**: As part of the review process, different approaches may be found that could improve the code.
+* **Find potential mistakes in the code**: Although peer review is not a replacement for testing, it can find potential bugs or issues in the code.
+
+Peer reviewed code and projects can help meet the key principles of analytical code.
+
+* **Transparent:** Questions that do not have obvious answers already arise, which can then be addressed.
+* **Reproducible:** A good peer review will include running all code and data preparation.
+* **Quality assured:** In addition to catching issues that when addressed will improve quality, builds trust that the code and project has been checked.
+
+## What is peer review?
+
+Peer review is a process where a colleague provides constructive feedback aimed at improving the quality, validity, and maintainability of code or workflows before they are finalised and used to produce output.
+
+## How do we do it then?
+
+When using version control tools such as Git, peer review should be part of the branching and pull request process (see [DDaT Playbook][ddat-playbook]). Ideally a pull request should not be merged without the code being reviewed by another person. In analytical projects, code reviews are often (although not always) the responsibilities of the [Critical Friend][critical-friend]. 
+
+Using version control tools the basic steps for a peer review are:
+<!-- DRAFT NOTE: do we need more details or is this repeating DDaT playbook -->
+
+1. Code author submits merge request for branch used to develop code.
+1. Reviewer reviews the code and adds comments for any potential issues, including whether:
+    * the code is readable and understandable
+    * the code is tested, and does what it is designed for
+    * other approaches may have been better
+1. Author reviews comments and amends code as needed.
+    * Comments can and should be challenged if there is any disagreement to agree a resolution between the author and reviewer.
+1. Reviewer approves amended code checking all issues have been resolved.
+1. Branch merged by author.
+
+**Code Author**
+
+* **Do** submit code for review in manageable and related chunks.
+* **Do** ensure your code runs correctly and passes relevant tests before before a review.
+* **Do** provide context and additional explanation when required.
+* **Do** carefully consider all reviewer feedback; discuss comments you disagree with or are unsure of to reach an understanding.
+* **Do** document changes made and decisions taken based on the review feedback.
+* **Don't** bypass or rush the review process just to merge code faster.
+* **Don't** submit unrelated changes together.
+* **Don't** blindly accept and implement all reviewer comments.
+
+**Reviewer**
+
+* **Do** thoroughly review the code, understanding its purpose and verifying it does what is expected.
+* **Do** provide clear, constructive, and actionable feedback; explain the *why* of your suggestions.
+* **Do** document identified issues, potential improvements, or questions clearly.
+* **Don't** Simply glance over the code and approve it without scrutiny.
+* **Don't** Delay reviews unnecessarily, blocking the author's progress.
+* **Don't** Be overly critical or personal in your feedback.
+
+Whenever feasible, analytical code and low-or-no-code artifacts should be version controlled. Version control tools facilitate [peer-review][ddat-playbook-peer-review], among [other benefits][version-control].
+
+However, even where version control tools are not used, peer review should still be done, including recording of any feedback and amendments requested during the review process.
+
+## Pair programming
+
+Instead of having the code writing and peer review as two distinct phases, pair programming combines these into a single step with two or more people actively working on the same piece of code at the same time. Effective pair programming will involve one person writing the code whilst the other(s) supply real time feedback on the code being written.
+
+The benefits of pair programming are that feedback can be provided as the code is being written, suggesting improvements or identifying/fixing issues as they appear. Additionally, pair programming can be a good method to share knowledge and experience between individuals.
+
+Pair programming may require more resource during the development stage but at the benefit in a reduction of resource needed in the review stage.
+
+For pair programming to be effective there are guidelines that should be followed.
+
+### Rotate roles often
+
+Everyone should take turns writing and reviewing which could mean switching roles every 15-30 minutes. 
+This will ensure everyone gets experience from both sides of the process and will solidify the knowledge of the code being written.
+
+### Document large decisions
+
+Pair programming allows real-time discussion and decision making but where big decisions in terms of approach have been made these should still be documented for anybody who may use the code in future.
+
+### Be vocal and ask questions
+
+Pair programming is a collaborative process and should not just involve one person watching another code. The person writing the code should be talking through what they are writing, and the reviewer should be supplying feedback and asking for clarification if there are parts that they do not understand. Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.
+
+## How do we define success?
+
+* Reviewers should understand what they are expected to review ahead of time.
+* Developers should receive kind, constructive feedback that improves quality.
+* Reviews should be proportionate to the complexity and importance of the analysis.
+
+**Lookout for:**
+
+* there is often more than one way to achieve a certain task: reviewers should look at whether what has been delivered aligns with best practice, rather than whether they would have done it that way!
+* avoid asking for review on very large pieces of work in one go - try breaking it up to make it easier for the reviewer!
+
+
+[duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
+[ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
+[version-control]: /guidance/02-develop/pages/03-version-controlled.qmd
+[critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/03-responsibilities/pages/11-critical-friend.html
+[ddat-playbook-peer-review]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/

@@ -25,7 +25,7 @@ It is intended to complement, not replace, existing UK government and NHS guidan
 * [NHS Health RAP playbook][health-rap]
 * [Department of Health and Social Care (DHSC)][dhsc] 
 
-The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more): 
+The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following stages of the analytical cycle (click to explore more): 
 ---
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html
