@@ -10,6 +10,17 @@ description: "Effective documentation is essential for any software project to b
 > * [NHSBSA DDaT playbook: Licensing software or code][ddat-playbook-licenses]
 > * [NHSBSA DDaT playbook: Standard code repository files][ddat-playbook-dev-doc]
 
+## What sort of documentation is needed?
+
+Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.
+
+We should document:
+
+* a project's purpose and scope
+* how to install or run code or other outputs and their dependencies
+* how to use code or other outputs like apps or dashboards
+* decisions and changes across a project lifecycle
+
 ## Why should we document our code and project?
 
 * **Understanding:** Makes code and project purpose clear, improving transparency.
@@ -25,17 +36,6 @@ Well documented code and projects can help meet the key principles of analytical
 * **Transparent:** Others can more easily understand what the analysis does, with important context like decisions and limitations.
 * **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier and trust is built.
 * **Quality assured:** It is easier for others to review both the code and project as a whole.
-
-## What sort of documentation is needed?
-
-Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.
-
-We should document:
-
-* a project's purpose and scope
-* how to install or run code or other outputs and their dependencies
-* how to use code or other outputs like apps or dashboards
-* decisions and changes across a project lifecycle
 
 ## How do we create and maintain quality documentation?
 

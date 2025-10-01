@@ -8,6 +8,10 @@ description: "Readable code is helpful for transparency and reusability and a ma
 > * [AF Duck book: Readable code][duck-book]
 > * [NHSBSA DDaT playbook: Naming conventions][ddat-playbook]
 
+## What is readable code?
+
+Readable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader's experience over the convenience of writing code.
+
 ## Why should we write readable code?
 
 * Simpler and faster for readers (including yourself!) to understand.
@@ -22,10 +26,6 @@ Readable code can help meet the key principles of analytical code.
 * **Transparent:** Others can more easily understand what the code does.
 * **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier.
 * **Quality assured:** As well as improving the quality of code, it is easier for others to review it.
-
-## What is readable code?
-
-Readable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader's experience over the convenience of writing code.
 
 ## How do we write readable code?
 

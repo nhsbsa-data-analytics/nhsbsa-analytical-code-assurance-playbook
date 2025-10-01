@@ -3,6 +3,10 @@ title: "Open Source"
 description: "Publishing analytical code as open source increases transparency, collaboration, and reusability."
 ---
 
+## What is open source?
+
+Open source is a way of developing and distributing software. The code can be viewed, downloaded, used and changed by anyone.
+
 ## Why publish analytical code as open source?
 
 * **Transparent:** Others can see how analyses are performed, increasing trust in results.

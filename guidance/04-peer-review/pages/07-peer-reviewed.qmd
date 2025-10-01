@@ -7,6 +7,10 @@ description: "Peer review is essential for quality code, and helps ensure transp
 > * [AF Duck Book: Peer review][duck-book]
 > * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook]
 
+## What is peer review?
+
+Peer review is a process where a colleague provides constructive feedback aimed at improving the quality, validity, and maintainability of code or workflows before they are finalised and used to produce output.
+
 ## Why should code be peer reviewed?
 
 * **Improving quality of code**: As part of the peer review process code will be reviewed to ensure that it is readable and understandable.
@@ -21,10 +25,6 @@ Peer reviewed code and projects can help meet the key principles of analytical c
 * **Transparent:** Questions that do not have obvious answers already arise, which can then be addressed.
 * **Reproducible:** A good peer review will include running all code and data preparation.
 * **Quality assured:** In addition to catching issues that when addressed will improve quality, builds trust that the code and project has been checked.
-
-## What is peer review?
-
-Peer review is a process where a colleague provides constructive feedback aimed at improving the quality, validity, and maintainability of code or workflows before they are finalised and used to produce output.
 
 ## How do we do it then?
 
