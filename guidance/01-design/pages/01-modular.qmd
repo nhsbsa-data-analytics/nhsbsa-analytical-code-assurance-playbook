@@ -24,7 +24,7 @@ description: "Modular code is an important paradigm for code, aiding resuability
 * Speeds up the [peer review][peer-review] process.
 * Makes sharing and reusing code easier.
 
-Modular code can help meet the key principles of analytical code.
+### Alignment with analytical code key principles
 
 * **Transparent:** Others can more easily understand the steps taken.
 * **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier.
