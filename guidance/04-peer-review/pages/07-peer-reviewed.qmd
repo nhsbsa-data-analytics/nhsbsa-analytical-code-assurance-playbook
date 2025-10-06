@@ -20,7 +20,7 @@ Peer review is a process where a colleague provides constructive feedback aimed 
 * **Optimising code performance**: As part of the review process, different approaches may be found that could improve the code.
 * **Find potential mistakes in the code**: Although peer review is not a replacement for testing, it can find potential bugs or issues in the code.
 
-Peer reviewed code and projects can help meet the key principles of analytical code.
+### Alignment with analytical code key principles
 
 * **Transparent:** Questions that do not have obvious answers already arise, which can then be addressed.
 * **Reproducible:** A good peer review will include running all code and data preparation.
