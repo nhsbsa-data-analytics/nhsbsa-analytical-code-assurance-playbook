@@ -21,7 +21,7 @@ Readable code is written with clarity and simplicity, making it easy for others 
 * Speeds up the onboarding process for new team members.
 * Demonstrates professionalism and care, enhancing organisation and team image.
 
-Readable code can help meet the key principles of analytical code.
+### Alignment with analytical code key principles
 
 * **Transparent:** Others can more easily understand what the code does.
 * **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier.
