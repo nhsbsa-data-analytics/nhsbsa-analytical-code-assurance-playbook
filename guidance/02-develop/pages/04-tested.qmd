@@ -30,7 +30,7 @@ There are many different types of tests, each aimed to address a different aspec
 * **Serve as [Documentation][documented]:** Well-written tests can illustrate intended use and expected behaviour.
 * **Facilitate Collaboration:** Ensure that contributions from different team members integrate correctly.
 
-Well tested code can help meet the key principles of analytical code.
+### Alignment with analytical code key principles
 
 * **Transparent:** Others can be more trusting of the results of the code, knowing it has been tested.
 * **Reproducible:** By testing the code, issues that could make it less reproducible are more easily found.
