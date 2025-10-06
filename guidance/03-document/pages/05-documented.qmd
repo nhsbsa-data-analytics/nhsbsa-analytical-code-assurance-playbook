@@ -31,7 +31,7 @@ We should document:
 * **Knowledge:** Prevents critical information loss when team members change.
 * **Standards:** Provides a record of how a project has been quality assured and facilitates reproducibility and transparency.
 
-Well documented code and projects can help meet the key principles of analytical code.
+### Alignment with analytical code key principles
 
 * **Transparent:** Others can more easily understand what the analysis does, with important context like decisions and limitations.
 * **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier and trust is built.
