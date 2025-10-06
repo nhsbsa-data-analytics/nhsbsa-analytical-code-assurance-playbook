@@ -1,0 +1,17 @@
+---
+title: "Document"
+description: "Documentation is needed at different levels"
+title-block-banner: true
+listing:
+  type: grid
+  contents: "/pages/**.qmd"
+  sort: "path"
+---
+
+There are different levels of documentation.
+
+- Code: This includes things like function documentation and code comments, and also overall usage instructions.
+- Project: Documentation at this level includes things like Problem Definitions, decision logs and QA log.
+- Analysis: This refers to [outputs of the analysis][outputs], such as written reports or interactive apps.
+
+[outputs]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/02-analytical-cycle/pages/06-delivery-and-approval.html

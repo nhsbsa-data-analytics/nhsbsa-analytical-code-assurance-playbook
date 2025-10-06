@@ -1,0 +1,14 @@
+---
+title: "Design"
+description: "The design of analytical code should be appropriate to the requirements at hand"
+title-block-banner: true
+listing:
+  type: grid
+  contents: "/pages/**.qmd"
+  sort: "path"
+---
+
+The [design of analytical code][design] should be appropriate to the requirements agreed on in the [Customer Engagement/Scoping][scoping] stage of the analytical cycle. Design decisions may be revisited and change as the analysis proceeds.
+
+[design]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/02-analytical-cycle/pages/04-analysis-design.html
+[scoping]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/02-analytical-cycle/pages/03-customer-engagement.html

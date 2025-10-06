@@ -1,0 +1,53 @@
+---
+title: "Readable"
+description: "Readable code is helpful for transparency and reusability and a marker of quality analysis."
+---
+
+> ### Pre-requisite reading
+>
+> * [AF Duck book: Readable code][duck-book]
+> * [NHSBSA DDaT playbook: Naming conventions][ddat-playbook]
+
+## What is readable code?
+
+Readable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader's experience over the convenience of writing code.
+
+## Why should we write readable code?
+
+* Simpler and faster for readers (including yourself!) to understand.
+* Reduces risk of bugs and simplifies debugging and future maintenance.
+* Enhances collaboration by making it easier to share and reuse code across teams / projects.
+* Encourages coding best practices.
+* Speeds up the onboarding process for new team members.
+* Demonstrates professionalism and care, enhancing organisation and team image.
+
+### Alignment with analytical code key principles
+
+* **Transparent:** Others can more easily understand what the code does.
+* **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier.
+* **Quality assured:** As well as improving the quality of code, it is easier for others to review it.
+
+## How do we write readable code?
+
+* Use clear and descriptive names for variables, functions and other objects.
+* Regularly [refactor](https://en.wikipedia.org/wiki/Code_refactoring) to improve code clarity.
+* Comments to explain the 'why', not the 'how' or 'what (if you find yourself explaining what your code does or how it does it, then it probably needs to be refactored!).
+* Adhere to a consistent [style guide][ddat-style-guide] (ideally discuss and agree this with your team before you start!).
+
+By following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. For more detailed insights, please refer to the recommended pre-requisite reading.
+
+## How do we define success?
+
+* You should always review your code after you have written it to check for and fix any obvious issues.
+* [Peer-review][peer-review] should highlight any issues spotted when someone else tries to read your code.
+
+**Lookout for:**
+
+* try putting what you have written to one side, or leaving it overnight - does it still make sense when you come back?
+* code can always be improved, so try to make it 'good enough' and avoid falling into the trap of never finishing!
+
+
+[duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/readable_code.html
+[ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-naming-conventions/
+[ddat-style-guide]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-style-guide/
+[peer-review]: /guidance/04-peer-review/pages/07-peer-reviewed.qmd

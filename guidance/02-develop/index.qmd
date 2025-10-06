@@ -1,0 +1,13 @@
+---
+title: "Develop"
+description: "Code should be accessible, version controlled and tested"
+title-block-banner: true
+listing:
+  type: grid
+  contents: "/pages/**.qmd"
+  sort: "path"
+---
+
+[Development of analytical code][development] is usually an iterative process. Unanticipated problems, feedback and code reviews can result in the need to make changes.
+
+[development]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/02-analytical-cycle/pages/05-conducting-the-analysis.html

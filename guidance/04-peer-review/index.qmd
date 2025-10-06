@@ -1,0 +1,13 @@
+---
+title: "Peer review"
+description: "You can't mark your own homework!"
+title-block-banner: true
+listing:
+  type: grid
+  contents: "/pages/**.qmd"
+  sort: "path"
+---
+
+All code should be [carefully reviewed][review] by someone other than the person writing it.
+
+[review]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/02-analytical-cycle/pages/05-conducting-the-analysis.html#:~:text=Conducting%20Analysis%20Assurance

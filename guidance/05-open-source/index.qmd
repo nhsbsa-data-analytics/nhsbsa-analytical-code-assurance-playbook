@@ -1,0 +1,13 @@
+---
+title: "Open source"
+description: "Open sourcing code should be the default"
+title-block-banner: true
+listing:
+  type: grid
+  contents: "/pages/**.qmd"
+  sort: "path"
+---
+
+The [UK Government Technology Code of Practice][open-source] stipulates a preference for open sourcing of code.
+
+[open-source]: https://www.gov.uk/guidance/the-technology-code-of-practice#be-open-and-use-open-source

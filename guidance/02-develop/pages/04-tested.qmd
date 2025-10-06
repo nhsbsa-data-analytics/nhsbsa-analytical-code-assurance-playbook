@@ -10,12 +10,9 @@ description: "Testing is fundamental to the quality assurance of analysis."
 
 ## What types of testing should be done?
 
-Testing is fundamental to assuring quality of analytical processes.
-It helps us ensure the things we've written to generate our analyses (e.g. code, workflows, excel workbooks, etc) work as expected and reduces the risk of errors in our results. 
-Testing also builds confidence that results are [reproducible][reproducible] and helps anyone to [easily verify this][transparent].
+Testing is fundamental to assuring quality of analytical processes. It helps us ensure the things we've written to generate our analyses (e.g. code, workflows, excel workbooks, etc) work as expected and reduces the risk of errors in our results. Testing also builds confidence that results are reproducible and helps anyone to easily verify this.
 
-There are many different types of tests, each aimed to address a different aspect of quality assurance. 
-In analytical work, the following are often the most important to consider:
+There are many different types of tests, each aimed to address a different aspect of quality assurance. In analytical work, the following are often the most important to consider:
 
 | Type | Description | Benefits |
 | ----- | ------------- | -------- |
@@ -26,12 +23,18 @@ In analytical work, the following are often the most important to consider:
 ## Why should we test our analysis?
 
 * **Verify Correctness:** Ensure our processes behave as intended and meet the requirements.
-* **Provide Confidence:** Increase confidence in the code's reliability and the [reproducibility][reproducible] of results.
+* **Provide Confidence:** Increase confidence in the code's reliability and the reproducibility of results.
 * **Catch Bugs (Early):** Identify and fix issues during development, when they are cheapest and easiest to resolve.
 * **Improve Design:** Writing testable processes often leads to better, more [modular][modular], and loosely coupled designs.
 * **Enable Refactoring:** Act as a safety net to enable us to make improvements while knowing that our results are not impacted.
 * **Serve as [Documentation][documented]:** Well-written tests can illustrate intended use and expected behaviour.
 * **Facilitate Collaboration:** Ensure that contributions from different team members integrate correctly.
+
+### Alignment with analytical code key principles
+
+* **Transparent:** Others can be more trusting of the results of the code, knowing it has been tested.
+* **Reproducible:** By testing the code, issues that could make it less reproducible are more easily found.
+* **Quality assured:** Testing is inherently an activity that increases assurance of quality.
 
 ## How do we test our analysis?
 
@@ -44,12 +47,13 @@ In analytical work, the following are often the most important to consider:
 * **Maintain Tests:** As your analysis [evolves][version-controlled], be sure to update your tests, refactor them, remove obsolete tests and add new ones. 
 
 ### Testing code
-If you are producing analysis using code, the following points can help you go even further:
+
+If you are producing analysis using code, the following points can help you go even further.
+
 * **Use Testing Frameworks:** Use established testing frameworks appropriate for the coding language.
 * **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
 
-It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. 
-This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
+It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
 
 ## How do we define success?
 	
@@ -62,14 +66,13 @@ This is a good reason to regularly run all existing unit, integration and E2E te
 	
 **Lookout for:**
 	
-- Apply the 80/20 rule - the most effective use of time writing tests will be spent on the first 20% of tests that cover 80% of the key logic. 
-- Plan for long term maintenance - you'll need to maintain your tests, so design them carefully and stop before you write more than you can realistically keep up-to-date.
-- Avoid testing implementation details - focusing on the *what* rather than the *how* will improve your designs, make refactoring easier and avoid you having to update tests every time you update your code.
+- apply the 80/20 rule - the most effective use of time writing tests will be spent on the first 20% of tests that cover 80% of the key logic
+- plan for long term maintenance - you'll need to maintain your tests, so design them carefully and stop before you write more than you can realistically keep up-to-date
+- avoid testing implementation details - focusing on the *what* rather than the *how* will improve your designs, make refactoring easier and avoid you having to update tests every time you update your code
+
 
 [duck-book-testing]: https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html
 [ddat-playbook-testing]: https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/
-[reproducible]: /guidance/01-reproducible/index.qmd
-[transparent]: /guidance/03-transparent/index.qmd
-[documented]: /guidance/01-reproducible/pages/01-documented.qmd
-[modular]: /guidance/01-reproducible/pages/03-modular.qmd
-[version-controlled]: /guidance/01-reproducible/pages/04-version-controlled.qmd
+[documented]: /guidance/03-document/pages/05-documented.qmd
+[modular]: /guidance/01-design/pages/01-modular.qmd
+[version-controlled]: /guidance/02-develop/pages/03-version-controlled.qmd
