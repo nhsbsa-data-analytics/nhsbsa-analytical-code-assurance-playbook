@@ -9,6 +9,7 @@ Open source is a way of developing and distributing software. The code can be vi
 
 ## Why publish analytical code as open source?
 
+### Alignment with analytical code key principles
 * **Transparent:** Others can see how analyses are performed, increasing trust in results.
 * **Reproducible:** Open code makes it easier to verify and reproduce results, and to reuse code.
 * **Quality assured:** Open review and feedback help identify issues and improve code.
