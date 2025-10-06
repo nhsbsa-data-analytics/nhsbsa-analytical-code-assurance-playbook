@@ -1,11 +1,35 @@
 [
   {
-    "listing": "/guidance/01-reproducible/index.html",
+    "listing": "/guidance/05-open-source/index.html",
     "items": [
-      "/guidance/01-reproducible/pages/01-documented.html",
-      "/guidance/01-reproducible/pages/02-readable.html",
-      "/guidance/01-reproducible/pages/03-modular.html",
-      "/guidance/01-reproducible/pages/04-version-controlled.html"
+      "/guidance/05-open-source/pages/08-open-source.html"
+    ]
+  },
+  {
+    "listing": "/guidance/04-peer-review/index.html",
+    "items": [
+      "/guidance/04-peer-review/pages/07-peer-reviewed.html"
+    ]
+  },
+  {
+    "listing": "/guidance/02-develop/index.html",
+    "items": [
+      "/guidance/02-develop/pages/02-readable.html",
+      "/guidance/02-develop/pages/03-version-controlled.html",
+      "/guidance/02-develop/pages/04-tested.html"
+    ]
+  },
+  {
+    "listing": "/guidance/01-design/index.html",
+    "items": [
+      "/guidance/01-design/pages/01-modular.html"
+    ]
+  },
+  {
+    "listing": "/guidance/03-document/index.html",
+    "items": [
+      "/guidance/03-document/pages/05-documented.html",
+      "/guidance/03-document/pages/06-decisions-logged.html"
     ]
   }
 ]

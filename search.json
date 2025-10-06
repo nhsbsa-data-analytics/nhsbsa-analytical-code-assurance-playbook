@@ -14,160 +14,238 @@
     "text": "This accessibility statement applies to the NHSBSA Analytical Code Assurance Playbook website.\nThis website is run by the NHS Business Services Authority (NHSBSA). We want as many people as possible to be able to use this website. For example, that means you should be able to:\n\nzoom in up to 400% without the text spilling off the screen\nlisten to most of the website using a screen reader (including the most recent version of NVDA)\nnavigate most of the website using just a keyboard or speech recognition software (Dragon)\nchange colours, contrast levels and fonts using browser or device settings\n\nWe’ve also made the website text as simple as possible to understand.\nAbilityNet has advice on making your device easier to use if you have a disability.\n\n\nWe know some parts of this website are not fully accessible, as:\n\nnavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order\nzooming can only be done to a limited extent due to content becoming unviewable\nthe report has links to external PDF or Excel documents and websites which may have accessibility issues\n\n\n\n\nIf you need information on this website in a different format such as accessible PDF, large print, easy read, audio recording or braille, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nWe’ll consider your request and get back to you in 5 working days.\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nWe’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, you can contact us by:\nEmail: accessibility@nhsbsa.nhs.uk\nThis email address is only for accessibility queries. It is not for technical queries or IT problems. If you have a query that is not about accessibility, go to the ‘Contact us’ section of this page.\n\n\n\nFor all queries not accessibility related, you can contact us by:\nEmail: dall@nhsbsa.nhs.uk\n\n\n\nThe Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).\nIf you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).\n\n\n\nThe NHSBSA is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.\n\n\nThis website is partially compliant with the Web Content Accessibility Guidelines version 2.2 AA standard, due to the non-compliances listed below.\n\n\n\n\nThe content listed below is non-accessible for the following reasons.\n\n\nNavigation by tabbing does not always follow a left-to-right, top-to-bottom visual order. This fails WCAG 2.2 success criterion 2.4.3 (Focus Order).\nZooming can only be done to a limited extent due to content becoming unviewable. This fails WCAG 2.2 success criterion 1.4.10 (Reflow).\nThe report has links to external PDF or Excel documents and websites which may have accessibility issues. This fails WCAG 2.2 success criteria 1.1.1 (Non-text Content), 1.3.1 (Info and Relationships) and 4.1.2 (Name, role, value).\nWe plan to fix these issues. When we publish new content, we’ll make sure it meets accessibility standards.\n\n\n\n\nWe’re committed to making sure this website is compliant to WCAG 2.2 ‘AA’ standard.\nOur accessibility compliance statement will be reviewed regularly. Every newly released website will be designed, built, and tested to meet ‘AA’ standards by default.\n\n\n\nThis statement was originally prepared on 16 April 2025. It was last reviewed on 16 April 2025.\nThis website was last tested on 16 April 2025 against the WCAG 2.2 AA standard.\nThe test was carried out by the NHSBSA test and development teams. The most viewed pages were tested using automated testing tools by our website team. A further audit of the website was carried out to the WCAG 2.2 AA standard.\nWe tested all the website screens to meet ‘AA’ WCAG 2.2 standards, using manual and automated tests.\nWe run each webpage through automated Wave, Lighthouse and Axe accessibility tools then manually test with screen readers (NVDA) and standards checklists. We run representative user journey tests through speech recognition software (Dragon).\nThese checklists contain standards that have been compiled using WCAG, the NHS service manual and the Government Digital Service (GDS) guidance."
   },
   {
-    "objectID": "guidance/03-transparent/pages/07-decisions-logged.html",
-    "href": "guidance/03-transparent/pages/07-decisions-logged.html",
+    "objectID": "guidance/05-open-source/index.html",
+    "href": "guidance/05-open-source/index.html",
+    "title": "Open source",
+    "section": "",
+    "text": "The UK Government Technology Code of Practice stipulates a preference for open sourcing of code.\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source\n\n\nPublishing analytical code as open source increases transparency, collaboration, and reusability.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Playbook Home Page",
+      "Open source"
+    ]
+  },
+  {
+    "objectID": "guidance/03-document/pages/06-decisions-logged.html",
+    "href": "guidance/03-document/pages/06-decisions-logged.html",
     "title": "Decisions Logged",
     "section": "",
     "text": "Lorem ipsum dolor sit veritum …",
     "crumbs": [
       "Playbook Home Page",
-      "Transparent",
+      "Document",
       "Decisions Logged"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html",
-    "title": "Peer-reviewed",
+    "objectID": "guidance/01-design/pages/01-modular.html",
+    "href": "guidance/01-design/pages/01-modular.html",
+    "title": "Modular",
     "section": "",
-    "text": "AF Duck Book: Peer review\nNHSBSA DDaT Playbook: Development - Peer Review",
+    "text": "AF Duck book: Modular code\nNHSBSA DDaT playbook: Development - Coding",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
+      "Design",
+      "Modular"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#what-is-peer-review",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#what-is-peer-review",
-    "title": "Peer-reviewed",
-    "section": "What is peer review?",
-    "text": "What is peer review?\nPeer review is a process where a colleague provides constructive feedback aimed at improving the quality, validity, and maintainability of code or workflows before they are finalised and used to produce output.",
+    "objectID": "guidance/01-design/pages/01-modular.html#what-is-modular-code",
+    "href": "guidance/01-design/pages/01-modular.html#what-is-modular-code",
+    "title": "Modular",
+    "section": "What is modular code?",
+    "text": "What is modular code?\n\nComplex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks.\nBreaking down your code and workflow into smaller, independent, reusable chunks (modules) can help you maintain your project and share components across a series of analyses.\nEach module ideally handles a specific task (aka separation of concerns) and interacts with others through well-defined interfaces (you should be able to use a module from the outside without needing to understand the internal complexity on the inside).\nLanguages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
+      "Design",
+      "Modular"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#why-should-i-do-this",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#why-should-i-do-this",
-    "title": "Peer-reviewed",
-    "section": "Why should I do this?",
-    "text": "Why should I do this?\nBenefits from peer review include:\n\nImproving quality of code: As part of the peer review process code will be reviewed to ensure that it is readable and understandable\nConsistency: Promotes consistency by ensuring adherence to team standards and style guides\nAlternative Perspectives: Provides alternative perspectives that might lead to simpler or more robust solutions\nSharing knowledge: Review code can improve the knowledge of both the original code author and the reviewer\nOptimising code performance: As part of the review process, different approaches may be found that could improve the code\nFind potential mistakes in the code: Although peer review is not a replacement for testing, it can find potential bugs or issues in the code",
+    "objectID": "guidance/01-design/pages/01-modular.html#why-should-code-be-modular",
+    "href": "guidance/01-design/pages/01-modular.html#why-should-code-be-modular",
+    "title": "Modular",
+    "section": "Why should code be modular?",
+    "text": "Why should code be modular?\n\nPromotes readability by preventing long, complex walls of code that are hard to understand.\nMultiple team members working on same codebase will have less code conflicts.\nSimplifies testing of the code (and its outputs).\nSmaller modules are easier to maintain or improve in future.\nSpeeds up the peer review process.\nMakes sharing and reusing code easier.\n\n\nAlignment with analytical code key principles\n\nTransparent: Others can more easily understand the steps taken.\nReproducible: Although not making the code inherently reproducible, reproducing it is made easier.\nQuality assured: As well as improving the quality of code, it is easier for others to review it.",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
+      "Design",
+      "Modular"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-do-it-then",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-do-it-then",
-    "title": "Peer-reviewed",
+    "objectID": "guidance/01-design/pages/01-modular.html#how-do-we-do-it-then",
+    "href": "guidance/01-design/pages/01-modular.html#how-do-we-do-it-then",
+    "title": "Modular",
     "section": "How do we do it then?",
-    "text": "How do we do it then?\nWhen using version control tools such as Git, peer review should be part of the branching and pull request process (see DDaT Playbook). Ideally a pull request should not be merged without the code being reviewed by another person. In analytical projects, code reviews are often (although not always) the responsibilities of the Critical Friend.\nUsing version control tools the basic steps for a peer review are: \n\nCode author submits merge request relating for branch used to develop code\nReviewer reviews the code and adds comments for any potential issues, including the following areas:\n\nIs the code readable and understandable?\nIs the code tested, and does the code do what it is designed for?\nCould the problem have been approached in a different way?\n\nAuthor reviews comments and amends code as needed\n\nComments can and should be challenged if there is any disagreement to agree a resolution between the author and reviewer\n\nReviewer approves amended code checking all issues have been resolved\nBranch merged\n\nAs the Code Author:\n\nDo submit code for review in manageable and related chunks.\nDo ensure your code runs correctly and passes relevant tests before before a review.\nDo provide context and additional explanation when required.\nDo carefully consider all reviewer feedback; discuss comments you disagree with or are unsure of to reach an understanding.\nDo document changes made and decisions taken based on the review feedback.\nDon’t bypass or rush the review process just to merge code faster.\nDon’t submit unrelated changes together.\nDon’t blindly accept and implement all reviewer comments.\n\nAs the Reviewer:\n\nDo thoroughly review the code, understanding its purpose and verifying it does what is expected.\nDo provide clear, constructive, and actionable feedback; explain the why of your suggestions.\nDo document identified issues, potential improvements, or questions clearly.\nDon’t Simply glance over the code and approve it without scrutiny.\nDon’t Delay reviews unnecessarily, blocking the author’s progress.\nDon’t Be overly critical or personal in your feedback.\n\nWhenever feasible, analytical code and low-or-no-code artifacts should be version controlled. Version control tools facilitate peer-review, among other benefits.\nHowever, even where version control tools are not used, peer review should still be done, including recording of any feedback and amendments requested during the review process.",
+    "text": "How do we do it then?\nWriting modular code or developing modular workflows can differ depending on the your tool of choice, the needs of the project or piece of work, the intended customer, or the expected users of the code in the future.\nHowever, a simple hierarchy of actions to take are to:\n\nsplit complex code and workflows in multiple (ordered) scripts or smaller workflows\nuse a code notebook to organise your analysis\nwrite re-usable code as functions\norganise related functions into modules\norganise and document modules as packages\nstarting from ‘monolithic’ code and refactoring over time is a valid strategy!\n\nLet’s dive into how we can do some of these.\n\nSplit your code into multiple scripts\nMonolithic code should be avoided as much as possible. A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug, and maintain, and your peer reviewer won’t thank you either! Splitting your monolithic code into ordered scripts can help yourself and others understand the steps you’ve taken and the reasons why.\n\nFor example, in R a large project could be split into:\nproject\n-- 01_data_build.R\n-- 02_data_clean.R\n-- 03_analysis.R\n-- 04_visualisation.R\nThese scripts can now be run in their intended order and splits out the parts of your code into related areas, making peer review easier.\nUsing scripts doesn’t inherently make your code reproducible or reusable, but are a good first step towards better and higher quality code.\nDo:\n\nsplit your code up\ngroup related code together\norganise your scripts so you and others know how to run it\nmake your scripts self contained and runnable from the command line\n\nDon’t:\n\nwrite monolithic code\nsplit up your code too much - 100 scripts with 10 lines of code in are just as hard to digest\nwrite overly complex code where simpler solutions might exist\n\n\n\nUsing notebooks\nTools such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. They can be incredibly useful starting points for exploring data, developing an analysis and are great for communicating results.\nHowever, as your analysis matures it can be difficult to align notebooks with other principles for producing high quality code.\n\nNotebooks are inherently difficult to review and audit using version control.\nCode cells can be ran out of order, reducing reproducibility.\nIt’s hard to test functions written in the notebook.",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
+      "Design",
+      "Modular"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#pair-programming",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#pair-programming",
-    "title": "Peer-reviewed",
-    "section": "Pair programming",
-    "text": "Pair programming\nInstead of having the code writing and peer review as two distinct phases, pair programming combines these into a single step with two or more people actively working on the same piece of code at the same time. Effective pair programming will involve one person writing the code whilst the other(s) supply real time feedback on the code being written.\nThe benefits of pair programming are that feedback can be provided as the code is being written, suggesting improvements or identifying/fixing issues as they appear. Additionally, pair programming can be a good method to share knowledge and experience between individuals.\nPair programming may require more resource during the development stage but at the benefit in a reduce of resource needed for a review stage.\nFor pair programming to be effective there are guidelines that should be followed:\n\nRotate roles often\nEveryone should take turns writing and reviewing which could mean switching roles every 15-30 minutes. This will ensure everyone gets experience from both sides of the process and will solidify the knowledge of the code being written.\n\n\nDocument large decisions\nPair programming allows real-time discussion and decision making but where big decisions in terms of approach have been made these should still be documented for anybody who may use the code in future.\n\n\nBe vocal and ask questions\nPair programming is a collaborative process and should not just involve one person watching another code. The person writing the code should be talking through what they are writing, and the reviewer should be supplying feedback and asking for clarification if there are parts that they do not understand. Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.",
-    "crumbs": [
-      "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
-    ]
-  },
-  {
-    "objectID": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-define-success",
-    "href": "guidance/02-quality-assured/pages/06-peer-reviewed.html#how-do-we-define-success",
-    "title": "Peer-reviewed",
+    "objectID": "guidance/01-design/pages/01-modular.html#how-do-we-define-success",
+    "href": "guidance/01-design/pages/01-modular.html#how-do-we-define-success",
+    "title": "Modular",
     "section": "How do we define success?",
-    "text": "How do we define success?\n\nReviewers should understand what they are expected to review ahead of time\nDevelopers should receive kind, constructive feedback that improves quality\nReviews should be proportionate to the complexity and importance of the analysis\n\nLookout for:\n\nThere is often more than one way to achieve a certain task: reviewers should look at whether what has been delivered aligns with best practice, rather than whether they would have done it that way!\nAvoid asking for review on very large pieces of work in one go - try breaking it up to make it easier for the reviewer!",
+    "text": "How do we define success?\n\nModular code should feel well-organised and easy to navigate.\nRepetition will be minimised through the use of small, reusable functions.\nThe purpose of each part of the code will be clear to the reader, with similar pieces of logic grouped together.\nA reviewer should help spot any potentially issues and suggest improvements.\n\nLookout for:\n\nfinding yourself scrolling-and-scrolling to look for a particular part of the code could indicate you should break it up into smaller modules!\nalternatively, needing to look through many, many files and maintain multiple tabs to understand and make changes might suggest reducing the modularity!",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Peer-reviewed"
+      "Design",
+      "Modular"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/01-documented.html",
-    "href": "guidance/01-reproducible/pages/01-documented.html",
-    "title": "Documented",
-    "section": "",
-    "text": "AF Duck book: Code documentation\nAF Duck book: Project documentation\nNHSBSA DDaT playbook: Licensing software or code\nNHSBSA DDaT playbook: Standard code repository files",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Documented"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/01-documented.html#what-sort-of-documentation-is-needed",
-    "href": "guidance/01-reproducible/pages/01-documented.html#what-sort-of-documentation-is-needed",
-    "title": "Documented",
-    "section": "What sort of documentation is needed?",
-    "text": "What sort of documentation is needed?\nEffective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.\nWe should document:\n\na project’s purpose and scope\nhow to install or run code or other outputs and their dependencies\nhow to use code or other outputs like apps or dashboards\ndecisions and changes across a project lifecycle",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Documented"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/01-documented.html#why-should-we-document-our-code-and-project",
-    "href": "guidance/01-reproducible/pages/01-documented.html#why-should-we-document-our-code-and-project",
-    "title": "Documented",
-    "section": "Why should we document our code and project?",
-    "text": "Why should we document our code and project?\n\nUnderstanding: Makes code and project purpose clear, improving transparency.\nCollaboration: Reduces time to become productive for contributors and other users.\nMaintenance: Makes modifying, fixing and refactoring code safer and easier.\nImproved Design: Explaining complex parts often highlights areas for simplification or improvement.\nAccessibility: Makes the project accessible and usable for its intended audience.\nKnowledge: Prevents critical information loss when team members change.\nStandards: Provides a record of how a project has been quality assured and facilitates reproducibility and transparency.",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Documented"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/01-documented.html#how-do-we-create-and-maintain-quality-documentation",
-    "href": "guidance/01-reproducible/pages/01-documented.html#how-do-we-create-and-maintain-quality-documentation",
-    "title": "Documented",
-    "section": "How do we create and maintain quality documentation?",
-    "text": "How do we create and maintain quality documentation?\nThere are considerations that apply to the project itself, or just to code, in addition to more general considerations that apply to both project and code.\n\nProject-Level:\n\nThe standard files used in code repositories are in the NHSBSA DDaT playbook - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.\nIn addition to the standard documentation, a project may also need to include additional documentation.\n\nSupport Information: How to get help, particularly where a project output includes an app-like artifact.\nDesign Docs: High-level overview for complex projects.\nAccessibility Statement: If an output is available as a webpage or app, it must have an accessibility statement.\n\n\nCode-Level:\n\nIn-Code Comments: Explanations within the code focusing on the why (rationale, complex logic, trade-offs).\nAPI Documentation: Standardized comments for functions, classes, modules explaining their purpose, parameters, returns, and usage.\nDetailed Explanations: Separate documents or wiki pages for complex algorithms, data structures, or specific modules when needed.\n\nGeneral\n\nStart Early & Integrate: Treat documentation as an integral part of the development process, and build updates into your workflow.\nWrite Clearly and Concisely: Know your audience for a particular piece of documentation and use straightforward language at the right level.\nFocus on the “Why”: Especially for in-code comments, explain the reasoning behind non-obvious decisions.\nUse Standard Formats & Locations: Employ conventional filenames, formats, and place documentation where users expect it.\nLeverage Tooling\n\nUse linters and formatters to enforce documentation standards.\nUse tools to generate documentation from code comments.\nUse templates for consistency.\n\nMaintain Discoverability: Ensure documentation is easy to find and link related documents together.\nAssign Responsibility: Have clear ownership for creating and maintaining different documentation aspects.",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Documented"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/01-documented.html#how-do-we-define-success",
-    "href": "guidance/01-reproducible/pages/01-documented.html#how-do-we-define-success",
-    "title": "Documented",
-    "section": "How do we define success?",
-    "text": "How do we define success?\n\nDocumentation enables rapid onboarding of contributors and users.\nDocumentation reflects the state of a project, with documentation updates being part of the regular workflow.\nNeeded information is easy to locate.\nDocumentation covers all aspects adequately for the intended audience, answering reasonable questions.\n\nLookout for:\n\nCritical friends and other peer-reviewers should consider and feedback on documentation, in addition to code and outputs.\nCreating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates.\nInclude documentation in retrospective discussions to ensure it’s improving and evolving in line with the rest of the analysis.",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Documented"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/04-version-controlled.html",
-    "href": "guidance/01-reproducible/pages/04-version-controlled.html",
+    "objectID": "guidance/02-develop/pages/03-version-controlled.html",
+    "href": "guidance/02-develop/pages/03-version-controlled.html",
     "title": "Version Controlled",
     "section": "",
     "text": "Lorem ipsum dolor sit veritum …",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
+      "Develop",
       "Version Controlled"
     ]
+  },
+  {
+    "objectID": "guidance/02-develop/pages/04-tested.html",
+    "href": "guidance/02-develop/pages/04-tested.html",
+    "title": "Tested",
+    "section": "",
+    "text": "AF Duck book: Testing code\nNHSBSA DDaT playbook: Testing",
+    "crumbs": [
+      "Playbook Home Page",
+      "Develop",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "guidance/02-develop/pages/04-tested.html#what-types-of-testing-should-be-done",
+    "href": "guidance/02-develop/pages/04-tested.html#what-types-of-testing-should-be-done",
+    "title": "Tested",
+    "section": "What types of testing should be done?",
+    "text": "What types of testing should be done?\nTesting is fundamental to assuring quality of analytical processes. It helps us ensure the things we’ve written to generate our analyses (e.g. code, workflows, excel workbooks, etc) work as expected and reduces the risk of errors in our results. Testing also builds confidence that results are reproducible and helps anyone to easily verify this.\nThere are many different types of tests, each aimed to address a different aspect of quality assurance. In analytical work, the following are often the most important to consider:\n\n\n\n\n\n\n\n\nType\nDescription\nBenefits\n\n\n\n\nUnit Tests\nSmall isolated tests to ensure each individual component works as expected\nHelp you locate and identify the root cause of any issues or errors\n\n\nIntegration Tests\nTesting interactions between two or more individual components (for example, can the data output by one component be used as the input to another?)\nVerify that different components or modules work together as expected\n\n\nEnd-to-end Tests\nTesting the entire analysis from start to finish\nVerify that the whole process produces the expected results, given certain inputs",
+    "crumbs": [
+      "Playbook Home Page",
+      "Develop",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "guidance/02-develop/pages/04-tested.html#why-should-we-test-our-analysis",
+    "href": "guidance/02-develop/pages/04-tested.html#why-should-we-test-our-analysis",
+    "title": "Tested",
+    "section": "Why should we test our analysis?",
+    "text": "Why should we test our analysis?\n\nVerify Correctness: Ensure our processes behave as intended and meet the requirements.\nProvide Confidence: Increase confidence in the code’s reliability and the reproducibility of results.\nCatch Bugs (Early): Identify and fix issues during development, when they are cheapest and easiest to resolve.\nImprove Design: Writing testable processes often leads to better, more modular, and loosely coupled designs.\nEnable Refactoring: Act as a safety net to enable us to make improvements while knowing that our results are not impacted.\nServe as Documentation: Well-written tests can illustrate intended use and expected behaviour.\nFacilitate Collaboration: Ensure that contributions from different team members integrate correctly.\n\n\nAlignment with analytical code key principles\n\nTransparent: Others can be more trusting of the results of the code, knowing it has been tested.\nReproducible: By testing the code, issues that could make it less reproducible are more easily found.\nQuality assured: Testing is inherently an activity that increases assurance of quality.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Develop",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "guidance/02-develop/pages/04-tested.html#how-do-we-test-our-analysis",
+    "href": "guidance/02-develop/pages/04-tested.html#how-do-we-test-our-analysis",
+    "title": "Tested",
+    "section": "How do we test our analysis?",
+    "text": "How do we test our analysis?\n\nFocus on Behaviour: Test what the logic should do, rather than how it does it.\nRisk-based Approach: Write more tests for logic that is very new, more complex, or business critical.\nTest Edge Cases and Errors: Include tests for boundary conditions, invalid inputs, and expected failure modes.\nWrite Testable Processes: Design and implement analytical processes with testing in mind.\nKeep Tests Independent and Fast: Ensure tests can run independently and quickly to provide rapid feedback.\nWrite Clear and Readable Tests: Tests should be easy to understand, indicating what is being tested and why.\nMaintain Tests: As your analysis evolves, be sure to update your tests, refactor them, remove obsolete tests and add new ones.\n\n\nTesting code\nIf you are producing analysis using code, the following points can help you go even further.\n\nUse Testing Frameworks: Use established testing frameworks appropriate for the coding language.\nAutomate Test Execution: Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.\n\nIt is important to also ensure that new changes or bug fixes haven’t introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Develop",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "guidance/02-develop/pages/04-tested.html#how-do-we-define-success",
+    "href": "guidance/02-develop/pages/04-tested.html#how-do-we-define-success",
+    "title": "Tested",
+    "section": "How do we define success?",
+    "text": "How do we define success?\n\nTeams feel confident about their code.\nBugs discovered after release of code are rare.\nAutomated tests in CI quickly inform developers of potential issues.\nTest quality and relevance is high, and regressions detected.\nThe tests are understandable and do not hinder refactoring of the code.\nTests clearly demonstrate that the code meets its specified requirements.\n\nLookout for:\n\napply the 80/20 rule - the most effective use of time writing tests will be spent on the first 20% of tests that cover 80% of the key logic\nplan for long term maintenance - you’ll need to maintain your tests, so design them carefully and stop before you write more than you can realistically keep up-to-date\navoid testing implementation details - focusing on the what rather than the how will improve your designs, make refactoring easier and avoid you having to update tests every time you update your code",
+    "crumbs": [
+      "Playbook Home Page",
+      "Develop",
+      "Tested"
+    ]
+  },
+  {
+    "objectID": "guidance/04-peer-review/pages/07-peer-reviewed.html",
+    "href": "guidance/04-peer-review/pages/07-peer-reviewed.html",
+    "title": "Peer-reviewed",
+    "section": "",
+    "text": "AF Duck Book: Peer review\nNHSBSA DDaT Playbook: Development - Peer Review",
+    "crumbs": [
+      "Playbook Home Page",
+      "Peer review",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/04-peer-review/pages/07-peer-reviewed.html#what-is-peer-review",
+    "href": "guidance/04-peer-review/pages/07-peer-reviewed.html#what-is-peer-review",
+    "title": "Peer-reviewed",
+    "section": "What is peer review?",
+    "text": "What is peer review?\nPeer review is a process where a colleague provides constructive feedback aimed at improving the quality, validity, and maintainability of code or workflows before they are finalised and used to produce output.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Peer review",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/04-peer-review/pages/07-peer-reviewed.html#why-should-code-be-peer-reviewed",
+    "href": "guidance/04-peer-review/pages/07-peer-reviewed.html#why-should-code-be-peer-reviewed",
+    "title": "Peer-reviewed",
+    "section": "Why should code be peer reviewed?",
+    "text": "Why should code be peer reviewed?\n\nImproving quality of code: As part of the peer review process code will be reviewed to ensure that it is readable and understandable.\nConsistency: Promotes consistency by ensuring adherence to team standards and style guides.\nAlternative Perspectives: Provides alternative perspectives that might lead to simpler or more robust solutions.\nSharing knowledge: Review code can improve the knowledge of both the original code author and the reviewer.\nOptimising code performance: As part of the review process, different approaches may be found that could improve the code.\nFind potential mistakes in the code: Although peer review is not a replacement for testing, it can find potential bugs or issues in the code.\n\n\nAlignment with analytical code key principles\n\nTransparent: Questions that do not have obvious answers already arise, which can then be addressed.\nReproducible: A good peer review will include running all code and data preparation.\nQuality assured: In addition to catching issues that when addressed will improve quality, builds trust that the code and project has been checked.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Peer review",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/04-peer-review/pages/07-peer-reviewed.html#how-do-we-do-it-then",
+    "href": "guidance/04-peer-review/pages/07-peer-reviewed.html#how-do-we-do-it-then",
+    "title": "Peer-reviewed",
+    "section": "How do we do it then?",
+    "text": "How do we do it then?\nWhen using version control tools such as Git, peer review should be part of the branching and pull request process (see DDaT Playbook). Ideally a pull request should not be merged without the code being reviewed by another person. In analytical projects, code reviews are often (although not always) the responsibilities of the Critical Friend.\nUsing version control tools the basic steps for a peer review are: \n\nCode author submits merge request for branch used to develop code.\nReviewer reviews the code and adds comments for any potential issues, including whether:\n\nthe code is readable and understandable\nthe code is tested, and does what it is designed for\nother approaches may have been better\n\nAuthor reviews comments and amends code as needed.\n\nComments can and should be challenged if there is any disagreement to agree a resolution between the author and reviewer.\n\nReviewer approves amended code checking all issues have been resolved.\nBranch merged by author.\n\nCode Author\n\nDo submit code for review in manageable and related chunks.\nDo ensure your code runs correctly and passes relevant tests before before a review.\nDo provide context and additional explanation when required.\nDo carefully consider all reviewer feedback; discuss comments you disagree with or are unsure of to reach an understanding.\nDo document changes made and decisions taken based on the review feedback.\nDon’t bypass or rush the review process just to merge code faster.\nDon’t submit unrelated changes together.\nDon’t blindly accept and implement all reviewer comments.\n\nReviewer\n\nDo thoroughly review the code, understanding its purpose and verifying it does what is expected.\nDo provide clear, constructive, and actionable feedback; explain the why of your suggestions.\nDo document identified issues, potential improvements, or questions clearly.\nDon’t Simply glance over the code and approve it without scrutiny.\nDon’t Delay reviews unnecessarily, blocking the author’s progress.\nDon’t Be overly critical or personal in your feedback.\n\nWhenever feasible, analytical code and low-or-no-code artifacts should be version controlled. Version control tools facilitate peer-review, among other benefits.\nHowever, even where version control tools are not used, peer review should still be done, including recording of any feedback and amendments requested during the review process.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Peer review",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/04-peer-review/pages/07-peer-reviewed.html#pair-programming",
+    "href": "guidance/04-peer-review/pages/07-peer-reviewed.html#pair-programming",
+    "title": "Peer-reviewed",
+    "section": "Pair programming",
+    "text": "Pair programming\nInstead of having the code writing and peer review as two distinct phases, pair programming combines these into a single step with two or more people actively working on the same piece of code at the same time. Effective pair programming will involve one person writing the code whilst the other(s) supply real time feedback on the code being written.\nThe benefits of pair programming are that feedback can be provided as the code is being written, suggesting improvements or identifying/fixing issues as they appear. Additionally, pair programming can be a good method to share knowledge and experience between individuals.\nPair programming may require more resource during the development stage but at the benefit in a reduction of resource needed in the review stage.\nFor pair programming to be effective there are guidelines that should be followed.\n\nRotate roles often\nEveryone should take turns writing and reviewing which could mean switching roles every 15-30 minutes. This will ensure everyone gets experience from both sides of the process and will solidify the knowledge of the code being written.\n\n\nDocument large decisions\nPair programming allows real-time discussion and decision making but where big decisions in terms of approach have been made these should still be documented for anybody who may use the code in future.\n\n\nBe vocal and ask questions\nPair programming is a collaborative process and should not just involve one person watching another code. The person writing the code should be talking through what they are writing, and the reviewer should be supplying feedback and asking for clarification if there are parts that they do not understand. Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Peer review",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "guidance/04-peer-review/pages/07-peer-reviewed.html#how-do-we-define-success",
+    "href": "guidance/04-peer-review/pages/07-peer-reviewed.html#how-do-we-define-success",
+    "title": "Peer-reviewed",
+    "section": "How do we define success?",
+    "text": "How do we define success?\n\nReviewers should understand what they are expected to review ahead of time.\nDevelopers should receive kind, constructive feedback that improves quality.\nReviews should be proportionate to the complexity and importance of the analysis.\n\nLookout for:\n\nthere is often more than one way to achieve a certain task: reviewers should look at whether what has been delivered aligns with best practice, rather than whether they would have done it that way!\navoid asking for review on very large pieces of work in one go - try breaking it up to make it easier for the reviewer!",
+    "crumbs": [
+      "Playbook Home Page",
+      "Peer review",
+      "Peer-reviewed"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
   },
   {
     "objectID": "index.html",
@@ -181,11 +259,11 @@
     ]
   },
   {
-    "objectID": "index.html#the-playbook-aims-to-support-nhsbsa-staff-in-the-production-of-high-quality-analytical-code-inline-with-the-following-principles-click-to-explore-more",
-    "href": "index.html#the-playbook-aims-to-support-nhsbsa-staff-in-the-production-of-high-quality-analytical-code-inline-with-the-following-principles-click-to-explore-more",
+    "objectID": "index.html#the-playbook-aims-to-support-nhsbsa-staff-in-the-production-of-high-quality-analytical-code-inline-with-the-following-stages-of-the-analytical-cycle-click-to-explore-more",
+    "href": "index.html#the-playbook-aims-to-support-nhsbsa-staff-in-the-production-of-high-quality-analytical-code-inline-with-the-following-stages-of-the-analytical-cycle-click-to-explore-more",
     "title": "NHSBSA Analytical Code Assurance Playbook",
-    "section": "The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):",
-    "text": "The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following principles (click to explore more):",
+    "section": "The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following stages of the analytical cycle (click to explore more):",
+    "text": "The Playbook aims to support NHSBSA staff in the production of high-quality analytical code, inline with the following stages of the analytical cycle (click to explore more):",
     "crumbs": [
       "Playbook Home Page",
       "Home"
@@ -234,248 +312,226 @@
     "text": "Thank you to the NHS England RAP Community of Practice from which this guide took heavy inspiration!"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "guidance/04-peer-review/index.html",
+    "href": "guidance/04-peer-review/index.html",
+    "title": "Peer review",
     "section": "",
-    "text": "This Playbook has been developed by the NHSBSA to provide guidance for quality assuring code to produce analysis."
-  },
-  {
-    "objectID": "guidance/01-reproducible/index.html",
-    "href": "guidance/01-reproducible/index.html",
-    "title": "Analysis should be reproducible",
-    "section": "",
-    "text": "Documented\n\n\nEffective documentation is essential for any software project to be reproducible, quality assured and transparent.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReadable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "All code should be carefully reviewed by someone other than the person writing it.\n\n\n\n\n\n\n\n\n\n\n\n\nPeer-reviewed\n\n\nPeer review is essential for quality code, and helps ensure transparency and reproducibility.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible"
+      "Peer review"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/02-readable.html",
-    "href": "guidance/01-reproducible/pages/02-readable.html",
+    "objectID": "guidance/02-develop/index.html",
+    "href": "guidance/02-develop/index.html",
+    "title": "Develop",
+    "section": "",
+    "text": "Development of analytical code is usually an iterative process. Unanticipated problems, feedback and code reviews can result in the need to make changes.\n\n\n\n\n\n\n\n\n\n\n\n\nReadable\n\n\nReadable code is helpful for transparency and reusability and a marker of quality analysis.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVersion Controlled\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTested\n\n\nTesting is fundamental to the quality assurance of analysis.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Playbook Home Page",
+      "Develop"
+    ]
+  },
+  {
+    "objectID": "guidance/02-develop/pages/02-readable.html",
+    "href": "guidance/02-develop/pages/02-readable.html",
     "title": "Readable",
     "section": "",
     "text": "AF Duck book: Readable code\nNHSBSA DDaT playbook: Naming conventions",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
+      "Develop",
       "Readable"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/02-readable.html#what-is-readable-code",
-    "href": "guidance/01-reproducible/pages/02-readable.html#what-is-readable-code",
+    "objectID": "guidance/02-develop/pages/02-readable.html#what-is-readable-code",
+    "href": "guidance/02-develop/pages/02-readable.html#what-is-readable-code",
     "title": "Readable",
     "section": "What is readable code?",
     "text": "What is readable code?\nReadable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader’s experience over the convenience of writing code.",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
+      "Develop",
       "Readable"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/02-readable.html#why-should-we-write-readable-code",
-    "href": "guidance/01-reproducible/pages/02-readable.html#why-should-we-write-readable-code",
+    "objectID": "guidance/02-develop/pages/02-readable.html#why-should-we-write-readable-code",
+    "href": "guidance/02-develop/pages/02-readable.html#why-should-we-write-readable-code",
     "title": "Readable",
     "section": "Why should we write readable code?",
-    "text": "Why should we write readable code?\n\nSimpler and faster for readers (including yourself!) to understand\nReduces risk of bugs and simplifies debugging and future maintenance\nEnhances collaboration by making it easier to share and reuse code across teams / projects\nEncourages coding best practices\nSpeeds up the onboarding process for new team members\nDemonstrates professionalism and care, enhancing organisation and team image",
+    "text": "Why should we write readable code?\n\nSimpler and faster for readers (including yourself!) to understand.\nReduces risk of bugs and simplifies debugging and future maintenance.\nEnhances collaboration by making it easier to share and reuse code across teams / projects.\nEncourages coding best practices.\nSpeeds up the onboarding process for new team members.\nDemonstrates professionalism and care, enhancing organisation and team image.\n\n\nAlignment with analytical code key principles\n\nTransparent: Others can more easily understand what the code does.\nReproducible: Although not making the code inherently reproducible, reproducing it is made easier.\nQuality assured: As well as improving the quality of code, it is easier for others to review it.",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
+      "Develop",
       "Readable"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/02-readable.html#how-do-we-write-readable-code",
-    "href": "guidance/01-reproducible/pages/02-readable.html#how-do-we-write-readable-code",
+    "objectID": "guidance/02-develop/pages/02-readable.html#how-do-we-write-readable-code",
+    "href": "guidance/02-develop/pages/02-readable.html#how-do-we-write-readable-code",
     "title": "Readable",
     "section": "How do we write readable code?",
-    "text": "How do we write readable code?\n\nUse clear and descriptive names for variables, functions and other objects\nRegularly refactor to improve code clarity\nComments to explain the ‘why’, not the ‘how’ or ’what (if you find yourself explaining what your code does or how it does it, then it probably needs to be refactored!)\nAdhere to a consistent style guide (ideally discuss and agree this with your team before you start!)\n\nBy following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. For more detailed insights, please refer to the recommended pre-requisite reading.",
+    "text": "How do we write readable code?\n\nUse clear and descriptive names for variables, functions and other objects.\nRegularly refactor to improve code clarity.\nComments to explain the ‘why’, not the ‘how’ or ’what (if you find yourself explaining what your code does or how it does it, then it probably needs to be refactored!).\nAdhere to a consistent style guide (ideally discuss and agree this with your team before you start!).\n\nBy following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. For more detailed insights, please refer to the recommended pre-requisite reading.",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
+      "Develop",
       "Readable"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/02-readable.html#how-do-we-define-success",
-    "href": "guidance/01-reproducible/pages/02-readable.html#how-do-we-define-success",
+    "objectID": "guidance/02-develop/pages/02-readable.html#how-do-we-define-success",
+    "href": "guidance/02-develop/pages/02-readable.html#how-do-we-define-success",
     "title": "Readable",
     "section": "How do we define success?",
-    "text": "How do we define success?\n\nYou should always review your code after you have written it to check for and fix any obvious issues\nPeer-review should highlight any issues spotted when someone else tries to read your code.\n\nLookout for:\n\nTry putting what you have written to one side, or leaving it overnight - does it still make sense when you come back?\nCode can always be improved, so try to make it ‘good enough’ and avoid falling into the trap of never finishing!",
+    "text": "How do we define success?\n\nYou should always review your code after you have written it to check for and fix any obvious issues.\nPeer-review should highlight any issues spotted when someone else tries to read your code.\n\nLookout for:\n\ntry putting what you have written to one side, or leaving it overnight - does it still make sense when you come back?\ncode can always be improved, so try to make it ‘good enough’ and avoid falling into the trap of never finishing!",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
+      "Develop",
       "Readable"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/03-modular.html",
-    "href": "guidance/01-reproducible/pages/03-modular.html",
-    "title": "Modular",
+    "objectID": "guidance/01-design/index.html",
+    "href": "guidance/01-design/index.html",
+    "title": "Design",
     "section": "",
-    "text": "AF Duck book: Modular code\nNHSBSA DDaT playbook: Development - Coding",
+    "text": "The design of analytical code should be appropriate to the requirements agreed on in the Customer Engagement/Scoping stage of the analytical cycle. Design decisions may be revisited and change as the analysis proceeds.\n\n\n\n\n\n\n\n\n\n\n\n\nModular\n\n\nModular code is an important paradigm for code, aiding resuability and improving quality.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Playbook Home Page",
-      "Reproducible",
-      "Modular"
+      "Design"
     ]
   },
   {
-    "objectID": "guidance/01-reproducible/pages/03-modular.html#what-is-modular-code",
-    "href": "guidance/01-reproducible/pages/03-modular.html#what-is-modular-code",
-    "title": "Modular",
-    "section": "What is modular code?",
-    "text": "What is modular code?\n\nComplex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks.\nBreaking down your code and workflow into smaller, independent, reusable chunks (modules) can help you maintain your project and share components across a series of analyses.\nEach module ideally handles a specific task (aka separation of concerns) and interacts with others through well-defined interfaces (you should be able to use a module from the outside without needing to understand the internal complexity on the inside)\nLanguages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Modular"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/03-modular.html#why-should-i-do-this",
-    "href": "guidance/01-reproducible/pages/03-modular.html#why-should-i-do-this",
-    "title": "Modular",
-    "section": "Why should I do this?",
-    "text": "Why should I do this?\nWriting your code in a modular way provides a range of benefits:\n\npromotes readability by preventing long, complex walls of code that are hard to understand\nmultiple team members working on same codebase will have less code conflicts\nsimplifies testing of the code (and its outputs)\nsmaller modules are easier to maintain or improve in future\nspeeds up the peer review process\nmakes sharing and reusing code easier",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Modular"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/03-modular.html#how-do-we-do-it-then",
-    "href": "guidance/01-reproducible/pages/03-modular.html#how-do-we-do-it-then",
-    "title": "Modular",
-    "section": "How do we do it then?",
-    "text": "How do we do it then?\nWriting modular code or developing modular workflows can differ depending on the your tool of choice, the needs of the project or piece of work, the intended customer, or the expected users of the code in the future. However, a simple hierarchy of actions to take are:\n\nsplit complex code and workflows in multiple (ordered) scripts or smaller workflows\nuse a code notebook to organise your analysis\nwrite re-usable code as functions\norganise related functions into modules\norganise and document modules as packages\nstarting from ‘monolithic’ code and refactoring over time is a valid strategy!\n\nLet’s dive into how we can do some of these.\n\nSplit your code into multiple scripts\nMonolithic code should be avoided as much as possible. A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug, and maintain, and your peer reviewer won’t thank you either! Splitting your monolithic code into ordered scripts can help yourself and others understand the steps you’ve taken and the reasons why.\n\nFor example, in R a large project could be split into:\nproject\n-- 01_data_build.R\n-- 02_data_clean.R\n-- 03_analysis.R\n-- 04_visualisation.R\nthese scripts can now be run in their intended order and splits out the parts of your code into related areas, making peer review easier.\nUsing scripts doesn’t inherently make your code reproducible or reusable, but are a good first step towards better and higher quality code.\nDo\n\nsplit your code up\ngroup related code together\norganise your scripts so you and others know how to run it\nmake your scripts self contained and runnable from the command line\n\nDon’t\n\nwrite monolithic code\nsplit up your code too much - 100 scripts with 10 lines of code in are just as hard to digest\nwrite overly complex code where simpler solutions might exist\n\n\n\nUsing notebooks\nTools such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. They can be incredibly useful starting points for exploring data, developing an analysis and are great for communicating results.\nHowever, as your analysis matures it can be difficult to align notebooks with other principles for producing high quality code:\n\nnotebooks are inherently difficult to review and audit using version control\ncode cells can be ran out of order, reducing reproducibility\nit’s hard to test functions written in the notebook",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Modular"
-    ]
-  },
-  {
-    "objectID": "guidance/01-reproducible/pages/03-modular.html#how-do-we-define-success",
-    "href": "guidance/01-reproducible/pages/03-modular.html#how-do-we-define-success",
-    "title": "Modular",
-    "section": "How do we define success?",
-    "text": "How do we define success?\n\nModular code should feel well-organised and easy to navigate.\nRepetition will be minimised through the use of small, reusable functions.\nThe purpose of each part of the code will be clear to the reader, with similar pieces of logic grouped together.\nA reviewer should help spot any potentially issues and suggest improvements.\n\nLookout for:\n\nFinding yourself scrolling-and-scrolling to look for a particular part of the code could indicate you should break it up into smaller modules!\nAlternatively, needing to look through many, many files and maintain multiple tabs to understand and make changes might suggest reducing the modularity!",
-    "crumbs": [
-      "Playbook Home Page",
-      "Reproducible",
-      "Modular"
-    ]
-  },
-  {
-    "objectID": "guidance/02-quality-assured/pages/05-tested.html",
-    "href": "guidance/02-quality-assured/pages/05-tested.html",
-    "title": "Tested",
+    "objectID": "guidance/03-document/index.html",
+    "href": "guidance/03-document/index.html",
+    "title": "Document",
     "section": "",
-    "text": "AF Duck book: Testing code\nNHSBSA DDaT playbook: Testing",
+    "text": "There are different levels of documentation.\n\nCode: This includes things like function documentation and code comments, and also overall usage instructions.\nProject: Documentation at this level includes things like Problem Definitions, decision logs and QA log.\nAnalysis: This refers to outputs of the analysis, such as written reports or interactive apps.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocumented\n\n\nEffective documentation is essential for any software project to be reproducible, quality assured and transparent.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDecisions Logged\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Tested"
+      "Document"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/05-tested.html#what-types-of-testing-should-be-done",
-    "href": "guidance/02-quality-assured/pages/05-tested.html#what-types-of-testing-should-be-done",
-    "title": "Tested",
-    "section": "What types of testing should be done?",
-    "text": "What types of testing should be done?\nTesting is fundamental to assuring quality of analytical processes. It helps us ensure the things we’ve written to generate our analyses (e.g. code, workflows, excel workbooks, etc) work as expected and reduces the risk of errors in our results. Testing also builds confidence that results are reproducible and helps anyone to easily verify this.\nThere are many different types of tests, each aimed to address a different aspect of quality assurance. In analytical work, the following are often the most important to consider:\n\n\n\n\n\n\n\n\nType\nDescription\nBenefits\n\n\n\n\nUnit Tests\nSmall isolated tests to ensure each individual component works as expected\nHelp you locate and identify the root cause of any issues or errors\n\n\nIntegration Tests\nTesting interactions between two or more individual components (for example, can the data output by one component be used as the input to another?)\nVerify that different components or modules work together as expected\n\n\nEnd-to-end Tests\nTesting the entire analysis from start to finish\nVerify that the whole process produces the expected results, given certain inputs",
+    "objectID": "guidance/03-document/pages/05-documented.html",
+    "href": "guidance/03-document/pages/05-documented.html",
+    "title": "Documented",
+    "section": "",
+    "text": "AF Duck book: Code documentation\nAF Duck book: Project documentation\nNHSBSA DDaT playbook: Licensing software or code\nNHSBSA DDaT playbook: Standard code repository files",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Tested"
+      "Document",
+      "Documented"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/05-tested.html#why-should-we-test-our-analysis",
-    "href": "guidance/02-quality-assured/pages/05-tested.html#why-should-we-test-our-analysis",
-    "title": "Tested",
-    "section": "Why should we test our analysis?",
-    "text": "Why should we test our analysis?\n\nVerify Correctness: Ensure our processes behave as intended and meet the requirements.\nProvide Confidence: Increase confidence in the code’s reliability and the reproducibility of results.\nCatch Bugs (Early): Identify and fix issues during development, when they are cheapest and easiest to resolve.\nImprove Design: Writing testable processes often leads to better, more modular, and loosely coupled designs.\nEnable Refactoring: Act as a safety net to enable us to make improvements while knowing that our results are not impacted.\nServe as Documentation: Well-written tests can illustrate intended use and expected behaviour.\nFacilitate Collaboration: Ensure that contributions from different team members integrate correctly.",
+    "objectID": "guidance/03-document/pages/05-documented.html#what-sort-of-documentation-is-needed",
+    "href": "guidance/03-document/pages/05-documented.html#what-sort-of-documentation-is-needed",
+    "title": "Documented",
+    "section": "What sort of documentation is needed?",
+    "text": "What sort of documentation is needed?\nEffective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.\nWe should document:\n\na project’s purpose and scope\nhow to install or run code or other outputs and their dependencies\nhow to use code or other outputs like apps or dashboards\ndecisions and changes across a project lifecycle",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Tested"
+      "Document",
+      "Documented"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/05-tested.html#how-do-we-test-our-analysis",
-    "href": "guidance/02-quality-assured/pages/05-tested.html#how-do-we-test-our-analysis",
-    "title": "Tested",
-    "section": "How do we test our analysis?",
-    "text": "How do we test our analysis?\n\nFocus on Behaviour: Test what the logic should do, rather than how it does it.\nRisk-based Approach: Write more tests for logic that is very new, more complex, or business critical.\nTest Edge Cases and Errors: Include tests for boundary conditions, invalid inputs, and expected failure modes.\nWrite Testable Processes: Design and implement analytical processes with testing in mind.\nKeep Tests Independent and Fast: Ensure tests can run independently and quickly to provide rapid feedback.\nWrite Clear and Readable Tests: Tests should be easy to understand, indicating what is being tested and why.\nMaintain Tests: As your analysis evolves, be sure to update your tests, refactor them, remove obsolete tests and add new ones.\n\n\nTesting code\nIf you are producing analysis using code, the following points can help you go even further: * Use Testing Frameworks: Use established testing frameworks appropriate for the coding language. * Automate Test Execution: Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.\nIt is important to also ensure that new changes or bug fixes haven’t introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.",
+    "objectID": "guidance/03-document/pages/05-documented.html#why-should-we-document-our-code-and-project",
+    "href": "guidance/03-document/pages/05-documented.html#why-should-we-document-our-code-and-project",
+    "title": "Documented",
+    "section": "Why should we document our code and project?",
+    "text": "Why should we document our code and project?\n\nUnderstanding: Makes code and project purpose clear, improving transparency.\nCollaboration: Reduces time to become productive for contributors and other users.\nMaintenance: Makes modifying, fixing and refactoring code safer and easier.\nImproved Design: Explaining complex parts often highlights areas for simplification or improvement.\nAccessibility: Makes the project accessible and usable for its intended audience.\nKnowledge: Prevents critical information loss when team members change.\nStandards: Provides a record of how a project has been quality assured and facilitates reproducibility and transparency.\n\n\nAlignment with analytical code key principles\n\nTransparent: Others can more easily understand what the analysis does, with important context like decisions and limitations.\nReproducible: Although not making the code inherently reproducible, reproducing it is made easier and trust is built.\nQuality assured: It is easier for others to review both the code and project as a whole.",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Tested"
+      "Document",
+      "Documented"
     ]
   },
   {
-    "objectID": "guidance/02-quality-assured/pages/05-tested.html#how-do-we-define-success",
-    "href": "guidance/02-quality-assured/pages/05-tested.html#how-do-we-define-success",
-    "title": "Tested",
+    "objectID": "guidance/03-document/pages/05-documented.html#how-do-we-create-and-maintain-quality-documentation",
+    "href": "guidance/03-document/pages/05-documented.html#how-do-we-create-and-maintain-quality-documentation",
+    "title": "Documented",
+    "section": "How do we create and maintain quality documentation?",
+    "text": "How do we create and maintain quality documentation?\nThere are considerations that apply to the project itself, or just to code, in addition to more general considerations that apply to both project and code.\n\nProject-Level:\n\nThe standard files used in code repositories are in the NHSBSA DDaT playbook - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.\nIn addition to the standard documentation, a project may also need to include additional documentation.\n\nSupport Information: How to get help, particularly where a project output includes an app-like artifact.\nDesign Docs: High-level overview for complex projects.\nAccessibility Statement: If an output is available as a webpage or app, it must have an accessibility statement.\n\n\nCode-Level:\n\nIn-Code Comments: Explanations within the code focusing on the why (rationale, complex logic, trade-offs).\nAPI Documentation: Standardized comments for functions, classes, modules explaining their purpose, parameters, returns, and usage.\nDetailed Explanations: Separate documents or wiki pages for complex algorithms, data structures, or specific modules when needed.\n\nGeneral\n\nStart Early & Integrate: Treat documentation as an integral part of the development process, and build updates into your workflow.\nWrite Clearly and Concisely: Know your audience for a particular piece of documentation and use straightforward language at the right level.\nFocus on the “Why”: Especially for in-code comments, explain the reasoning behind non-obvious decisions.\nUse Standard Formats & Locations: Employ conventional filenames, formats, and place documentation where users expect it.\nLeverage Tooling\n\nUse linters and formatters to enforce documentation standards.\nUse tools to generate documentation from code comments.\nUse templates for consistency.\n\nMaintain Discoverability: Ensure documentation is easy to find and link related documents together.\nAssign Responsibility: Have clear ownership for creating and maintaining different documentation aspects.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Document",
+      "Documented"
+    ]
+  },
+  {
+    "objectID": "guidance/03-document/pages/05-documented.html#how-do-we-define-success",
+    "href": "guidance/03-document/pages/05-documented.html#how-do-we-define-success",
+    "title": "Documented",
     "section": "How do we define success?",
-    "text": "How do we define success?\n\nTeams feel confident about their code.\nBugs discovered after release of code are rare.\nAutomated tests in CI quickly inform developers of potential issues.\nTest quality and relevance is high, and regressions detected.\nThe tests are understandable and do not hinder refactoring of the code.\nTests clearly demonstrate that the code meets its specified requirements.\n\nLookout for:\n\nApply the 80/20 rule - the most effective use of time writing tests will be spent on the first 20% of tests that cover 80% of the key logic.\nPlan for long term maintenance - you’ll need to maintain your tests, so design them carefully and stop before you write more than you can realistically keep up-to-date.\nAvoid testing implementation details - focusing on the what rather than the how will improve your designs, make refactoring easier and avoid you having to update tests every time you update your code.",
+    "text": "How do we define success?\n\nDocumentation enables rapid onboarding of contributors and users.\nDocumentation reflects the state of a project, with documentation updates being part of the regular workflow.\nNeeded information is easy to locate.\nDocumentation covers all aspects adequately for the intended audience, answering reasonable questions.\n\nLookout for:\n\ncritical friends and other peer-reviewers should consider and feedback on documentation, in addition to code and outputs\ncreating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates\ninclude documentation in retrospective discussions to ensure it’s improving and evolving in line with the rest of the analysis",
     "crumbs": [
       "Playbook Home Page",
-      "Quality Assured",
-      "Tested"
+      "Document",
+      "Documented"
     ]
   },
   {
-    "objectID": "guidance/03-transparent/pages/08-open-source.html",
-    "href": "guidance/03-transparent/pages/08-open-source.html",
+    "objectID": "guidance/05-open-source/pages/08-open-source.html",
+    "href": "guidance/05-open-source/pages/08-open-source.html",
     "title": "Open Source",
     "section": "",
-    "text": "Publishing analytical code openly is a key part of making our work:\n\nTransparent: Others can see how analyses are performed, increasing trust in results.\nReproducible: Open code makes it easier to verify and reproduce results.\nReusable: Allows others to build on existing work, reducing duplication.\nQuality assured: Open review and feedback help identify issues and improve code.",
+    "text": "Open source is a way of developing and distributing software. The code can be viewed, downloaded, used and changed by anyone.",
     "crumbs": [
       "Playbook Home Page",
-      "Transparent",
+      "Open source",
       "Open Source"
     ]
   },
   {
-    "objectID": "guidance/03-transparent/pages/08-open-source.html#why-publish-analytical-code-as-open-source",
-    "href": "guidance/03-transparent/pages/08-open-source.html#why-publish-analytical-code-as-open-source",
+    "objectID": "guidance/05-open-source/pages/08-open-source.html#what-is-open-source",
+    "href": "guidance/05-open-source/pages/08-open-source.html#what-is-open-source",
     "title": "Open Source",
     "section": "",
-    "text": "Publishing analytical code openly is a key part of making our work:\n\nTransparent: Others can see how analyses are performed, increasing trust in results.\nReproducible: Open code makes it easier to verify and reproduce results.\nReusable: Allows others to build on existing work, reducing duplication.\nQuality assured: Open review and feedback help identify issues and improve code.",
+    "text": "Open source is a way of developing and distributing software. The code can be viewed, downloaded, used and changed by anyone.",
     "crumbs": [
       "Playbook Home Page",
-      "Transparent",
+      "Open source",
       "Open Source"
     ]
   },
   {
-    "objectID": "guidance/03-transparent/pages/08-open-source.html#how-to-publish-analytical-code-openly",
-    "href": "guidance/03-transparent/pages/08-open-source.html#how-to-publish-analytical-code-openly",
+    "objectID": "guidance/05-open-source/pages/08-open-source.html#why-publish-analytical-code-as-open-source",
+    "href": "guidance/05-open-source/pages/08-open-source.html#why-publish-analytical-code-as-open-source",
+    "title": "Open Source",
+    "section": "Why publish analytical code as open source?",
+    "text": "Why publish analytical code as open source?\n\nAlignment with analytical code key principles\n\nTransparent: Others can see how analyses are performed, increasing trust in results.\nReproducible: Open code makes it easier to verify and reproduce results, and to reuse code.\nQuality assured: Open review and feedback help identify issues and improve code.",
+    "crumbs": [
+      "Playbook Home Page",
+      "Open source",
+      "Open Source"
+    ]
+  },
+  {
+    "objectID": "guidance/05-open-source/pages/08-open-source.html#how-to-publish-analytical-code-openly",
+    "href": "guidance/05-open-source/pages/08-open-source.html#how-to-publish-analytical-code-openly",
     "title": "Open Source",
     "section": "How to publish analytical code openly",
-    "text": "How to publish analytical code openly\nThere are two main routes to open-sourcing analytical code:\n\nWork in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the NHSBSA Open Data Portal.\nRetrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments. We would still recommend retrospectively publishing your analytical code, although this may need additional review (see below for details).\n\nTo publish analytical code:\n\nInclude a full LICENCE file: Add a file named LICENCE (British English spelling) with the complete licence text in your repository, not just a statement in the README (see below to learn more about the licences we use at the NHSBSA)\nDocument your code: Provide clear instructions for use, dependencies, and purpose.\nHost on GitHub: Host your code on the NHSBSA Data Analytics GitHub\nFollow NHSBSA guidance: Adhere to NHSBSA policies and approval processes for open source coding (only visible to internal NHSBSA colleagues).\nAvoid storing secret keys or credentials in source code: Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See GOV.UK guidance.\nCheck for sensitive information: Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!\n\nSee the GOV.UK Service Manual and NHS Digital RAP Community guidance for detailed steps and best practices.\n\nRetrospective open sourcing\nIf you are retrospectively open sourcing your code (after having developed it closed source), also consider:\n\nThe NHSBSA Retrospective Open Sourcing Guidance (only visible to internal NHSBSA colleagues)\nWhether you would benefit from using a ‘fit-for-publishing checklist’ to ensure your code is ready for release, including internal and external review steps. See the NHS Digital RAP Community Fit for publishing checklist.\n\n\n\nLicensing open code\nWhen publishing code or content openly, it is essential to include a clear licence to specify how others can use, modify, and share your work. Open code should include a LICENCE file, with a copyright notice where the year should reflect first publication, or a range if significantly updated.\nThe NHSBSA uses two types of licences, to serve different purposes:\n\nFor software/code use the Apache 2 Licence. This is generally the licence to use in the code repository via the LICENCE file.\nFor published content, documentation, and data use the Open Government Licence v3.0 (OGL v3). A link to the OGL v3 licence should be included in the footer or main documentation of published outputs. The NHSBSA uses a standard footer format which includes the appropriate licencing information and can be resused across NHSBSA products:\n\nRShiny reports and dashboards\nWebsites created using Markdown and Quarto (including this Playbook!)\nWebsites created using HTML and JavaScript\n\n\nFor more details on licencing, see the NHSBSA Digital Playbook.",
+    "text": "How to publish analytical code openly\nThere are two main routes to open-sourcing analytical code:\n\nWork in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the NHSBSA Open Data Portal.\nRetrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments. It is still recommended to retrospectively publish your analytical code, although this may need additional review (see below for details).\n\nTo publish analytical code:\n\nInclude a full LICENCE file: Add a file named LICENCE (British English spelling) with the complete licence text in your repository, not just a statement in the README (see below to learn more about the licences we use at the NHSBSA).\nDocument your code: Provide clear instructions for use, dependencies, and purpose.\nHost on GitHub: Host your code on the NHSBSA Data Analytics GitHub.\nFollow NHSBSA guidance: Adhere to NHSBSA policies and approval processes for open source coding (only visible to internal NHSBSA colleagues).\nAvoid storing secret keys or credentials in source code: Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See GOV.UK guidance.\nCheck for sensitive information: Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!\n\nSee the GOV.UK Service Manual and NHS Digital RAP Community guidance for detailed steps and best practices.\n\nRetrospective open sourcing\nThere are additional considerations if you are retrospectively open sourcing your code (after having developed it closed source).\n\nThe NHSBSA Retrospective Open Sourcing Guidance (only visible to internal NHSBSA colleagues).\nWhether you would benefit from using a ‘fit-for-publishing checklist’ to ensure your code is ready for release, including internal and external review steps. See the NHS Digital RAP Community Fit for publishing checklist.\n\n\n\nLicensing open code\nWhen publishing code or content openly, it is essential to include a clear licence to specify how others can use, modify, and share your work. Open code should include a LICENCE file, with a copyright notice where the year should reflect first publication, or a range if significantly updated.\nThe NHSBSA uses two types of licences, to serve different purposes:\n\nFor software/code use the Apache 2 Licence. This is generally the licence to use in the code repository via the LICENCE file.\nFor published content, documentation, and data use the Open Government Licence v3.0 (OGL v3). A link to the OGL v3 licence should be included in the footer or main documentation of published outputs. The NHSBSA uses a standard footer format which includes the appropriate licencing information and can be reused across NHSBSA products:\n\nRShiny reports and dashboards\nWebsites created using Markdown and Quarto (including this Playbook!)\nWebsites created using HTML and JavaScript\n\n\nFor more details on licencing, see the NHSBSA Digital Playbook.",
     "crumbs": [
       "Playbook Home Page",
-      "Transparent",
+      "Open source",
       "Open Source"
     ]
   },
   {
-    "objectID": "guidance/03-transparent/pages/08-open-source.html#how-do-we-define-success",
-    "href": "guidance/03-transparent/pages/08-open-source.html#how-do-we-define-success",
+    "objectID": "guidance/05-open-source/pages/08-open-source.html#how-do-we-define-success",
+    "href": "guidance/05-open-source/pages/08-open-source.html#how-do-we-define-success",
     "title": "Open Source",
     "section": "How do we define success?",
-    "text": "How do we define success?\n\nThe majority of NHSBSA analytical codebases are available in the open.\nDecisions to keep code closed source are justified and clearly recorded.\nPublished outputs (reports, data, dashboards, etc) are linked to the published code that produced them.\nAll outputs (code and publications) include a LICENCE file in line with the guidance above.\nSensitive or confidential information never appears in open repositories.\nBugs or issues discovered after publication are rare.\n\n\nLookout for:\n\nSensitive or confidential information accidentally included in the repository or commit history.\nMissing or unclear documentation on how to setup and use the code.\nLack of key repository files, including LICENCE and CONTRIBUTE.\nCode that is difficult to understand or maintain.",
+    "text": "How do we define success?\n\nThe majority of NHSBSA analytical codebases are available in the open.\nDecisions to keep code closed source are justified and clearly recorded.\nPublished outputs (reports, data, dashboards, etc) are linked to the published code that produced them.\nAll outputs (code and publications) include a LICENCE file in line with the guidance above.\nSensitive or confidential information never appears in open repositories.\nBugs or issues discovered after publication are rare.\n\n\nLookout for:\n\nsensitive or confidential information accidentally included in the repository or commit history.\nmissing or unclear documentation on how to setup and use the code.\nlack of key repository files, including LICENCE and CONTRIBUTE.\ncode that is difficult to understand or maintain.",
     "crumbs": [
       "Playbook Home Page",
-      "Transparent",
+      "Open source",
       "Open Source"
     ]
   }

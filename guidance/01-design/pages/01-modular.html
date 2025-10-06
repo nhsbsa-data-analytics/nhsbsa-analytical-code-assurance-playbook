@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Publishing analytical code as open source increases transparency, collaboration, and reusability.">
+<meta name="description" content="Modular code is an important paradigm for code, aiding resuability and improving quality.">
 
 <title>Analytical Code Assurance</title>
 <style>
@@ -29,14 +29,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-661abc31964421674c6110dac4971316.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-2d42b221d4a3bf25ead76833855245a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
@@ -69,7 +70,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.nhsbsa.nhs.uk/" class="navbar-brand navbar-brand-logo">
-    <img src="../../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo">
+    <img src="../../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo light-content">
+    <img src="../../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo dark-content">
     </a>
   </div>
           <ul class="navbar-nav navbar-nav-scroll me-auto">
@@ -83,16 +85,24 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guidance">    
         <li>
-    <a class="dropdown-item" href="../../../guidance/01-reproducible/index.html">
- <span class="dropdown-text">Analysis should be reproducible</span></a>
+    <a class="dropdown-item" href="../../../guidance/01-design/index.html">
+ <span class="dropdown-text">Design</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/02-quality-assured/index.html">
- <span class="dropdown-text">Analysis should be quality assured</span></a>
+    <a class="dropdown-item" href="../../../guidance/02-develop/index.html">
+ <span class="dropdown-text">Develop</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/03-transparent/index.html">
- <span class="dropdown-text">Analysis should be transparent</span></a>
+    <a class="dropdown-item" href="../../../guidance/03-document/index.html">
+ <span class="dropdown-text">Document</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../guidance/04-peer-review/index.html">
+ <span class="dropdown-text">Peer review</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../guidance/05-open-source/index.html">
+ <span class="dropdown-text">Open source</span></a>
   </li>  
     </ul>
   </li>
@@ -125,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Open Source</h1>
+          <h1 class="quarto-secondary-nav-title">Modular</h1>
         </a>     
     </div>
   </nav>
@@ -134,10 +144,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Open Source</h1>
+      <h1 class="title d-none d-lg-block">Modular</h1>
                   <div>
         <div class="description">
-          Publishing analytical code as open source increases transparency, collaboration, and reusability.
+          Modular code is an important paradigm for code, aiding resuability and improving quality.
         </div>
       </div>
                 </div>
@@ -155,6 +165,10 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -165,8 +179,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../guidance/01-reproducible/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible</span></a>
+            <a href="../../../guidance/01-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Design</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -174,34 +188,16 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/01-documented.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Documented</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/02-readable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Readable</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/03-modular.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../guidance/01-design/pages/01-modular.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Modular</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/04-version-controlled.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Version Controlled</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../guidance/02-quality-assured/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quality Assured</span></a>
+            <a href="../../../guidance/02-develop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Develop</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -209,22 +205,28 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/02-quality-assured/pages/05-tested.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tested</span></a>
+  <a href="../../../guidance/02-develop/pages/02-readable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/02-quality-assured/pages/06-peer-reviewed.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Peer-reviewed</span></a>
+  <a href="../../../guidance/02-develop/pages/03-version-controlled.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version Controlled</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../guidance/02-develop/pages/04-tested.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tested</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../guidance/03-transparent/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transparent</span></a>
+            <a href="../../../guidance/03-document/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Document</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -232,13 +234,47 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/03-transparent/pages/07-decisions-logged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decisions Logged</span></a>
+  <a href="../../../guidance/03-document/pages/05-documented.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documented</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/03-transparent/pages/08-open-source.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../guidance/03-document/pages/06-decisions-logged.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decisions Logged</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../guidance/04-peer-review/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer review</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer-reviewed</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../guidance/05-open-source/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open source</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../guidance/05-open-source/pages/08-open-source.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open Source</span></a>
   </div>
 </li>
@@ -254,16 +290,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-publish-analytical-code-as-open-source" id="toc-why-publish-analytical-code-as-open-source" class="nav-link active" data-scroll-target="#why-publish-analytical-code-as-open-source">Why publish analytical code as open source?</a></li>
-  <li><a href="#how-to-publish-analytical-code-openly" id="toc-how-to-publish-analytical-code-openly" class="nav-link" data-scroll-target="#how-to-publish-analytical-code-openly">How to publish analytical code openly</a>
+  <li><a href="#what-is-modular-code" id="toc-what-is-modular-code" class="nav-link active" data-scroll-target="#what-is-modular-code">What is modular code?</a></li>
+  <li><a href="#why-should-code-be-modular" id="toc-why-should-code-be-modular" class="nav-link" data-scroll-target="#why-should-code-be-modular">Why should code be modular?</a>
   <ul class="collapse">
-  <li><a href="#retrospective-open-sourcing" id="toc-retrospective-open-sourcing" class="nav-link" data-scroll-target="#retrospective-open-sourcing">Retrospective open sourcing</a></li>
-  <li><a href="#licensing-open-code" id="toc-licensing-open-code" class="nav-link" data-scroll-target="#licensing-open-code">Licensing open code</a></li>
+  <li><a href="#alignment-with-analytical-code-key-principles" id="toc-alignment-with-analytical-code-key-principles" class="nav-link" data-scroll-target="#alignment-with-analytical-code-key-principles">Alignment with analytical code key principles</a></li>
   </ul></li>
-  <li><a href="#how-do-we-define-success" id="toc-how-do-we-define-success" class="nav-link" data-scroll-target="#how-do-we-define-success">How do we define success?</a>
+  <li><a href="#how-do-we-do-it-then" id="toc-how-do-we-do-it-then" class="nav-link" data-scroll-target="#how-do-we-do-it-then">How do we do it then?</a>
   <ul class="collapse">
-  <li><a href="#lookout-for" id="toc-lookout-for" class="nav-link" data-scroll-target="#lookout-for">Lookout for:</a></li>
+  <li><a href="#split-your-code-into-multiple-scripts" id="toc-split-your-code-into-multiple-scripts" class="nav-link" data-scroll-target="#split-your-code-into-multiple-scripts">Split your code into multiple scripts</a></li>
+  <li><a href="#using-notebooks" id="toc-using-notebooks" class="nav-link" data-scroll-target="#using-notebooks">Using notebooks</a></li>
   </ul></li>
+  <li><a href="#how-do-we-define-success" id="toc-how-do-we-define-success" class="nav-link" data-scroll-target="#how-do-we-define-success">How do we define success?</a></li>
   </ul>
 </nav>
     </div>
@@ -283,78 +320,106 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="why-publish-analytical-code-as-open-source" class="level2">
-<h2 class="anchored" data-anchor-id="why-publish-analytical-code-as-open-source">Why publish analytical code as open source?</h2>
-<p>Publishing analytical code openly is a key part of making our work:</p>
+<blockquote class="blockquote">
+<h3 id="pre-requisite-reading" class="anchored">Pre-requisite reading</h3>
 <ul>
-<li><strong>Transparent:</strong> Others can see how analyses are performed, increasing trust in results.</li>
-<li><strong>Reproducible:</strong> Open code makes it easier to verify and reproduce results.</li>
-<li><strong>Reusable:</strong> Allows others to build on existing work, reducing duplication.</li>
-<li><strong>Quality assured:</strong> Open review and feedback help identify issues and improve code.</li>
+<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html">AF Duck book: Modular code</a></li>
+<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/">NHSBSA DDaT playbook: Development - Coding</a></li>
+</ul>
+</blockquote>
+<section id="what-is-modular-code" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-modular-code">What is modular code?</h2>
+<ul>
+<li>Complex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks.</li>
+<li>Breaking down your code and workflow into smaller, independent, reusable chunks (modules) can help you maintain your project and share components across a series of analyses.</li>
+<li>Each module ideally handles a specific task (aka separation of concerns) and interacts with others through well-defined interfaces (you should be able to use a module from the outside without needing to understand the internal complexity on the inside).</li>
+<li>Languages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.</li>
 </ul>
 </section>
-<section id="how-to-publish-analytical-code-openly" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-publish-analytical-code-openly">How to publish analytical code openly</h2>
-<p>There are two main routes to open-sourcing analytical code:</p>
-<ol type="1">
-<li>Work in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the <a href="https://opendata.nhsbsa.net/">NHSBSA Open Data Portal</a>.</li>
-<li>Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments. We would still recommend retrospectively publishing your analytical code, although this may need additional review (see below for details).</li>
-</ol>
-<p>To publish analytical code:</p>
-<ol type="1">
-<li><strong>Include a full LICENCE file:</strong> Add a file named <code>LICENCE</code> (British English spelling) with the complete licence text in your repository, not just a statement in the <code>README</code> (see below to learn more about the licences we use at the NHSBSA)</li>
-<li><strong>Document your code:</strong> Provide clear instructions for use, dependencies, and purpose.</li>
-<li><strong>Host on GitHub:</strong> Host your code on the <a href="https://github.com/nhsbsa-data-analytics/">NHSBSA Data Analytics GitHub</a></li>
-<li><strong>Follow NHSBSA guidance:</strong> Adhere to <a href="https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3585835009/NHSBSA+Open+Source+Policy+FINAL">NHSBSA policies</a> and approval processes for open source coding (only visible to internal NHSBSA colleagues).</li>
-<li><strong>Avoid storing secret keys or credentials in source code:</strong> Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#you-must-not-store-secret-keys-or-credentials-in-the-source-code">GOV.UK guidance</a>.</li>
-<li><strong>Check for sensitive information:</strong> Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!</li>
-</ol>
-<p>See the <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#making-the-code-open">GOV.UK Service Manual</a> and <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/publishing_code/how-to-publish-your-code-in-the-open/">NHS Digital RAP Community guidance</a> for detailed steps and best practices.</p>
-<section id="retrospective-open-sourcing" class="level3">
-<h3 class="anchored" data-anchor-id="retrospective-open-sourcing">Retrospective open sourcing</h3>
-<p>If you are retrospectively open sourcing your code (after having developed it closed source), also consider:</p>
-<ol type="1">
-<li>The <a href="https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3978821762/Retrospective+open+sourcing+REVIEW">NHSBSA Retrospective Open Sourcing</a> Guidance (only visible to internal NHSBSA colleagues)</li>
-<li>Whether you would benefit from using a ‘fit-for-publishing checklist’ to ensure your code is ready for release, including internal and external review steps. See the <a href="https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.pdf">NHS Digital RAP Community Fit for publishing checklist</a>.</li>
-</ol>
-</section>
-<section id="licensing-open-code" class="level3">
-<h3 class="anchored" data-anchor-id="licensing-open-code">Licensing open code</h3>
-<p>When publishing code or content openly, it is essential to include a clear licence to specify how others can use, modify, and share your work. Open code should include a <code>LICENCE</code> file, with a copyright notice where the year should reflect first publication, or a range if significantly updated.</p>
-<p>The NHSBSA uses two types of licences, to serve different purposes:</p>
+<section id="why-should-code-be-modular" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-code-be-modular">Why should code be modular?</h2>
 <ul>
-<li>For software/code use the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2 Licence</a>. This is generally the licence to use in the code repository via the <code>LICENCE</code> file.</li>
-<li>For published content, documentation, and data use the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0 (OGL v3)</a>. A link to the OGL v3 licence should be included in the footer or main documentation of published outputs. The NHSBSA uses a standard footer format which includes the appropriate licencing information and can be resused across NHSBSA products:
-<ul>
-<li><a href="https://github.com/nhsbsa-data-analytics/nhsbsaShinyR/blob/main/R/nhs_footer.R">RShiny reports and dashboards</a></li>
-<li><a href="https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/blob/main/_quarto.yml#L70">Websites created using Markdown and Quarto (including this Playbook!)</a></li>
-<li><a href="https://github.com/nhsbsa/nhsbsa-digital-playbook/tree/main/lib/_components/appFooter">Websites created using HTML and JavaScript</a></li>
-</ul></li>
+<li>Promotes <a href="../../../guidance/02-develop/pages/02-readable.html">readability</a> by preventing long, complex walls of code that are hard to understand.</li>
+<li>Multiple team members working on same codebase will have less code conflicts.</li>
+<li>Simplifies testing of the code (and its outputs).</li>
+<li>Smaller modules are easier to maintain or improve in future.</li>
+<li>Speeds up the <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">peer review</a> process.</li>
+<li>Makes sharing and reusing code easier.</li>
 </ul>
-<p>For more details on licencing, see the <a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/#ogl-v3">NHSBSA Digital Playbook</a>.</p>
+<section id="alignment-with-analytical-code-key-principles" class="level3">
+<h3 class="anchored" data-anchor-id="alignment-with-analytical-code-key-principles">Alignment with analytical code key principles</h3>
+<ul>
+<li><strong>Transparent:</strong> Others can more easily understand the steps taken.</li>
+<li><strong>Reproducible:</strong> Although not making the code inherently reproducible, reproducing it is made easier.</li>
+<li><strong>Quality assured:</strong> As well as improving the quality of code, it is easier for others to review it.</li>
+</ul>
+</section>
+</section>
+<section id="how-do-we-do-it-then" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-do-it-then">How do we do it then?</h2>
+<p>Writing modular code or developing modular workflows can differ depending on the your tool of choice, the needs of the project or piece of work, the intended customer, or the expected users of the code in the future.</p>
+<p>However, a simple hierarchy of actions to take are to:</p>
+<ul>
+<li>split complex code and workflows in multiple (ordered) scripts or smaller workflows</li>
+<li>use a code notebook to organise your analysis</li>
+<li>write re-usable code as functions</li>
+<li>organise related functions into modules</li>
+<li>organise and document modules as packages</li>
+<li>starting from ‘monolithic’ code and refactoring over time is a valid strategy!</li>
+</ul>
+<p>Let’s dive into how we can do some of these.</p>
+<section id="split-your-code-into-multiple-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="split-your-code-into-multiple-scripts">Split your code into multiple scripts</h3>
+<p>Monolithic code should be avoided as much as possible. A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug, and maintain, and your <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">peer reviewer</a> won’t thank you either! Splitting your monolithic code into ordered scripts can help yourself and others understand the steps you’ve taken and the reasons why.</p>
+<!-- DRAFT NOTE: intention here is to provide examples for the various tools that teams use e.g. R, Python, SQL, Alteryx, VBA (also need to be conscious of future data platform) -->
+<p>For example, in R a large project could be split into:</p>
+<pre><code>project
+-- 01_data_build.R
+-- 02_data_clean.R
+-- 03_analysis.R
+-- 04_visualisation.R</code></pre>
+<p>These scripts can now be run in their intended order and splits out the parts of your code into related areas, making peer review easier.</p>
+<p>Using scripts doesn’t inherently make your code reproducible or reusable, but are a good first step towards better and higher quality code.</p>
+<p><strong>Do:</strong></p>
+<ul>
+<li>split your code up</li>
+<li>group related code together</li>
+<li>organise your scripts so you and others know how to run it</li>
+<li>make your scripts self contained and runnable from the command line</li>
+</ul>
+<p><strong>Don’t:</strong></p>
+<ul>
+<li>write monolithic code</li>
+<li>split up your code too much - 100 scripts with 10 lines of code in are just as hard to digest</li>
+<li>write overly complex code where simpler solutions might exist</li>
+</ul>
+</section>
+<section id="using-notebooks" class="level3">
+<h3 class="anchored" data-anchor-id="using-notebooks">Using notebooks</h3>
+<p>Tools such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. They can be incredibly useful starting points for exploring data, developing an analysis and are great for communicating results.</p>
+<p>However, as your analysis matures it can be difficult to align notebooks with other principles for producing high quality code.</p>
+<ul>
+<li>Notebooks are inherently difficult to <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">review</a> and audit using <a href="../../../guidance/02-develop/pages/03-version-controlled.html">version control</a>.</li>
+<li>Code cells can be ran out of order, reducing reproducibility.</li>
+<li>It’s hard to <a href="../../../guidance/02-develop/pages/04-tested.html">test</a> functions written in the notebook.</li>
+</ul>
 </section>
 </section>
 <section id="how-do-we-define-success" class="level2">
 <h2 class="anchored" data-anchor-id="how-do-we-define-success">How do we define success?</h2>
 <ul>
-<li>The majority of NHSBSA analytical codebases are available in the open.</li>
-<li>Decisions to keep code closed source are justified and clearly recorded.</li>
-<li>Published outputs (reports, data, dashboards, etc) are linked to the published code that produced them.</li>
-<li>All outputs (code and publications) include a <code>LICENCE</code> file in line with the guidance above.</li>
-<li>Sensitive or confidential information never appears in open repositories.</li>
-<li>Bugs or issues discovered after publication are rare.</li>
+<li>Modular code should feel well-organised and easy to navigate.</li>
+<li>Repetition will be minimised through the use of small, reusable functions.</li>
+<li>The purpose of each part of the code will be clear to the reader, with similar pieces of logic grouped together.</li>
+<li>A <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">reviewer</a> should help spot any potentially issues and suggest improvements.</li>
 </ul>
-<section id="lookout-for" class="level3">
-<h3 class="anchored" data-anchor-id="lookout-for">Lookout for:</h3>
+<p><strong>Lookout for:</strong></p>
 <ul>
-<li>Sensitive or confidential information accidentally included in the repository or commit history.</li>
-<li>Missing or unclear documentation on how to setup and use the code.</li>
-<li>Lack of key repository files, including <code>LICENCE</code> and <code>CONTRIBUTE</code>.</li>
-<li>Code that is difficult to understand or maintain.</li>
+<li>finding yourself scrolling-and-scrolling to look for a particular part of the code could indicate you should break it up into smaller modules!</li>
+<li>alternatively, needing to look through many, many files and maintain multiple tabs to understand and make changes might suggest reducing the modularity!</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -490,13 +555,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

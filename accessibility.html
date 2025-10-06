@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -28,14 +28,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-661abc31964421674c6110dac4971316.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2d42b221d4a3bf25ead76833855245a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
@@ -68,7 +69,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.nhsbsa.nhs.uk/" class="navbar-brand navbar-brand-logo">
-    <img src="./static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo">
+    <img src="./static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo light-content">
+    <img src="./static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo dark-content">
     </a>
   </div>
           <ul class="navbar-nav navbar-nav-scroll me-auto">
@@ -82,16 +84,24 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guidance">    
         <li>
-    <a class="dropdown-item" href="./guidance/01-reproducible/index.html">
- <span class="dropdown-text">Analysis should be reproducible</span></a>
+    <a class="dropdown-item" href="./guidance/01-design/index.html">
+ <span class="dropdown-text">Design</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/02-quality-assured/index.html">
- <span class="dropdown-text">Analysis should be quality assured</span></a>
+    <a class="dropdown-item" href="./guidance/02-develop/index.html">
+ <span class="dropdown-text">Develop</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/03-transparent/index.html">
- <span class="dropdown-text">Analysis should be transparent</span></a>
+    <a class="dropdown-item" href="./guidance/03-document/index.html">
+ <span class="dropdown-text">Document</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/04-peer-review/index.html">
+ <span class="dropdown-text">Peer review</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/05-open-source/index.html">
+ <span class="dropdown-text">Open source</span></a>
   </li>  
     </ul>
   </li>
@@ -133,6 +143,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -143,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./guidance/01-reproducible/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible</span></a>
+            <a href="./guidance/01-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Design</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -152,34 +166,16 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/01-reproducible/pages/01-documented.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Documented</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/01-reproducible/pages/02-readable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Readable</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/01-reproducible/pages/03-modular.html" class="sidebar-item-text sidebar-link">
+  <a href="./guidance/01-design/pages/01-modular.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modular</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/01-reproducible/pages/04-version-controlled.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Version Controlled</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./guidance/02-quality-assured/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quality Assured</span></a>
+            <a href="./guidance/02-develop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Develop</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -187,22 +183,28 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/02-quality-assured/pages/05-tested.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tested</span></a>
+  <a href="./guidance/02-develop/pages/02-readable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/02-quality-assured/pages/06-peer-reviewed.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Peer-reviewed</span></a>
+  <a href="./guidance/02-develop/pages/03-version-controlled.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version Controlled</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/02-develop/pages/04-tested.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tested</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./guidance/03-transparent/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transparent</span></a>
+            <a href="./guidance/03-document/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Document</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -210,13 +212,47 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/03-transparent/pages/07-decisions-logged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decisions Logged</span></a>
+  <a href="./guidance/03-document/pages/05-documented.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documented</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/03-transparent/pages/08-open-source.html" class="sidebar-item-text sidebar-link">
+  <a href="./guidance/03-document/pages/06-decisions-logged.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decisions Logged</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./guidance/04-peer-review/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer review</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/04-peer-review/pages/07-peer-reviewed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer-reviewed</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./guidance/05-open-source/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open source</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/05-open-source/pages/08-open-source.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open Source</span></a>
   </div>
 </li>
@@ -386,13 +422,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

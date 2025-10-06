@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Effective documentation is essential for any software project to be reproducible, quality assured and transparent.">
+<meta name="description" content="You can’t mark your own homework!">
 
 <title>Analytical Code Assurance</title>
 <style>
@@ -24,20 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="../../../static/bsa-favicon.png" rel="icon" type="image/png">
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-661abc31964421674c6110dac4971316.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../../static/bsa-favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2d42b221d4a3bf25ead76833855245a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -53,9 +56,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -69,12 +130,13 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.nhsbsa.nhs.uk/" class="navbar-brand navbar-brand-logo">
-    <img src="../../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo">
+    <img src="../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo light-content">
+    <img src="../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo dark-content">
     </a>
   </div>
           <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../../index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
 <span class="menu-text">Playbook Home Page</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -83,23 +145,31 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guidance">    
         <li>
-    <a class="dropdown-item" href="../../../guidance/01-reproducible/index.html">
- <span class="dropdown-text">Analysis should be reproducible</span></a>
+    <a class="dropdown-item" href="../../guidance/01-design/index.html">
+ <span class="dropdown-text">Design</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/02-quality-assured/index.html">
- <span class="dropdown-text">Analysis should be quality assured</span></a>
+    <a class="dropdown-item" href="../../guidance/02-develop/index.html">
+ <span class="dropdown-text">Develop</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/03-transparent/index.html">
- <span class="dropdown-text">Analysis should be transparent</span></a>
+    <a class="dropdown-item" href="../../guidance/03-document/index.html">
+ <span class="dropdown-text">Document</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../guidance/04-peer-review/index.html">
+ <span class="dropdown-text">Peer review</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../guidance/05-open-source/index.html">
+ <span class="dropdown-text">Open source</span></a>
   </li>  
     </ul>
   </li>
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:information-outline" style="font-size: 1.5em;" aria-label="Icon information-outline from mdi Iconify.design set." title="Icon information-outline from mdi Iconify.design set."></iconify-icon> About</span></a>
   </li>  
   <li class="nav-item">
@@ -125,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Documented</h1>
+          <h1 class="quarto-secondary-nav-title">Peer review</h1>
         </a>     
     </div>
   </nav>
@@ -133,18 +203,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Documented</h1>
+    <div class="quarto-title column-page-right">
+      <h1 class="title d-none d-lg-block">Peer review</h1>
                   <div>
         <div class="description">
-          Effective documentation is essential for any software project to be reproducible, quality assured and transparent.
+          You can’t mark your own homework!
         </div>
       </div>
                 </div>
   </div>
     
   
-  <div class="quarto-title-meta column-body">
+  <div class="quarto-title-meta column-page-right">
 
       
     
@@ -155,18 +225,22 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../guidance/01-reproducible/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible</span></a>
+            <a href="../../guidance/01-design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Design</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -174,34 +248,16 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/01-documented.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Documented</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/02-readable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Readable</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/03-modular.html" class="sidebar-item-text sidebar-link">
+  <a href="../../guidance/01-design/pages/01-modular.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modular</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-reproducible/pages/04-version-controlled.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Version Controlled</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../guidance/02-quality-assured/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quality Assured</span></a>
+            <a href="../../guidance/02-develop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Develop</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -209,22 +265,28 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/02-quality-assured/pages/05-tested.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tested</span></a>
+  <a href="../../guidance/02-develop/pages/02-readable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/02-quality-assured/pages/06-peer-reviewed.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Peer-reviewed</span></a>
+  <a href="../../guidance/02-develop/pages/03-version-controlled.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version Controlled</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guidance/02-develop/pages/04-tested.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tested</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../guidance/03-transparent/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transparent</span></a>
+            <a href="../../guidance/03-document/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Document</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -232,13 +294,47 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/03-transparent/pages/07-decisions-logged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decisions Logged</span></a>
+  <a href="../../guidance/03-document/pages/05-documented.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documented</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/03-transparent/pages/08-open-source.html" class="sidebar-item-text sidebar-link">
+  <a href="../../guidance/03-document/pages/06-decisions-logged.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decisions Logged</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../guidance/04-peer-review/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Peer review</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guidance/04-peer-review/pages/07-peer-reviewed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer-reviewed</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../guidance/05-open-source/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open source</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guidance/05-open-source/pages/08-open-source.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open Source</span></a>
   </div>
 </li>
@@ -249,20 +345,11 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#what-sort-of-documentation-is-needed" id="toc-what-sort-of-documentation-is-needed" class="nav-link active" data-scroll-target="#what-sort-of-documentation-is-needed">What sort of documentation is needed?</a></li>
-  <li><a href="#why-should-we-document-our-code-and-project" id="toc-why-should-we-document-our-code-and-project" class="nav-link" data-scroll-target="#why-should-we-document-our-code-and-project">Why should we document our code and project?</a></li>
-  <li><a href="#how-do-we-create-and-maintain-quality-documentation" id="toc-how-do-we-create-and-maintain-quality-documentation" class="nav-link" data-scroll-target="#how-do-we-create-and-maintain-quality-documentation">How do we create and maintain quality documentation?</a></li>
-  <li><a href="#how-do-we-define-success" id="toc-how-do-we-define-success" class="nav-link" data-scroll-target="#how-do-we-define-success">How do we define success?</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 <script>
   // Create skiplink
   var a = document.createElement('a');
@@ -277,94 +364,35 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<blockquote class="blockquote">
-<h2 id="pre-requisite-reading" class="anchored">Pre-requisite reading</h2>
-<ul>
-<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html">AF Duck book: Code documentation</a></li>
-<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html">AF Duck book: Project documentation</a></li>
-<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/">NHSBSA DDaT playbook: Licensing software or code</a></li>
-<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/">NHSBSA DDaT playbook: Standard code repository files</a></li>
-</ul>
-</blockquote>
-<section id="what-sort-of-documentation-is-needed" class="level2">
-<h2 class="anchored" data-anchor-id="what-sort-of-documentation-is-needed">What sort of documentation is needed?</h2>
-<p>Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.</p>
-<p>We should document:</p>
-<ul>
-<li>a project’s purpose and scope</li>
-<li>how to install or run code or other outputs and their dependencies</li>
-<li>how to use code or other outputs like apps or dashboards</li>
-<li>decisions and changes across a project lifecycle</li>
-</ul>
-</section>
-<section id="why-should-we-document-our-code-and-project" class="level2">
-<h2 class="anchored" data-anchor-id="why-should-we-document-our-code-and-project">Why should we document our code and project?</h2>
-<ul>
-<li><strong>Understanding:</strong> Makes code and project purpose clear, improving <a href="../../../guidance/03-transparent/index.html">transparency</a>.</li>
-<li><strong>Collaboration:</strong> Reduces time to become productive for contributors and other users.</li>
-<li><strong>Maintenance:</strong> Makes modifying, fixing and refactoring code safer and easier.</li>
-<li><strong>Improved Design:</strong> Explaining complex parts often highlights areas for simplification or improvement.</li>
-<li><strong>Accessibility:</strong> Makes the project <a href="../../../guidance/01-reproducible/pages/02-accessible.qmd">accessible</a> and usable for its intended audience.</li>
-<li><strong>Knowledge:</strong> Prevents critical information loss when team members change.</li>
-<li><strong>Standards:</strong> Provides a record of how a project has been <a href="../../../guidance/02-quality-assured/index.html">quality assured</a> and facilitates <a href="../../../guidance/01-reproducible/index.html">reproducibility</a> and <a href="../../../guidance/03-transparent/index.html">transparency</a>.</li>
-</ul>
-</section>
-<section id="how-do-we-create-and-maintain-quality-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-we-create-and-maintain-quality-documentation">How do we create and maintain quality documentation?</h2>
-<p>There are considerations that apply to the project itself, or just to code, in addition to more general considerations that apply to both project and code.</p>
-<ul>
-<li><strong>Project-Level:</strong>
-<ul>
-<li>The standard files used in code repositories are in the <a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/">NHSBSA DDaT playbook</a> - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.</li>
-<li>In addition to the standard documentation, a project may also need to include additional documentation.
-<ul>
-<li><strong>Support Information:</strong> How to get help, particularly where a project output includes an app-like artifact.</li>
-<li><strong>Design Docs:</strong> High-level overview for complex projects.</li>
-<li><strong>Accessibility Statement:</strong> If an output is available as a webpage or app, it must have an accessibility statement.</li>
-</ul></li>
-</ul></li>
-<li><strong>Code-Level:</strong>
-<ul>
-<li><strong>In-Code Comments:</strong> Explanations within the code focusing on the <em>why</em> (rationale, complex logic, trade-offs).</li>
-<li><strong>API Documentation:</strong> Standardized comments for functions, classes, modules explaining their purpose, parameters, returns, and usage.</li>
-<li><strong>Detailed Explanations:</strong> Separate documents or wiki pages for complex algorithms, data structures, or specific modules when needed.</li>
-</ul></li>
-<li><strong>General</strong>
-<ul>
-<li><strong>Start Early &amp; Integrate:</strong> Treat documentation as an integral part of the development process, and build updates into your workflow.</li>
-<li><strong>Write Clearly and Concisely:</strong> Know your audience for a particular piece of documentation and use straightforward language at the right level.</li>
-<li><strong>Focus on the “Why”:</strong> Especially for in-code comments, explain the reasoning behind non-obvious decisions.</li>
-<li><strong>Use Standard Formats &amp; Locations:</strong> Employ conventional filenames, formats, and place documentation where users expect it.</li>
-<li><strong>Leverage Tooling</strong>
-<ul>
-<li>Use linters and formatters to enforce documentation standards.</li>
-<li>Use tools to generate documentation from code comments.</li>
-<li>Use templates for consistency.</li>
-</ul></li>
-<li><strong>Maintain Discoverability:</strong> Ensure documentation is easy to find and link related documents together.</li>
-<li><strong>Assign Responsibility:</strong> Have clear ownership for creating and maintaining different documentation aspects.</li>
-</ul></li>
-</ul>
-</section>
-<section id="how-do-we-define-success" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-we-define-success">How do we define success?</h2>
-<ul>
-<li>Documentation enables rapid onboarding of contributors and users.</li>
-<li>Documentation reflects the state of a project, with documentation updates being part of the regular workflow.</li>
-<li>Needed information is easy to locate.</li>
-<li>Documentation covers all aspects adequately for the intended audience, answering reasonable questions.</li>
-</ul>
-<p><strong>Lookout for:</strong></p>
-<ul>
-<li><a href="https://nhsbsa-data-analytics.github.io/nhsbsa-data-science-playbook/guidance/03-analysis/analysis-steps/04-review.html#critical-friend-review">Critical friends</a> and other <a href="../../../guidance/02-quality-assured/pages/06-peer-reviewed.html">peer-reviewers</a> should consider and feedback on documentation, in addition to code and outputs.</li>
-<li>Creating and updating documentation is often overlooked during project planning: be sure to allocate sufficient time for documentation in your estimates.</li>
-<li>Include documentation in retrospective discussions to ensure it’s improving and evolving in line with the rest of the analysis.</li>
-</ul>
+<p>All code should be <a href="https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/02-analytical-cycle/pages/05-conducting-the-analysis.html#:~:text=Conducting%20Analysis%20Assurance">carefully reviewed</a> by someone other than the person writing it.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1759763379768" data-listing-reading-time-sort="5" data-listing-word-count-sort="997">
+<a href="../../guidance/04-peer-review/pages/07-peer-reviewed.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Peer-reviewed
+</h5>
+<div class="card-text listing-description delink">
+<p>Peer review is essential for quality code, and helps ensure transparency and reproducibility.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script>
   // 1. Handle 'i' tags - these are added dynamically by quarto. They can have 
   //    the 'aria-hidden' attribute set to 'true', but quarto does not make them
@@ -497,13 +525,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -850,11 +879,11 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-footer">
     <div class="nav-footer-left">
 <ul>
-<li><a href="../../../accessibility.html">Accessibility</a></li>
+<li><a href="../../accessibility.html">Accessibility</a></li>
 <li><a href="mailto:analyticalassurance@nhsbsa.nhs.uk">Contact</a></li>
 <li><a href="https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook">GitHub</a></li>
 </ul>
-<p><img src="../../../static/ogl3-logo.svg" height="17" width="41" focusable="false">&nbsp; All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.</p>
+<p><img src="../../static/ogl3-logo.svg" height="17" width="41" focusable="false">&nbsp; All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
