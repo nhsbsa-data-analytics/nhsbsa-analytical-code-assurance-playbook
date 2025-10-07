@@ -3,6 +3,8 @@ title: "Version Controlled"
 description: "Version control is all about managing changes"
 ---
 
+## What is version control?
+
 Git is a distributed version control system used to track changes in source code. It allows developers to collaborate on projects by managing different versions of the same files, creating branches for new features, before merging changes into software releases.
 
 Git is built on simple and elegant principles that support independent work in an offline, local environment. Git hosting providers such as Gitlab, Github and Azure enhance the collaborative experience with features such as code review, and continuous integration and deployment build pipelines.
@@ -11,7 +13,17 @@ The command line interface to Git is notoriously unintuitive with inconsistent t
 
 Our [suggested learning resources](#learn-more) provide additional support for beginner and expert Git users.
 
-## NHSBSA Mandatory Rules
+## Why should we use version control?
+
+
+
+### Alignment with analytical code key principles
+
+
+
+## How do we use version control?
+
+### NHSBSA Mandatory Rules
 
 Teams should be self directing and adopt tools and processes to fit their circumstances, however we have these non-negotiable standards that must be adhered to:
 
@@ -30,14 +42,14 @@ Teams should be self directing and adopt tools and processes to fit their circum
   * [Testing](../../testing/test-frameworks/)
 * __Binary dependencies are not held in source control__
   Use package managers to declare dependencies, and resolve binaries within the build. Package descriptors also enable tool to check for downstream vulnerabilities and licence compliance.
-
-## Git Hosting
+  
+### Git Hosting
 
 The primary Git hosting provider at the NHSBSA is [Gitlab.com](https://gitlab.com/nhsbsa) although some teams use Github or Azure Repositories.
 
 Access to Gitlab is controlled via Azure Entra ID and requested via Service Desk.
 
-### Issue Trackers
+#### Issue Trackers
 
 Git hosting providers often integrate with issue tracking services. Use commit messages to automatically post updates or transition tickets:
 
@@ -48,11 +60,11 @@ Git hosting providers often integrate with issue tracking services. Use commit m
 
 :::
 
-## Commits
+### Commits
 
 A Commit records the changes made to files in a codebase. The message attached to a commit should clearly communicate what changed and why. A well written commit message will help people to understand a codebase, as modern IDEs can display commit information alongside each line of code.
 
-### Clean code
+#### Clean code
 
 Well written commit messages support clean code. For instance, they remove the motivation for these anti-patterns:
 
@@ -63,7 +75,7 @@ Well written commit messages support clean code. For instance, they remove the m
 * __Commented out code__
   Leaving redundant code in the codebase, via comment blocks adds unnecessary distraction. Use the commit history if you need to revisit old code.
 
-### Logical commits
+#### Logical commits
 
 Logical commits refers organising change into well-defined, coherent units that represent a single logical change to the codebase:
 
@@ -72,7 +84,7 @@ Logical commits refers organising change into well-defined, coherent units that 
 * The changes are complete enough to not break functionality
 * The commit message clearly explains what changed and why
 
-### Commit frequency
+#### Commit frequency
 
 We recommend committing regular and often.
 
@@ -82,7 +94,7 @@ Note that committing updates the 'local' repository stored on your development m
 
 Changes should be pushed to the remote at least daily to serve as backup.
 
-### Squashing
+#### Squashing
 
 We recommend squashing commits into logical commits prior to merge downstream. This removes unneccesary commits that can confuse, providing a clean and logical git history. Use [interactive rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) to take control of squashing, and the resulting commit messages.
 
@@ -90,7 +102,7 @@ Most Git hosting providers support squashing on merge. We recommend against this
 
 Commits should not be squashed automatically when merging downstream and never when merging into `main`. Change is only allowed into `main` after it has been tested in a pre-production environment. Squashing will change the commit history, rendering the tests invalid.
 
-### Conventional Commits
+#### Conventional Commits
 
 We recommend adopting [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to structure commit messages.
 
@@ -134,7 +146,7 @@ We recommend adopting [conventional commits](https://www.conventionalcommits.org
 * The optional body should contain details of specific changes if required
 * The optional footer should contain [git-trailer](https://git-scm.com/docs/git-interpret-trailers) formatted meta-information
 
-## Branching Strategy
+### Branching Strategy
 
 A branching strategy is a set of rules to manage and organize code changes in a Git system. A strategy helps to:
 
@@ -150,14 +162,14 @@ There are [many Git branching strategies](https://graphite.dev/guides/git-branch
 
 We recommend using our [standard branching strategy](../dev-git-branching-strategy/), based on git-flow.
 
-## Merging
+### Merging
 
 Consider the direction of flow for code change: 
 
 * _Left_ or _Upstream_ is the source of change such as a feature branch
 * _Right_ or _Downstream_ is the target of change, ultimately Production
 
-### Promoting left to right
+#### Promoting left to right
 
 The normal direction of flow for change is left to right: A developer creates a feature branch to make a change. The change is promoted to a release candidate branch and then merged into the production, `main` branch.
 
@@ -165,7 +177,7 @@ The normal direction of flow for change is left to right: A developer creates a 
 * Ensure promoted code is clean with few, logical commits
 * Favour fast forward merge over merge commits
 
-### Aligning right to left
+#### Aligning right to left
 
 Often a branch of code will fall behind the downstream code on the right, especially when working in larger teams. This _divergence_ of code should be resolved prior to promoting.
 
@@ -173,14 +185,14 @@ Often a branch of code will fall behind the downstream code on the right, especi
 * Favour rebase over merge commit. A merge commit when aligning downstream code will result in a complicated Git graph, which is difficult to keep tidy
 * Favour squashing commits to a small number before rebasing against downstream code. Fewer commits will mean fewer merge conflicts to resolve.
 
-### Shared branches
+#### Shared branches
 
 We recommend against using shared branches between collaborators. Prefer author specific branches, with peer-reviewed merges.
 
 * Shared branches miss the review step between collaborators
 * There is increased chance of merge commits and complex Git history when pulling divergent changes. See [Git configuration](git-configuration) for controlling pull behaviour.
 
-## Rebasing
+### Rebasing
 
 Rebasing is a way to tidy up the Git commit history. It involves rewriting commits for a mix of purposes:
 
@@ -203,7 +215,7 @@ git reset --hard <branch> origin/<branch>
 
 !!!
 
-### Rebase or merge
+#### Rebase or merge
 
 We recommend that teams rebase their branches against the downstream branch whenever they diverge. This provides a more streamlined and understandable git history, and simplifies squashing.
 
@@ -211,7 +223,7 @@ Using a merge commit from an downstream branch makes squashing and reverting cha
 
 We also advise squashing unecessary commits before a rebase. This simplifies conflict resolution.
 
-### Forced pushes
+#### Forced pushes
 
 Sometime we need to overwrite a branch with a re-written Git history. Be very careful when force-pushing a shared branch. Ensure that every team member understands how to resolve their local repository against a force-pushed remote branch.
 
@@ -221,7 +233,7 @@ Use `force-with-lease` as a safer way to force push:
 git push --force-with-lease
 ```
 
-## Git configuration
+### Git configuration
 
 Ensure your local Git configuration is correct.
 
@@ -264,7 +276,7 @@ Ensure your local Git configuration is correct.
   Every repository must define a `.gitignore` file to avoid commit of build artefacts, IDE configuration and local development files.
   Our [standard files repository](https://gitlab.com/nhsbsa/libraries/nhsbsa-standard-files) contains an example covering most use cases.
 
-## Controls
+### Controls
 
 Git repository hosting providers support adding controls on what can be done with a hosted Git repository. These must be configured to protect the branch and release process.
 
@@ -298,6 +310,14 @@ Git repository hosting providers support adding controls on what can be done wit
     * When a commit is added: `Remove all approvals`
 
 :::
+
+## How do we define success?
+
+
+
+**Lookout for:**
+
+
 
 ## Learn more
 
