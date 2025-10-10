@@ -27,7 +27,7 @@ To publish analytical code:
 1. **Document your code:** Provide clear instructions for use, dependencies, and purpose.
 1. **Host on GitHub:** Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github].
 1. **Follow NHSBSA guidance:** Adhere to [NHSBSA policies][nhsbsa-open-source] and approval processes for open source coding (only visible to internal NHSBSA colleagues).
-1. **Avoid storing secret keys or credentials in source code:** Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
+1. **Avoid storing secret keys or credentials in source code:** Use [secret management systems][secrets] and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
 1. **Check for sensitive information:** Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!
 
 See the [GOV.UK Service Manual][govuk-service-manual] and [NHS Digital RAP Community guidance][rap-community-guidance] for detailed steps and best practices.
@@ -70,17 +70,18 @@ For more details on licencing, see the [NHSBSA Digital Playbook][coding-licences
 * code that is difficult to understand or maintain.
 
 
-[fit-for-publishing]: https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.pdf
+[nhsbsa-open-data]: https://opendata.nhsbsa.net/
+[nhsbsa-github]: https://github.com/nhsbsa-data-analytics/
+[nhsbsa-open-source]: https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3585835009/NHSBSA+Open+Source+Policy+FINAL #gitleaks:allow
+[gitleaks]: /guidance/05-open-source/pages/09-gitleaks.qmd
 [govuk-secret-guidance]: https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#you-must-not-store-secret-keys-or-credentials-in-the-source-code
 [govuk-service-manual]: https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#making-the-code-open
 [rap-community-guidance]: https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/publishing_code/how-to-publish-your-code-in-the-open/
+[nhsbsa-retro-open]: https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3978821762/Retrospective+open+sourcing+REVIEW #gitleaks:allow
+[fit-for-publishing]: https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.pdf
 [apache-2]: https://www.apache.org/licenses/LICENSE-2.0
 [ogl-v3]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
-[coding-licences]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/#ogl-v3
-[nhsbsa-open-data]: https://opendata.nhsbsa.net/
-[nhsbsa-github]: https://github.com/nhsbsa-data-analytics/
-[nhsbsa-open-source]: https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3585835009/NHSBSA+Open+Source+Policy+FINAL
-[nhsbsa-retro-open]: https://bsa2468.atlassian.net/wiki/spaces/OS/pages/3978821762/Retrospective+open+sourcing+REVIEW
-[nhsbsa-footer-quarto]: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/blob/main/_quarto.yml#L70
 [nhsbsa-footer-shiny]: https://github.com/nhsbsa-data-analytics/nhsbsaShinyR/blob/main/R/nhs_footer.R
+[nhsbsa-footer-quarto]: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/blob/main/_quarto.yml#L70
 [nhsbsa-footer-js]: https://github.com/nhsbsa/nhsbsa-digital-playbook/tree/main/lib/_components/appFooter
+[coding-licences]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/#ogl-v3
