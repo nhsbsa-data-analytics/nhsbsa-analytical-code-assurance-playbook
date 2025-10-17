@@ -1,0 +1,84 @@
+---
+title: "Gitleaks"
+description: "Automatically scan for secrets when pushing code to GitHub"
+---
+
+## `gitleaks`
+
+It is best practice to set up a [`gitleaks`][gitleaks] secret scanning action when using GitHub. The GitHub organisation [`nhsbsa-data-analytics`][github-org] account contains a publicly accessible [`gitleaks` config file][config] for the action, which has some custom rules. This extends the standard config used by `gitleaks`.
+
+Use of `gitleaks` is free, however a license key is required for organisations.
+
+### GitHub action setup
+
+To get a license key:
+
+1. Visit [gitleaks.io][gitleaks-io].
+1. Click the Sign-up button.
+1. Fill in the form.
+1. You will be emailed a license key.
+1. Add this key as a secret named `GITLEAKS_LICENSE` by navigating to your organisation's actions page (the page will be https://github.com/organizations/{YOUR_ORGANISATION}/settings/secrets/actions/)
+
+Note that this organisation level secret will only be visible from public repositories. For any private repositories, you will need to add the license key at the repository level itself, again named `GITLEAKS_LICENSE` (the page will be https://github.com/nhsbsa-data-analytics/{PRIVATE_REPOSITORY}/settings/secrets/actions).
+
+To add an action that will run whenever code is pushed to a repo:
+
+1. If not already there, create a file in the root directory of your repo named `.github` (note the '.'!).
+1. Within the `.github` folder, and if not already present, create another folder named `workflows`.
+1. Create a file in `workflows` named `gitleaks.yml`.
+1. Paste the following into `gitleaks.yml`:
+
+```
+name: gitleaks
+on: [pull_request, push, workflow_dispatch]
+jobs:
+  scan:
+    name: gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - run: wget -O gitleaks.toml https://raw.githubusercontent.com/nhsbsa-data-analytics/nhsbsaShinyR/main/gitleaks.toml
+
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+          GITLEAKS_CONFIG: "gitleaks.toml"
+
+```
+
+### Handling false positives
+
+Rarely you might get a false positive when the `gitleaks` action runs. To handle this, simply add a comment to ignore the line:
+
+```
+My fake NHS number is 1234567890 #gitleaks:allow
+```
+
+### Handling exposed secrets
+
+If you have pushed a secret to a public GitHub repository **assume that the secret is now public knowledge**.
+
+1. Triage: If the secret is a credential of some sort, immediately take action to revoke, delete or change it.
+1. Cleanup: Remove the secret from your repository history.
+1. Prevention: Consider if there are any actions you can take in future to minimise the chance of revealing a secret.
+
+See detailed instructions for [removing sensitive data from a repository][remove-sensitive-data].
+
+One thing that can reduce the chance of an exposure is to check your code before you even make a commit. This can be done by setting up a [pre-commit hook][hook] that runs `gitleaks` every time you make a commit.
+
+## Additional measures
+
+You should enable [push protection][push-protection] at the `GitHub` organisation level. It is also possible to schedule [secret scanning][secret-scanning] on your repositories. Push protection and secret scanning are always available for free on public repositories, but they are a paid-tier service for any private repos. The methods used in these services are similar to `gitleaks`, but are proprietary to GitHub. Most major cloud service providers and many API providers are partners with GitHub. This means GitHub can sometimes send a suspect token to a partner to verify if it's an active, valid credential before even alerting the user.
+
+[gitleaks]: https://github.com/gitleaks/gitleaks
+[github-org]: https://github.com/nhsbsa-data-analytics
+[config]: https://github.com/nhsbsa-data-analytics/nhsbsaShinyR/blob/main/gitleaks.toml
+[gitleaks-io]: https://gitleaks.io/
+[remove-sensitive-data]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+[hook]: https://github.com/gitleaks/gitleaks?tab=readme-ov-file#pre-commit
+[push-protection]: https://docs.github.com/en/code-security/secret-scanning/introduction/about-push-protection
+[secret-scanning]: https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning
