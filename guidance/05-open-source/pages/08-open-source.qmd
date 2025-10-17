@@ -27,7 +27,7 @@ To publish analytical code:
 1. **Document your code:** Provide clear instructions for use, dependencies, and purpose.
 1. **Host on GitHub:** Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github].
 1. **Follow NHSBSA guidance:** Adhere to [NHSBSA policies][nhsbsa-open-source] and approval processes for open source coding (only visible to internal NHSBSA colleagues).
-1. **Avoid storing secret keys or credentials in source code:** Use [secret management systems][secrets] and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
+1. **Avoid storing secret keys or credentials in source code:** Use [secret management systems][gitleaks] and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
 1. **Check for sensitive information:** Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!
 
 See the [GOV.UK Service Manual][govuk-service-manual] and [NHS Digital RAP Community guidance][rap-community-guidance] for detailed steps and best practices.
