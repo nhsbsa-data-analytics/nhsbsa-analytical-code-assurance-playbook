@@ -66,7 +66,9 @@ Teams should be self directing and adopt tools and processes to fit their circum
   * [Testing](../../testing/test-frameworks/)
 * __Binary dependencies are not held in source control__
   Use package managers to declare dependencies, and resolve binaries within the build. Package descriptors also enable tool to check for downstream vulnerabilities and licence compliance.
-  
+
+<!--
+
 ### Git Hosting
 
 The primary Git hosting provider at the NHSBSA is [Gitlab.com](https://gitlab.com/nhsbsa) although some teams use Github or Azure Repositories.
@@ -85,6 +87,8 @@ Git hosting providers often integrate with issue tracking services. Use commit m
   On Merge Request creSation, a Jira ticket ID in the branch name, commit message or MR title will link the ticket to the MR
 
 :::
+
+-->
 
 ### Commits
 
