@@ -35,7 +35,7 @@ website:
       - href: about.qmd
         text: "{{< iconify mdi:information-outline size=xl >}} About"
       - href: https://www.nhsbsa.nhs.uk/nhsbsa-statistics-and-data-science
-        text: "{{< iconify mdi:house-outline size=xl >}} NHSBSA Data Science Home Page"
+        text: "{{< iconify mdi:house-outline size=xl >}} NHSBSA Statistics and Data Science"
       - href: https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook
         text: "{{< iconify mdi:github size=xl >}} GitHub"
       - href: https://twitter.com/nhsbsa
