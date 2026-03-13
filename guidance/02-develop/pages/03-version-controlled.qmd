@@ -16,23 +16,14 @@ Our [suggested learning resources](#learn-more) provide additional support for b
 ### How do we define success?
 
 * teams feel confident to apply version control practices for all analytical code
-
 * branching and release practices are followed consistently
-
 * repos have clean and meaningful commit histories (no monolithic commits!)
-
 * code change is always peer-reviewed and pull/merge requests are the default
-
 * teams can reproduce published outputs using versioned code
-
 * bug investigations and data discrepancies rely on git history
-
 * improved collaboration within and between teams
-
 * fewer single points of failure within teams
-
 * improved stakeholder confidence and trust in analytical outputs
-
 * teams view Git as a safety net rather than a hurdle and red tape
 
 #### Lookout for:
@@ -53,15 +44,10 @@ Version control is a key tool for assuring analytical code. It enables teams to 
 Version control makes code:
 
 * transparent and auditable by keeping a complete, attributed history of every change for full traceability
-
 * reproducible, making sure any past version of the code can be restored
-
 * safe to collaborate and work in parallel on through branching, preventing clashes and enforcing peer review
-
 * easy to revert to a stable version after problematic changes
-
 * resilient by storing work safely in a remote repository, protecting against local failures.
-
 * easier to share knowledge about, providing clear history and structure to help new team members understand the codebase
 
 ### Alignment with analytical code key principles
@@ -107,37 +93,6 @@ Before a codebase is tagged for release, it must be assured as meeting requireme
 * [Quality assurance](../coding-quality-assurance/)
 * [Testing](../../testing/test-frameworks/)
 
-<!--
-
-#### Binary dependencies are not held in source control
-
-Use package managers to declare dependencies, and resolve binaries within the build. Package descriptors also enable tool to check for downstream vulnerabilities and licence compliance.
-
---> 
-
-<!--
-
-### Git Hosting
-
-The primary Git hosting provider at the NHSBSA is [Gitlab.com](https://gitlab.com/nhsbsa) although some teams use Github or Azure Repositories.
-
-Access to Gitlab is controlled via Azure Entra ID and requested via Service Desk.
-
-#### Issue Trackers
-
-Git hosting providers often integrate with issue tracking services. Use commit messages to automatically post updates or transition tickets:
-
-::: details
-
-### Gitlab to Jira
-
-* [Gitlab Jira integration](https://docs.gitlab.com/ee/integration/jira/)
-  On Merge Request creSation, a Jira ticket ID in the branch name, commit message or MR title will link the ticket to the MR
-
-:::
-
--->
-
 ### Commits
 
 A Commit records the changes made to files in a codebase. The message attached to a commit should clearly communicate what changed and why. A well written commit message will help people to understand a codebase, as modern IDEs can display commit information alongside each line of code.
@@ -157,11 +112,8 @@ Well written commit messages support clean code and they  the motivation for ant
 Logical commits refers to organising change into well-defined, coherent units that represent a single logical change to the codebase:
 
 * each commit addresses a single concern or feature
-
 * the commit can be understood on its own without requiring context from other commits
-
 * the changes are complete enough to not break functionality
-
 * the commit message clearly explains what changed and why
 
 #### Commit frequency
@@ -194,7 +146,7 @@ We recommend adopting [conventional commits](https://www.conventionalcommits.org
 
 The commit header should contain the type of change, ticket reference and a short description. For example:
 
-```
+```bash
 feat: LIS-123 adds time series chart
 ```
 
@@ -343,35 +295,37 @@ Optimise Git usage by providing aliases to complex or frequent git commands.
   ```
 </details>
 
-* __.gitignore__
-  Every repository must define a `.gitignore` file to avoid commit of build artefacts, IDE configuration and local development files.
-  Our [standard files repository](https://gitlab.com/nhsbsa/libraries/nhsbsa-standard-files) contains an example covering most use cases.
+#### .gitignore
+
+Every repository must define a `.gitignore` file to avoid commit of build artefacts, IDE configuration and local development files.
+
+Our [standard files repository](https://gitlab.com/nhsbsa/libraries/nhsbsa-standard-files) contains an example covering most use cases.
 
 ### Controls
 
-Git repository hosting providers support adding controls on what can be done with a hosted Git repository. These must be configured to protect the branch and release process.
+Git repository hosting providers support adding controls on what can be done with a hosted Git repository. These must be configured to protect the branch and release process such as:
 
-* Prevent unauthorised push to production and release branches
-* Prevent unapproved merge of code into the release process
-* Prevent non-compliant commits and branch names
+* prevent unauthorised push to production and release branches
+* prevent unapproved merge of code into the release process
+* prevent non-compliant commits and branch names
 
-::: details 
-## Gitlab configuration
+<details>
+  <summary>GitLab configuration</summary>
 
-* Under `Settings` > `Repository` > `Protected branches`:
+1. Under `Settings` > `Repository` > `Protected branches`:
   * Protect named `main` branch, and wildcard `develop*` and `hotfix*`
   * Allowed to merge: `Developers` and `Maintainers`
   * Allowed to push and merge: `No-one`
   * Allowed to force push: `No`
-* Under `Settings` > `Repository` > `Branch rules`:
+2. Under `Settings` > `Repository` > `Branch rules`:
   * Add rule for `All protected branches`
   * Add approval rule
   * Required approvals at `1` as a minimum. Projects may choose more approvers.
-* Under `Settings` > `Repository` > `Push rules`:
+3. Under `Settings` > `Repository` > `Push rules`:
   * Check: `Reject unverified users`
   * Check: `Check whether the commit author is a GitLab user`
   * Branch Name: `([A-Z]{3,4})-|develop-|hotfix-|NO-JIRA-|main)`
-* Under `Settings` > `Merge requests`
+4. Under `Settings` > `Merge requests`
   * Merge method: `Fast-forward merge`
   * Merge checks:
     * Checked: `Pipelines must succeed`
@@ -381,9 +335,7 @@ Git repository hosting providers support adding controls on what can be done wit
     * Checked: `Prevent editing approval rules in merge requests`
     * When a commit is added: `Remove all approvals`
 
-:::
-
-
+</details>
 
 ## Learn more
 
