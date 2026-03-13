@@ -9,11 +9,30 @@ Git is a distributed version control system used to track changes in source code
 
 Git is built on simple and elegant principles that support independent work in an offline, local environment. Git hosting providers such as Gitlab, Github and Azure enhance the collaborative experience with features such as code review, and continuous integration and deployment build pipelines.
 
-The command line interface to Git is notoriously unintuitive with inconsistent terminiology and arcane flags that change behaviour in unexpected ways. This often leads to users either knowing just enough to get by, or becoming experts that with strong opinions on topics such as keeping a clean commit history. This page provides key guidance to teams so that they may use Git to their best advantage.
+The command line interface to Git is notoriously unintuitive with inconsistent terminology and arcane flags that change behaviour in unexpected ways. This often leads to users either knowing just enough to get by, or becoming experts that with strong opinions on topics such as keeping a clean commit history. This page provides key guidance to teams so that they may use Git to their best advantage.
 
 Our [suggested learning resources](#learn-more) provide additional support for beginner and expert Git users.
 
 ## Why should we use version control?
+Version control is a key tool for assuring analytical code. It enables teams to manage change safely, track code lineage, collaborate, and reproduce results with confidence.
+
+* __transparency and auditability:__
+Keeps a complete, attributed history of every change for full traceability
+
+* __reproducibility:__
+Ensures any past version of the code can be restored exactly
+
+* __safe collaboration:__
+Allows parallel work through branches, preventing clashes and enforcing peer review
+
+* __rolling it back:__
+Makes it easy to find problematic changes and revert to a stable version.
+
+* __preventing work and data loss:__
+Stores work safely in a remote repository, protecting against local failures.
+
+* __facilitating knowledge sharing:__
+Provides clear history and structure that help new team members understand the codebase.
 
 
 
@@ -53,10 +72,12 @@ Access to Gitlab is controlled via Azure Entra ID and requested via Service Desk
 
 Git hosting providers often integrate with issue tracking services. Use commit messages to automatically post updates or transition tickets:
 
-::: details Gitlab to Jira
+::: details
+
+### Gitlab to Jira
 
 * [Gitlab Jira integration](https://docs.gitlab.com/ee/integration/jira/)
-  On Merge Request creation, a Jira ticket ID in the branch name, commit message or MR title will link the ticket to the MR
+  On Merge Request creSation, a Jira ticket ID in the branch name, commit message or MR title will link the ticket to the MR
 
 :::
 
@@ -116,7 +137,8 @@ We recommend adopting [conventional commits](https://www.conventionalcommits.org
 
 * The commit header should contain the type of change, ticket reference and a short description.
 
-  ::: details Conventional commit types
+  ::: details 
+  ## Conventional commit types
 
   * `build`
     Changes that affect the build system or external dependencies (example scopes: maven, npm).
@@ -259,7 +281,8 @@ Ensure your local Git configuration is correct.
 * __Git alias__
   Optimise Git usage by providing aliases to complex or frequent git commands.
 
-  ::: details Suggested alias configuration:
+  ::: details 
+  ## Suggested alias configuration:
 
   ```text
   [alias]
@@ -284,7 +307,8 @@ Git repository hosting providers support adding controls on what can be done wit
 * Prevent unapproved merge of code into the release process
 * Prevent non-compliant commits and branch names
 
-::: details Gitlab configuration
+::: details 
+## Gitlab configuration
 
 * Under `Settings` > `Repository` > `Protected branches`:
   * Protect named `main` branch, and wildcard `develop*` and `hotfix*`
