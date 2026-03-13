@@ -34,11 +34,16 @@ Stores work safely in a remote repository, protecting against local failures.
 * __facilitating knowledge sharing:__
 Provides clear history and structure that help new team members understand the codebase.
 
-
-
 ### Alignment with analytical code key principles
 
+* __Transparent:__
+Others can see how, when, why, and by whom the code has been changed
 
+* __Reproducible:__
+Any version of the code be rolled back and used to recreate the results of a specific version of data, metrics, models, or reports
+
+* __Quality assured:__
+Peer review is required to promote code to a ready to use state. This gateway makes sure that assurance is conducted
 
 ## How do we use version control?
 
