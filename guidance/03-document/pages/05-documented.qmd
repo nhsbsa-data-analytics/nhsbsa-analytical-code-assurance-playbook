@@ -1,6 +1,6 @@
 ---
 title: "Documented"
-description: "Effective documentation is essential for any software project to be reproducible, quality assured and transparent."
+description: "Clear documentation is essential for any project to be **transparent**, **reproducible** and **quality assured**."
 ---
 
 > ## Pre-requisite reading
@@ -10,26 +10,31 @@ description: "Effective documentation is essential for any software project to b
 > * [NHSBSA DDaT playbook: Licensing software or code][ddat-playbook-licenses]
 > * [NHSBSA DDaT playbook: Standard code repository files][ddat-playbook-dev-doc]
 
-## What sort of documentation is needed?
-
-Effective documentation is essential for any software project to be reproducible, quality assured and transparent. It encompasses both code and the project itself, providing technical details, project management information, records of quality assurance and details of logic, assumptions and decisions made.
+## What is documentation?
+Documentation is written information that explains what your analytical project does, why decisions were made, and how others can use and reproduce your work.
 
 We should document:
 
 * a project's purpose and scope
-* how to install or run code or other outputs and their dependencies
-* how to use code or other outputs like apps or dashboards
-* decisions and changes across a project lifecycle
+* how to setup the project and install any dependencies
+* how to configure, use and run the code, including analytical pipelines, dashboards or webapps
+* outputs from running the code and how to interpret them
+* assumptions and limitations, how they are implemented and how they affect results
+* key decisions and changes across a project lifecycle
+* quality assurance logs 
 
-## Why should we document our code and project?
 
-* **Understanding:** Makes code and project purpose clear, improving transparency.
-* **Collaboration:** Reduces time to become productive for contributors and other users.
-* **Maintenance:** Makes modifying, fixing and refactoring code safer and easier.
-* **Improved Design:** Explaining complex parts often highlights areas for simplification or improvement.
-* **Accessibility:** Makes the project [accessible][accessible] and usable for its intended audience.
-* **Knowledge:** Prevents critical information loss when team members change.
-* **Standards:** Provides a record of how a project has been quality assured and facilitates reproducibility and transparency.
+## Why should we document our code?
+
+Good documentation:
+
+* Helps the intended audience understand the project using suitable language
+* Makes the project accessible to a wider audience and improves transparency
+* Helps to ensure the project is reusable and the results are reproducible 
+* Supports knowledge sharing and collaboration between team members
+* Reduces the risk of knowledge loss when team members change
+* Provides an audit trail and evidence that sufficient quality assurance has taken place 
+* Reflects the current state of the project and evolves as the project is updated
 
 ### Alignment with analytical code key principles
 
@@ -39,39 +44,31 @@ We should document:
 
 ## How do we create and maintain quality documentation?
 
-There are considerations that apply to the project itself, or just to code, in addition to more general considerations that apply to both project and code.
+Documentation should cover both the overall project and the code itself.
 
-* **Project-Level:**
-  * The standard files used in code repositories are in the [NHSBSA DDaT playbook][ddat-playbook-dev-doc] - similar documentation should exist even for projects where version control is not in use, for example where low-or-no-code tools are used.
-  * In addition to the standard documentation, a project may also need to include additional documentation.
-    * **Support Information:** How to get help, particularly where a project output includes an app-like artifact.
-    * **Design Docs:** High-level overview for complex projects.
-    * **Accessibility Statement:** If an output is available as a webpage or app, it must have an accessibility statement.
+* **In general:**
+  * Make documentation part of your normal workflow from the beginning.
+  * Use simple language at an appropriate level for your readers.
+  * Explain the reasons behind decisions, especially when they're not obvious.
+  * Put documentation where people expect to find it, using common filenames and formats.
+  * Make documentation easy to find and link related documents together.
+  * Make sure someone is responsible for creating and maintaining each part of the documentation.
+  * Use templates to keep documentation consistent.
 
-* **Code-Level:**
-  * **In-Code Comments:** Explanations within the code focusing on the *why* (rationale, complex logic, trade-offs).
-  * **API Documentation:** Standardized comments for functions, classes, modules explaining their purpose, parameters, returns, and usage.
-  * **Detailed Explanations:** Separate documents or wiki pages for complex algorithms, data structures, or specific modules when needed.
+* **At a project-Level:**
+  * Use the standard files described in the [NHSBSA DDaT playbook][ddat-playbook-dev-doc]. Similar documentation should exist even when not using version control, such as in low-code or no-code projects.
+  * You may also need extra documentation depending on your project:
+    * A high-level overview or design document for complex projects.
+    * How users can get help, especially for apps or interactive outputs.
+    * Accessibility statements are required for any webpage or app output.
 
-* **General**
-  * **Start Early & Integrate:** Treat documentation as an integral part of the development process, and build updates into your workflow.
-  * **Write Clearly and Concisely:** Know your audience for a particular piece of documentation and use straightforward language at the right level.
-  * **Focus on the "Why":** Especially for in-code comments, explain the reasoning behind non-obvious decisions.
-  * **Use Standard Formats & Locations:** Employ conventional filenames, formats, and place documentation where users expect it.
-  * **Leverage Tooling**
-    * Use linters and formatters to enforce documentation standards.
-    * Use tools to generate documentation from code comments.
-    * Use templates for consistency.
-  * **Maintain Discoverability:** Ensure documentation is easy to find and link related documents together.
-  * **Assign Responsibility:** Have clear ownership for creating and maintaining different documentation aspects.
+* **Within the code:**
+  * Use comments in code to explain why code is written how it is (i.e. the reasoning, complex logic, and trade-offs). 
+  * However, we should also avoid explaining *what* code is doing: as a rule, if code can't be understood without comments, then it is better to refactor.
+  * Write standard comments that describe the reusable parts of your code (e.g. functions) - what they do, what inputs they need, what they return, and how to use them.
+  * Use tools that create documentation automatically from code comments.
+  * Create separate documents for complex algorithms, data structures, or specific parts of the code when needed.
 
-## How do we define success?
-	
-* Documentation enables rapid onboarding of contributors and users.
-* Documentation reflects the state of a project, with documentation updates being part of the regular workflow.
-* Needed information is easy to locate.
-* Documentation covers all aspects adequately for the intended audience, answering reasonable questions.
-	
 **Lookout for:**
 
 * [critical friends][critical-friend] and other [peer-reviewers][peer-review] should consider and feedback on documentation, in addition to code and outputs
