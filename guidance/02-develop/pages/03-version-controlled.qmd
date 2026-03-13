@@ -198,7 +198,6 @@ The commit header should contain the type of change, ticket reference and a shor
 feat: LIS-123 adds time series chart
 ```
 
-::: {.details}
 <details> 
   <summary>Conventional commit types</summary>
 
@@ -213,7 +212,6 @@ feat: LIS-123 adds time series chart
 * `test` adding missing tests or correcting existing tests
 
 </details>
-:::
 
 The optional body should contain details of specific changes if required. The optional footer should contain [git-trailer](https://git-scm.com/docs/git-interpret-trailers) formatted meta-information
 
@@ -221,9 +219,9 @@ The optional body should contain details of specific changes if required. The op
 
 A branching strategy is a set of rules to manage and organize code changes in a Git system. A strategy helps to:
 
-* Prevent conflicts: Avoid merge conflicts that can occur when multiple people work on the same project at the same time
-* Increase productivity: Allow the team to work on different features simultaneously
-* Reduce version management time: Help teams to manage release of code more efficiently
+* prevent conflicts merge conflicts that can occur when multiple people work on the same project at the same time
+* allow the team to work on different features simultaneously
+* reduce version management time and help teams to manage release of code more efficiently
 
 There are [many Git branching strategies](https://graphite.dev/guides/git-branching-strategies) including:
 
@@ -242,49 +240,47 @@ Consider the direction of flow for code change:
 
 #### Promoting left to right
 
-The normal direction of flow for change is left to right: A developer creates a feature branch to make a change. The change is promoted to a release candidate branch and then merged into the production, `main` branch.
+The normal direction of flow for change is left to right. A developer creates a feature branch to make a change. The change is promoted to a release candidate branch and then merged into the production, `main` branch.
 
-* Promoting code must always be merged via a [peer review process](../coding-peer-review)
-* Ensure promoted code is clean with few, logical commits
-* Favour fast forward merge over merge commits
+* promoting code must always be merged via a [peer review process](../coding-peer-review)
+* make sure promoted code is clean with few, logical commits
+* favour fast forward merge over merge commits
 
 #### Aligning right to left
 
-Often a branch of code will fall behind the downstream code on the right, especially when working in larger teams. This _divergence_ of code should be resolved prior to promoting.
+Often a branch of code will fall behind the downstream code on the right, especially when working in larger teams. This divergence of code should be resolved prior to promoting.
 
-* Aligning downstream code should be merged locally
-* Favour rebase over merge commit. A merge commit when aligning downstream code will result in a complicated Git graph, which is difficult to keep tidy
-* Favour squashing commits to a small number before rebasing against downstream code. Fewer commits will mean fewer merge conflicts to resolve.
+* aligning downstream code should be merged locally
+* favour rebase over merge commit -- a merge commit when aligning downstream code will result in a complicated Git graph, which is difficult to keep tidy
+* favour squashing commits to a small number before rebasing against downstream code -- fewer commits will mean fewer merge conflicts to resolve
 
 #### Shared branches
 
 We recommend against using shared branches between collaborators. Prefer author specific branches, with peer-reviewed merges.
 
-* Shared branches miss the review step between collaborators
-* There is increased chance of merge commits and complex Git history when pulling divergent changes. See [Git configuration](git-configuration) for controlling pull behaviour.
+* shared branches miss the review step between collaborators
+* there is increased chance of merge commits and complex Git history when pulling divergent changes. See [Git configuration](git-configuration) for controlling pull behaviour
 
 ### Rebasing
 
-Rebasing is a way to tidy up the Git commit history. It involves rewriting commits for a mix of purposes:
+Rebasing is a way to tidy up the Git commit history. It involves rewriting commits for a mix of purposes. Rebasing can:
 
-* Fixing merge conflicts: Rebasing can alter changes in a branch to avoid conflict with changes in another branch.
-* Cleaning up project history: Rebasing can create a cleaner project history by combining multiple commits into one.
-* Editing commit messages: Rebasing can be used to edit previous commit messages.
-* Deleting or reverting commits: Rebasing can be used to delete or revert commits that are no longer necessary
+* alter changes in a branch to avoid merge conflicts with changes in another branch.
+* create a cleaner project history by combining multiple commits into one
+* be used to edit previous commit messages
+* be used to delete or revert commits that are no longer necessary
 
-!!! warning Rebase needs team consensus
-Rebasing will change the Git commit graph and has potential to create an inconsistent repository that is difficult to recover from. Rebase with caution and consult your professional lead if you are unsure of what you are doing.
+:::{.callout-warning}
+## Rebase needs team consensus
+Rebasing will change the Git commit graph and has potential to create an inconsistent repository that is difficult to recover from. Rebase with caution and consult others if you are unsure of what you are doing.
 
-Whenever a shared branch is rebased, the entire team must be notified. Every team member will need to reset their local branch to the rewritten remote:
-
-e.g.
+Whenever a shared branch is rebased, the entire team must be notified. Every team member will need to reset their local branch to the rewritten remote
 
 ```bash
 git fetch --all
 git reset --hard <branch> origin/<branch>
 ```
-
-!!!
+:::
 
 #### Rebase or merge
 
@@ -298,7 +294,7 @@ We also advise squashing unecessary commits before a rebase. This simplifies con
 
 Sometime we need to overwrite a branch with a re-written Git history. Be very careful when force-pushing a shared branch. Ensure that every team member understands how to resolve their local repository against a force-pushed remote branch.
 
-Use `force-with-lease` as a safer way to force push:
+Use [`force-with-lease`](https://git-scm.com/docs/git-push#Documentation/git-push.txt---force-with-lease) as a safer way to force push:
 
 ```bash
 git push --force-with-lease
@@ -308,32 +304,35 @@ git push --force-with-lease
 
 Ensure your local Git configuration is correct.
 
-* __Identity__
-  Ensure that your committer identity (name and email) is the same as your Git hosting provider identity (Gitlab, Github, Azure).
-  We endeavour to Open Source our code which will bring commit identities into the public realm. You may choose to remain anonymous by using a 'cipher' identity and email address.
+#### Identity
 
-* __Pull__
-  Avoid merge commits on pull by setting the `pull.rebase` configuration option:
+Ensure that your committer identity (name and email) is the same as your Git hosting provider identity (Gitlab, Github, Azure).
 
+We endeavour to Open Source our code which will bring commit identities into the public realm. You may choose to remain anonymous by using a 'cipher' identity and email address.
+
+#### Pull
+
+Avoid merge commits on pull by setting the `pull.rebase` configuration option:
+
+```bash
+git config --global pull.rebase true
+```
+
+#### autocrlf
+
+Windows users should configure `autocrlf` to `true` to convert unix line endings (LF) to Windows on checkout and commit. Our standard is to store unix style line endings in Git.
+
+```bash
+git config --global core.autocrlf true
+```
+
+#### Git alias
+
+Optimise Git usage by providing aliases to complex or frequent git commands.
+
+<details>
+  <summary>Suggested alias configuration</summary>
   ```bash
-  git config --global pull.rebase true
-  ```
-
-* __autocrlf__
-  Windows users should configure `autocrlf` to `true` to convert unix line endings (LF) to Windows on checkout and commit.
-  Our standard is to store unix style line endings in Git.
-
-  ```bash
-  git config --global core.autocrlf true
-  ```
-
-* __Git alias__
-  Optimise Git usage by providing aliases to complex or frequent git commands.
-
-  ::: details 
-  ## Suggested alias configuration:
-
-  ```text
   [alias]
     br=branch
     co=checkout
@@ -342,7 +341,7 @@ Ensure your local Git configuration is correct.
     pf=push --force-with-lease
     so=show --pretty='parent %Cred%p%Creset commit %Cred%h%Creset%C(yellow)%d%Creset%n%n%w(72,2,2)%s%n%n%w(72,0,0)%C(cyan)%an%Creset %Cgreen%ar%Creset'
   ```
-  :::
+</details>
 
 * __.gitignore__
   Every repository must define a `.gitignore` file to avoid commit of build artefacts, IDE configuration and local development files.
