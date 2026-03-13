@@ -50,33 +50,32 @@ Our [suggested learning resources](#learn-more) provide additional support for b
 ## Why should we use version control?
 Version control is a key tool for assuring analytical code. It enables teams to manage change safely, track code lineage, collaborate, and reproduce results with confidence.
 
-* __transparency and auditability:__
-Keeps a complete, attributed history of every change for full traceability
+Version control makes code:
 
-* __reproducibility:__
-Ensures any past version of the code can be restored exactly
+* transparent and auditable by keeping a complete, attributed history of every change for full traceability
 
-* __safe collaboration:__
-Allows parallel work through branches, preventing clashes and enforcing peer review
+* reproducible, making sure any past version of the code can be restored
 
-* __rolling it back:__
-Makes it easy to find problematic changes and revert to a stable version.
+* safe to collaborate and work in parallel on through branching, preventing clashes and enforcing peer review
 
-* __preventing work and data loss:__
-Stores work safely in a remote repository, protecting against local failures.
+* easy to revert to a stable version after problematic changes
 
-* __facilitating knowledge sharing:__
-Provides clear history and structure that help new team members understand the codebase.
+* resilient by storing work safely in a remote repository, protecting against local failures.
+
+* easier to share knowledge about, providing clear history and structure to help new team members understand the codebase
 
 ### Alignment with analytical code key principles
 
-* __Transparent:__
+#### Transparent
+
 Others can see how, when, why, and by whom the code has been changed
 
-* __Reproducible:__
+#### Reproducible
+
 Any version of the code be rolled back and used to recreate the results of a specific version of data, metrics, models, or reports
 
-* __Quality assured:__
+#### Quality assured
+
 Peer review is required to promote code to a ready to use state. This gateway makes sure that assurance is conducted
 
 ## How do we use version control?
