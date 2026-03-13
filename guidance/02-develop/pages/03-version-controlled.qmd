@@ -144,23 +144,25 @@ A Commit records the changes made to files in a codebase. The message attached t
 
 #### Clean code
 
-Well written commit messages support clean code. For instance, they remove the motivation for these anti-patterns:
+Well written commit messages support clean code and they  the motivation for anti-pattern behaviour:
 
-* __Journal comments__
-  A log of changes written in every file.
-* __Attribution and bylines__
-  Adding comments with ticket number and author diverts a reader's attention from understanding the code as a whole. In a few months time, that change is no more important than any other.
-* __Commented out code__
-  Leaving redundant code in the codebase, via comment blocks adds unnecessary distraction. Use the commit history if you need to revisit old code.
+* journal comments as a log of changes written in every file.
+
+* adding comments with ticket number and author - this diverts a reader's attention from understanding the code as a whole. In a few months time, that change is no more important than any other.
+
+* leaving redundant code in the codebase via comment blocks adds unnecessary distraction. Use the commit history if you need to revisit old code.
 
 #### Logical commits
 
-Logical commits refers organising change into well-defined, coherent units that represent a single logical change to the codebase:
+Logical commits refers to organising change into well-defined, coherent units that represent a single logical change to the codebase:
 
-* Each commit addresses a single concern or feature
-* The commit can be understood on its own without requiring context from other commits
-* The changes are complete enough to not break functionality
-* The commit message clearly explains what changed and why
+* each commit addresses a single concern or feature
+
+* the commit can be understood on its own without requiring context from other commits
+
+* the changes are complete enough to not break functionality
+
+* the commit message clearly explains what changed and why
 
 #### Commit frequency
 
@@ -178,8 +180,6 @@ We recommend squashing commits into logical commits prior to merge downstream. T
 
 Most Git hosting providers support squashing on merge. We recommend against this. Automating removes control from authors on the resulting commit message. There is a risk that detail is lost from the squashed commits, or too much needless information is included. There is a further risk that issue IDs are lost, removing audit.
 
-Commits should not be squashed automatically when merging downstream and never when merging into `main`. Change is only allowed into `main` after it has been tested in a pre-production environment. Squashing will change the commit history, rendering the tests invalid.
-
 #### Conventional Commits
 
 We recommend adopting [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to structure commit messages.
@@ -192,38 +192,30 @@ We recommend adopting [conventional commits](https://www.conventionalcommits.org
 [optional footer(s)]
 ```
 
-* The commit header should contain the type of change, ticket reference and a short description.
+The commit header should contain the type of change, ticket reference and a short description. For example:
 
-  ::: details 
-  ## Conventional commit types
+```
+feat: LIS-123 adds time series chart
+```
 
-  * `build`
-    Changes that affect the build system or external dependencies (example scopes: maven, npm).
-  * `ci`
-    Changes to the CI configuration files and scripts (example scopes: Gitlab-CI, Azure Devops)
-  * `docs`
-    Documentation only changes
-  * `feat`
-    A new feature
-  * `fix`
-    A bug fix
-  * `perf`
-    A code change that improves performance
-  * `refactor`
-    A code change that neither fixes a bug nor adds a feature
-  * `style`
-    Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc). We always recommend separating formatting changes from functional changes
-  * `test`
-    Adding missing tests or correcting existing tests
+::: {.details}
+<details> 
+  <summary>Conventional commit types</summary>
 
-  :::
+* `build` changes that affect the build system or external dependencies (example scopes: maven, npm).
+* `ci` changes to the CI configuration files and scripts (example scopes: Gitlab-CI, Azure Devops)
+* `docs` documentation only changes
+* `feat` a new feature
+* `fix` a bug fix
+* `perf` a code change that improves performance
+* `refactor` a code change that neither fixes a bug nor adds a feature
+* `style` changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc). We always recommend separating formatting changes from functional changes
+* `test` adding missing tests or correcting existing tests
 
-  ```text
-  feat: LIS-123 adds back button
-  ```
+</details>
+:::
 
-* The optional body should contain details of specific changes if required
-* The optional footer should contain [git-trailer](https://git-scm.com/docs/git-interpret-trailers) formatted meta-information
+The optional body should contain details of specific changes if required. The optional footer should contain [git-trailer](https://git-scm.com/docs/git-interpret-trailers) formatted meta-information
 
 ### Branching Strategy
 
