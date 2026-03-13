@@ -13,6 +13,40 @@ The command line interface to Git is notoriously unintuitive with inconsistent t
 
 Our [suggested learning resources](#learn-more) provide additional support for beginner and expert Git users.
 
+### How do we define success?
+
+* teams feel confident to apply version control practices for all analytical code
+
+* branching and release practices are followed consistently
+
+* repos have clean and meaningful commit histories (no monolithic commits!)
+
+* code change is always peer-reviewed and pull/merge requests are the default
+
+* teams can reproduce published outputs using versioned code
+
+* bug investigations and data discrepancies rely on git history
+
+* improved collaboration within and between teams
+
+* fewer single points of failure within teams
+
+* improved stakeholder confidence and trust in analytical outputs
+
+* teams view Git as a safety net rather than a hurdle and red tape
+
+#### Lookout for:
+
+* not committing enough - large infrequent commits make it more difficult to understand changes for others and your future self. Small, frequent commits with meaningful messages are easier to review and audit
+
+* not pushing to the remote - committing to the local repository doesn't mean that your changes are reflected for everyone else. Remember to push your commits to the remote
+
+* __rule of thumb -__ commit after each small task is completed, such as a function, writing a common table expression, or developing a visualisation. Push to the remote __at least__ once a day
+
+* don't be afraid to break things - __you will__ make a mistake when starting with Git. Git is designed to make fixing things easy, mistakes are usually reversible
+
+* accidentally committing sensitive data - it's easy to check-in API keys, secrets, credentials, and sometimes personal data. Always follow best practice for managing these items 
+
 ## Why should we use version control?
 Version control is a key tool for assuring analytical code. It enables teams to manage change safely, track code lineage, collaborate, and reproduce results with confidence.
 
@@ -343,12 +377,6 @@ Git repository hosting providers support adding controls on what can be done wit
     * When a commit is added: `Remove all approvals`
 
 :::
-
-## How do we define success?
-
-
-
-**Lookout for:**
 
 
 
