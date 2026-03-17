@@ -3,6 +3,11 @@ title: "Version Controlled"
 description: "Version control is all about managing changes"
 ---
 
+## At a glance
+Version control (Git) helps teams to safely collaborate and make their code resilient by tracking changes, enabling branching, and ensuring code is transparent, auditable and reproducible. Clean, logical, and frequent commits make histories easy to understand and maintain.
+
+Teams should follow consistent branching, merging, and release practices, with `main` always representing 'production' and all changes peer reviewed. Good version control practice reduces risk, improves collaboration, and provides a reliable safety net for developing analytical code
+
 ## What is version control?
 
 Git is a distributed version control system used to track changes in source code. It allows developers to collaborate on projects by managing different versions of the same files, creating branches for new features, before merging changes into software releases.
