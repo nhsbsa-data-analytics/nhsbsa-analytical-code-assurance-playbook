@@ -89,7 +89,7 @@ However, as your analysis matures it can be difficult to align notebooks with ot
 * Code cells can be ran out of order, reducing reproducibility.
 * It's hard to [test][testing] functions written in the notebook.
 
-## How do we define success?
+## What does good look like?
 
 * Modular code should feel well-organised and easy to navigate.
 * Repetition will be minimised through the use of small, reusable functions.

@@ -53,7 +53,7 @@ The NHSBSA uses two types of licences, to serve different purposes:
 
 For more details on licencing, see the [NHSBSA Digital Playbook][coding-licences].
 
-## How do we define success?
+## What does good look like?
 
 * The majority of NHSBSA analytical codebases are available in the open.
 * Decisions to keep code closed source are justified and clearly recorded.

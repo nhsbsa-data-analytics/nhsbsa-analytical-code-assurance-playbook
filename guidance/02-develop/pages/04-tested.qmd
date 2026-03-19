@@ -55,7 +55,7 @@ If you are producing analysis using code, the following points can help you go e
 
 It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
 
-## How do we define success?
+## What does good look like?
 	
 * Teams feel confident about their code.
 * Bugs discovered after release of code are rare.

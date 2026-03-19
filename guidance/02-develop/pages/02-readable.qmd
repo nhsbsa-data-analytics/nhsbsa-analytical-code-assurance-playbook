@@ -36,7 +36,7 @@ Readable code is written with clarity and simplicity, making it easy for others 
 
 By following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. For more detailed insights, please refer to the recommended pre-requisite reading.
 
-## How do we define success?
+## What does good look like?
 
 * You should always review your code after you have written it to check for and fix any obvious issues.
 * [Peer-review][peer-review] should highlight any issues spotted when someone else tries to read your code.
