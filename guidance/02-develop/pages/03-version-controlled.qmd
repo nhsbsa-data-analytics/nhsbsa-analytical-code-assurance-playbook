@@ -168,9 +168,66 @@ There are many ways to set, use, and reference environment variables depending o
 
 ## Advanced practice
 
-After you have been using Git for while and gotten more comfortable using the CLI you might be looking to expand you practice and how it you use it in your projects. 
+After you have been using Git for a while and gotten more comfortable using the CLI you might be looking to expand your practice and how you use it in your projects. 
 
 ### Semantic versioning
+
+Semantic versioning is a standard that is used across software engineering to denote meaningful version numbers. You will have likely seen them already when downloading software such as R (R-4.5.3 is latest version as of writing).
+
+The format most commonly followed is:
+```Bash
+MAJOR.MINOR.PATCH
+```
+
+This concept can be adapted and adopted for analytical code. When you start your project, start your version at `0.1.0`, and increment each number when required. Once initial development of your project is complete, you should increment your major version to `1.0.0`.
+
+#### Major
+Increment your major version when you have changes that affect interpretability or reproducibility, such as:
+
+* methodological changes -- new statistical models or imputation approaches
+* changes in definitions, classifications, or analytical scope of measures
+* breaking changes to file formats or schemas
+* a new data set version that cannot be compared to previous outputs
+* decommissioning and removal of key indicators
+
+#### Minor
+Increment your minor version when making backwards compatible changes, such as:
+
+* adding new analyses, charts, or indicators
+* extending data sets with new variables without breaking old ones
+* adding configurable parameters that default to existing behaviour
+* improving documentation
+* adding optional features
+
+These are safe changes that do not invalidate or break previous outputs.
+
+#### Patch
+Increment your patch version when there are no output or interpretation changes, such as:
+
+* fixing a typo in the code or other minor typographical changes
+* improving performance
+* refactoring code without altering logic
+* updating metadata
+* fixing a small bug that __does not__ change analytical results
+
+#### Versioning data
+
+Data changes do not determine that a version needs to be incremented. The code version should only be incremented if the new data requires new logic to be developed. For example, if variable definitions change within the data you would increment the `MAJOR` version.
+
+Data should be versioned separately and is not covered in this guidance.
+
+#### Versioning outputs
+
+Semantic versioning can also be applied to analytical outputs or outputs of analytical code. A simple approach to this is to combined the code and data versions to make a traceable ID. For example:
+
+* code version: `1.3.0`
+* data version: `2025-26`
+* output version: `1.3.0-202526`
+
+This can be applied to reports, data tables, and other outputs.
+
+### Tagging
+
 
 #### Semantic versioning
 
