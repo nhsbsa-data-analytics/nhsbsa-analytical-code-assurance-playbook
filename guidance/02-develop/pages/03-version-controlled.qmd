@@ -4,44 +4,31 @@ description: "Version control is all about managing changes"
 ---
 
 ## At a glance
-Version control (Git) helps teams to safely collaborate and make their code resilient by tracking changes, enabling branching, and ensuring code is transparent, auditable and reproducible. Clean, logical, and frequent commits make histories easy to understand and maintain.
+Version control (Git) helps teams to safely collaborate and make their code resilient by tracking changes, enabling branching, and ensuring code is transparent, auditable and reproducible. 
 
-Teams should follow consistent branching, merging, and release practices, with `main` always representing 'production' and all changes peer reviewed. Good version control practice reduces risk, improves collaboration, and provides a reliable safety net for developing analytical code
+This guidance aims to give users an understanding of version control, the benefits of its use, and how to implement it in their work.
 
 ## What is version control?
 
-Git is a distributed version control system used to track changes in source code. It allows developers to collaborate on projects by managing different versions of the same files, creating branches for new features, before merging changes into software releases.
+Version control is a way to track line-by-line changes to source code over time to give a complete history of edits to a file. It supports collaboration on analytical projects by managing different versions of the same files. It also allows any point in history to be restored. 
 
-Git is built on simple and elegant principles that support independent work in an offline, local environment. Git hosting providers such as Gitlab, Github and Azure enhance the collaborative experience with features such as code review, and continuous integration and deployment build pipelines.
+Version control helps us to solve the problem of managing file versions manually through inefficient naming conventions and [keep an audit trail of changes](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#keep-an-audit-trail-of-changes).
 
-The command line interface to Git is notoriously unintuitive with inconsistent terminology and arcane flags that change behaviour in unexpected ways. This often leads to users either knowing just enough to get by, or becoming experts that with strong opinions on topics such as keeping a clean commit history. This page provides key guidance to teams so that they may use Git to their best advantage.
+Version control allows us to track changes in source code and its accompanying documentation and dependencies, streamlining environment and package management.
+
+### What is Git?
+
+Git is a distributed version control system that is the tool of choice at the NHSBSA. Git is built on simple and elegant principles that support independent work in an offline, local environment, and "pushing" changes back to a online hosted remote. Git hosting providers such as Gitlab, Github and Azure enhance the collaborative experience with features such as code review and issue trackers.
+
+There are 2 main ways to interact with git: 
+
+* through the command line interface (Git Bash) - the Git CLI is more difficult to use for beginners but much more flexible and powerful 
+
+* through IDEs with in-built Git functionality - tools like R Studio and Visual Studio Code help users get started with the basics of creating repositories, linking them to a remote, committing, pushing, and pulling through streamlined GUIs. 
 
 Our [suggested learning resources](#learn-more) provide additional support for beginner and expert Git users.
 
-### How do we define success?
 
-* teams feel confident to apply version control practices for all analytical code
-* branching and release practices are followed consistently
-* repos have clean and meaningful commit histories (no monolithic commits!)
-* code change is always peer-reviewed and pull/merge requests are the default
-* teams can reproduce published outputs using versioned code
-* bug investigations and data discrepancies rely on git history
-* improved collaboration within and between teams
-* fewer single points of failure within teams
-* improved stakeholder confidence and trust in analytical outputs
-* teams view Git as a safety net rather than a hurdle and red tape
-
-#### Lookout for:
-
-* not committing enough - large infrequent commits make it more difficult to understand changes for others and your future self. Small, frequent commits with meaningful messages are easier to review and audit
-
-* not pushing to the remote - committing to the local repository doesn't mean that your changes are reflected for everyone else. Remember to push your commits to the remote
-
-* __rule of thumb -__ commit after each small task is completed, such as a function, writing a common table expression, or developing a visualisation. Push to the remote __at least__ once a day
-
-* don't be afraid to break things - __you will__ make a mistake when starting with Git. Git is designed to make fixing things easy, mistakes are usually reversible
-
-* accidentally committing sensitive data - it's easy to check-in API keys, secrets, credentials, and sometimes personal data. Always follow best practice for managing these items 
 
 ## Why should we use version control?
 Version control is a key tool for assuring analytical code. It enables teams to manage change safely, track code lineage, collaborate, and reproduce results with confidence.
@@ -55,64 +42,143 @@ Version control makes code:
 * resilient by storing work safely in a remote repository, protecting against local failures.
 * easier to share knowledge about, providing clear history and structure to help new team members understand the codebase
 
-### Alignment with analytical code key principles
-
-#### Transparent
-
-Others can see how, when, why, and by whom the code has been changed
-
-#### Reproducible
-
-Any version of the code be rolled back and used to recreate the results of a specific version of data, metrics, models, or reports
-
-#### Quality assured
-
-Peer review is required to promote code to a ready to use state. This gateway makes sure that assurance is conducted
-
 ## How do we use version control?
 
-### NHSBSA Mandatory Rules
+Teams should adopt tools and processes that fit their circumstances. However, when you adopt version control we recommend following a set approach:
 
-Teams should be self directing and adopt tools and processes to fit their circumstances, however we have these non-negotiable standards that must be adhered to:
+* commit often -- small, frequent commits with meaningful messages are easier to review and understand for both other team members and your future self
 
-#### Project documentation
+* push to the remote regularly -- committing to your local repository doesn't mean that you changes are reflected for everyone else. Remember to push your commits to the remote
 
-All projects must document their git conventions, including their [branching strategy](#branching-strategy) and [controls](#controls). Changes from the standard approaches defined here must be held as decision records with a rationale for any deviation.
+* use branching -- use a branching strategy to organise work and separate changes by collaborators. Your `main` branch should always be assured, reviewed code that can be trusted
 
-#### Main is production
+* peer review -- use pull/merge request functionality from Git hosting providers to review code before merging changes
 
-The `main` branch must always reflect the current release, running in production. Keeping `main` as production makes it easier to hotfix urgent changes. Merges into main must be fast-forward only (using the flag `ff-only`). This will prevent merges if there are any divergences between the commit histories of the source branch being merged and `main`. If `main` has progressed ahead of the source branch, the difference must be resolved and tested in the source branch before merging into main. This keeps the history of `main` clean by avoiding any complex merge commits.
+* manage sensitive data -- follow best practice when managing credentials, secrets, API keys, and personal data. It is easy to accidentally check these things in to version control and difficult to remove them again
 
-#### Change attribution
+:::{.callout-tip}
+## Rule of thumb
+__Commit__ after each small task is completed, such as a function, writing a common table expression, or developing a visualisation. __Push__ to the remote at least once a day.
+:::
 
-Code changes must contain the [author](#git-configuration) and [issue tracker ID](#conventional-commits).
+Git has a learning curve and it is easy to make mistakes when getting started but don't be afraid to break things. Git is designed to make fixing things easy and mistakes are usually reversible. 
+
+### Setting Git up
+Git uses a configuration file to set your name and email address that are attached to commits. It is essential that you set your Git config to allow changes and commits to be attributable to you as an author. 
+
+Guidance on setting your config and how user accounts for git providers should be created are available on the [NHSBSA Confluence](https://bsa2468.atlassian.net/wiki/spaces/KB/pages/5801672736/Github+User+Accounts).
+
+### Commits
+
+A commit records the changes made to the file(s) that you're working on. The message attached to a commit should clearly communicate what changed and why. Most commit messages are short and informative and should be written in the imperative. For example, 'Add feature' or 'Fix bug', not 'Added feature', 'Adds feature', or 'Fixed bug', 'Fixes bug':
+
+```bash
+add table creation function
+```
+
+```bash
+fix bug in identified_patient flag
+```
+
+In some cases you may want to provide more detail, the first line of a commit message can be treated like the subject of an email with the rest of the text as the body.
+
+You should commit frequently when you have completed a small, discrete amount of work. For example, you have developed a chart, created a table, or written an output. 
+
+Small, frequent commits make understanding the history of a file much easier and reduces the burden for a peer reviewer. Small commits also make it easier to roll back changes after the introduction of a bug or issue -- large, monolithic commits make bug hunting and fixing harder. 
+
+### Pushing
+
+Changes that you make to your local version of the files (repository) remain local until you explicitly "push" them to the remote. a Remote is typically a repository hosted by one of the big Git providers -- GitHub, GitLab, or Azure DevOps -- that has been synced to your local copy. If you "clone" a repository from a service this syncing is done automatically. If you have created a local repository first you will have to set the remote manually.
+
+Pushing your changes to the remote makes them available to everyone to "pull" into their local copies. Pushing should be done regularly, typically at least once a day, or more frequently if you are making rapid, large scale changes that others need to progress their work.
+
+:::{.callout-caution}
+## Merge conflicts
+If you push changes to the remote and someone else also pushes changes to the same code or file you risk overwriting each others work, creating complex merge conflicts, and removing auditability of changes.
+
+To prevent this, you should work in individual branches before merging them through a pull/merge request.
+:::
+
+### Branching
+
+Git allows you to "branch" out from an established version of a repository to continue making changes without making them directly in that version. When you create a Git repository by default it will have one branch -- `main` (some historical repos might have the default branch of `master`). You can then create a new branch and make changes without jeopardising the contents of `main` before merging at a later point.
+
+You can create as many branches as you want in Git, including branches of branches of branches of branches...
+
+If you use branches in this way it can quickly become unwieldy, difficult to navigate, and impossible to maintain. We recommend adopting a branching strategy and documenting this for your team or project so everyone knows how to work in the repo.
+
+#### Branching strategies
+
+There are many branching strategies that can be employed, all very well documented and with their own strengths and weaknesses. The strategy you adopt should be based on the needs of you and your collaborators, and of the project you're working on. Some popular strategies are:
+
+* Git-flow
+* release branching
+* trunk-based development
+
+We recommend adopting Git-flow, or a variation thereof, for larger more complex projects or projects with larger teams (more than 3 collaborators).
+
+We recommend adopting trunk-based development for smaller projects or projects with very small teams (1 to 3 collaborators).
+
+#### Shared branches
+
+We recommend using one branch per collaborator. Author specific branches with peer-reviewed merges help to prevent overwrites and merge conflicts.
+
+### Pull requests and peer review
+
+Git hosting services provide tools to conduct code reviews through pull requests (GitHub/DevOps) or merge requests (GitLab). All changes should be peer reviewed before being merged into the `main` branch (or other protected branches depending on your branching strategy).
+
+Pull requests allow a team to have a shared conversation during the review of code, including making in-line comments, standards to achieve before approval, and transparent discussion of any issues identified.
+
+Pull requests are not limited to just merges into `main` but are the only pull requests that are mandatory.
+
+Code reviews should be conducted in line with our [peer review](../../04-peer-review/pages/07-peer-reviewed.qmd) guidance.
+
+### Managing sensitive data
+
+During the course of a project it is likely that you will work with sensitive data such as:
+
+* credentials
+* secrets
+* API keys
+* personal identifiable data
+
+If any sensitive data is checked into version control it requires more than just deleting the file and committing the change to remove the data -- it would still be available through the commit history of the repo.
+
+To fully remove the data requires the commit history to be rewritten which is a difficult process -- Git is designed to prevent this as much as possible to maintain an audit of all changes.
+
+As always, prevention is the best form of treatment.
+
+#### Environment variables
+
+Any secrets or credentials that you require should __always__ be stored in an environment variable file which is not tracked by Git and __never__ directly in code or a file that is checked into version control.
+
+There are many ways to set, use, and reference environment variables depending on the tool, language, or type of project you are working on. However, any environment files should added to a `.gitignore` file to prevent them being tracked.
+
+#### .gitignore
+
+`.gitignore` files are used to prevent certain files or file types being checked into version control. For example, data should never be checked into version control. Your `.gitignore` might look like:
+
+```bash
+.env
+*.csv
+*.xlsx
+*.rds
+*.html
+```
+
+## Advanced practice
+
+After you have been using Git for while and gotten more comfortable using the CLI you might be looking to expand you practice and how it you use it in your projects. 
+
+### Semantic versioning
 
 #### Semantic versioning
 
 Release by SemVer Tag. Released versions of code must be identified by a Git tag on the commit that was quality assured. Release tags must follow the [Semantic Versioning standard 2.0.0](https://semver.org/spec/v2.0.0.html). Pre-release semantic versions must not be released into production.
 
-#### Assure quality before release
-
-Before a codebase is tagged for release, it must be assured as meeting requirements:
-* [Peer review](../coding-peer-review/)
-* [Quality assurance](../coding-quality-assurance/)
-* [Testing](../../testing/test-frameworks/)
-
 ### Commits
-
-A Commit records the changes made to files in a codebase. The message attached to a commit should clearly communicate what changed and why. A well written commit message will help people to understand a codebase, as modern IDEs can display commit information alongside each line of code.
-
-#### Clean code
-
-Well written commit messages support clean code and they  the motivation for anti-pattern behaviour:
-
-* journal comments as a log of changes written in every file.
-
-* adding comments with ticket number and author - this diverts a reader's attention from understanding the code as a whole. In a few months time, that change is no more important than any other.
-
-* leaving redundant code in the codebase via comment blocks adds unnecessary distraction. Use the commit history if you need to revisit old code.
-
-#### Logical commits
+####
+ Logical commits
 
 Logical commits refers to organising change into well-defined, coherent units that represent a single logical change to the codebase:
 
@@ -172,22 +238,6 @@ feat: LIS-123 adds time series chart
 
 The optional body should contain details of specific changes if required. The optional footer should contain [git-trailer](https://git-scm.com/docs/git-interpret-trailers) formatted meta-information
 
-### Branching Strategy
-
-A branching strategy is a set of rules to manage and organize code changes in a Git system. A strategy helps to:
-
-* prevent conflicts merge conflicts that can occur when multiple people work on the same project at the same time
-* allow the team to work on different features simultaneously
-* reduce version management time and help teams to manage release of code more efficiently
-
-There are [many Git branching strategies](https://graphite.dev/guides/git-branching-strategies) including:
-
-* Git-flow
-* GitHub-flow
-* Trunk Based Development
-
-We recommend using our [standard branching strategy](../dev-git-branching-strategy/), based on git-flow.
-
 ### Merging
 
 Consider the direction of flow for code change: 
@@ -210,13 +260,6 @@ Often a branch of code will fall behind the downstream code on the right, especi
 * aligning downstream code should be merged locally
 * favour rebase over merge commit -- a merge commit when aligning downstream code will result in a complicated Git graph, which is difficult to keep tidy
 * favour squashing commits to a small number before rebasing against downstream code -- fewer commits will mean fewer merge conflicts to resolve
-
-#### Shared branches
-
-We recommend against using shared branches between collaborators. Prefer author specific branches, with peer-reviewed merges.
-
-* shared branches miss the review step between collaborators
-* there is increased chance of merge commits and complex Git history when pulling divergent changes. See [Git configuration](git-configuration) for controlling pull behaviour
 
 ### Rebasing
 
@@ -261,12 +304,6 @@ git push --force-with-lease
 
 Ensure your local Git configuration is correct.
 
-#### Identity
-
-Ensure that your committer identity (name and email) is the same as your Git hosting provider identity (Gitlab, Github, Azure).
-
-We endeavour to Open Source our code which will bring commit identities into the public realm. You may choose to remain anonymous by using a 'cipher' identity and email address.
-
 #### Pull
 
 Avoid merge commits on pull by setting the `pull.rebase` configuration option:
@@ -299,12 +336,6 @@ Optimise Git usage by providing aliases to complex or frequent git commands.
     so=show --pretty='parent %Cred%p%Creset commit %Cred%h%Creset%C(yellow)%d%Creset%n%n%w(72,2,2)%s%n%n%w(72,0,0)%C(cyan)%an%Creset %Cgreen%ar%Creset'
   ```
 </details>
-
-#### .gitignore
-
-Every repository must define a `.gitignore` file to avoid commit of build artefacts, IDE configuration and local development files.
-
-Our [standard files repository](https://gitlab.com/nhsbsa/libraries/nhsbsa-standard-files) contains an example covering most use cases.
 
 ### Controls
 
