@@ -228,10 +228,14 @@ This can be applied to reports, data tables, and other outputs.
 
 ### Tagging
 
+Git allows the use of tags to reference specific points in a repo's history. Tags are more user friendly ways of identifying specific commits that we want to be able to easily find in the future -- commit hashes have no inherent meaning. For example, we might want to tag in a repo the point in history that was used to produce a particular release, or when the version was incremented due to a new model or methodology changing.
 
-#### Semantic versioning
+```bash
+git tag -a v1.3.0 -m "New patient age analyses and charts"
+git push origin v1.3.0
+```
 
-Release by SemVer Tag. Released versions of code must be identified by a Git tag on the commit that was quality assured. Release tags must follow the [Semantic Versioning standard 2.0.0](https://semver.org/spec/v2.0.0.html). Pre-release semantic versions must not be released into production.
+Once a tag has been created, these locations in a project's history can be easily found and recovered.
 
 ### Commits
 ####
