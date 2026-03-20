@@ -1,6 +1,6 @@
 ---
 title: "Peer-reviewed"
-description: "Peer review is essential for quality code, and helps ensure transparency and reproducibility."
+description: "Peer review is an opportunity to receive constructive feedback on the quality of your analysis and analytical code."
 ---
 
 > ### Pre-requisite reading
@@ -9,7 +9,6 @@ description: "Peer review is essential for quality code, and helps ensure transp
 
 ## At a glance
 
-Peer review is a fundamental component of quality assuring analysis and analytical code. 
 Peer review is when a colleague checks your work and provides (hopefully constructive) feedback to improve quality or spot potential errors before it is finalised and used to produce results.
 This guide outlines the benefits of peer review for quality assuring analytical code and how to put it into practice within the NHSBSA. 
 
@@ -133,7 +132,7 @@ Pair programming is a collaborative process and should not just involve one pers
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
-[version-control]: /guidance/02-develop/pages/03-version-controlled.qmd
+[version-control]: /guidance/01-version-controlled/index.qmd
 [critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/03-responsibilities/pages/11-critical-friend.html
 [ddat-playbook-peer-review]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/
 [aqa-principles]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/01-principles/

@@ -80,6 +80,6 @@ Documentation should cover both the overall project and the code itself.
 [duck-book-project-doc]: https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html
 [ddat-playbook-licenses]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/
 [ddat-playbook-dev-doc]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/
-[accessible]: /guidance/02-develop/pages/02-readable.qmd
+[accessible]: /guidance/04-readable/index.qmd
 [critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-data-science-playbook/guidance/03-analysis/analysis-steps/04-review.html#critical-friend-review
-[peer-review]: /guidance/04-peer-review/pages/07-peer-reviewed.qmd
+[peer-review]: /guidance/03-peer-reviewed/index.qmd

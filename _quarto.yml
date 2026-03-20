@@ -25,11 +25,13 @@ website:
         text: Playbook Home Page
       - text: "Guidance"
         menu:
-          - href: guidance/01-design/index.qmd
-          - href: guidance/02-develop/index.qmd
-          - href: guidance/03-document/index.qmd
-          - href: guidance/04-peer-review/index.qmd
-          - href: guidance/05-open-source/index.qmd
+          - href: guidance/01-version-controlled/index.qmd
+          - href: guidance/02-tested/index.qmd
+          - href: guidance/03-peer-reviewed/index.qmd
+          - href: guidance/04-readable/index.qmd
+          - href: guidance/05-modular/index.qmd
+          - href: guidance/06-documented/index.qmd
+          - href: guidance/07-open-source/index.qmd
           
     right:
       - href: about.qmd
@@ -59,21 +61,20 @@ website:
     contents:
       - text: "Home"
         href: index.qmd
-      - section: "Design"
-        href: guidance/01-design/index.qmd
-        contents: guidance/01-design/pages/*
-      - section: "Develop"
-        href: guidance/02-develop/index.qmd
-        contents: guidance/02-develop/pages/*
-      - section: "Document"
-        href: guidance/03-document/index.qmd
-        contents: guidance/03-document/pages/*
-      - section: "Peer review"
-        href: guidance/04-peer-review/index.qmd
-        contents: guidance/04-peer-review/pages/*
-      - section: "Open source"
-        href: guidance/05-open-source/index.qmd
-        contents: guidance/05-open-source/pages/*
+      - text: "Version Controlled"
+        href: guidance/01-version-controlled/index.qmd
+      - text: "Tested"
+        href: guidance/02-tested/index.qmd
+      - text: "Peer Reviewed"
+        href: guidance/03-peer-reviewed/index.qmd
+      - text: "Readable"
+        href: guidance/04-readable/index.qmd
+      - text: "Modular"
+        href: guidance/05-modular/index.qmd
+      - text: "Documented"
+        href: guidance/06-documented/index.qmd
+      - text: "Open Source"
+        href: guidance/07-open-source/index.qmd
         
   page-footer:
     left: |

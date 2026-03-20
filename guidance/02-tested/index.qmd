@@ -1,0 +1,93 @@
+---
+title: "Tested"
+description: "Testing ensures the analytical code produces the correct output."
+---
+
+> ## Pre-requisite reading
+>
+> * [AF Duck book: Testing code][duck-book-testing]
+> * [NHSBSA DDaT playbook: Testing][ddat-playbook-testing]
+
+## What is testing?
+
+Testing is the process of checking that the analytical code produces the correct output. Testing reduces the risk of errors, promotes confidence in our results and helps ensures the work is repeatable and reproducible.
+
+Testing should be applied throughout the analysis, from data processing and transformation, to the final outputs and results. Testing should be proportionate to the complexity and importance of the analysis, and should be applied in a risk-based way, with more testing applied to new, complex or business critical logic. 
+
+One of the most important aspects of testing is providing evidence of what has been tested, how it was tested, and the results. This can be done through a combination of documentation, manual tests and, where appropriate, automated tests.
+
+### What is *automated testing*?
+In software development workflows, *testing* and *automated testing* are often used interchangeably to mean the latter. 
+
+Automated testing means writing tests in code that run automatically. This approach is repeatable, gives quick feedback on changes, and catches issues early. However, it takes time to write and maintain, and isn't always the best way to test everything.
+
+We recommend combining manual and automated testing, using automated testing where it adds the most value.
+
+
+## Why should we test our analysis?
+
+Testing is a fundamental part of quality assurance, helping to:
+
+* Verify that the code works as intended.
+* Check that the outputs of the analysis are correct and reproducible.
+* Creating an audit trail which provides evidence that the analysis produces the correct output.
+* Catch errors and bugs before the code is used to produce results.
+* [Documentat][documented] how the code is intended to behave, promoting collaboration and reproducibility.
+* Act as a safety net when making changes or improvements.
+* Encourage more [modular][modular] designs which are easier to test and maintain.
+
+
+## How do we test our analysis?
+
+We recommend the following workflow for testing analytical code:
+
+1. Identify the scenarios or behaviours you want to test. For example, this could be checking the result of a specific calculation or data transformation.  
+2. Define the inputs and expected outputs or behaviour. Tip: Test *what* the code should do, rather than *how* it does it. 
+3. Run the code that you are testing and observe the results.
+4. Assert that the code did what you expected it to do (usually comparing the actual output matches the expected output). 
+5. Fix any errors or issues.
+6. Rerun the tests to verify that your code works as expected.
+
+This workflow is the same whether you are manually testing (e.g. by directly comparing input and output files using excel) or automated tested using tests in code. 
+The benefit of automated tests is that once you've written the test, these steps, particularly step 6 can be run over and over again with minimal effort.
+
+We recommend adopting proportionate, risk-based approach with more focus on testing logic that is newer, more complex, or business critical.
+
+For more detail on how to design and implement your tests, see [this guide][rap-testing]
+
+<!-- * Tests should be [documented][documented], indicating what has been tested and why.
+* As your analysis [evolves][version-controlled], be sure to update your tests and documentation. This includes refactoring automated tests in code, removing obsolete tests and adding new ones.  -->
+
+
+### What types of tests are there?
+
+In analytical work, the following types of tests are often the most important to consider:
+
+| Type | Description | Benefits |
+| ----- | ------------- | -------- |
+| Unit Tests | Small isolated tests to ensure each individual component (e.g. a single calculation) works as expected | Help you locate and identify the root cause of any issues or errors |
+| Integration Tests | Testing interactions between two or more individual components (for example, can the data output by one calculation be used as the input to another?) | Verify that different parts of the analysis work together as expected |
+| End-to-end Tests | Testing the entire analysis from start to finish | Verify that the whole process produces the expected results, given certain inputs |
+
+In practice, a mix of all three types often works best. 
+For analytical work, integration and end-to-end tests tend to give the most value, as they verify the analysis works correctly without requiring excessive maintenance as the analysis changes.
+As unit tests are the most costly to maintain, it is recommended that they target the most complex and critical logic, and that they focus on testing the *behaviour* of the code rather than the *implementation*.
+
+
+### Additional tips for automated testing
+If you are producing analysis using code, the following points can help you go even further.
+
+* **Use Testing Frameworks:** Use established testing frameworks appropriate for the coding language.
+* **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
+
+It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests and to do so by CI.
+
+
+
+[duck-book-testing]: https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html
+[ddat-playbook-testing]: https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/
+[rap-testing]: https://nhsdigital.github.io/rap-community-of-practice/training_resources/python/unit-testing/
+[version-controlled]: /guidance/01-version-controlled/index.qmd
+[modular]: /guidance/05-modular/index.qmd
+[documented]: /guidance/06-documented/index.qmd
+[analytical-cycle]: ...

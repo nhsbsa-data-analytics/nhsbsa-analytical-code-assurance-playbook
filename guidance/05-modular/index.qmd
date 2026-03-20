@@ -104,7 +104,7 @@ However, as your analysis matures it can be difficult to align notebooks with ot
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
-[readable-code]: /guidance/02-develop/pages/02-readable.qmd
-[peer-review]: /guidance/04-peer-review/pages/07-peer-reviewed.qmd
-[version-control]: /guidance/02-develop/pages/03-version-controlled.qmd
-[testing]: /guidance/02-develop/pages/04-tested.qmd
+[readable-code]: /guidance/04-readable/index.qmd
+[peer-review]: /guidance/03-peer-reviewed/index.qmd
+[version-control]: /guidance/01-version-controlled/index.qmd
+[testing]: /guidance/02-tested/index.qmd

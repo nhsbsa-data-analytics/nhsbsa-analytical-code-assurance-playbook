@@ -50,4 +50,4 @@ By following these guidelines, we create a codebase that is easier to read, unde
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/readable_code.html
 [ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-naming-conventions/
 [ddat-style-guide]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-style-guide/
-[peer-review]: /guidance/04-peer-review/pages/07-peer-reviewed.qmd
+[peer-review]: /guidance/03-peer-reviewed/index.qmd
