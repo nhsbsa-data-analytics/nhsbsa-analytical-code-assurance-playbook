@@ -3,7 +3,7 @@ title: "Tested"
 description: "Testing ensures the analytical code produces the correct output."
 ---
 
-> ## Pre-requisite reading
+> ## Suggested reading
 >
 > * [AF Duck book: Testing code][duck-book-testing]
 > * [NHSBSA DDaT playbook: Testing][ddat-playbook-testing]
@@ -107,4 +107,4 @@ It is important to also ensure that new changes or bug fixes haven't introduced 
 [version-controlled]: /guidance/01-version-controlled/index.qmd
 [modular]: /guidance/05-modular/index.qmd
 [documented]: /guidance/06-documented/index.qmd
-[peer-review]: /guidance/03-peer-review/index.qmd
+[peer-review]: /guidance/03-peer-reviewed/index.qmd

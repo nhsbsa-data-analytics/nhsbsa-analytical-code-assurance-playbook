@@ -3,7 +3,7 @@ title: "Documented"
 description: "Clear documentation is essential for any project to be **transparent**, **reproducible** and **quality assured**."
 ---
 
-> ## Pre-requisite reading
+> ## Suggested reading
 >
 > * [AF Duck book: Code documentation][duck-book-code-doc]
 > * [AF Duck book: Project documentation][duck-book-project-doc]

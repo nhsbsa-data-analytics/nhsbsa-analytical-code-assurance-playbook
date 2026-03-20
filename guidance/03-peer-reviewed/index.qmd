@@ -3,7 +3,7 @@ title: "Peer-reviewed"
 description: "Peer review is an opportunity to receive constructive feedback on the quality of your analysis and analytical code."
 ---
 
-> ### Pre-requisite reading
+> ### Suggested reading
 > * [AF Duck Book: Peer review][duck-book]
 > * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook]
 

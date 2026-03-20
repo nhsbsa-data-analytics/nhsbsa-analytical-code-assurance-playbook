@@ -1,50 +1,51 @@
 ---
 title: "Readable"
-description: "Readable code is helpful for transparency and reusability and a marker of quality analysis."
+description: "Readable code is clear and easy to understand, maintain and reuse."
 ---
 
-> ### Pre-requisite reading
+> ### Suggested reading
 >
 > * [AF Duck book: Readable code][duck-book]
 > * [NHSBSA DDaT playbook: Naming conventions][ddat-playbook]
 
-## What is readable code?
+## At a glance
+Readable code is written with clarity and simplicity, making it easy for others to understand, maintain and reuse.
+This guide outlines the benefits of writing readable code and how to put it into practice within the NHSBSA. 
 
-Readable code is written with clarity and simplicity, making it easy for others to understand and maintain. It prioritises the reader's experience over the convenience of writing code.
+
+## What is readable code?
+Readable code is code that is clear and easy to understand, maintain and reuse. 
+It is written in a way that allows others (including your future self!) to quickly grasp what the code does, how it works, and why certain decisions were made.
+
+Readable code:
+* Uses clear and descriptive names for variables, functions and other objects.
+* Is well-organised and structured, with a clear flow and logical grouping of related code.
+* Is concise and avoids unnecessary complexity or redundancy.
+* Is well-documented, with comments that explain the 'why' behind the code, rather than the 'what' or 'how' (if you find yourself explaining what your code does or how it does it, then it probably needs to be refactored!).
+
 
 ## Why should we write readable code?
 
-* Simpler and faster for readers (including yourself!) to understand.
-* Reduces risk of bugs and simplifies debugging and future maintenance.
+Readable code:
+
+* Is easier for readers to understand and reproduce.
+* Supports review and quality assurance of code, as well as spotting potential errors or issues.
+* Simplifies debugging, maintenance and future improvements.
 * Enhances collaboration by making it easier to share and reuse code across teams / projects.
-* Encourages coding best practices.
 * Speeds up the onboarding process for new team members.
 * Demonstrates professionalism and care, enhancing organisation and team image.
 
-### Alignment with analytical code key principles
-
-* **Transparent:** Others can more easily understand what the code does.
-* **Reproducible:** Although not making the code inherently reproducible, reproducing it is made easier.
-* **Quality assured:** As well as improving the quality of code, it is easier for others to review it.
 
 ## How do we write readable code?
 
-* Use clear and descriptive names for variables, functions and other objects.
-* Regularly [refactor](https://en.wikipedia.org/wiki/Code_refactoring) to improve code clarity.
-* Comments to explain the 'why', not the 'how' or 'what (if you find yourself explaining what your code does or how it does it, then it probably needs to be refactored!).
-* Adhere to a consistent [style guide][ddat-style-guide] (ideally discuss and agree this with your team before you start!).
+A recommended workflow for producing readable code is:
 
-By following these guidelines, we create a codebase that is easier to read, understand, and contribute to, ultimately leading to a more efficient and effective development process. For more detailed insights, please refer to the recommended pre-requisite reading.
-
-## What does good look like?
-
-* You should always review your code after you have written it to check for and fix any obvious issues.
-* [Peer-review][peer-review] should highlight any issues spotted when someone else tries to read your code.
-
-**Lookout for:**
-
-* try putting what you have written to one side, or leaving it overnight - does it still make sense when you come back?
-* code can always be improved, so try to make it 'good enough' and avoid falling into the trap of never finishing!
+1. Agree on a [style guide][ddat-style-guide] with your team before you start, so that conventions are consistent across the codebase.
+2. Write your code, applying the principles described above: clear names, logical structure, and comments that explain the 'why'.
+3. Review your own work before sharing it — step away from the code and re-read it with fresh eyes.
+4. [Refactor](https://en.wikipedia.org/wiki/Code_refactoring) where needed to improve clarity, removing duplication and unnecessary complexity. Aim for 'good enough' rather than perfect — avoid the trap of never finishing.
+5. Submit for [peer review][peer-review], which will surface any remaining issues that are harder to spot in your own code.
+6. Revisit and improve as the codebase evolves.
 
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/readable_code.html

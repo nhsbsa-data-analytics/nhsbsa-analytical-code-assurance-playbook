@@ -3,7 +3,7 @@ title: "Modular"
 description: "Modular code is an important paradigm for code, aiding resuability and improving quality."
 ---
 
-> ### Pre-requisite reading
+> ### Suggested reading
 >
 > * [AF Duck book: Modular code][duck-book]
 > * [NHSBSA DDaT playbook: Development - Coding][ddat-playbook]
