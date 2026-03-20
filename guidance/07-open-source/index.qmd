@@ -1,18 +1,28 @@
 ---
 title: "Open Source"
-description: "Publishing analytical code as open source increases transparency, collaboration, and reusability."
+description: "Open source code is code that can be viewed, downloaded, used and changed by anyone."
 ---
+
+## At a glance
+Open source code is code that can be viewed, downloaded, used and changed by anyone. 
+This guide outlines the benefits of publishing analytical code as open source and how to do it within the NHSBSA.
 
 ## What is open source?
 
-Open source is a way of developing and distributing software. The code can be viewed, downloaded, used and changed by anyone.
+Open source is a way of developing and distributing software. 
+The code can be viewed, downloaded, used and changed by anyone.
+Open source code is often hosted on platforms like GitHub, where it can be shared and collaborated on by a community of developers.
+Open source code is typically licensed under an open source licence, which specifies how others can use, modify and share the code.
 
 ## Why publish analytical code as open source?
 
-### Alignment with analytical code key principles
-* **Transparent:** Others can see how analyses are performed, increasing trust in results.
-* **Reproducible:** Open code makes it easier to verify and reproduce results, and to reuse code.
-* **Quality assured:** Open review and feedback help identify issues and improve code.
+Open source code:
+* Allows others to see how analyses are performed, increasing transparency and trust in results.
+* Shows the workings behind published analyses (reports, data, dashboards, etc), making it easier to verify and reproduce results
+* Enables others to reuse code which increases value.
+* Open review and feedback help identify issues and improve code.
+* Encourages collaboration and knowledge sharing across teams and organisations.
+
 
 ## How to publish analytical code openly
 
@@ -24,7 +34,7 @@ There are two main routes to open-sourcing analytical code:
 To publish analytical code:
 
 1. **Include a full LICENCE file:** Add a file named `LICENCE` (British English spelling) with the complete licence text in your repository, not just a statement in the `README` (see below to learn more about the licences we use at the NHSBSA).
-1. **Document your code:** Provide clear instructions for use, dependencies, and purpose.
+1. **Document your code:** Provide clear instructions for use, dependencies, and purpose. Ensure the code itself is written to be easy to understand and maintain, and include a `CONTRIBUTE` file to guide others who may want to contribute.
 1. **Host on GitHub:** Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github].
 1. **Follow NHSBSA guidance:** Adhere to [NHSBSA policies][nhsbsa-open-source] and approval processes for open source coding (only visible to internal NHSBSA colleagues).
 1. **Avoid storing secret keys or credentials in source code:** Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
@@ -52,23 +62,6 @@ The NHSBSA uses two types of licences, to serve different purposes:
     * [Websites created using HTML and JavaScript][nhsbsa-footer-js]
 
 For more details on licencing, see the [NHSBSA Digital Playbook][coding-licences].
-
-## What does good look like?
-
-* The majority of NHSBSA analytical codebases are available in the open.
-* Decisions to keep code closed source are justified and clearly recorded.
-* Published outputs (reports, data, dashboards, etc) are linked to the published code that produced them.
-* All outputs (code and publications) include a `LICENCE` file in line with the guidance above.
-* Sensitive or confidential information never appears in open repositories.
-* Bugs or issues discovered after publication are rare.
-
-### Lookout for:
-
-* sensitive or confidential information accidentally included in the repository or commit history.
-* missing or unclear documentation on how to setup and use the code.
-* lack of key repository files, including `LICENCE` and `CONTRIBUTE`.
-* code that is difficult to understand or maintain.
-
 
 [fit-for-publishing]: https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.pdf
 [govuk-secret-guidance]: https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#you-must-not-store-secret-keys-or-credentials-in-the-source-code
