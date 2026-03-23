@@ -129,7 +129,7 @@ Git hosting services provide tools to conduct code reviews through pull requests
 
 Pull requests allow a team to have a shared conversation during the review of code, including making in-line comments, standards to achieve before approval, and transparent discussion of any issues identified.
 
-Pull requests are not limited to just merges into `main` but are the only pull requests that are mandatory.
+Pull requests are not limited to just merges into `main` but are the only pull requests that we deem as mandatory.
 
 Code reviews should be conducted in line with our [peer review](../../04-peer-review/pages/07-peer-reviewed.qmd) guidance.
 
@@ -172,7 +172,7 @@ After you have been using Git for a while and gotten more comfortable using the 
 
 ### Semantic versioning
 
-Semantic versioning is a standard that is used across software engineering to denote meaningful version numbers. You will have likely seen them already when downloading software such as R (R-4.5.3 is latest version as of writing).
+Semantic versioning is a standard that is used across software engineering to denote meaningful version numbers. You will have likely seen them already when downloading software such as R (R-4.5.3 is the latest version as of writing).
 
 The format most commonly followed is:
 ```Bash
@@ -218,7 +218,7 @@ Data should be versioned separately and is not covered in this guidance.
 
 #### Versioning outputs
 
-Semantic versioning can also be applied to analytical outputs or outputs of analytical code. A simple approach to this is to combined the code and data versions to make a traceable ID. For example:
+Semantic versioning can also be applied to analytical outputs or outputs of analytical code. A simple approach to this is to combine the code and data versions to make a traceable ID. For example:
 
 * code version: `1.3.0`
 * data version: `2025-26`
@@ -238,35 +238,54 @@ git push origin v1.3.0
 Once a tag has been created, these locations in a project's history can be easily found and recovered.
 
 ### Commits
-####
- Logical commits
 
-Logical commits refers to organising change into well-defined, coherent units that represent a single logical change to the codebase:
+Earlier in this guidance we defined the simple approach to commits and writing commit messages. As your project grows you may find that your Git history growing with it and becoming more complex, with the previous approach to commits no longer being fit for purpose.
 
-* each commit addresses a single concern or feature
-* the commit can be understood on its own without requiring context from other commits
-* the changes are complete enough to not break functionality
-* the commit message clearly explains what changed and why
+#### Logical commits
 
-#### Commit frequency
+Logical commits are well defined units of work that represent a single coherent change to the codebase. They:
 
-We recommend committing regular and often.
+* address a single concern or feature
+* can be understood on their own without requiring context from other commits
+* are complete enough to not break functionality
+* clearly explain what changed and why using a commit message
 
-Take care not to sacrifice logical commits by committing too frequently. If you wish to commit unfinished work, then make this clear by labelling the commit as work in progress (wip), and later [squash](#squashing) the commits.
+For example, a logical commit could be the full unit of work required to develop a data visualisation or a data aggregation function. 
 
-Note that committing updates the 'local' repository stored on your development machine (for example, on your laptop or VM). To update the 'remote' repository on the Git hosting provider, you need to 'push' the changes you have committed.
-
-Changes should be pushed to the remote at least daily to serve as backup.
+Take care not to sacrifice logical commits by committing too frequently. If you wish to commit unfinished work, then make this clear by labelling the commit as work in progress (wip) and later [squash](#squashing) the commits.
 
 #### Squashing
 
-We recommend squashing commits into logical commits prior to merge downstream. This removes unneccesary commits that can confuse, providing a clean and logical git history. Use [interactive rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) to take control of squashing, and the resulting commit messages.
+We recommend squashing commits into logical commits prior to merging downstream to branches such as `main` or `develop`. This removes unneccesary commits that can confuse, providing a clean and logical git history. Use [interactive rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) to take control of squashing, and the resulting commit messages.
 
-Most Git hosting providers support squashing on merge. We recommend against this. Automating removes control from authors on the resulting commit message. There is a risk that detail is lost from the squashed commits, or too much needless information is included. There is a further risk that issue IDs are lost, removing audit.
+Most Git hosting providers support squashing on merge. We recommend against this. Automating removes control from authors on the resulting commit message. There is a risk that detail is lost from the squashed commits, or too much needless information is included. If you are using an issue tracker and adding issue IDs to your commit messages, there is a further risk that issue IDs are lost, removing audit.
 
 #### Conventional Commits
 
-We recommend adopting [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to structure commit messages.
+We recommend adopting a version of [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to structure commit messages. Conventional commits provide a lightweight set of rules for creating an explicit commit history. it makes it easier to read and understand a commit history and to run automated tools over them, such as a `CHANGELOG` generator. Conventional commits also dovetail nicely with semantic versioning. A commit type:
+
+* `fix` patches a bug, correlating with `PATCH` in semantic versioning
+* `feat` introduces a new feature, correlating with `MINOR` in semantic versioning
+* `feat!` introduces a new feature with a breaking change, correlating with `MAJOR` in semantic versioning
+
+There are other types of commit that can be used and you can define your own types if necessary.
+
+<details> 
+  <summary>Conventional commit types for analysis</summary>
+
+* `docs` documentation only changes
+* `feat` a new feature
+* `fix` a bug fix
+* `perf` a code change that improves performance
+* `refactor` a code change that neither fixes a bug nor adds a feature
+* `style` changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc). We always recommend separating formatting changes from functional changes
+* `test` adding missing tests or correcting existing tests
+* `revert` backing out a previous change
+
+You can denote a breaking change in your commit by adding `!` after the type or scope in your commit message. Breaking changes can be part of commits of any type.
+</details>
+
+A typical conventional commit looks like:
 
 ```html
 <type>[optional scope]: <description>
@@ -276,51 +295,13 @@ We recommend adopting [conventional commits](https://www.conventionalcommits.org
 [optional footer(s)]
 ```
 
-The commit header should contain the type of change, ticket reference and a short description. For example:
+The commit header should contain the type of change, ticket reference if using an issue tracker, and a short description. For example:
 
 ```bash
-feat: LIS-123 adds time series chart
+feat: OST-123 adds time series chart
 ```
 
-<details> 
-  <summary>Conventional commit types</summary>
-
-* `build` changes that affect the build system or external dependencies (example scopes: maven, npm).
-* `ci` changes to the CI configuration files and scripts (example scopes: Gitlab-CI, Azure Devops)
-* `docs` documentation only changes
-* `feat` a new feature
-* `fix` a bug fix
-* `perf` a code change that improves performance
-* `refactor` a code change that neither fixes a bug nor adds a feature
-* `style` changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc). We always recommend separating formatting changes from functional changes
-* `test` adding missing tests or correcting existing tests
-
-</details>
-
 The optional body should contain details of specific changes if required. The optional footer should contain [git-trailer](https://git-scm.com/docs/git-interpret-trailers) formatted meta-information
-
-### Merging
-
-Consider the direction of flow for code change: 
-
-* _Left_ or _Upstream_ is the source of change such as a feature branch
-* _Right_ or _Downstream_ is the target of change, ultimately Production
-
-#### Promoting left to right
-
-The normal direction of flow for change is left to right. A developer creates a feature branch to make a change. The change is promoted to a release candidate branch and then merged into the production, `main` branch.
-
-* promoting code must always be merged via a [peer review process](../coding-peer-review)
-* make sure promoted code is clean with few, logical commits
-* favour fast forward merge over merge commits
-
-#### Aligning right to left
-
-Often a branch of code will fall behind the downstream code on the right, especially when working in larger teams. This divergence of code should be resolved prior to promoting.
-
-* aligning downstream code should be merged locally
-* favour rebase over merge commit -- a merge commit when aligning downstream code will result in a complicated Git graph, which is difficult to keep tidy
-* favour squashing commits to a small number before rebasing against downstream code -- fewer commits will mean fewer merge conflicts to resolve
 
 ### Rebasing
 
@@ -343,27 +324,9 @@ git reset --hard <branch> origin/<branch>
 ```
 :::
 
-#### Rebase or merge
-
-We recommend that teams rebase their branches against the downstream branch whenever they diverge. This provides a more streamlined and understandable git history, and simplifies squashing.
-
-Using a merge commit from an downstream branch makes squashing and reverting change more difficult.
-
-We also advise squashing unecessary commits before a rebase. This simplifies conflict resolution.
-
-#### Forced pushes
-
-Sometime we need to overwrite a branch with a re-written Git history. Be very careful when force-pushing a shared branch. Ensure that every team member understands how to resolve their local repository against a force-pushed remote branch.
-
-Use [`force-with-lease`](https://git-scm.com/docs/git-push#Documentation/git-push.txt---force-with-lease) as a safer way to force push:
-
-```bash
-git push --force-with-lease
-```
-
 ### Git configuration
 
-Ensure your local Git configuration is correct.
+It's possible set a wide range of options for your local Git configuration. Some options will make it easier to do while others will make things harder to do, depending on the behaviour you desire.
 
 #### Pull
 
@@ -375,7 +338,7 @@ git config --global pull.rebase true
 
 #### autocrlf
 
-Windows users should configure `autocrlf` to `true` to convert unix line endings (LF) to Windows on checkout and commit. Our standard is to store unix style line endings in Git.
+Windows users should configure `autocrlf` to `true` to convert unix line endings (LF) to Windows on checkout and commit.
 
 ```bash
 git config --global core.autocrlf true
@@ -400,11 +363,11 @@ Optimise Git usage by providing aliases to complex or frequent git commands.
 
 ### Controls
 
-Git repository hosting providers support adding controls on what can be done with a hosted Git repository. These must be configured to protect the branch and release process such as:
+Git repository hosting providers support adding controls on what can be done with a hosted Git repository. These can be configured to enforce certain processes and standards for your team. For example:
 
-* prevent unauthorised push to production and release branches
-* prevent unapproved merge of code into the release process
-* prevent non-compliant commits and branch names
+* prevent pushing directly to `main` or other branches that should be protected
+* prevent code being merged that has not been reviewed and approved
+* prevent commits and branch names that do not meet your team ways of working
 
 <details>
   <summary>GitLab configuration</summary>
