@@ -24,6 +24,7 @@ Languages such as R, Python and SQL, and workflow tools like Alteryx provide way
 ## Why should code be modular?
 
 Modular code:
+
 * Feels well-organised and easy to navigate.
 * Promotes [readability][readable-code] by preventing long, complex walls of code that are hard to understand.
 * Minimises repetition, which reduces the risk of errors and inconsistencies.

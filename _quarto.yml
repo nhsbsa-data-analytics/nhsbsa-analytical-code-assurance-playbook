@@ -65,13 +65,13 @@ website:
         href: guidance/01-version-controlled/index.qmd
       - text: "Tested"
         href: guidance/02-tested/index.qmd
-      - text: "Peer Reviewed"
+      - text: "Peer Review"
         href: guidance/03-peer-reviewed/index.qmd
       - text: "Readable"
         href: guidance/04-readable/index.qmd
       - text: "Modular"
         href: guidance/05-modular/index.qmd
-      - text: "Documented"
+      - text: "Documentation"
         href: guidance/06-documented/index.qmd
       - text: "Open Source"
         href: guidance/07-open-source/index.qmd

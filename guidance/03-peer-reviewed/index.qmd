@@ -1,11 +1,11 @@
 ---
-title: "Peer-reviewed"
+title: "Peer Review"
 description: "Peer review is an opportunity to receive constructive feedback on the quality of your analysis and analytical code."
 ---
 
 > ### Suggested reading
 > * [AF Duck Book: Peer review][duck-book]
-> * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook]
+> * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook-peer-review]
 
 ## At a glance
 
@@ -44,15 +44,15 @@ In analytical projects, the [Critical Friend][critical-friend] often takes on th
 
 The steps outlined below provide a general process for peer review, which can be adapted to your team's specific context and needs. Steps 1-4 are iterative and may need to be repeated until the reviewer is satisfied with the code quality. Step 5 is the final step to complete the review process.
 
+:::{style="text-align: center"}
 ```{mermaid}
-%%| fig-align: center
 flowchart TD
-    Start([Start Peer Review]) --> Prepare[1. Author:<br/>Prepare Code for Review]
-    Prepare --> Review[2. Reviewer:<br/>Review the Code]
-    Review --> Address[3. Author:<br/>Address Feedback]
-    Address --> Check[4. Reviewer:<br/>Review and Approve]
+    Start([Start Peer Review]) --> Prepare[1 Author:<br/>Prepare Code for Review]
+    Prepare --> Review[2 Reviewer:<br/>Review the Code]
+    Review --> Address[3 Author:<br/>Address Feedback]
+    Address --> Check[4 Reviewer:<br/>Review and Approve]
     Check -->|Changes needed| Prepare
-    Check -->|Approved| Complete[5. Complete Review]
+    Check -->|Approved| Complete[5 Complete Review]
     Complete --> End([End])
     
     style Start fill:#e1f5ff
@@ -63,6 +63,7 @@ flowchart TD
     style Check fill:#fce4ec
     style Complete fill:#c8e6c9
 ```
+:::
 
 ### 1. Author prepares code for review
 
@@ -131,7 +132,6 @@ Pair programming is a collaborative process and should not just involve one pers
 
 
 [duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
-[ddat-playbook]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/
 [version-control]: /guidance/01-version-controlled/index.qmd
 [critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/03-responsibilities/pages/11-critical-friend.html
 [ddat-playbook-peer-review]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/

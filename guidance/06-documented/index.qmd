@@ -1,6 +1,6 @@
 ---
-title: "Documented"
-description: "Documentation is written information that explains what your analytical project does, why decisions were made, and how others can use and reproduce your work."
+title: "Documentation"
+description: "Documentation explains what your analytical project does, why decisions were made, and how others can use and reproduce your work."
 ---
 
 > ## Suggested reading
@@ -59,3 +59,4 @@ Treat documentation as an ongoing activity rather than a final task. The workflo
 [accessible]: /guidance/04-readable/index.qmd
 [critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-data-science-playbook/guidance/03-analysis/analysis-steps/04-review.html#critical-friend-review
 [peer-review]: /guidance/03-peer-reviewed/index.qmd
+[testing]: /guidance/02-tested/index.qmd

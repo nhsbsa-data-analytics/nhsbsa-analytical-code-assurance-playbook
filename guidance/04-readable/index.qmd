@@ -17,7 +17,8 @@ This guide outlines the benefits of writing readable code and how to put it into
 Readable code is code that is clear and easy to understand, maintain and reuse. 
 It is written in a way that allows others (including your future self!) to quickly grasp what the code does, how it works, and why certain decisions were made.
 
-Readable code:
+Key characteristics of readable code include:
+
 * Uses clear and descriptive names for variables, functions and other objects.
 * Is well-organised and structured, with a clear flow and logical grouping of related code.
 * Is concise and avoids unnecessary complexity or redundancy.

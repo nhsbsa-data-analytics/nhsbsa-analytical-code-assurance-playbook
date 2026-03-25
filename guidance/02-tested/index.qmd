@@ -8,6 +8,10 @@ description: "Testing ensures the analytical code produces the correct output."
 > * [AF Duck book: Testing code][duck-book-testing]
 > * [NHSBSA DDaT playbook: Testing][ddat-playbook-testing]
 
+
+## At a glance
+Analytical code should be tested to ensure it produces the correct output. This guide outlines the benefits of testing and how to put it into practice within the NHSBSA.
+
 ## What is testing?
 
 Testing is the process of checking that the analytical code produces the correct output. Testing reduces the risk of errors, promotes confidence in our results and helps ensures the work is repeatable and reproducible.

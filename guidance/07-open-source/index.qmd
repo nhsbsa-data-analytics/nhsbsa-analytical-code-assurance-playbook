@@ -1,10 +1,10 @@
 ---
 title: "Open Source"
-description: "Open source code is code that can be viewed, downloaded, used and changed by anyone."
+description: "Open source code can be viewed, downloaded, used and changed by anyone."
 ---
 
 ## At a glance
-Open source code is code that can be viewed, downloaded, used and changed by anyone. 
+Open source code can be viewed, downloaded, used and changed by anyone. 
 This guide outlines the benefits of publishing analytical code as open source and how to do it within the NHSBSA.
 
 ## What is open source?
@@ -17,6 +17,7 @@ Open source code is typically licensed under an open source licence, which speci
 ## Why publish analytical code as open source?
 
 Open source code:
+
 * Allows others to see how analyses are performed, increasing transparency and trust in results.
 * Shows the workings behind published analyses (reports, data, dashboards, etc), making it easier to verify and reproduce results
 * Enables others to reuse code which increases value.
