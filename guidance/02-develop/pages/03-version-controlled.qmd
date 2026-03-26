@@ -14,7 +14,7 @@ Version control is a way to track line-by-line changes to source code over time.
 
 Version control supports collaboration on analytical projects by managing different versions of the same files and helps us to solve the problem of managing file versions manually through inefficient naming conventions. 
 
-As well as tracking the history of source code, version control helps us track changes in accompanying documentation and dependencies, streamlining environment and package management.
+As well as tracking the history of source code, version control helps us track changes in accompanying documentation and dependencies, streamlining environment and package management. This helps us understand what versions of the code produced what outputs, the environment those outputs where produced in, and state of any dependencies.
 
 ### What is Git?
 
@@ -28,8 +28,6 @@ There are 2 main ways to interact with git:
 
 Our [suggested learning resources](#learn-more) provide additional support for beginner and expert Git users.
 
-
-
 ## Why should we use version control?
 Version control is a key tool for assuring analytical code. It enables teams to manage change safely, track code lineage, collaborate, and reproduce results with confidence.
 
@@ -37,7 +35,7 @@ Version control makes code:
 
 * transparent and auditable by keeping a complete, attributed history of every change for full traceability
 * reproducible, making sure any past version of the code can be restored
-* safe to collaborate and work in parallel on through branching, preventing clashes and enforcing peer review
+* safe to collaborate and work in parallel on through branching, preventing clashes and enforcing [peer review](../../04-peer-review/pages/07-peer-reviewed.qmd)
 * easy to revert to a stable version after problematic changes
 * resilient by storing work safely in a remote repository, protecting against local failures.
 * easier to share knowledge about, providing clear history and structure to help new team members understand the codebase
@@ -52,7 +50,7 @@ Teams should adopt tools and processes that fit their circumstances. However, wh
 
 * use branching -- use a branching strategy to organise work and separate changes by collaborators. Your `main` branch should always be assured, reviewed code that can be trusted
 
-* peer review -- use pull/merge request functionality from Git hosting providers to review code before merging changes
+* [peer review](../../04-peer-review/pages/07-peer-reviewed.qmd) -- use pull/merge request functionality from Git hosting providers to review code before merging changes
 
 * manage sensitive data -- follow best practice when managing credentials, secrets, API keys, and personal data. It is easy to accidentally check these things in to version control and difficult to remove them again
 
@@ -70,7 +68,7 @@ Guidance on setting your config and how user accounts for git providers should b
 
 ### Commits
 
-A commit records the changes made to the file(s) that you're working on. The message attached to a commit should clearly communicate what changed and why. Most commit messages are short and informative and should be written in the imperative. For example, 'Add feature' or 'Fix bug', not 'Added feature', 'Adds feature', or 'Fixed bug', 'Fixes bug':
+A commit records the changes made to the file(s) that you're working on. The message attached to a commit should clearly communicate what changed and why. Most commit messages are short and informative and should be written in the imperative, that is, how the commit changes the codebase in the present tense, rather than what you did in the past tense. For example, 'Add feature', not 'Added feature' or 'Adds feature', and 'Fix bug' not 'Fixed bug' or 'Fixes bug':
 
 ```bash
 Add table creation function
@@ -92,16 +90,18 @@ Changes that you make to your local version of the files (repository) remain loc
 
 Pushing your changes to the remote makes them available to everyone to "pull" into their local copies. Pushing should be done regularly, typically at least once a day, or more frequently if you are making rapid, large scale changes that others need to progress their work.
 
+We recommend against pushing changes directly to the `main` branch and working in individual feature branches before merging them through a pull/merge request.
+
 :::{.callout-caution}
 ## Merge conflicts
-If you push changes to the remote and someone else also pushes changes to the same code or file you risk overwriting each others work, creating complex merge conflicts, and removing auditability of changes.
-
-To prevent this, you should work in individual branches before merging them through a pull/merge request.
+If you push changes to the remote and someone else also pushes changes to the same code or file in the same branch you risk overwriting each others work, creating complex merge conflicts, and removing auditability of changes.
 :::
 
 ### Branching
 
 Git allows you to "branch" out from an established version of a repository to continue making changes without making them directly in that version. When you create a Git repository by default it will have one branch -- `main` (some historical repos might have the default branch of `master`). You can then create a new branch and make changes without jeopardising the contents of `main` before merging at a later point.
+
+Branches can help us explore and experiment with analysis, techniques, and other features before deciding how we integrate them into the codebase in a safe manner. All while allowing others to work from a stable version.
 
 You can create as many branches as you want in Git, including branches of branches of branches of branches...
 
