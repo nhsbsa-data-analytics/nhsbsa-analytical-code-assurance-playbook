@@ -3,8 +3,15 @@ title: "Version Controlled"
 description: "Version control is all about managing changes"
 ---
 
+## Suggested reading
+
+* [AF Duck book: Version control][duck-book-version-control]
+* [NHSE RAP Community of Practice: Introduction to Git][nhse-rap-cop-git]
+
+
 ## At a glance
-Version control (Git) helps teams to safely collaborate and make their code resilient by tracking changes, enabling branching, and ensuring code is transparent, auditable and reproducible. 
+
+Version control (Git) is an essential tool helps teams to safely collaborate and make their code resilient by tracking changes, enabling branching, and ensuring code is transparent, auditable and reproducible. 
 
 This guidance aims to give users an understanding of version control, the benefits of its use, and how to implement it in their work.
 
@@ -15,6 +22,13 @@ Version control is a way to track line-by-line changes to source code over time.
 Version control supports collaboration on analytical projects by managing different versions of the same files and helps us to solve the problem of managing file versions manually through inefficient naming conventions. 
 
 As well as tracking the history of source code, version control helps us track changes in accompanying documentation and dependencies, streamlining environment and package management. This helps us understand what versions of the code produced what outputs, the environment those outputs where produced in, and state of any dependencies.
+
+Version control should be seen as a tool that underpins and promotes high quality analytical code, facilitating other best practices detailed in this playbook such as:
+
+* [peer review][peer-review]
+* [testing][tested]
+* [documentation][documented]
+* [open sourcing][open-sourcing]
 
 ### What is Git?
 
@@ -35,7 +49,7 @@ Version control makes code:
 
 * transparent and auditable by keeping a complete, attributed history of every change for full traceability
 * reproducible, making sure any past version of the code can be restored
-* safe to collaborate and work in parallel on through branching, preventing clashes and enforcing [peer review](../../04-peer-review/pages/07-peer-reviewed.qmd)
+* safe to collaborate and work in parallel on through branching, preventing clashes and enforcing [peer review][peer-review]
 * easy to revert to a stable version after problematic changes
 * resilient by storing work safely in a remote repository, protecting against local failures.
 * easier to share knowledge about, providing clear history and structure to help new team members understand the codebase
@@ -50,7 +64,7 @@ Teams should adopt tools and processes that fit their circumstances. However, wh
 
 * use branching -- use a branching strategy to organise work and separate changes by collaborators. Your `main` branch should always be assured, reviewed code that can be trusted
 
-* [peer review](../../04-peer-review/pages/07-peer-reviewed.qmd) -- use pull/merge request functionality from Git hosting providers to review code before merging changes
+* [peer review][peer-review] -- use pull/merge request functionality from Git hosting providers to review code before merging changes
 
 * manage sensitive data -- follow best practice when managing credentials, secrets, API keys, and personal data. It is easy to accidentally check these things in to version control and difficult to remove them again
 
@@ -64,7 +78,7 @@ Git has a learning curve and it is easy to make mistakes when getting started bu
 ### Setting Git up
 Git uses a configuration file to set your name and email address that are attached to commits. It is essential that you set your Git config to allow changes and commits to be attributable to you as an author. 
 
-Guidance on setting your config and how user accounts for git providers should be created are available on the [NHSBSA Confluence](https://bsa2468.atlassian.net/wiki/spaces/KB/pages/5801672736/Github+User+Accounts).
+Guidance on setting your config and how user accounts for git providers should be created are available on the [NHSBSA Confluence][nhsbsa-confluence-github-accounts].
 
 ### Commits
 
@@ -131,7 +145,7 @@ Pull requests allow a team to have a shared conversation during the review of co
 
 Pull requests are not limited to just merges into `main` but are the only pull requests that we deem as mandatory.
 
-Code reviews should be conducted in line with our [peer review](../../04-peer-review/pages/07-peer-reviewed.qmd) guidance.
+Code reviews should be conducted in line with our [peer review][peer-review] guidance.
 
 ### Managing sensitive data
 
@@ -256,13 +270,13 @@ Take care not to sacrifice logical commits by committing too frequently. If you 
 
 #### Squashing
 
-We recommend squashing commits into logical commits prior to merging downstream to branches such as `main` or `develop`. This removes unneccesary commits that can confuse, providing a clean and logical git history. Use [interactive rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) to take control of squashing, and the resulting commit messages.
+We recommend squashing commits into logical commits prior to merging downstream to branches such as `main` or `develop`. This removes unneccesary commits that can confuse, providing a clean and logical git history. Use [interactive rebase][atlassian-git-rebase] to take control of squashing, and the resulting commit messages.
 
 Most Git hosting providers support squashing on merge. We recommend against this. Automating removes control from authors on the resulting commit message. There is a risk that detail is lost from the squashed commits, or too much needless information is included. If you are using an issue tracker and adding issue IDs to your commit messages, there is a further risk that issue IDs are lost, removing audit.
 
 #### Conventional Commits
 
-We recommend adopting a version of [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to structure commit messages. Conventional commits provide a lightweight set of rules for creating an explicit commit history. it makes it easier to read and understand a commit history and to run automated tools over them, such as a `CHANGELOG` generator. Conventional commits also dovetail nicely with semantic versioning. A commit type:
+We recommend adopting a version of [conventional commits][conventional-commits] to structure commit messages. Conventional commits provide a lightweight set of rules for creating an explicit commit history. it makes it easier to read and understand a commit history and to run automated tools over them, such as a `CHANGELOG` generator. Conventional commits also dovetail nicely with semantic versioning. A commit type:
 
 * `fix` patches a bug, correlating with `PATCH` in semantic versioning
 * `feat` introduces a new feature, correlating with `MINOR` in semantic versioning
@@ -301,7 +315,7 @@ The commit header should contain the type of change, ticket reference if using a
 feat: OST-123 adds time series chart
 ```
 
-The optional body should contain details of specific changes if required. The optional footer should contain [git-trailer](https://git-scm.com/docs/git-interpret-trailers) formatted meta-information
+The optional body should contain details of specific changes if required. The optional footer should contain [git-trailer][git-trailer-info] formatted meta-information
 
 ### Rebasing
 
@@ -407,3 +421,14 @@ Git repository hosting providers support adding controls on what can be done wit
 * [Git Katas](https://github.com/eficode-academy/git-katas)
 * [Atlassian on Git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 * [Git immersion](https://gitimmersion.com/)
+
+[peer-review]: /guidance/03-peer-reviewed/index.qmd
+[tested]: /guidance/02-tested/index.qmd
+[documented]: /guidance/06-documented/index.qmd
+[open-source]: /guidance/07-open-source/index.qmd
+[duck-book-version-control]: https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html
+[nhse-rap-cop-git]: https://nhsdigital.github.io/rap-community-of-practice/training_resources/git/introduction-to-git/
+[nhsbsa-confluence-github-accounts]: https://bsa2468.atlassian.net/wiki/spaces/KB/pages/5801672736/Github+User+Accounts
+[atlassian-git-rebase]: https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+[conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0/
+[git-trailer-info]: https://git-scm.com/docs/git-interpret-trailers
