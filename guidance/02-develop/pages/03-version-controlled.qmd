@@ -10,11 +10,11 @@ This guidance aims to give users an understanding of version control, the benefi
 
 ## What is version control?
 
-Version control is a way to track line-by-line changes to source code over time to give a complete history of edits to a file. It supports collaboration on analytical projects by managing different versions of the same files. It also allows any point in history to be restored. 
+Version control is a way to track line-by-line changes to source code over time. Version control [keeps an audit trail of changes](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#keep-an-audit-trail-of-changes) and allows any point in history to be restored. 
 
-Version control helps us to solve the problem of managing file versions manually through inefficient naming conventions and [keep an audit trail of changes](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html#keep-an-audit-trail-of-changes).
+Version control supports collaboration on analytical projects by managing different versions of the same files and helps us to solve the problem of managing file versions manually through inefficient naming conventions. 
 
-Version control allows us to track changes in source code and its accompanying documentation and dependencies, streamlining environment and package management.
+As well as tracking the history of source code, version control helps us track changes in accompanying documentation and dependencies, streamlining environment and package management.
 
 ### What is Git?
 
@@ -73,11 +73,11 @@ Guidance on setting your config and how user accounts for git providers should b
 A commit records the changes made to the file(s) that you're working on. The message attached to a commit should clearly communicate what changed and why. Most commit messages are short and informative and should be written in the imperative. For example, 'Add feature' or 'Fix bug', not 'Added feature', 'Adds feature', or 'Fixed bug', 'Fixes bug':
 
 ```bash
-add table creation function
+Add table creation function
 ```
 
 ```bash
-fix bug in identified_patient flag
+Fix bug in identified_patient flag
 ```
 
 In some cases you may want to provide more detail, the first line of a commit message can be treated like the subject of an email with the rest of the text as the body.
@@ -88,7 +88,7 @@ Small, frequent commits make understanding the history of a file much easier and
 
 ### Pushing
 
-Changes that you make to your local version of the files (repository) remain local until you explicitly "push" them to the remote. a Remote is typically a repository hosted by one of the big Git providers -- GitHub, GitLab, or Azure DevOps -- that has been synced to your local copy. If you "clone" a repository from a service this syncing is done automatically. If you have created a local repository first you will have to set the remote manually.
+Changes that you make to your local version of the files (repository) remain local until you explicitly "push" them to the remote. A remote is typically a repository hosted by one of the big Git providers -- GitHub, GitLab, or Azure DevOps -- that has been synced to your local copy. If you "clone" a repository from a service this syncing is done automatically. If you have created a local repository first you will have to set the remote manually.
 
 Pushing your changes to the remote makes them available to everyone to "pull" into their local copies. Pushing should be done regularly, typically at least once a day, or more frequently if you are making rapid, large scale changes that others need to progress their work.
 
