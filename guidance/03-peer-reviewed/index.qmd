@@ -9,7 +9,7 @@ description: "Peer review is an opportunity to receive constructive feedback on 
 
 ## At a glance
 
-Peer review is when a colleague checks your work and provides (hopefully constructive) feedback to improve quality or spot potential errors before it is finalised and used to produce results.
+Peer review is when a colleague checks your work and provides constructive feedback to improve quality or spot potential errors before it is finalised and used to produce results.
 This guide outlines the benefits of peer review for quality assuring analytical code and how to put it into practice within the NHSBSA. 
 
 
@@ -26,13 +26,13 @@ However, even when version control tools are not used, peer review should still 
 
 Peer review should ensure that analytical code aligns with the key principles of transparency, reproducibility and quality assurance by providing an independent check that:
 
-* Code is readable and understandable
-* There is sufficient documentation explaining what the code does and why, including any key assumptions, limitations and key decisions
-* Code has been tested and produces the correct results 
-* Outputs have been verified and are reproducible 
-* Code and outputs are consistent with the analytical plan or problem definition to ensure it answers [the right questions][aqa-principles]
-* Alternative approaches have been considered where appropriate, including that the [right methods have been used][aqa-principles]
-* Code follows best practice and team standards, maintaining consistency across the project and team
+* code is readable and understandable
+* there is sufficient documentation explaining what the code does and why, including any key assumptions, limitations and key decisions
+* code has been tested and produces the correct results 
+* outputs have been verified and are reproducible 
+* code and outputs are consistent with the analytical plan or problem definition to ensure it answers [the right questions][aqa-principles]
+* alternative approaches have been considered where appropriate, including that the [right methods have been used][aqa-principles]
+* code follows best practice and team standards, maintaining consistency across the project and team
 
 
 ## How does peer review work?
@@ -67,44 +67,46 @@ flowchart TD
 
 ### 1. Author prepares code for review
 
-* Break your work into manageable, related chunks rather than submitting everything at once.
-* Ensure your code runs correctly and passes any tests before requesting review.
-* Provide clear context: explain what the code does, why you made certain decisions, and highlight any areas where you'd particularly like feedback.
-* If using version control tools like Git, submit a pull/merge request for your branch.
-* Don't rush the process or bypass review to save time - quality assurance is worth the investment.
+* break your work into manageable, related chunks rather than submitting everything at once.
+* ensure your code runs correctly and passes any tests before requesting review.
+* provide clear context: explain what the code does, why you made certain decisions, and highlight any areas where you'd particularly like feedback.
+* if using version control tools like Git, submit a pull/merge request for your branch.
+* don't rush the process or bypass review to save time - quality assurance is worth the investment.
 
 ### 2. Reviewer reviews the code
 
-* Read through the code carefully to understand its purpose and logic.
-* Check whether the code:
-    * Is readable and understandable
-    * Has sufficient documentation explaining what it does and why, including any key assumptions, limitations and key decisions
-    * Produces the correct outputs and has appropriate tests
-    * Follows team standards and best practices
-    * Aligns with the analytical plan or problem definition
-* Add clear, constructive comments on any issues, questions, or suggestions for improvement.
-* Explain *why* you're suggesting changes, not just *what* to change.
-* Remember: there's often more than one way to solve a problem. Focus on whether the approach is sound and follows best practice, rather than whether you would have done it differently.
+Read through the code carefully to understand its purpose and logic. Check whether the code:
+* is readable and understandable
+* has sufficient documentation explaining what it does and why, including any key assumptions, limitations and key decisions
+* produces the correct outputs and has appropriate tests
+* follows team standards and best practices
+* aligns with the analytical plan or problem definition
+
+You should add clear, constructive comments on any issues, questions, or suggestions for improvement, explaining why you're suggesting changes, not just what to change.
+
+Remember, there's often more than one way to solve a problem. Focus on whether the approach is sound and follows best practice, rather than whether you would have done it differently.
 
 ### 3. Author addresses feedback
 
-* Review all comments carefully and consider each piece of feedback.
-* Make changes to the code where appropriate.
-* Discuss any comments you disagree with or don't understand - peer review is a conversation, not a command.
-* Document the changes you've made and any decisions taken based on the feedback.
+Review all comments carefully, consider each piece of feedback, and make changes where appropriate. 
+
+Discuss any comments you disagree with or don't understand -- peer review is a conversation, not a command. 
+
+Finally, document the changes you've made and any decisions taken based on the feedback.
 
 ### 4. Reviewer reviews and approves
 
-* Check that your feedback has been addressed appropriately.
-* Approve the code once you're satisfied it meets quality standards.
-* If using version control tools, formally approve the pull/merge request.
+Check that your feedback has been addressed appropriately and approve the code once you're satisfied it meets the right standards of quality. 
+
+If using version control tools, formally approve the pull/merge request.
 
 ### 5. The review is completed
 
-* Once approved, the code can be merged (if using version control)
-    * We recommend this is done by the author to maintain accountability, but this may depend on your team's processes and permissions.
-* If not using version control, the author should update the main codebase with the reviewed code and document that the review has taken place.
-* Thank your reviewer for their time and feedback.
+If using version control the code should be merged once approved. We recommend that this is done by the author to maintain auditability, but this may depend on your team's processes and permissions.
+
+If not using version control, the author should update the main codebase with the reviewed code and document that the review has taken place.
+
+Always remember to thank your reviewer of their time and feedback -- successful and productive peer review requires effort on both sides.
 
 
 <!-- ### Pair programming

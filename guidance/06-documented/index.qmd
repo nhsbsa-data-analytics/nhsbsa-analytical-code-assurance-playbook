@@ -12,13 +12,13 @@ description: "Documentation explains what your analytical project does, why deci
 
 ## At a glance
 Documentation is written information that explains what your analytical project does, why decisions were made, and how others can use and reproduce your work.
-This guide outlines the benefits of documentation and how to create and maintain quality documentation within the NHSBSA.
+This guide outlines the benefits of quality documentation and how to create and maintain it within the NHSBSA.
 
 
 ## What is documentation?
 Documentation is written information that explains what your analytical project does, why decisions were made, and how others can use and reproduce your work.
 
-We should document:
+You should document:
 
 * a project's purpose and scope
 * how to setup the project and install any dependencies
@@ -33,13 +33,13 @@ We should document:
 
 Good documentation:
 
-* Helps the intended audience understand the project using suitable language.
-* Makes the project accessible to a wider audience and improves transparency.
-* Helps to ensure the project is reusable and the results are reproducible.
-* Supports knowledge sharing and collaboration between team members.
-* Makes it easier for others to [review][peer-review] the code and project as a whole, including spotting potential issues or improvements.
-* Reduces the risk of knowledge loss when team members change.
-* Provides an audit trail and evidence that sufficient [quality assurance][testing] has taken place.
+* helps the intended audience understand the project using suitable language
+* makes the project accessible to a wider audience and improves transparency
+* helps to ensure the project is reusable and the results are reproducible
+* supports knowledge sharing and collaboration between team members
+* makes it easier for others to [review][peer-review] the code and project as a whole, including spotting potential issues or improvements
+* reduces the risk of knowledge loss when team members change
+* provides an audit trail and evidence that sufficient [quality assurance][testing] has taken place
 
 
 ## How do we create and maintain quality documentation?
@@ -47,7 +47,7 @@ Good documentation:
 Treat documentation as an ongoing activity rather than a final task. The workflow below maps documentation to natural points in a project lifecycle:
 
 1. At project outset set up the [standard repository files][ddat-playbook-dev-doc] using common filenames and formats, and agree who is responsible for each part of the documentation. Allocate time for documentation in your estimates.
-2. As you code write comments to explain *why* decisions were made, not *what* the code does. Use standard docstrings for functions and modules, and consider tools that generate reference documentation automatically from these. Use simple language appropriate for your audience, adding extra documentation where the project is complex (e.g. design documents, accessibility statements, or user help).
+2. As you code write comments to explain **why** decisions were made, not **what** the code does. Use standard docstrings for functions and modules, and consider tools that generate reference documentation automatically from these. Use simple language appropriate for your audience, adding extra documentation where the project is complex. For example, design documents, accessibility statements, or user help.
 3. When designs or decisions change update documentation at the point of change. Record the reasoning behind significant decisions so future maintainers understand the context.
 4. Ask [peer reviewers][peer-review] and [critical friends][critical-friend] to assess documentation alongside code and outputs. Use this feedback to identify gaps.
 5. Practice continuous improvement by reflecting as a team on the quality of documentation and how it can be improved in future.

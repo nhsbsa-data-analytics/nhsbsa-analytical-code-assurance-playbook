@@ -18,31 +18,36 @@ Complex analysis projects and workflows can often lead to a lot of code being wr
 
 Each module should do one specific job and work with other modules through clear interfaces (known inputs, known outputs). You should be able to use a module without needing to know how it works inside.
 
-Languages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.
+Languages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions, macros, libraries, and packages.
 
 
 ## Why should code be modular?
 
 Modular code:
 
-* Feels well-organised and easy to navigate.
-* Promotes [readability][readable-code] by preventing long, complex walls of code that are hard to understand.
-* Minimises repetition, which reduces the risk of errors and inconsistencies.
-* Reduces the likelihood of code conflicts when multiple team members are working on the same codebase.
-* Simplifies testing of the code (and its outputs).
-* Is easier to maintain or improve in future.
-* Speeds up the [peer review][peer-review] process.
+* is better organised and easier to navigate
+* promotes [readability][readable-code] by preventing long, complex walls of code that are hard to understand
+* minimises repetition, which reduces the risk of errors and inconsistencies
+* reduces the likelihood of code conflicts when multiple team members are working on the same codebase
+* simplifies testing of the code and its outputs
+* is easier to maintain or improve in future
+* speeds up the [peer review][peer-review] process
 
 
 ## How do we write modular code?
 
 A recommended workflow for producing modular code is:
 
-1. Start by splitting complex code into multiple ordered scripts grouped by concern (e.g. data build, cleaning, analysis, visualisation). Organise scripts so that the intended run order is clear — this alone improves navigability and makes [peer review][peer-review] easier.
+1. Start by splitting complex code into multiple ordered scripts grouped by concern. For example, data build, cleaning, analysis, visualisation. Organise scripts so that the intended run order is clear -- this alone improves navigability and makes [peer review][peer-review] easier. 
+
 2. Identify repetitive or reusable logic and extract it into functions. Keep functions small and focused on a single responsibility, with clear inputs and outputs.
-3. Group related functions into modules (e.g. a dedicated file or script for data validation helpers). If you find yourself scrolling endlessly to locate a particular piece of logic, that's a signal to break it into smaller modules. Equally, if you need many tabs open just to follow a single change, you may have over-fragmented — aim for balance. Avoid overly complex solutions where simpler ones exist.
+
+3. Group related functions into modules. For example, a dedicated file or script for data validation helpers. If you find yourself scrolling endlessly to locate a particular piece of logic, that's a signal to break it into smaller modules. Equally, if you need many tabs open just to follow a single change, you may have over-fragmented -- aim for balance. Avoid overly complex solutions where simpler ones exist. 
+
 4. As the codebase matures, consider packaging related modules so they can be shared and reused across projects.
-5. Starting from monolithic code and refactoring incrementally is a valid strategy — you don't need to get it right first time.
+
+5. Starting from monolithic code and refactoring incrementally is a valid strategy -- you don't need to get it right first time.
+
 6. Submit for [peer review][peer-review], which will surface opportunities to improve structure that are hard to spot yourself.
 
 <!-- AJ: come back to this in v2.0 

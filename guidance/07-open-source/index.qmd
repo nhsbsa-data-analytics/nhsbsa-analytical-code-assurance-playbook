@@ -18,11 +18,11 @@ Open source code is typically licensed under an open source licence, which speci
 
 Open source code:
 
-* Allows others to see how analyses are performed, increasing transparency and trust in results.
-* Shows the workings behind published analyses (reports, data, dashboards, etc), making it easier to verify and reproduce results
-* Enables others to reuse code which increases value.
-* Open review and feedback help identify issues and improve code.
-* Encourages collaboration and knowledge sharing across teams and organisations.
+* allows others to see how analyses are performed, increasing transparency and trust in results
+* shows the workings behind published analyses (reports, data, dashboards, etc), making it easier to verify and reproduce results
+* enables others to reuse code which increases value
+* open review and feedback help identify issues and improve code
+* encourages collaboration and knowledge sharing across teams and organisations
 
 
 ## How to publish analytical code openly
@@ -34,11 +34,11 @@ There are two main routes to open-sourcing analytical code:
 
 To publish analytical code:
 
-1. **Include a full LICENCE file:** Add a file named `LICENCE` (British English spelling) with the complete licence text in your repository, not just a statement in the `README` (see below to learn more about the licences we use at the NHSBSA).
-1. **Document your code:** Provide clear instructions for use, dependencies, and purpose. Ensure the code itself is written to be easy to understand and maintain, and include a `CONTRIBUTE` file to guide others who may want to contribute.
-1. **Host on GitHub:** Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github].
-1. **Follow NHSBSA guidance:** Adhere to [NHSBSA policies][nhsbsa-open-source] and approval processes for open source coding (only visible to internal NHSBSA colleagues).
-1. **Avoid storing secret keys or credentials in source code:** Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
+1. Include a file named `LICENCE` (British English spelling) with the complete licence text in your repository, not just a statement in the `README`.
+2. Document your code and provide clear instructions for use, dependencies, and purpose. Ensure the code itself is written to be easy to understand and maintain, and include a `CONTRIBUTE` file to guide others who may want to contribute.
+3. Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github].
+4. Follow [NHSBSA policies][nhsbsa-open-source] and approval processes for open source coding.
+5. Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
 1. **Check for sensitive information:** Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!
 
 See the [GOV.UK Service Manual][govuk-service-manual] and [NHS Digital RAP Community guidance][rap-community-guidance] for detailed steps and best practices.
