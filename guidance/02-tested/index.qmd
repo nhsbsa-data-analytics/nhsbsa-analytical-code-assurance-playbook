@@ -43,7 +43,7 @@ Testing is a fundamental part of quality assurance, helping to:
 
 ## How do we test our analysis?
 
-We recommend adopting proportionate (as judged by peer-review), risk-based approach with more focus on testing logic that is newer, more complex, or business critical.
+We recommend adopting a proportionate, risk-based approach with more focus on testing logic that is newer, more complex, or business critical. Your approach should be discussed with your team, critical friend, or peer reviewer to agree that it is in-line with the identified risk profile of the project.
 
 
 ### Roles and responsibilities
@@ -98,12 +98,12 @@ In practice, a mix of all three types often works best.
 
 
 ### Additional guidance for automated testing
-If you are producing analysis using code, the following points can help you go even further.
+If you are producing analysis using code, you can take this approach further by using:
 
-* **Use Testing Frameworks:** Use established testing frameworks appropriate for the coding language.
-* **Automate Test Execution:** Run tests automatically, especially as part of a Continuous Integration (CI) pipeline, to get fast feedback on changes.
+* established testing frameworks for you the coding language you're using
+* automated test execution to run tests automatically, especially as part of a continuous integration (CI) pipline
 
-It is important to also ensure that new changes or bug fixes haven't introduced a bug in code that was already tested successfully. This is a good reason to regularly run all existing unit, integration and E2E tests, which is much easier if you have automated tests in place and easier still if you have a CI pipeline set up.
+ It is important to make sure that new changes or bug fixes haven't introduced new bugs in code that was already tested successfully. This is a good reason to automate as many tests as possible and regularly run them as a suite of tests.
 
 [duck-book-testing]: https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html
 [ddat-playbook-testing]: https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/
