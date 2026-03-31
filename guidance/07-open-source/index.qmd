@@ -4,13 +4,13 @@ description: "Open source code can be viewed, downloaded, used and changed by an
 ---
 
 ## At a glance
-Open source code can be viewed, downloaded, used and changed by anyone. 
+Open source code can be viewed, downloaded and used by anyone. 
 This guide outlines the benefits of publishing analytical code as open source and how to do it within the NHSBSA.
 
 ## What is open source?
 
 Open source is a way of developing and distributing software. 
-The code can be viewed, downloaded, used and changed by anyone.
+The code can be viewed, downloaded and used by anyone. Anyone can contribute to open source code (pending approval by the code owner via Pull Requests) which promotes collaboration across teams and organisations.
 Open source code is often hosted on platforms like GitHub, where it can be shared and collaborated on by a community of developers.
 Open source code is typically licensed under an open source licence, which specifies how others can use, modify and share the code.
 
