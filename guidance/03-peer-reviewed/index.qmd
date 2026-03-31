@@ -33,6 +33,7 @@ Peer review should ensure that analytical code aligns with the key principles of
 * code and outputs are consistent with the analytical plan or problem definition to ensure it answers [the right questions][aqa-principles]
 * alternative approaches have been considered where appropriate, including that the [right methods have been used][aqa-principles]
 * code follows best practice and team standards, maintaining consistency across the project and team
+* documentation and code can be understood by colleagues and knowledge has been shared across the team
 
 
 ## How does peer review work?
