@@ -43,21 +43,19 @@ Effective peer review requires clear expectations, constructive feedback, and pr
 There are two key roles in peer review: the **code author** (the analyst doing the work) and the **reviewer** (a team member or critical friend who checks the work).
 In analytical projects, the [Critical Friend][critical-friend] often takes on the reviewer role, though any suitably skilled team member can perform reviews. 
 
-The steps outlined below provide a general process for peer review, which can be adapted to your team's specific context and needs. Steps 1-4 are iterative and may need to be repeated until the reviewer is satisfied with the code quality. Step 5 is the final step to complete the review process.
+The steps outlined below provide a general process for peer review, which can be adapted to your team's specific context and needs. The diagram below illustrates the process, which is then explained in more detail in the sections that follow.
 
 :::{style="text-align: center"}
 ```{mermaid}
 flowchart TD
     Start([Start Peer Review]) --> Prepare[1 Author:<br/>Prepare Code for Review]
-    Prepare --> Review[2 Reviewer:<br/>Review the Code]
-    Review --> Address[3 Author:<br/>Address Feedback]
-    Address --> Check[4 Reviewer:<br/>Review and Approve]
-    Check -->|Changes needed| Prepare
-    Check -->|Approved| Complete[5 Complete Review]
-    Complete --> End([End])
+    Prepare --> Review[2 Reviewer:<br/>Review the code]
+    Review --> |Changes needed|Address[3 Author:<br/>Address feedback]
+    Review --> Check[4 Reviewer:<br/>Approves]
+    Address --> Review
+    Check -->|Approved| Complete([5 Complete review])
     
     style Start fill:#e1f5ff
-    style End fill:#e1f5ff
     style Prepare fill:#fff4e6
     style Review fill:#f3e5f5
     style Address fill:#e8f5e9
