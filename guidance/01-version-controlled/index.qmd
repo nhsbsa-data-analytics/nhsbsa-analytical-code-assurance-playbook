@@ -28,7 +28,7 @@ Version control should be seen as a tool that underpins and promotes high qualit
 * [peer review][peer-review]
 * [testing][tested]
 * [documentation][documented]
-* [open sourcing][open-sourcing]
+* [open sourcing][open-source]
 
 ### What is Git?
 
