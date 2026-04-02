@@ -2,14 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Modular code is an important paradigm for code, aiding resuability and improving quality.">
+<meta name="description" content="Testing ensures the analytical code produces the correct output.">
 
 <title>Analytical Code Assurance</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,21 +27,20 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="../../../static/bsa-favicon.png" rel="icon" type="image/png">
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-2d42b221d4a3bf25ead76833855245a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../../static/bsa-favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f04851e5181f5d885676c86098d93a9e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -56,27 +58,24 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <div id="quarto-announcement" data-announcement-id="3ba91ba772a959eb82aaf840c71796ea" class="alert alert-warning hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Pre-Release</strong>: This is a new website under development. <a href="https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/blob/main/CONTRIBUTE.md">Click here</a> to find out how you can submit feedback, suggest improvements and get involved!</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
     <nav class="navbar navbar-expand " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.nhsbsa.nhs.uk/" class="navbar-brand navbar-brand-logo">
-    <img src="../../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo light-content">
-    <img src="../../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo dark-content">
+    <img src="../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo light-content">
+    <img src="../../static/NHSBSA logo.png" alt="NHS Business Services Authority" class="navbar-logo dark-content">
     </a>
   </div>
           <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../../index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
 <span class="menu-text">Playbook Home Page</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -85,36 +84,44 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guidance">    
         <li>
-    <a class="dropdown-item" href="../../../guidance/01-design/index.html">
- <span class="dropdown-text">Design</span></a>
+    <a class="dropdown-item" href="../../guidance/01-version-controlled/index.html">
+ <span class="dropdown-text">Version Controlled</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/02-develop/index.html">
- <span class="dropdown-text">Develop</span></a>
+    <a class="dropdown-item" href="../../guidance/02-tested/index.html">
+ <span class="dropdown-text">Tested</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/03-document/index.html">
- <span class="dropdown-text">Document</span></a>
+    <a class="dropdown-item" href="../../guidance/03-peer-reviewed/index.html">
+ <span class="dropdown-text">Peer Review</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/04-peer-review/index.html">
- <span class="dropdown-text">Peer review</span></a>
+    <a class="dropdown-item" href="../../guidance/04-readable/index.html">
+ <span class="dropdown-text">Readable</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../guidance/05-open-source/index.html">
- <span class="dropdown-text">Open source</span></a>
+    <a class="dropdown-item" href="../../guidance/05-modular/index.html">
+ <span class="dropdown-text">Modular</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../guidance/06-documented/index.html">
+ <span class="dropdown-text">Documentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../guidance/07-open-source/index.html">
+ <span class="dropdown-text">Open Source</span></a>
   </li>  
     </ul>
   </li>
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:information-outline" style="font-size: 1.5em;" aria-label="Icon information-outline from mdi Iconify.design set." title="Icon information-outline from mdi Iconify.design set."></iconify-icon> About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://www.nhsbsa.nhs.uk/nhsbsa-statistics-and-data-science"> 
-<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:house-outline" style="font-size: 1.5em;" aria-label="Icon house-outline from mdi Iconify.design set." title="Icon house-outline from mdi Iconify.design set."></iconify-icon> NHSBSA Data Science Home Page</span></a>
+<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:house-outline" style="font-size: 1.5em;" aria-label="Icon house-outline from mdi Iconify.design set." title="Icon house-outline from mdi Iconify.design set."></iconify-icon> NHSBSA Statistics and Data Science</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook"> 
@@ -135,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Modular</h1>
+          <h1 class="quarto-secondary-nav-title">Tested</h1>
         </a>     
     </div>
   </nav>
@@ -144,10 +151,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Modular</h1>
+      <h1 class="title d-none d-lg-block">Tested</h1>
                   <div>
         <div class="description">
-          Modular code is an important paradigm for code, aiding resuability and improving quality.
+          Testing ensures the analytical code produces the correct output.
         </div>
       </div>
                 </div>
@@ -165,121 +172,56 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../../../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../guidance/01-design/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Design</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/01-design/pages/01-modular.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Modular</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../guidance/02-develop/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Develop</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/02-develop/pages/02-readable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Readable</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../guidance/02-develop/pages/03-version-controlled.html" class="sidebar-item-text sidebar-link">
+  <a href="../../guidance/01-version-controlled/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Version Controlled</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/02-develop/pages/04-tested.html" class="sidebar-item-text sidebar-link">
+  <a href="../../guidance/02-tested/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tested</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../guidance/03-document/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Document</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/03-document/pages/05-documented.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Documented</span></a>
+  <a href="../../guidance/03-peer-reviewed/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer Review</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/03-document/pages/06-decisions-logged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decisions Logged</span></a>
+  <a href="../../guidance/04-readable/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readable</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../guidance/04-peer-review/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Peer review</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Peer-reviewed</span></a>
+  <a href="../../guidance/05-modular/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modular</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../guidance/05-open-source/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open source</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../guidance/05-open-source/pages/08-open-source.html" class="sidebar-item-text sidebar-link">
+  <a href="../../guidance/06-documented/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guidance/07-open-source/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open Source</span></a>
   </div>
 </li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -290,17 +232,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-modular-code" id="toc-what-is-modular-code" class="nav-link active" data-scroll-target="#what-is-modular-code">What is modular code?</a></li>
-  <li><a href="#why-should-code-be-modular" id="toc-why-should-code-be-modular" class="nav-link" data-scroll-target="#why-should-code-be-modular">Why should code be modular?</a>
+  <li><a href="#at-a-glance" id="toc-at-a-glance" class="nav-link active" data-scroll-target="#at-a-glance">At a glance</a></li>
+  <li><a href="#what-is-testing" id="toc-what-is-testing" class="nav-link" data-scroll-target="#what-is-testing">What is testing?</a>
   <ul class="collapse">
-  <li><a href="#alignment-with-analytical-code-key-principles" id="toc-alignment-with-analytical-code-key-principles" class="nav-link" data-scroll-target="#alignment-with-analytical-code-key-principles">Alignment with analytical code key principles</a></li>
+  <li><a href="#what-is-automated-testing" id="toc-what-is-automated-testing" class="nav-link" data-scroll-target="#what-is-automated-testing">What is <em>automated testing</em>?</a></li>
   </ul></li>
-  <li><a href="#how-do-we-do-it-then" id="toc-how-do-we-do-it-then" class="nav-link" data-scroll-target="#how-do-we-do-it-then">How do we do it then?</a>
+  <li><a href="#why-should-we-test-our-analysis" id="toc-why-should-we-test-our-analysis" class="nav-link" data-scroll-target="#why-should-we-test-our-analysis">Why should we test our analysis?</a></li>
+  <li><a href="#how-do-we-test-our-analysis" id="toc-how-do-we-test-our-analysis" class="nav-link" data-scroll-target="#how-do-we-test-our-analysis">How do we test our analysis?</a>
   <ul class="collapse">
-  <li><a href="#split-your-code-into-multiple-scripts" id="toc-split-your-code-into-multiple-scripts" class="nav-link" data-scroll-target="#split-your-code-into-multiple-scripts">Split your code into multiple scripts</a></li>
-  <li><a href="#using-notebooks" id="toc-using-notebooks" class="nav-link" data-scroll-target="#using-notebooks">Using notebooks</a></li>
+  <li><a href="#roles-and-responsibilities" id="toc-roles-and-responsibilities" class="nav-link" data-scroll-target="#roles-and-responsibilities">Roles and responsibilities</a></li>
+  <li><a href="#recommended-workflow" id="toc-recommended-workflow" class="nav-link" data-scroll-target="#recommended-workflow">Recommended workflow</a></li>
+  <li><a href="#manual-testing-considerations" id="toc-manual-testing-considerations" class="nav-link" data-scroll-target="#manual-testing-considerations">Manual testing considerations</a></li>
+  <li><a href="#additional-guidance-for-automated-testing" id="toc-additional-guidance-for-automated-testing" class="nav-link" data-scroll-target="#additional-guidance-for-automated-testing">Additional guidance for automated testing</a></li>
   </ul></li>
-  <li><a href="#how-do-we-define-success" id="toc-how-do-we-define-success" class="nav-link" data-scroll-target="#how-do-we-define-success">How do we define success?</a></li>
   </ul>
 </nav>
     </div>
@@ -321,105 +265,101 @@ ul.task-list li input[type="checkbox"] {
 
 
 <blockquote class="blockquote">
-<h3 id="pre-requisite-reading" class="anchored">Pre-requisite reading</h3>
+<h2 id="suggested-reading" class="anchored">Suggested reading</h2>
 <ul>
-<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html">AF Duck book: Modular code</a></li>
-<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/">NHSBSA DDaT playbook: Development - Coding</a></li>
+<li><a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html">AF Duck book: Testing code</a></li>
+<li><a href="https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/">NHSBSA DDaT playbook: Testing</a></li>
 </ul>
 </blockquote>
-<section id="what-is-modular-code" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-modular-code">What is modular code?</h2>
-<ul>
-<li>Complex analysis projects and workflows can often lead to a lot of code being written with some or a lot of that code performing repetitive tasks.</li>
-<li>Breaking down your code and workflow into smaller, independent, reusable chunks (modules) can help you maintain your project and share components across a series of analyses.</li>
-<li>Each module ideally handles a specific task (aka separation of concerns) and interacts with others through well-defined interfaces (you should be able to use a module from the outside without needing to understand the internal complexity on the inside).</li>
-<li>Languages such as R, Python and SQL, and workflow tools like Alteryx provide ways to break up code into smaller logical units, including modules, classes, functions and macros.</li>
-</ul>
+<section id="at-a-glance" class="level2">
+<h2 class="anchored" data-anchor-id="at-a-glance">At a glance</h2>
+<p>Analytical code should be tested to ensure it produces the correct output. This guide outlines the benefits of testing and how to put it into practice within the NHSBSA.</p>
 </section>
-<section id="why-should-code-be-modular" class="level2">
-<h2 class="anchored" data-anchor-id="why-should-code-be-modular">Why should code be modular?</h2>
-<ul>
-<li>Promotes <a href="../../../guidance/02-develop/pages/02-readable.html">readability</a> by preventing long, complex walls of code that are hard to understand.</li>
-<li>Multiple team members working on same codebase will have less code conflicts.</li>
-<li>Simplifies testing of the code (and its outputs).</li>
-<li>Smaller modules are easier to maintain or improve in future.</li>
-<li>Speeds up the <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">peer review</a> process.</li>
-<li>Makes sharing and reusing code easier.</li>
-</ul>
-<section id="alignment-with-analytical-code-key-principles" class="level3">
-<h3 class="anchored" data-anchor-id="alignment-with-analytical-code-key-principles">Alignment with analytical code key principles</h3>
-<ul>
-<li><strong>Transparent:</strong> Others can more easily understand the steps taken.</li>
-<li><strong>Reproducible:</strong> Although not making the code inherently reproducible, reproducing it is made easier.</li>
-<li><strong>Quality assured:</strong> As well as improving the quality of code, it is easier for others to review it.</li>
-</ul>
+<section id="what-is-testing" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-testing">What is testing?</h2>
+<p>Testing is the process of checking that the analytical code produces the correct output. Testing reduces the risk of errors, promotes confidence in our results and helps ensures the work is repeatable and reproducible.</p>
+<p>Testing should be applied throughout the analysis, from data processing and transformation, to the final outputs and results. Testing should be proportionate to the complexity and importance of the analysis, and should be applied in a risk-based way, with more testing applied to new, complex or business critical logic.</p>
+<p>One of the most important aspects of testing is providing evidence of what has been tested, how it was tested, and the results. This can be done through a combination of documentation, manual tests and, where appropriate, automated tests.</p>
+<section id="what-is-automated-testing" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-automated-testing">What is <em>automated testing</em>?</h3>
+<p>In software development workflows, <em>testing</em> and <em>automated testing</em> are often used interchangeably to mean the latter.</p>
+<p>Automated testing means writing tests in code that run automatically. This approach is repeatable, gives quick feedback on changes, and catches issues early. However, it takes time to write and maintain, and isn’t always the best way to test everything.</p>
+<p>We recommend combining manual and automated testing, using automated testing where it adds the most value.</p>
 </section>
 </section>
-<section id="how-do-we-do-it-then" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-we-do-it-then">How do we do it then?</h2>
-<p>Writing modular code or developing modular workflows can differ depending on the your tool of choice, the needs of the project or piece of work, the intended customer, or the expected users of the code in the future.</p>
-<p>However, a simple hierarchy of actions to take are to:</p>
+<section id="why-should-we-test-our-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-we-test-our-analysis">Why should we test our analysis?</h2>
+<p>Testing is a fundamental part of quality assurance, helping to:</p>
 <ul>
-<li>split complex code and workflows in multiple (ordered) scripts or smaller workflows</li>
-<li>use a code notebook to organise your analysis</li>
-<li>write re-usable code as functions</li>
-<li>organise related functions into modules</li>
-<li>organise and document modules as packages</li>
-<li>starting from ‘monolithic’ code and refactoring over time is a valid strategy!</li>
-</ul>
-<p>Let’s dive into how we can do some of these.</p>
-<section id="split-your-code-into-multiple-scripts" class="level3">
-<h3 class="anchored" data-anchor-id="split-your-code-into-multiple-scripts">Split your code into multiple scripts</h3>
-<p>Monolithic code should be avoided as much as possible. A large and complex piece of code that runs into hundreds, if not thousands, of lines is unwieldy, difficult to read, debug, and maintain, and your <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">peer reviewer</a> won’t thank you either! Splitting your monolithic code into ordered scripts can help yourself and others understand the steps you’ve taken and the reasons why.</p>
-<!-- DRAFT NOTE: intention here is to provide examples for the various tools that teams use e.g. R, Python, SQL, Alteryx, VBA (also need to be conscious of future data platform) -->
-<p>For example, in R a large project could be split into:</p>
-<pre><code>project
--- 01_data_build.R
--- 02_data_clean.R
--- 03_analysis.R
--- 04_visualisation.R</code></pre>
-<p>These scripts can now be run in their intended order and splits out the parts of your code into related areas, making peer review easier.</p>
-<p>Using scripts doesn’t inherently make your code reproducible or reusable, but are a good first step towards better and higher quality code.</p>
-<p><strong>Do:</strong></p>
-<ul>
-<li>split your code up</li>
-<li>group related code together</li>
-<li>organise your scripts so you and others know how to run it</li>
-<li>make your scripts self contained and runnable from the command line</li>
-</ul>
-<p><strong>Don’t:</strong></p>
-<ul>
-<li>write monolithic code</li>
-<li>split up your code too much - 100 scripts with 10 lines of code in are just as hard to digest</li>
-<li>write overly complex code where simpler solutions might exist</li>
+<li>verify that the code works as intended.</li>
+<li>check that the outputs of the analysis are correct and reproducible.</li>
+<li>creating an audit trail which provides evidence that the analysis produces the correct output.</li>
+<li>catch errors and bugs before the code is used to produce results.</li>
+<li><a href="../../guidance/06-documented/index.html">document</a> how the code is intended to behave, promoting collaboration and reproducibility.</li>
+<li>act as a safety net when making changes or improvements.</li>
+<li>encourage more <a href="../../guidance/05-modular/index.html">modular</a> designs which are easier to test and maintain.</li>
 </ul>
 </section>
-<section id="using-notebooks" class="level3">
-<h3 class="anchored" data-anchor-id="using-notebooks">Using notebooks</h3>
-<p>Tools such as Jupyter notebooks or R Markdown allow you write code, commentary and visualisations alongside each other. They can be incredibly useful starting points for exploring data, developing an analysis and are great for communicating results.</p>
-<p>However, as your analysis matures it can be difficult to align notebooks with other principles for producing high quality code.</p>
+<section id="how-do-we-test-our-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-test-our-analysis">How do we test our analysis?</h2>
+<p>We recommend adopting a proportionate, risk-based approach with more focus on testing logic that is newer, more complex, or business critical. Your approach should be discussed with your team, critical friend, or peer reviewer to agree that it is in-line with the identified risk profile of the project.</p>
+<section id="roles-and-responsibilities" class="level3">
+<h3 class="anchored" data-anchor-id="roles-and-responsibilities">Roles and responsibilities</h3>
+<p>Testing is a shared responsibility, and everyone involved in the analysis should be encouraged to contribute to testing:</p>
 <ul>
-<li>Notebooks are inherently difficult to <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">review</a> and audit using <a href="../../../guidance/02-develop/pages/03-version-controlled.html">version control</a>.</li>
-<li>Code cells can be ran out of order, reducing reproducibility.</li>
-<li>It’s hard to <a href="../../../guidance/02-develop/pages/04-tested.html">test</a> functions written in the notebook.</li>
+<li>the analyst writing the code should be responsible for writing and running tests to verify their code works as expected.</li>
+<li><a href="../../guidance/03-peer-reviewed/index.html">peer reviewers</a> should check the evidence that appropriate tests have been carried out including that the right things have been tested. They should also reproduce the test results as part of their review process.</li>
+<li>if you have a dedicated testing or quality assurance role, they should be responsible for overseeing the testing process, providing guidance and support to analysts and reviewers, and ensuring that testing is being done effectively across the team.</li>
 </ul>
 </section>
+<section id="recommended-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-workflow">Recommended workflow</h3>
+<p>We recommend the following workflow for testing analytical code:</p>
+<ol type="1">
+<li>identify the scenarios or behaviours you want to test. For example, this could be checking the result of a specific calculation or data transformation.<br>
+</li>
+<li>define the inputs and expected outputs or behaviour. Tip: Test <em>what</em> the code should do, rather than <em>how</em> it does it.</li>
+<li>run the code that you are testing and observe the results.</li>
+<li>assert that the code did what you expected it to do (usually comparing the actual output matches the expected output).</li>
+<li>(if needed) fix any errors or issues.</li>
+<li>(if needed) rerun the tests to verify that your code works as expected.</li>
+</ol>
+<p>This workflow is the same whether you are manually testing (e.g.&nbsp;by directly comparing input and output files using excel) or automated tested using tests in code. Although the benefit of automated tests is that once you’ve written the test, these steps can be run over and over again with minimal effort.</p>
+<p>For more detail on how to design your tests, including what to test, see <a href="https://nhsdigital.github.io/rap-community-of-practice/training_resources/python/unit-testing/">this guide</a></p>
 </section>
-<section id="how-do-we-define-success" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-we-define-success">How do we define success?</h2>
+<section id="manual-testing-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="manual-testing-considerations">Manual testing considerations</h3>
+<p>Manual testing can be a good option for simpler or one-off pieces of analyses, or for testing specific scenarios that are difficult to automate.</p>
+<p>When manually testing, it is important to document your tests and results, so that others can understand what has been tested and the outcomes. This can be done using a simple spreadsheet or word document, which includes the inputs, expected outputs, actual outputs and any notes on the test results. It should also include instructions on how to reproduce the result, including any set up steps or dependencies.</p>
+<!-- * Tests should be [documented][documented], indicating what has been tested and why.
+* As your analysis [evolves][version-controlled], be sure to update your tests and documentation. This includes refactoring automated tests in code, removing obsolete tests and adding new ones.  -->
+<!-- AJ: Commented out - not sure we need this level of detail when it's available in links.
+### Additional details on types of tests
+
+In analytical work, the following types of tests are often the most important to consider:
+
+| Type | Description | Benefits |
+| ----- | ------------- | -------- |
+| Unit Tests | Small isolated tests to ensure each individual component (e.g. a single calculation) works as expected | Help you locate and identify the root cause of any issues or errors |
+| Integration Tests | Testing interactions between two or more individual components (for example, can the data output by one calculation be used as the input to another?) | Verify that different parts of the analysis work together as expected |
+| End-to-end Tests | Testing the entire analysis from start to finish | Verify that the whole process produces the expected results, given certain inputs |
+
+In practice, a mix of all three types often works best. 
+
+* For analytical work, integration and end-to-end tests tend to give the most value, as they verify the analysis works correctly without requiring a lot of maintenance as the analysis changes.
+* As unit tests are the most costly to maintain, it is recommended that they target the most complex and critical logic, and that they focus on testing the *behaviour* of the code rather than the *implementation*. -->
+</section>
+<section id="additional-guidance-for-automated-testing" class="level3">
+<h3 class="anchored" data-anchor-id="additional-guidance-for-automated-testing">Additional guidance for automated testing</h3>
+<p>If you are producing analysis using code, you can take this approach further by using:</p>
 <ul>
-<li>Modular code should feel well-organised and easy to navigate.</li>
-<li>Repetition will be minimised through the use of small, reusable functions.</li>
-<li>The purpose of each part of the code will be clear to the reader, with similar pieces of logic grouped together.</li>
-<li>A <a href="../../../guidance/04-peer-review/pages/07-peer-reviewed.html">reviewer</a> should help spot any potentially issues and suggest improvements.</li>
+<li>established testing frameworks for you the coding language you’re using</li>
+<li>automated test execution to run tests automatically, especially as part of a continuous integration (CI) pipline</li>
 </ul>
-<p><strong>Lookout for:</strong></p>
-<ul>
-<li>finding yourself scrolling-and-scrolling to look for a particular part of the code could indicate you should break it up into smaller modules!</li>
-<li>alternatively, needing to look through many, many files and maintain multiple tabs to understand and make changes might suggest reducing the modularity!</li>
-</ul>
+<p>It is important to make sure that new changes or bug fixes haven’t introduced new bugs in code that was already tested successfully. This is a good reason to automate as many tests as possible and regularly run them as a suite of tests.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -909,11 +849,11 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-footer">
     <div class="nav-footer-left">
 <ul>
-<li><a href="../../../accessibility.html">Accessibility</a></li>
+<li><a href="../../accessibility.html">Accessibility</a></li>
 <li><a href="mailto:analyticalassurance@nhsbsa.nhs.uk">Contact</a></li>
 <li><a href="https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook">GitHub</a></li>
 </ul>
-<p><img src="../../../static/ogl3-logo.svg" height="17" width="41" focusable="false">&nbsp; All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.</p>
+<p><img src="../../static/ogl3-logo.svg" height="17" width="41" focusable="false">&nbsp; All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

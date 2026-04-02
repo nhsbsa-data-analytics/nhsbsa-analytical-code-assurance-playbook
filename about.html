@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Analytical Code Assurance</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -28,15 +31,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2d42b221d4a3bf25ead76833855245a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f04851e5181f5d885676c86098d93a9e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
@@ -62,9 +64,6 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <div id="quarto-announcement" data-announcement-id="3ba91ba772a959eb82aaf840c71796ea" class="alert alert-warning hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Pre-Release</strong>: This is a new website under development. <a href="https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook/blob/main/CONTRIBUTE.md">Click here</a> to find out how you can submit feedback, suggest improvements and get involved!</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
     <nav class="navbar navbar-expand " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -84,24 +83,32 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guidance">    
         <li>
-    <a class="dropdown-item" href="./guidance/01-design/index.html">
- <span class="dropdown-text">Design</span></a>
+    <a class="dropdown-item" href="./guidance/01-version-controlled/index.html">
+ <span class="dropdown-text">Version Controlled</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/02-develop/index.html">
- <span class="dropdown-text">Develop</span></a>
+    <a class="dropdown-item" href="./guidance/02-tested/index.html">
+ <span class="dropdown-text">Tested</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/03-document/index.html">
- <span class="dropdown-text">Document</span></a>
+    <a class="dropdown-item" href="./guidance/03-peer-reviewed/index.html">
+ <span class="dropdown-text">Peer Review</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/04-peer-review/index.html">
- <span class="dropdown-text">Peer review</span></a>
+    <a class="dropdown-item" href="./guidance/04-readable/index.html">
+ <span class="dropdown-text">Readable</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guidance/05-open-source/index.html">
- <span class="dropdown-text">Open source</span></a>
+    <a class="dropdown-item" href="./guidance/05-modular/index.html">
+ <span class="dropdown-text">Modular</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/06-documented/index.html">
+ <span class="dropdown-text">Documentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./guidance/07-open-source/index.html">
+ <span class="dropdown-text">Open Source</span></a>
   </li>  
     </ul>
   </li>
@@ -113,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://www.nhsbsa.nhs.uk/nhsbsa-statistics-and-data-science"> 
-<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:house-outline" style="font-size: 1.5em;" aria-label="Icon house-outline from mdi Iconify.design set." title="Icon house-outline from mdi Iconify.design set."></iconify-icon> NHSBSA Data Science Home Page</span></a>
+<span class="menu-text"><iconify-icon role="img" inline="" icon="mdi:house-outline" style="font-size: 1.5em;" aria-label="Icon house-outline from mdi Iconify.design set." title="Icon house-outline from mdi Iconify.design set."></iconify-icon> NHSBSA Statistics and Data Science</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/nhsbsa-data-analytics/nhsbsa-analytical-code-assurance-playbook"> 
@@ -159,10 +166,6 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -171,109 +174,48 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./guidance/01-design/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Design</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/01-design/pages/01-modular.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Modular</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./guidance/02-develop/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Develop</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-develop/pages/02-readable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Readable</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./guidance/02-develop/pages/03-version-controlled.html" class="sidebar-item-text sidebar-link">
+  <a href="./guidance/01-version-controlled/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Version Controlled</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/02-develop/pages/04-tested.html" class="sidebar-item-text sidebar-link">
+  <a href="./guidance/02-tested/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tested</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./guidance/03-document/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Document</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/03-document/pages/05-documented.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Documented</span></a>
+  <a href="./guidance/03-peer-reviewed/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Peer Review</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/03-document/pages/06-decisions-logged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Decisions Logged</span></a>
+  <a href="./guidance/04-readable/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readable</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./guidance/04-peer-review/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Peer review</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/04-peer-review/pages/07-peer-reviewed.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Peer-reviewed</span></a>
+  <a href="./guidance/05-modular/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modular</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./guidance/05-open-source/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open source</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./guidance/05-open-source/pages/08-open-source.html" class="sidebar-item-text sidebar-link">
+  <a href="./guidance/06-documented/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./guidance/07-open-source/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open Source</span></a>
   </div>
 </li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
