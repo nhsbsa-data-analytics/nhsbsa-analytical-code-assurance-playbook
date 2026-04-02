@@ -75,6 +75,7 @@ flowchart TD
 ### 2. Reviewer reviews the code
 
 Read through the code carefully to understand its purpose and logic. Check whether the code:
+
 * is readable and understandable
 * has sufficient documentation explaining what it does and why, including any key assumptions, limitations and key decisions
 * produces the correct outputs and has appropriate tests

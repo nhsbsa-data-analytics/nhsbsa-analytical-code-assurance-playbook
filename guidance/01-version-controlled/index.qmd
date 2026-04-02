@@ -1,12 +1,12 @@
 ---
 title: "Version Controlled"
-description: "Version control is all about managing changes"
+description: "Version control is all about tracking code changes over time."
 ---
 
-## Suggested reading
-
-* [AF Duck book: Version control][duck-book-version-control]
-* [NHSE RAP Community of Practice: Introduction to Git][nhse-rap-cop-git]
+> ## Suggested reading
+>
+> * [AF Duck book: Version control][duck-book-version-control]
+> * [NHSE RAP Community of Practice: Introduction to Git][nhse-rap-cop-git]
 
 
 ## At a glance
