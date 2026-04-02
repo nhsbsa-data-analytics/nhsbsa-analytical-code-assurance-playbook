@@ -1,5 +1,5 @@
 ---
-title: "Tested"
+title: "Testing"
 description: "Testing ensures the analytical code produces the correct output."
 ---
 

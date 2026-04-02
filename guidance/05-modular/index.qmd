@@ -1,5 +1,5 @@
 ---
-title: "Modular"
+title: "Modular Code"
 description: "Modular code is broken down into smaller, independent, reusable chunks."
 ---
 

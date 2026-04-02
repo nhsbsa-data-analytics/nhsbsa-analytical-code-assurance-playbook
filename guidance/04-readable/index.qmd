@@ -1,5 +1,5 @@
 ---
-title: "Readable"
+title: "Readable Code"
 description: "Readable code is clear and easy to understand, maintain and reuse."
 ---
 
