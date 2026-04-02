@@ -1,6 +1,0 @@
----
-title: "Version Controlled"
-description: ""
----
-
-Lorem ipsum dolor sit veritum ...

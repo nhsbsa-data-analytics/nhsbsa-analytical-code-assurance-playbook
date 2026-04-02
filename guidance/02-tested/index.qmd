@@ -1,0 +1,114 @@
+---
+title: "Tested"
+description: "Testing ensures the analytical code produces the correct output."
+---
+
+> ## Suggested reading
+>
+> * [AF Duck book: Testing code][duck-book-testing]
+> * [NHSBSA DDaT playbook: Testing][ddat-playbook-testing]
+
+
+## At a glance
+Analytical code should be tested to ensure it produces the correct output. This guide outlines the benefits of testing and how to put it into practice within the NHSBSA.
+
+## What is testing?
+
+Testing is the process of checking that the analytical code produces the correct output. Testing reduces the risk of errors, promotes confidence in our results and helps ensures the work is repeatable and reproducible.
+
+Testing should be applied throughout the analysis, from data processing and transformation, to the final outputs and results. Testing should be proportionate to the complexity and importance of the analysis, and should be applied in a risk-based way, with more testing applied to new, complex or business critical logic. 
+
+One of the most important aspects of testing is providing evidence of what has been tested, how it was tested, and the results. This can be done through a combination of documentation, manual tests and, where appropriate, automated tests.
+
+### What is *automated testing*?
+In software development workflows, *testing* and *automated testing* are often used interchangeably to mean the latter. 
+
+Automated testing means writing tests in code that run automatically. This approach is repeatable, gives quick feedback on changes, and catches issues early. However, it takes time to write and maintain, and isn't always the best way to test everything.
+
+We recommend combining manual and automated testing, using automated testing where it adds the most value.
+
+
+## Why should we test our analysis?
+
+Testing is a fundamental part of quality assurance, helping to:
+
+* verify that the code works as intended.
+* check that the outputs of the analysis are correct and reproducible.
+* creating an audit trail which provides evidence that the analysis produces the correct output.
+* catch errors and bugs before the code is used to produce results.
+* [document][documented] how the code is intended to behave, promoting collaboration and reproducibility.
+* act as a safety net when making changes or improvements.
+* encourage more [modular][modular] designs which are easier to test and maintain.
+
+
+## How do we test our analysis?
+
+We recommend adopting a proportionate, risk-based approach with more focus on testing logic that is newer, more complex, or business critical. Your approach should be discussed with your team, critical friend, or peer reviewer to agree that it is in-line with the identified risk profile of the project.
+
+
+### Roles and responsibilities
+
+Testing is a shared responsibility, and everyone involved in the analysis should be encouraged to contribute to testing:
+
+* the analyst writing the code should be responsible for writing and running tests to verify their code works as expected.
+* [peer reviewers][peer-review] should check the evidence that appropriate tests have been carried out including that the right things have been tested. They should also reproduce the test results as part of their review process.
+* if you have a dedicated testing or quality assurance role, they should be responsible for overseeing the testing process, providing guidance and support to analysts and reviewers, and ensuring that testing is being done effectively across the team.
+
+
+### Recommended workflow 
+We recommend the following workflow for testing analytical code:
+
+1. identify the scenarios or behaviours you want to test. For example, this could be checking the result of a specific calculation or data transformation.  
+2. define the inputs and expected outputs or behaviour. Tip: Test *what* the code should do, rather than *how* it does it. 
+3. run the code that you are testing and observe the results.
+4. assert that the code did what you expected it to do (usually comparing the actual output matches the expected output). 
+5. (if needed) fix any errors or issues.
+6. (if needed) rerun the tests to verify that your code works as expected.
+
+This workflow is the same whether you are manually testing (e.g. by directly comparing input and output files using excel) or automated tested using tests in code. 
+Although the benefit of automated tests is that once you've written the test, these steps can be run over and over again with minimal effort.
+
+For more detail on how to design your tests, including what to test, see [this guide][rap-testing]
+
+
+### Manual testing considerations
+Manual testing can be a good option for simpler or one-off pieces of analyses, or for testing specific scenarios that are difficult to automate. 
+
+When manually testing, it is important to document your tests and results, so that others can understand what has been tested and the outcomes. This can be done using a simple spreadsheet or word document, which includes the inputs, expected outputs, actual outputs and any notes on the test results. It should also include instructions on how to reproduce the result, including any set up steps or dependencies.
+
+<!-- * Tests should be [documented][documented], indicating what has been tested and why.
+* As your analysis [evolves][version-controlled], be sure to update your tests and documentation. This includes refactoring automated tests in code, removing obsolete tests and adding new ones.  -->
+
+
+<!-- AJ: Commented out - not sure we need this level of detail when it's available in links.
+### Additional details on types of tests
+
+In analytical work, the following types of tests are often the most important to consider:
+
+| Type | Description | Benefits |
+| ----- | ------------- | -------- |
+| Unit Tests | Small isolated tests to ensure each individual component (e.g. a single calculation) works as expected | Help you locate and identify the root cause of any issues or errors |
+| Integration Tests | Testing interactions between two or more individual components (for example, can the data output by one calculation be used as the input to another?) | Verify that different parts of the analysis work together as expected |
+| End-to-end Tests | Testing the entire analysis from start to finish | Verify that the whole process produces the expected results, given certain inputs |
+
+In practice, a mix of all three types often works best. 
+
+* For analytical work, integration and end-to-end tests tend to give the most value, as they verify the analysis works correctly without requiring a lot of maintenance as the analysis changes.
+* As unit tests are the most costly to maintain, it is recommended that they target the most complex and critical logic, and that they focus on testing the *behaviour* of the code rather than the *implementation*. -->
+
+
+### Additional guidance for automated testing
+If you are producing analysis using code, you can take this approach further by using:
+
+* established testing frameworks for you the coding language you're using
+* automated test execution to run tests automatically, especially as part of a continuous integration (CI) pipline
+
+ It is important to make sure that new changes or bug fixes haven't introduced new bugs in code that was already tested successfully. This is a good reason to automate as many tests as possible and regularly run them as a suite of tests.
+
+[duck-book-testing]: https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html
+[ddat-playbook-testing]: https://nhsbsa.github.io/nhsbsa-digital-playbook/testing/
+[rap-testing]: https://nhsdigital.github.io/rap-community-of-practice/training_resources/python/unit-testing/
+[version-controlled]: /guidance/01-version-controlled/index.qmd
+[modular]: /guidance/05-modular/index.qmd
+[documented]: /guidance/06-documented/index.qmd
+[peer-review]: /guidance/03-peer-reviewed/index.qmd

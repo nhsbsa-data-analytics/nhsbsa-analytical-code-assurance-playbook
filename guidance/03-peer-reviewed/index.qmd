@@ -1,0 +1,139 @@
+---
+title: "Peer Review"
+description: "Peer review is an opportunity to receive constructive feedback on the quality of your analysis and analytical code."
+---
+
+> ### Suggested reading
+> * [AF Duck Book: Peer review][duck-book]
+> * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook-peer-review]
+
+## At a glance
+
+Peer review is when a colleague checks your work and provides constructive feedback to improve quality or spot potential errors before it is finalised and used to produce results.
+This guide outlines the benefits of peer review for quality assuring analytical code and how to put it into practice within the NHSBSA. 
+
+
+# What is peer review?
+
+Peer review involves a colleague checking your analytical code to ensure it is of good quality, and providing feedback to help you improve it.
+Peer review is not a replacement for self-review and testing, but it can help to offer alternative perspectives, spot potential issues that may have been missed, and improve the readability and maintainability of code.
+
+Peer review is strongly related to [version control][version-control] and is often implemented as part of the branching and pull request process when using version control tools. 
+However, even when version control tools are not used, peer review should still be done, including recording of any feedback and amendments requested during the review process.
+
+
+## Why should code be peer reviewed?
+
+Peer review should ensure that analytical code aligns with the key principles of transparency, reproducibility and quality assurance by providing an independent check that:
+
+* code is readable and understandable
+* there is sufficient documentation explaining what the code does and why, including any key assumptions, limitations and key decisions
+* code has been tested and produces the correct results 
+* outputs have been verified and are reproducible 
+* code and outputs are consistent with the analytical plan or problem definition to ensure it answers [the right questions][aqa-principles]
+* alternative approaches have been considered where appropriate, including that the [right methods have been used][aqa-principles]
+* code follows best practice and team standards, maintaining consistency across the project and team
+* documentation and code can be understood by colleagues and knowledge has been shared across the team
+
+
+## How does peer review work?
+
+Effective peer review requires clear expectations, constructive feedback, and proportionate effort based on the complexity and importance of the analysis.
+
+There are two key roles in peer review: the **code author** (the analyst doing the work) and the **reviewer** (a team member or critical friend who checks the work).
+In analytical projects, the [Critical Friend][critical-friend] often takes on the reviewer role, though any suitably skilled team member can perform reviews. 
+
+The steps outlined below provide a general process for peer review, which can be adapted to your team's specific context and needs. The diagram below illustrates the process, which is then explained in more detail in the sections that follow.
+
+:::{style="text-align: center"}
+```{mermaid}
+flowchart TD
+    Start([Start Peer Review]) --> Prepare[1 Author:<br/>Prepare Code for Review]
+    Prepare --> Review[2 Reviewer:<br/>Review the code]
+    Review --> |Changes needed|Address[3 Author:<br/>Address feedback]
+    Review --> Check[4 Reviewer:<br/>Approves]
+    Address --> Review
+    Check -->|Approved| Complete([5 Complete review])
+    
+    style Start fill:#e1f5ff
+    style Prepare fill:#fff4e6
+    style Review fill:#f3e5f5
+    style Address fill:#e8f5e9
+    style Check fill:#fce4ec
+    style Complete fill:#c8e6c9
+```
+:::
+
+### 1. Author prepares code for review
+
+* break your work into manageable, related chunks rather than submitting everything at once.
+* ensure your code runs correctly and passes any tests before requesting review.
+* provide clear context: explain what the code does, why you made certain decisions, and highlight any areas where you'd particularly like feedback.
+* if using version control tools like Git, submit a pull/merge request for your branch.
+* don't rush the process or bypass review to save time - quality assurance is worth the investment.
+
+### 2. Reviewer reviews the code
+
+Read through the code carefully to understand its purpose and logic. Check whether the code:
+* is readable and understandable
+* has sufficient documentation explaining what it does and why, including any key assumptions, limitations and key decisions
+* produces the correct outputs and has appropriate tests
+* follows team standards and best practices
+* aligns with the analytical plan or problem definition
+
+You should add clear, constructive comments on any issues, questions, or suggestions for improvement, explaining why you're suggesting changes, not just what to change.
+
+Remember, there's often more than one way to solve a problem. Focus on whether the approach is sound and follows best practice, rather than whether you would have done it differently.
+
+### 3. Author addresses feedback
+
+Review all comments carefully, consider each piece of feedback, and make changes where appropriate. 
+
+Discuss any comments you disagree with or don't understand -- peer review is a conversation, not a command. 
+
+Finally, document the changes you've made and any decisions taken based on the feedback.
+
+### 4. Reviewer reviews and approves
+
+Check that your feedback has been addressed appropriately and approve the code once you're satisfied it meets the right standards of quality. 
+
+If using version control tools, formally approve the pull/merge request.
+
+### 5. The review is completed
+
+If using version control the code should be merged once approved. We recommend that this is done by the author to maintain auditability, but this may depend on your team's processes and permissions.
+
+If not using version control, the author should update the main codebase with the reviewed code and document that the review has taken place.
+
+Always remember to thank your reviewer of their time and feedback -- successful and productive peer review requires effort on both sides.
+
+
+<!-- ### Pair programming
+
+Instead of having the code writing and peer review as two distinct phases, pair programming combines these into a single step with two or more people actively working on the same piece of code at the same time. Effective pair programming will involve one person writing the code whilst the other(s) supply real time feedback on the code being written.
+
+The benefits of pair programming are that feedback can be provided as the code is being written, suggesting improvements or identifying/fixing issues as they appear. Additionally, pair programming can be a good method to share knowledge and experience between individuals.
+
+Pair programming may require more resource during the development stage but at the benefit in a reduction of resource needed in the review stage.
+
+For pair programming to be effective there are guidelines that should be followed. 
+
+#### Rotate roles often
+
+Everyone should take turns writing and reviewing which could mean switching roles every 15-30 minutes. 
+This will ensure everyone gets experience from both sides of the process and will solidify the knowledge of the code being written.
+
+#### Document large decisions
+
+Pair programming allows real-time discussion and decision making but where big decisions in terms of approach have been made these should still be documented for anybody who may use the code in future.
+
+### Be vocal and ask questions
+
+Pair programming is a collaborative process and should not just involve one person watching another code. The person writing the code should be talking through what they are writing, and the reviewer should be supplying feedback and asking for clarification if there are parts that they do not understand. Everybody who has been involved writing the code should have full understanding as if they had written it all themselves.-->
+
+
+[duck-book]: https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html
+[version-control]: /guidance/01-version-controlled/index.qmd
+[critical-friend]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/03-responsibilities/pages/11-critical-friend.html
+[ddat-playbook-peer-review]: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/
+[aqa-principles]: https://nhsbsa-data-analytics.github.io/nhsbsa-quality-analysis-playbook/guidance/01-principles/
