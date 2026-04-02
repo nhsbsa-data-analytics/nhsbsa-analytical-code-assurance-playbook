@@ -251,6 +251,7 @@ git push origin v1.3.0
 
 Once a tag has been created, these locations in a project's history can be easily found and recovered.
 
+<!--
 ### Commits
 
 Earlier in this guidance we defined the simple approach to commits and writing commit messages. As your project grows you may find that your Git history growing with it and becoming more complex, with the previous approach to commits no longer being fit for purpose.
@@ -410,6 +411,7 @@ Git repository hosting providers support adding controls on what can be done wit
     * When a commit is added: `Remove all approvals`
 
 </details>
+-->
 
 ## Learn more
 
