@@ -11,7 +11,7 @@ description: "Version control is all about tracking code changes over time."
 
 ## At a glance
 
-Version control (Git) is an essential tool helps teams to safely collaborate and make their code resilient by tracking changes, enabling branching, and ensuring code is transparent, auditable and reproducible. 
+Version control (Git) is an essential tool that helps teams to safely collaborate and make their code resilient by tracking changes, enabling branching, and ensuring code is transparent, auditable and reproducible. 
 
 This guidance aims to give users an understanding of version control, the benefits of its use, and how to implement it in their work.
 
@@ -21,7 +21,7 @@ Version control is a way to track line-by-line changes to source code over time.
 
 Version control supports collaboration on analytical projects by managing different versions of the same files and helps us to solve the problem of managing file versions manually through inefficient naming conventions. 
 
-As well as tracking the history of source code, version control helps us track changes in accompanying documentation and dependencies, streamlining environment and package management. This helps us understand what versions of the code produced what outputs, the environment those outputs where produced in, and state of any dependencies.
+As well as tracking the history of source code, version control helps us track changes in accompanying documentation and dependencies, streamlining environment and package management. This helps us understand what versions of the code produced what outputs, the environment those outputs were produced in, and state of any dependencies.
 
 Version control should be seen as a tool that underpins and promotes high quality analytical code, facilitating other best practices detailed in this playbook such as:
 
@@ -32,13 +32,13 @@ Version control should be seen as a tool that underpins and promotes high qualit
 
 ### What is Git?
 
-Git is a distributed version control system that is the tool of choice at the NHSBSA. Git is built on simple and elegant principles that support independent work in an offline, local environment, and "pushing" changes back to a online hosted remote. Git hosting providers such as Gitlab, Github and Azure enhance the collaborative experience with features such as code review and issue trackers.
+Git is a distributed version control system that is the tool of choice at the NHSBSA. Git is built on simple and elegant principles that support independent work in an offline, local environment, and "pushing" changes back to an online hosted remote. Git hosting providers such as GitLab, GitHub and Azure enhance the collaborative experience with features such as code review and issue trackers.
 
-There are 2 main ways to interact with git: 
+There are 2 main ways to interact with Git: 
 
 * through the command line interface (Git Bash) - the Git CLI is more difficult to use for beginners but much more flexible and powerful 
 
-* through IDEs with in-built Git functionality - tools like R Studio and Visual Studio Code help users get started with the basics of creating repositories, linking them to a remote, committing, pushing, and pulling through streamlined GUIs. 
+* through IDEs with in-built Git functionality - tools like RStudio and Visual Studio Code help users get started with the basics of creating repositories, linking them to a remote, committing, pushing, and pulling through streamlined GUIs. 
 
 Our [suggested learning resources](#learn-more) provide additional support for beginner and expert Git users.
 
@@ -60,7 +60,7 @@ Teams should adopt tools and processes that fit their circumstances. However, wh
 
 * commit often -- small, frequent commits with meaningful messages are easier to review and understand for both other team members and your future self
 
-* push to the remote regularly -- committing to your local repository doesn't mean that you changes are reflected for everyone else. Remember to push your commits to the remote
+* push to the remote regularly -- committing to your local repository doesn't mean that your changes are reflected for everyone else. Remember to push your commits to the remote
 
 * use branching -- use a branching strategy to organise work and separate changes by collaborators. Your `main` branch should always be assured, reviewed code that can be trusted
 

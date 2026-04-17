@@ -3,7 +3,7 @@ title: "Peer Review"
 description: "Peer review is an opportunity to receive constructive feedback on the quality of your analysis and analytical code."
 ---
 
-> ### Suggested reading
+> ## Suggested reading
 > * [AF Duck Book: Peer review][duck-book]
 > * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook-peer-review]
 
@@ -66,6 +66,8 @@ flowchart TD
 
 ### 1. Author prepares code for review
 
+Write the code to perform the analysis and ensure it is ready for review. This includes:
+
 * break your work into manageable, related chunks rather than submitting everything at once.
 * ensure your code runs correctly and passes any tests before requesting review.
 * provide clear context: explain what the code does, why you made certain decisions, and highlight any areas where you'd particularly like feedback.
@@ -106,7 +108,7 @@ If using version control the code should be merged once approved. We recommend t
 
 If not using version control, the author should update the main codebase with the reviewed code and document that the review has taken place.
 
-Always remember to thank your reviewer of their time and feedback -- successful and productive peer review requires effort on both sides.
+Always remember to thank your reviewer for their time and feedback -- successful and productive peer review requires effort on both sides.
 
 
 <!-- ### Pair programming

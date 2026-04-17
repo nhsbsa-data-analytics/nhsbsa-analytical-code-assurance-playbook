@@ -3,7 +3,7 @@ title: "Readable Code"
 description: "Readable code is clear and easy to understand, maintain and reuse."
 ---
 
-> ### Suggested reading
+> ## Suggested reading
 >
 > * [AF Duck book: Readable code][duck-book]
 > * [NHSBSA DDaT playbook: Naming conventions][ddat-playbook]
