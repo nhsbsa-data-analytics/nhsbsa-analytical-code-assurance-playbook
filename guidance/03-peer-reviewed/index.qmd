@@ -13,7 +13,7 @@ Peer review is when a colleague checks your work and provides constructive feedb
 This guide outlines the benefits of peer review for quality assuring analytical code and how to put it into practice within the NHSBSA. 
 
 
-# What is peer review?
+## What is peer review?
 
 Peer review involves a colleague checking your analytical code to ensure it is of good quality, and providing feedback to help you improve it.
 Peer review is not a replacement for self-review and testing, but it can help to offer alternative perspectives, spot potential issues that may have been missed, and improve the readability and maintainability of code.
