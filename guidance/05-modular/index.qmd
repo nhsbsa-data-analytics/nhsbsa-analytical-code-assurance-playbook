@@ -1,9 +1,9 @@
 ---
-title: "Modular"
+title: "Modular Code"
 description: "Modular code is broken down into smaller, independent, reusable chunks."
 ---
 
-> ### Suggested reading
+> ## Suggested reading
 >
 > * [AF Duck book: Modular code][duck-book]
 > * [NHSBSA DDaT playbook: Development - Coding][ddat-playbook]

@@ -1,5 +1,5 @@
 ---
-title: "Tested"
+title: "Testing"
 description: "Testing ensures the analytical code produces the correct output."
 ---
 
@@ -14,7 +14,7 @@ Analytical code should be tested to ensure it produces the correct output. This 
 
 ## What is testing?
 
-Testing is the process of checking that the analytical code produces the correct output. Testing reduces the risk of errors, promotes confidence in our results and helps ensures the work is repeatable and reproducible.
+Testing is the process of checking that the analytical code produces the correct output. Testing reduces the risk of errors, promotes confidence in our results and helps ensure the work is repeatable and reproducible.
 
 Testing should be applied throughout the analysis, from data processing and transformation, to the final outputs and results. Testing should be proportionate to the complexity and importance of the analysis, and should be applied in a risk-based way, with more testing applied to new, complex or business critical logic. 
 
@@ -34,7 +34,7 @@ Testing is a fundamental part of quality assurance, helping to:
 
 * verify that the code works as intended.
 * check that the outputs of the analysis are correct and reproducible.
-* creating an audit trail which provides evidence that the analysis produces the correct output.
+* create an audit trail which provides evidence that the analysis produces the correct output.
 * catch errors and bugs before the code is used to produce results.
 * [document][documented] how the code is intended to behave, promoting collaboration and reproducibility.
 * act as a safety net when making changes or improvements.
@@ -65,7 +65,7 @@ We recommend the following workflow for testing analytical code:
 5. (if needed) fix any errors or issues.
 6. (if needed) rerun the tests to verify that your code works as expected.
 
-This workflow is the same whether you are manually testing (e.g. by directly comparing input and output files using excel) or automated tested using tests in code. 
+This workflow is the same whether you are manually testing (e.g. by directly comparing input and output files using excel) or automated testing using tests in code. 
 Although the benefit of automated tests is that once you've written the test, these steps can be run over and over again with minimal effort.
 
 For more detail on how to design your tests, including what to test, see [this guide][rap-testing]
@@ -100,8 +100,8 @@ In practice, a mix of all three types often works best.
 ### Additional guidance for automated testing
 If you are producing analysis using code, you can take this approach further by using:
 
-* established testing frameworks for you the coding language you're using
-* automated test execution to run tests automatically, especially as part of a continuous integration (CI) pipline
+* established testing frameworks for the coding language you're using
+* automated test execution to run tests automatically, especially as part of a continuous integration (CI) pipeline
 
  It is important to make sure that new changes or bug fixes haven't introduced new bugs in code that was already tested successfully. This is a good reason to automate as many tests as possible and regularly run them as a suite of tests.
 

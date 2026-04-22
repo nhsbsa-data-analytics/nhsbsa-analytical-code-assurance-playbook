@@ -3,7 +3,7 @@ title: "Peer Review"
 description: "Peer review is an opportunity to receive constructive feedback on the quality of your analysis and analytical code."
 ---
 
-> ### Suggested reading
+> ## Suggested reading
 > * [AF Duck Book: Peer review][duck-book]
 > * [NHSBSA DDaT Playbook: Development - Peer Review][ddat-playbook-peer-review]
 
@@ -13,7 +13,7 @@ Peer review is when a colleague checks your work and provides constructive feedb
 This guide outlines the benefits of peer review for quality assuring analytical code and how to put it into practice within the NHSBSA. 
 
 
-# What is peer review?
+## What is peer review?
 
 Peer review involves a colleague checking your analytical code to ensure it is of good quality, and providing feedback to help you improve it.
 Peer review is not a replacement for self-review and testing, but it can help to offer alternative perspectives, spot potential issues that may have been missed, and improve the readability and maintainability of code.
@@ -66,6 +66,8 @@ flowchart TD
 
 ### 1. Author prepares code for review
 
+Write the code to perform the analysis and ensure it is ready for review. This includes:
+
 * break your work into manageable, related chunks rather than submitting everything at once.
 * ensure your code runs correctly and passes any tests before requesting review.
 * provide clear context: explain what the code does, why you made certain decisions, and highlight any areas where you'd particularly like feedback.
@@ -75,6 +77,7 @@ flowchart TD
 ### 2. Reviewer reviews the code
 
 Read through the code carefully to understand its purpose and logic. Check whether the code:
+
 * is readable and understandable
 * has sufficient documentation explaining what it does and why, including any key assumptions, limitations and key decisions
 * produces the correct outputs and has appropriate tests
@@ -105,7 +108,7 @@ If using version control the code should be merged once approved. We recommend t
 
 If not using version control, the author should update the main codebase with the reviewed code and document that the review has taken place.
 
-Always remember to thank your reviewer of their time and feedback -- successful and productive peer review requires effort on both sides.
+Always remember to thank your reviewer for their time and feedback -- successful and productive peer review requires effort on both sides.
 
 
 <!-- ### Pair programming

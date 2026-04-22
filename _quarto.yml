@@ -52,13 +52,13 @@ website:
         href: index.qmd
       - text: "Version Controlled"
         href: guidance/01-version-controlled/index.qmd
-      - text: "Tested"
+      - text: "Testing"
         href: guidance/02-tested/index.qmd
       - text: "Peer Review"
         href: guidance/03-peer-reviewed/index.qmd
-      - text: "Readable"
+      - text: "Readable Code"
         href: guidance/04-readable/index.qmd
-      - text: "Modular"
+      - text: "Modular Code"
         href: guidance/05-modular/index.qmd
       - text: "Documentation"
         href: guidance/06-documented/index.qmd
@@ -75,7 +75,7 @@ website:
       All content is available under the <a class="nhsuk-footer__list-item-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated.        
               
     right:
-      - text: "&copy Crown Copyright"
+      - text: "&copy; Crown Copyright"
       
 format:
   html:

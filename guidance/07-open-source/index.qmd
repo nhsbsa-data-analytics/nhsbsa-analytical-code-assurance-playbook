@@ -32,6 +32,7 @@ There are two main routes to open-sourcing analytical code:
 1. Work in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the [NHSBSA Open Data Portal][nhsbsa-open-data]. 
 1. Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments. It is still recommended to retrospectively publish your analytical code, although this may need additional review (see below for details).
 
+### Publishing workflow
 To publish analytical code:
 
 1. Include a file named `LICENCE` (British English spelling) with the complete licence text in your repository, not just a statement in the `README`.
@@ -39,7 +40,7 @@ To publish analytical code:
 3. Host your code on the [NHSBSA Data Analytics GitHub][nhsbsa-github].
 4. Follow [NHSBSA policies][nhsbsa-open-source] and approval processes for open source coding.
 5. Use secret management systems and keep credentials out of repositories. Make sure you check the history as well as the current version of the codebase! See [GOV.UK guidance][govuk-secret-guidance].
-1. **Check for sensitive information:** Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!
+6. **Check for sensitive information:** Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!
 
 See the [GOV.UK Service Manual][govuk-service-manual] and [NHS Digital RAP Community guidance][rap-community-guidance] for detailed steps and best practices.
 
