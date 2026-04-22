@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/accessibility.html</loc>
-    <lastmod>2026-04-02T14:54:31.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/02-tested/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/05-modular/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/04-readable/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/01-version-controlled/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
-  </url>
-  <url>
     <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/CONTRIBUTE.html</loc>
-    <lastmod>2026-04-02T14:54:31.872Z</lastmod>
+    <lastmod>2026-04-22T15:34:52.992Z</lastmod>
   </url>
   <url>
     <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/about.html</loc>
-    <lastmod>2026-04-02T14:54:31.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/03-peer-reviewed/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
+    <lastmod>2026-04-22T15:34:52.992Z</lastmod>
   </url>
   <url>
     <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/07-open-source/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
   </url>
   <url>
     <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/06-documented/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/03-peer-reviewed/index.html</loc>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/04-readable/index.html</loc>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/05-modular/index.html</loc>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/02-tested/index.html</loc>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/guidance/01-version-controlled/index.html</loc>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/accessibility.html</loc>
+    <lastmod>2026-04-22T15:34:52.992Z</lastmod>
   </url>
   <url>
     <loc>https://nhsbsa-data-analytics.github.io/nhsbsa-analytical-code-assurance-playbook/index.html</loc>
-    <lastmod>2026-04-02T14:54:31.873Z</lastmod>
+    <lastmod>2026-04-22T15:34:52.993Z</lastmod>
   </url>
 </urlset>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f04851e5181f5d885676c86098d93a9e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3d1fb9b4d7c4b453f1b5aebe8a06213a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../guidance/02-tested/index.html">
- <span class="dropdown-text">Tested</span></a>
+ <span class="dropdown-text">Testing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../guidance/03-peer-reviewed/index.html">
@@ -97,11 +97,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../guidance/04-readable/index.html">
- <span class="dropdown-text">Readable</span></a>
+ <span class="dropdown-text">Readable Code</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../guidance/05-modular/index.html">
- <span class="dropdown-text">Modular</span></a>
+ <span class="dropdown-text">Modular Code</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../guidance/06-documented/index.html">
@@ -189,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../guidance/02-tested/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tested</span></a>
+ <span class="menu-text">Testing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -201,13 +201,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../guidance/04-readable/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Readable</span></a>
+ <span class="menu-text">Readable Code</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../guidance/05-modular/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Modular</span></a>
+ <span class="menu-text">Modular Code</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -237,6 +237,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#why-publish-analytical-code-as-open-source" id="toc-why-publish-analytical-code-as-open-source" class="nav-link" data-scroll-target="#why-publish-analytical-code-as-open-source">Why publish analytical code as open source?</a></li>
   <li><a href="#how-to-publish-analytical-code-openly" id="toc-how-to-publish-analytical-code-openly" class="nav-link" data-scroll-target="#how-to-publish-analytical-code-openly">How to publish analytical code openly</a>
   <ul class="collapse">
+  <li><a href="#publishing-workflow" id="toc-publishing-workflow" class="nav-link" data-scroll-target="#publishing-workflow">Publishing workflow</a></li>
   <li><a href="#retrospective-open-sourcing" id="toc-retrospective-open-sourcing" class="nav-link" data-scroll-target="#retrospective-open-sourcing">Retrospective open sourcing</a></li>
   <li><a href="#licensing-open-code" id="toc-licensing-open-code" class="nav-link" data-scroll-target="#licensing-open-code">Licensing open code</a></li>
   </ul></li>
@@ -285,6 +286,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Work in the open from the start: this is the ideal scenario which maximises the benefits from open-source, but it is usually only suitable when you are working on open, published datasets - for example, using data from the <a href="https://opendata.nhsbsa.net/">NHSBSA Open Data Portal</a>.</li>
 <li>Retrospectively publish closed-source codebases: many of the datasets we analyse at the NHSBSA are not publicly available and so to protect sensitive and confidential data, we often work within secure internal environments. It is still recommended to retrospectively publish your analytical code, although this may need additional review (see below for details).</li>
 </ol>
+<section id="publishing-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="publishing-workflow">Publishing workflow</h3>
 <p>To publish analytical code:</p>
 <ol type="1">
 <li>Include a file named <code>LICENCE</code> (British English spelling) with the complete licence text in your repository, not just a statement in the <code>README</code>.</li>
@@ -295,6 +298,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Check for sensitive information:</strong> Ensure no personal, confidential, or proprietary data is included. Make sure you check the history as well as the current version of the codebase!</li>
 </ol>
 <p>See the <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#making-the-code-open">GOV.UK Service Manual</a> and <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/publishing_code/how-to-publish-your-code-in-the-open/">NHS Digital RAP Community guidance</a> for detailed steps and best practices.</p>
+</section>
 <section id="retrospective-open-sourcing" class="level3">
 <h3 class="anchored" data-anchor-id="retrospective-open-sourcing">Retrospective open sourcing</h3>
 <p>There are additional considerations if you are retrospectively open sourcing your code (after having developed it closed source).</p>
